@@ -1,16 +1,36 @@
-<template lang="jade">
-#rec
-  .page-top(style="background-image: url(./static/zhaopin.jpg)")
-        h1 {{ pagetitle }}
-  .topbtn
-    p.p-1.action(@click="cktopbtn(1)") 研发类
-    p.p-2(@click="cktopbtn(2)") 服务类
-    p.p-3(@click="cktopbtn(3)") 营销类
-  #content-box
-    .content(v-for="pec in pecdata")
-        .zitem
-            h3 {{ pec.Title }}
-        p(v-for="px in pec.Content.split('\\n')") {{ px }}
+<!--<template lang="jade">-->
+<!--#rec-->
+<!--  .page-top(style="background-image: url(./static/zhaopin.jpg)")-->
+<!--        h1 {{ pagetitle }}-->
+<!--  .topbtn-->
+<!--    p.p-1.action(@click="cktopbtn(1)") 研发类-->
+<!--    p.p-2(@click="cktopbtn(2)") 服务类-->
+<!--    p.p-3(@click="cktopbtn(3)") 营销类-->
+<!--  #content-box-->
+<!--    .content(v-for="pec in pecdata")-->
+<!--        .zitem-->
+<!--            h3 {{ pec.Title }}-->
+<!--        p(v-for="px in pec.Content.split('\\n')") {{ px }}-->
+<!--</template>-->
+<template>
+  <div id="rec">
+    <div class="page-top" style="background-image: url(./static/zhaopin.jpg)">
+      <h1>{{ pagetitle }}</h1>
+    </div>
+    <div class = "topbtn">
+      <p class="p-1 action" @click="cktopbtn(1)">研发类</p>
+      <p class="p-2" @click="cktopbtn(2)">服务类</p>
+      <p class="p-3" @click="cktopbtn(3)">营销类</p>
+    </div>
+    <div id="content-box">
+      <div class="content" v-for="pec in pecdata">
+        <div class="zitem">
+          <h3>{{ pec.Title }}</h3>
+        </div>
+        <p v-for="px in pec.Content.split('\\n')">{{ px }}</p>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 import axios from "../router/http";

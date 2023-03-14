@@ -1,15 +1,34 @@
-<template lang="jade">
-el-card.box-card
-    div.clearfix(slot="header")
-        span GomRos后台登录入口
-        el-button(style="float: right; padding: 3px 0",type="text") 注册
-    el-form(ref="form",:model="form",label-width="80px")
-        el-form-item(label="AdminId")
-            el-input(v-model="form.name")
-        el-form-item(label="PassWord")
-            el-input(type="password",v-model="form.passwrod")
-        el-form-item
-            el-button(type="primary",@click="onSubmit") 立即登录
+<!--<template lang="jade">-->
+<!--el-card.box-card-->
+<!--    div.clearfix(slot="header")-->
+<!--        span GomRos后台登录入口-->
+<!--        el-button(style="float: right; padding: 3px 0",type="text") 注册-->
+<!--    el-form(ref="form",:model="form",label-width="80px")-->
+<!--        el-form-item(label="AdminId")-->
+<!--            el-input(v-model="form.name")-->
+<!--        el-form-item(label="PassWord")-->
+<!--            el-input(type="password",v-model="form.passwrod")-->
+<!--        el-form-item-->
+<!--            el-button(type="primary",@click="onSubmit") 立即登录-->
+<!--</template>-->
+<template>
+  <el-card class = "box-card">
+    <div class="clearfix" slot="header">
+      <span>GomRos后台登录入口</span>
+      <el-button style="float: right;padding: 3px 0" type="text">注册</el-button>
+    </div>
+    <el-form ref="form" :model="form" label-width="80px">
+      <el-form-item label="AdminId">
+        <el-input v-model="form.name"/>
+      </el-form-item>
+      <el-form-item label="PassWord">
+        <el-input v-model="form.passwrod" type="password"/>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="onSubmit">立即登录</el-button>
+      </el-form-item>
+    </el-form>
+  </el-card>
 </template>
 <script>
 import axios from "../router/http";

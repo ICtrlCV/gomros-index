@@ -1,12 +1,27 @@
-<template lang="jade">
-    .box
-        .page-top(style="background-image: url(./static/study.jpg)")
-            h1 {{ pagetitle }}
-        .content
-            .item(v-for="item in items")
-                h3 {{ item.Title }}
-                p {{ item.Content }}
+<!--<template lang="jade">-->
+<!--    .box-->
+<!--        .page-top(style="background-image: url(./static/study.jpg)")-->
+<!--            h1 {{ pagetitle }}-->
+<!--        .content-->
+<!--            .item(v-for="item in items")-->
+<!--                h3 {{ item.Title }}-->
+<!--                p {{ item.Content }}-->
+<!--</template>-->
+
+<template>
+  <div class="box">
+    <div class="page-top" style="background-image: url(./static/study.jpg)">
+      <h1>{{ pagetitle }}</h1>
+    </div>
+    <div class="content">
+      <div class="item" v-for="item in items">
+        <h3>{{ item.Title }}</h3>
+        <p>{{ item.Content }}</p>
+      </div>
+    </div>
+  </div>
 </template>
+
 <script>
 import axios from "../router/http";
 
