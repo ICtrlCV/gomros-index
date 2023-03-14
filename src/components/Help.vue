@@ -1,24 +1,56 @@
-<template lang="jade">
-#helpbox
-  .page-top(style="background-image: url(./static/helptop.jpg)")
-        h1 {{ pagetitle }}
-  #content-boxx
-    h1 留言板
-    h4 MESSAGE
-    el-form(:inline="true",:rules="rules",ref="formInline",:model="formInline",class="demo-form-inline")
-      el-form-item(label="姓名",prop="name")
-        el-input(v-model="formInline.name",placeholder="姓名")
-      el-form-item(label="电话",prop="phone")
-        el-input(v-model="formInline.phone",placeholder="电话")
-      el-form-item(label="邮箱",prop="emali")
-        el-input(v-model="formInline.emali",placeholder="邮箱")
-      br
-      el-form-item(label="留言",prop="content")
-        el-input(type="textarea",v-model="formInline.content",style="width: 649px;")
-      br
-      el-form-item(style="margin-left: 350px;")
-        el-button(type="primary",@click="onSubmit('formInline')") 发送
+<!--<template lang="jade">-->
+<!--#helpbox-->
+<!--  .page-top(style="background-image: url(./static/helptop.jpg)")-->
+<!--        h1 {{ pagetitle }}-->
+<!--  #content-boxx-->
+<!--    h1 留言板-->
+<!--    h4 MESSAGE-->
+<!--    el-form(:inline="true",:rules="rules",ref="formInline",:model="formInline",class="demo-form-inline")-->
+<!--      el-form-item(label="姓名",prop="name")-->
+<!--        el-input(v-model="formInline.name",placeholder="姓名")-->
+<!--      el-form-item(label="电话",prop="phone")-->
+<!--        el-input(v-model="formInline.phone",placeholder="电话")-->
+<!--      el-form-item(label="邮箱",prop="emali")-->
+<!--        el-input(v-model="formInline.emali",placeholder="邮箱")-->
+<!--      br-->
+<!--      el-form-item(label="留言",prop="content")-->
+<!--        el-input(type="textarea",v-model="formInline.content",style="width: 649px;")-->
+<!--      br-->
+<!--      el-form-item(style="margin-left: 350px;")-->
+<!--        el-button(type="primary",@click="onSubmit('formInline')") 发送-->
+<!--</template>-->
+
+<template>
+  <div id = "helpbox">
+    <div class="page-top" style="background-image: url(./static/helptop.jpg)">
+      <h1>{{ pagetitle }}</h1>
+    </div>
+    <div id="content-boxx">
+      <h1>留言板</h1>
+      <h4>MESSAGE</h4>
+      <el-form inline ="true" :rules="rules" ref=formInline" :model="formInline" class="demo-form-inline">
+        <el-form-item label="姓名" prop="name">
+          <el-input v-model="formInline.name" placeholder="姓名"/>
+        </el-form-item>
+        <el-form-item label="电话" prop="phone">
+          <el-input v-model="formInline.phone" placeholder="电话"/>
+        </el-form-item>
+        <el-form-item label="邮箱" prop="emali">
+          <el-input v-model="formInline.emali" placeholder="邮箱"/>
+        </el-form-item>
+        <br/>
+        <el-form-item label="留言" prop="content">
+          <el-input v-model="formInline.content" type="textarea" style="width: 649px">留言</el-input>
+        </el-form-item>
+        <br/>
+        <el-form-item style="margin-left: 350px">
+          <el-button type="primary" @click="onSubmit('formInline')">发送</el-button>
+        </el-form-item>
+      </el-form>
+    </div>
+  </div>
 </template>
+
 <script>
 import axios from "../router/http";
 export default {

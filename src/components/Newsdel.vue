@@ -1,11 +1,23 @@
-<template lang="jade">
-#casebox
-    .page-top(style="background-image: url(./static/news_top.jpg)")
-    #content
-        img(v-bind:src="imgserver + news.Img",style="width: 100%")
-        h2 {{ news.Title }}
-        span {{ news.CreateTime.substring(0,10) }}
-        p {{ news.Content }}
+<!--<template lang="jade">-->
+<!--#casebox-->
+<!--    .page-top(style="background-image: url(./static/news_top.jpg)")-->
+<!--    #content-->
+<!--        img(v-bind:src="imgserver + news.Img",style="width: 100%")-->
+<!--        h2 {{ news.Title }}-->
+<!--        span {{ news.CreateTime.substring(0,10) }}-->
+<!--        p {{ news.Content }}-->
+<!--</template>-->
+
+<template>
+  <div id="casebox">
+    <div class = "page-top" style="background-image: url(./static/news_top.jpg)"/>
+    <div id = "content">
+      <img v-bind:src="imgserver + news.Img" style="width: 100%"/>
+      <h2>{{ "新闻标题" }}</h2>
+      <span>{{ "新闻创建时间" }}</span>
+      <p>{{ "新闻内容" }}</p>
+    </div>
+  </div>
 </template>
 
 <script>
