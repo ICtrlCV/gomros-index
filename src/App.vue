@@ -1,71 +1,63 @@
-<!--<template lang="jade">
-#app
-    el-menu(:default-active="$route.path" style="min-width:1320px;" ,class="el-menu-demo",mode="horizontal",active-text-color="#409eff",v-bind:class="{ toppost : $route.path == '/' }" router)
-        el-menu-item(index="",style="padding-left: 3%")
-            //- img(src="static/toplogo.png",style="width: 280px")
-        el-menu-item(index="/",style="margin-left:23%") 首页
-        el-menu-item(index="/news") 新闻资讯
-        el-menu-item(index="/product") 产品中心
-        el-menu-item(index="/case") 经典案例
-        el-menu-item(index="/goto") 走进GomRos
-        //- el-menu-item(index="/help") 帮助中心
-        //- el-menu-item(index="/recruitment") 诚聘英才
-        //- el-menu-item(index="/about") 联系我们
-        //- el-menu-item(index="/study") 学习模块
-        el-menu-item(index="/appDownload") 下载APP
-    transition(enter-active-class="animated")
-        router-view
-    .bottombox(v-if="$route.path != '/' && $route.path.substring(0,6) != '/admin'")
-        ul(v-for="hrefs in hrefdata")
-            li(v-for="item in hrefs")
-                router-link(:to="item.href == null ? '#' : item.href") {{
-    item.text
-  }}
-         //- img.bottomercode(src="../static/ercode.png")
-       div.copyright 版权所有
-
-
-</template>-->
 <template>
   <div id="app">
-    <el-menu mode="horizontal" class="el-menu-demo" :default-active="$route.path" active-text-color="#409eff"
-             v-bind:class="{ toppost : $route.path === '/' }" router>
-      <el-menu-item index="/" style="padding-left: 3%">
-        <!--        <img src="">-->
-      </el-menu-item>
-      <el-menu-item index="/" style="margin-left:23%">首页</el-menu-item>
-      <el-menu-item index="/news">新闻资讯</el-menu-item>
-      <el-menu-item index="/product">产品中心</el-menu-item>
-      <el-menu-item index="/case">经典案例</el-menu-item>
-      <el-menu-item index="/goto">走进GomRos</el-menu-item>
-<!--      <el-menu-item index="/help">帮助中心</el-menu-item>-->
-<!--      <el-menu-item index="/recruitment">诚聘英才</el-menu-item>-->
-<!--      <el-menu-item index="/about">联系我们</el-menu-item>-->
-<!--      <el-menu-item index="/study">学习模块</el-menu-item>-->
-      <el-menu-item index="/appDownload">下载APP</el-menu-item>
-    </el-menu>
+    <div>
+      <el-menu mode="horizontal" class="el-menu-demo" :default-active="$route.path" active-text-color="#409eff"
+               v-bind:class="{ toppost : $route.path === '/' }" router>
+        <el-menu-item index="/" style="margin-left: 20%;height: auto" >
+<!--          <el-avatar :size="60" :src="circleUrl"></el-avatar>-->
+          <img src="../../gomros-index/static/product/logo-small.png" style="width: 60px">
+        </el-menu-item>
+        <el-menu-item index="/">首页</el-menu-item>
+        <el-submenu  index="2">
+          <template slot="title">机器人操作系统</template>
+          <el-menu-item index="/news">系统介绍</el-menu-item>
+        </el-submenu>
+        <el-submenu index="3">
+          <template slot="title">移动机器人</template>
+          <el-menu-item index="/product">移动机器人技术介绍</el-menu-item>
+          <!--        <el-menu-item index="2-1">移动机器人技术介绍</el-menu-item>-->
+          <el-submenu index="2-2">
+            <template slot="title">移动机器人配套系统</template>
+            <el-menu-item index="/case">云平台</el-menu-item>
+            <el-menu-item index="/goto">移动机器人数据平台</el-menu-item>
+            <el-menu-item index="/help">场景服务软件系统</el-menu-item>
+            <el-menu-item index="/recruitment">硬件控制及驱动系统</el-menu-item>
+          </el-submenu>
+        </el-submenu>
+        <el-submenu index="4">
+          <template slot="title">GomROS开放平台</template>
+          <el-menu-item index="/contact">开放平台介绍</el-menu-item>
+          <el-menu-item index="/study">开发者社区</el-menu-item>
+        </el-submenu>
+        <el-submenu index="5">
+          <template slot="title">生态合作</template>
+          <el-menu-item index="/development">协同研发平台</el-menu-item>
+          <el-menu-item index="/education">教育培训合作</el-menu-item>
+          <el-menu-item index="/supplier">供应商合作</el-menu-item>
+        </el-submenu>
+        <el-submenu index="6">
+          <template slot="title">关于我们</template>
+          <el-menu-item index="/corporateprofile">企业简介</el-menu-item>
+          <el-menu-item index="/about">联系我们</el-menu-item>
+        </el-submenu>
+        <el-menu-item index="4"><a href="https://www.alesmart.com/" target="_blank">公司官网</a></el-menu-item>
+      </el-menu>
+    </div>
     <transition enter-active-class="animated">
       <router-view></router-view>
     </transition>
-    <div class="bottombox" v-if="$route.path != '/' && $route.path.substring(0,6) != '/admin'">
-      <ul v-for="hrefs in hrefdata">
-        <li v-for="item in hrefs">
-          <router-link :to="item.href == null ? '#' : item.href"> {{ item.text }}
-          </router-link>
-        </li>
-      </ul>
-      <div class="copyright"></div>
-    </div>
   </div>
 </template>
 
 <script>
 import axios from "./router/http";
+import message from "element-ui/packages/message";
 
 export default {
   name: "App",
   data() {
     return {
+      circleUrl: "../../gomros-index/static/product/logo-small.png",
       appurl: '',
       transitionName: '',
       activeIndex: '/',
@@ -131,10 +123,10 @@ export default {
             href: "/help",
             text: "帮助中心"
           },
-          {
-            href: "/about",
-            text: "联系我们"
-          }
+          // {
+          //   href: "/about",
+          //   text: "联系我们2"
+          // }
         ],
         [
           {
@@ -142,17 +134,29 @@ export default {
             text: "关于我们"
           },
           {
-            href: null,
-            text: ""
+            href: '/contact',
+            text: "联系我们"
           },
           {
-            href: null,
-            text: ""
+            href: '/corporateprofile',
+            text: "企业简介"
           },
           {
-            href: null,
-            text: ""
-          }
+            href: '/development',
+            text: "协同研发平台"
+          },
+          {
+            href: '/education',
+            text: "教育培训合作"
+          },
+          {
+            href: 'supplier',
+            text: "供应商合作"
+          },
+          {
+            href: '/honor',
+            text: "荣耀"
+          },
         ]
       ]
     };
@@ -171,8 +175,7 @@ export default {
           this.hrefdata[5][3].text = "地址：" + response.data[2].Content
           this.appurl = response.data[3].Content
         })
-
-  }
+  },
 };
 </script>
 

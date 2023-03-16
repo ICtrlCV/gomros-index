@@ -76,6 +76,36 @@ const router = new Router({
             component: (resolve) => {
                 require(['../components/Login'], resolve)
             }
+        },{
+            path: '/contact',
+            name: 'Contact',
+            component: (resolve) => {
+                require(['../components/Contact'], resolve)
+            }
+        },{
+            path: '/corporateProfile',
+            name: 'CorporateProfile',
+            component: (resolve) => {
+                require(['../components/CorporateProfile'], resolve)
+            }
+        },{
+            path: '/development',
+            name: 'Development',
+            component: (resolve) => {
+                require(['../components/Development'], resolve)
+            }
+        },{
+            path: '/education',
+            name: 'Education',
+            component: (resolve) => {
+                require(['../components/Education'], resolve)
+            }
+        },{
+            path: '/supplier',
+            name: 'Supplier',
+            component: (resolve) => {
+                require(['../components/Supplier'], resolve)
+            }
         },
         {
             path: '/appDownload',
@@ -88,7 +118,7 @@ const router = new Router({
             name: 'Admin',
             // 需要登录才能进入的页面可以增加一个meta属性
             meta: {
-                requireAuth: true
+                requireAuth: false
             },
             component: (resolve) => {
                 require(['../components/Admin'], resolve)
@@ -165,7 +195,8 @@ const router = new Router({
                 component: (resolve) => {
                     require(['../components/admin/Enterprise'], resolve)
                 }
-            }]
+            },
+            ]
         }
     ]
 })
@@ -178,6 +209,7 @@ router.beforeEach((to, from, next) => {
             // 判断是否登录
             next()
         } else {
+
             // 没登录则跳转到登录界面
             next({
                 path: '/login',
