@@ -10,7 +10,7 @@
         <el-menu-item index="/">首页</el-menu-item>
         <el-submenu  index="2">
           <template slot="title">机器人操作系统</template>
-          <el-menu-item index="/news">系统介绍</el-menu-item>
+          <el-menu-item index="/robotCase">系统介绍</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">移动机器人</template>

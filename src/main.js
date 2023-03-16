@@ -17,6 +17,7 @@ import "video.js/dist/video-js.css"
 import "vue-video-player/src/custom-theme.css"
 import '../node_modules/element-ui/lib/theme-chalk/index.css'
 import 'animate.css'
+import '../static/css/robot_operate_system.css'
 
 // 服务器地址，后期可拓展为动态获取，填写对于API地址，例如www.xxxx.com/api
 Vue.prototype.serverpath = ''
