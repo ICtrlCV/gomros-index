@@ -1,5 +1,5 @@
 <template>
-  <div id="about" style="background: white;">
+  <div id="education" style="background: white;">
     <el-container id="top-img"
                   style="background-image: url(../../static/abouttop.jpg);
                   height: 500px;
@@ -153,6 +153,8 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
+                    <br>
+                    <br>
                     <img src="static/img/Development/u1955.jpg"
                          style="width: 100%;height: 100%">
                   </el-col>
