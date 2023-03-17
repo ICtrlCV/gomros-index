@@ -34,8 +34,6 @@
             </el-row>
             <el-row>
               <br>
-              <br>
-              <br>
             </el-row>
             <el-row style="color: white;font-size: 30px;text-shadow: none">
               致力于培养GomROS开发人才，与合作伙伴共建<br>
@@ -354,7 +352,7 @@
           </el-form-item>
         </el-row>
       </el-form>
-      <br><br><br><br>
+      <br><br>
       <div slot="footer" class="dialog-footer">
         <el-button type="primary" @click="trainForm()">确 定</el-button>
         <el-button @click="trainCancel()">取 消</el-button>
@@ -408,7 +406,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="24">
-          <br>
+          <br><br><br>
         </el-row>
         <el-row :gutter="24">
           <el-form-item label="合作需求" prop="demand">
@@ -470,7 +468,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="24">
-          <br>
+          <br><br><br>
         </el-row>
         <el-row :gutter="24">
           <el-form-item label="产品需求" prop="demand">
@@ -553,7 +551,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="24">
-        <br>
+          <br><br><br>
         </el-row>
         <el-row :gutter="24">
           <el-form-item label="个人信息" prop="information">
@@ -594,109 +592,141 @@ export default {
       lecturerform: {},
       trainRules: {
         applicantName: [
-          {required: true, message: "申请人姓名不能为空", trigger: "blur"}
+          {required: true, message: "申请人姓名不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         industry: [
-          {required: true, message: "所在行业不能为空", trigger: "blur"}
+          {required: true, message: "所在行业不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         companny: [
-          {required: true, message: "单位名称不能为空", trigger: "blur"}
+          {required: true, message: "单位名称不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         applicantJob: [
-          {required: true, message: "申请人职务不能为空", trigger: "blur"}
+          {required: true, message: "申请人职务不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         telephone: [
-          {required: true, message: "联系电话不能为空", trigger: "blur"}
+          {required: true, message: "联系电话不能为空", trigger: "blur"},
+          {max: 11, message: "长度最大为 11 位", trigger: "blur"}
         ],
         mail: [
-          {required: true, message: "联系邮箱不能为空", trigger: "blur"}
+          {required: true, message: "联系邮箱不能为空", trigger: "blur"},
+          {min: 5, max: 255, message: "长度在 5 到 255 个字符", trigger: "blur"}
         ],
         city: [
-          {required: true, message: "举办城市不能为空", trigger: "blur"}
+          {required: true, message: "举办城市不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         local: [
-          {required: true, message: "举办场地不能为空", trigger: "blur"}
+          {required: true, message: "举办场地不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         date: [
-          {required: true, message: "举办时间不能为空", trigger: "blur"}
+          {required: true, message: "举办时间不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         theme: [
-          {required: true, message: "举办主题不能为空", trigger: "blur"}
+          {required: true, message: "举办主题不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         scale: [
-          {required: true, message: "培训规模不能为空", trigger: "blur"}
+          {required: true, message: "培训规模不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         audiences: [
-          {required: true, message: "培训受众不能为空", trigger: "blur"}
+          {required: true, message: "培训受众不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
       },
       schoolRules: {
         applicantName: [
-          {required: true, message: "申请人姓名不能为空", trigger: "blur"}
+          {required: true, message: "申请人姓名不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         schoolName: [
-          {required: true, message: "高校名称不能为空", trigger: "blur"}
+          {required: true, message: "高校名称不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         majorName: [
-          {required: true, message: "专业名称不能为空", trigger: "blur"}
+          {required: true, message: "专业名称不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         applicantJob: [
-          {required: true, message: "申请人职务不能为空", trigger: "blur"}
+          {required: true, message: "申请人职务不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         telephone: [
-          {required: true, message: "联系电话不能为空", trigger: "blur"}
+          {required: true, message: "联系电话不能为空", trigger: "blur"},
+          {max: 11, message: "长度最大为 11 位", trigger: "blur"}
         ],
         mail: [
-          {required: true, message: "联系邮箱不能为空", trigger: "blur"}
+          {required: true, message: "联系邮箱不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
       },
       productRules: {
         applicantName: [
-          {required: true, message: "申请人名称不能为空", trigger: "blur"}
+          {required: true, message: "申请人名称不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         project: [
-          {required: true, message: "合作项目不能为空", trigger: "blur"}
+          {required: true, message: "合作项目不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         companyName: [
-          {required: true, message: "单位名称不能为空", trigger: "blur"}
+          {required: true, message: "单位名称不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         applicantJob: [
-          {required: true, message: "申请人职务不能为空", trigger: "blur"}
+          {required: true, message: "申请人职务不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         telephone: [
-          {required: true, message: "联系电话不能为空", trigger: "blur"}
+          {required: true, message: "联系电话不能为空", trigger: "blur"},
+          {max: 11, message: "长度最大为 11 位", trigger: "blur"}
         ],
         mail: [
-          {required: true, message: "联系邮箱不能为空", trigger: "blur"}
+          {required: true, message: "联系邮箱不能为空", trigger: "blur"},
+          {min: 2, max: 255, message: "长度在 2 到 255 个字符", trigger: "blur"}
         ],
       },
       lecturerRules: {
         applicantName: [
-          {required: true, message: "申请人姓名不能为空", trigger: "blur"}
+          {required: true, message: "申请人姓名不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         applicantSex: [
-          {required: true, message: "申请人性别不能为空", trigger: "change"}
+          {required: true, message: "申请人性别不能为空", trigger: "change"},
+          {max: 4, message: "长度最大 4 个字符", trigger: "blur"}
         ],
         companyName: [
-          {required: true, message: "单位名称不能为空", trigger: "blur"}
+          {required: true, message: "单位名称不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         applicantJob: [
-          {required: true, message: "申请人职务不能为空", trigger: "blur"}
+          {required: true, message: "申请人职务不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         telephone: [
-          {required: true, message: "联系电话不能为空", trigger: "blur"}
+          {required: true, message: "联系电话不能为空", trigger: "blur"},
+          {max: 11, message: "长度最大为 11 位", trigger: "blur"}
         ],
         mail: [
-          {required: true, message: "联系邮箱不能为空", trigger: "blur"}
+          {required: true, message: "联系邮箱不能为空", trigger: "blur"},
+          {min: 2, max: 255, message: "长度在 2 到 255 个字符", trigger: "blur"}
         ],
         educationBackgroud: [
-          {required: true, message: "申请人学历不能为空", trigger: "blur"}
+          {required: true, message: "申请人学历不能为空", trigger: "blur"},
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         birthTime: [
-          {required: true, message: "出生日期不能为空", trigger: "blur"}
+          {required: true, message: "出生日期不能为空", trigger: "blur"},
         ],
         major: [
-          {required: true, message: "专业方向不能为空", trigger: "blur"}
+          {required: true, message: "专业方向不能为空", trigger: "blur"},
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
       },
     };

@@ -1,5 +1,5 @@
 <template>
-  <div id="education" style="background: white;">
+  <div id="development" style="background: white;">
     <el-container id="top-img"
                   style="background-image: url(../../static/abouttop.jpg);
                   height: 500px;
@@ -425,7 +425,7 @@
       <el-aside width="50px">
         <br>
       </el-aside>
-      <el-main style="background: #0d64e8;font-size: 30px">
+      <el-main style="background: #0d64e8;font-size: 25px">
         <el-row :gutter="24">
           <el-col :span="10" style="color: white;text-align: left">
             欢迎咨询协同研发平台相关产品
@@ -519,24 +519,17 @@ export default {
       form:{},
       rules: {
         companyName:[
-          { required: true, message: "企业名称不能为空", trigger: "blur" }
+          { required: true, message: "企业名称不能为空", trigger: "blur" },
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
         userName:[
-          { required: true, message: "姓名不能为空", trigger: "blur" }
+          { required: true, message: "姓名不能为空", trigger: "blur" },
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
         telephone:[
-          { required: true, message: "手机号不能为空", trigger: "blur" }
+          { required: true, message: "手机号不能为空", trigger: "blur" },
+          {max: 11, message: "长度最大为 11 位", trigger: "blur"}
         ],
-        name: [
-          {required: true, message: "请输入姓名", trigger: "blur"},
-          {min: 2, max: 5, message: "长度在 2 到 5 个字符", trigger: "blur"}
-        ],
-        phone: [{required: true, message: "请输入联系电话", trigger: "blur"}],
-        email: [{required: true, message: "请输入联系邮箱", trigger: "blur"}],
-        company: [
-          {required: true, message: "请输入公司名称", trigger: "blur"}
-        ],
-        content: [{required: true, message: "请输入留言", trigger: "blur"}]
       }
     };
   },
@@ -582,14 +575,6 @@ export default {
 
           )
         }
-        // else {
-        //   this.$message({
-        //     type:"error",
-        //     message:"请按照要求填写"
-        //   })
-        //   this.reset();
-        //   this.open=true;
-        // }
       })
     },
   }
