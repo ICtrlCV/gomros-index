@@ -114,6 +114,18 @@ const router = new Router({
                 require(['../components/AppDownload'], resolve)
             }
         }, {
+            path: '/robotOperateSystem',
+            name: 'RobotOperateSystem',
+            component: (resolve) => {
+                require(['../components/RobotOperateSystem'], resolve)
+            }
+        }, {
+            path: '/robotCase',
+            name: 'RobotCase',
+            component: (resolve) => {
+                require(['../components/RobotCase'], resolve)
+            }
+        }, {
             path: '/admin',
             name: 'Admin',
             // 需要登录才能进入的页面可以增加一个meta属性
