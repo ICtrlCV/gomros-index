@@ -1,51 +1,432 @@
 <template>
-  <div id="about">
-    <div class="page-top" style="background-image: url(../../static/abouttop.jpg)">
-      <h1>供应商合作</h1>
-    </div>
-    <div id="content-box">
-      <h1>您的需求</h1>
-      <h3>REQUIREMENT</h3>
-      <el-row class="require-box">
-        <el-col :span="12">
-          <el-form class="demo-form-inline" :inline="true" :rules="rules" ref="formInline" :model="formInline"
-                   label-width="80px">
-            <el-form-item label="姓名" prop="name">
-              <el-input v-model="formInline.name" placeholder="姓名"/>
+  <div id="Supplier" style="color: #0D64E8">
+    <el-container id="top-img"
+                  style="background-image: url(static/img/Supplier/ccc__u2459.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  height: 100%;
+                  width: 100%">
+      <el-main>
+        <el-container id="img-text">
+          <el-aside width="100px">
+            <br>
+            <br>
+            <img src="static/img/Development/u3.png">
+          </el-aside>
+          <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
+            <el-row :gutter="10" type="flex">
+              <el-col :span="6" style="font-size:60px">
+                GomROS
+              </el-col>
+              <el-col :span="4" style="font-size: 15px">
+                <br>
+                <br>工业基础软件
+              </el-col>
+            </el-row>
+            <el-row :gutter="10" type="flex">
+              <el-col :span="6" style="font-size:60px">
+                生态合作
+              </el-col>
+              <el-col :span="4" style="font-size: 15px">
+                <br>
+                <br>协同发展平台
+              </el-col>
+            </el-row>
+            <el-row>
+              <br>
+            </el-row>
+            <el-row style="color: white;font-size: 30px;text-shadow: none">
+              共同开发，共同创造，发展长期的，信赖的合作关系
+            </el-row>
+          </el-main>
+        </el-container>
+      </el-main>
+      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px">
+        供应商合作
+      </el-footer>
+    </el-container>
+
+    <el-container>
+      <el-header>
+        <br>
+        <br>
+      </el-header>
+      <el-container>
+        <el-aside width="100px">
+          <br>
+        </el-aside>
+        <el-main style="text-align: left">
+          <div>
+            <el-row :gutter="24">
+              <el-col :span="15" style="background-color: #f2f6fa">
+                <div>
+                  <el-row>
+                    <br>
+                  </el-row>
+                  <el-row :gutter="24" style="font-size: 32px">
+                    <el-col :span="1">
+                      <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                    </el-col>
+                    <el-col :span="22">
+                      简介
+                    </el-col>
+                    <el-col :span="1">
+                      <br>
+                    </el-col>
+                  </el-row>
+                  <el-row :gutter="24">
+                    <el-col :span="1">
+                      <br>
+                    </el-col>
+                    <el-col :span="22">
+                      <br>
+                      <br>
+                      山东亚历山大智能科技有限公司坐落于山东省济南市，比邻千佛山，眺望大明
+                      湖。公司以工业4.0的自动化解决方案为核心技术，长期致力于智能装备、智能
+                      检测系统等相关的自动化生产线、仓储物流系统、群控移动机器人、工业机器
+                      人及生产活动管控软件、辅助教研平台等数字化高端智能装备系统的研发制造。
+                      <br><br><br><br><br><br><br><br>
+                    </el-col>
+                    <el-col :span="1">
+                      <br>
+                      <br>
+                    </el-col>
+                  </el-row>
+                </div>
+              </el-col>
+              <el-col :span="1">
+                <br>
+              </el-col>
+              <el-col :span="8">
+                <div>
+                  <el-row :gutter="24">
+                    <div>
+                      <div style="background-color: #f2f6fa">
+                        <br>
+                        <el-row :gutter="24" style="font-size: 32px">
+                          <el-col :span="2">
+                            <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                          </el-col>
+                          <el-col :span="20">
+                            理念
+                          </el-col>
+                          <el-col :span="2">
+                            <br>
+                          </el-col>
+                        </el-row>
+                        <el-row :gutter="24">
+                          <el-col :span="2">
+                            <br>
+                          </el-col>
+                          <el-col :span="20">
+                            <br>
+                            资源共享，合作共赢
+                          </el-col>
+                          <el-col :span="2"></el-col>
+                        </el-row>
+                        <el-row>
+                          <el-row>
+                            <br>
+                            <br>
+                          </el-row>
+                        </el-row>
+                      </div>
+                      <div>
+                        <br>
+                      </div>
+                      <div style="background-color: #f2f6fa">
+                        <el-row :gutter="24" style="font-size: 32px">
+                          <br>
+                          <el-col :span="2">
+                            <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                          </el-col>
+                          <el-col :span="20">
+                            申请合作
+                          </el-col>
+                          <el-col :span="2">
+                            <br>
+                          </el-col>
+                        </el-row>
+                        <el-row :gutter="24">
+                          <el-col :span="2">
+                            <br>
+                          </el-col>
+                          <el-col :span="20">
+                            <br>
+                            <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                          </el-col>
+                          <el-col :span="2">
+                          </el-col>
+                        </el-row>
+                        <el-row>
+                          <br>
+                        </el-row>
+                      </div>
+                    </div>
+                  </el-row>
+                </div>
+              </el-col>
+            </el-row>
+          </div>
+        </el-main>
+        <el-aside width="100px">
+          <br>
+        </el-aside>
+      </el-container>
+    </el-container>
+
+    <el-container style="text-align: left;background-color: #f2f6fa">
+      <el-aside width="100px"></el-aside>
+      <el-main>
+        <el-row :gutter="24" style="font-size: 32px">
+          <el-col :span="1">
+            <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+          </el-col>
+          <el-col :span="20">
+            合作申请
+          </el-col>
+          <el-col :span="2"></el-col>
+        </el-row>
+        <el-row>
+          <br>
+          <br>
+        </el-row>
+        <el-row :gutter="24">
+          <el-col :span="1">
+            <br>
+          </el-col>
+          <el-col :span="22">
+            <el-steps :active="5" align-center style="font-size: 50px">
+              <el-step description="信息填报"></el-step>
+              <el-step description="资质审核"></el-step>
+              <el-step description="意向洽谈"></el-step>
+              <el-step description="现场考察"></el-step>
+              <el-step description="商务合作"></el-step>
+            </el-steps>
+          </el-col>
+          <el-col :span="1"></el-col>
+        </el-row>
+      </el-main>
+      <!--      <el-container>-->
+      <!--        <el-header style="text-align: left">-->
+      <!--          <br>-->
+      <!--          合作流程-->
+      <!--        </el-header>-->
+      <!--        <el-main>-->
+      <!--          <el-steps :active="5" align-center style="font-size: 50px" >-->
+      <!--            <el-step description="信息填报"></el-step>-->
+      <!--            <el-step description="资质审核"></el-step>-->
+      <!--            <el-step description="意向洽谈"></el-step>-->
+      <!--            <el-step description="现场考察"></el-step>-->
+      <!--            <el-step description="商务合作"></el-step>-->
+      <!--          </el-steps>-->
+      <!--        </el-main>-->
+      <!--      </el-container>-->
+      <el-aside width="100px"></el-aside>
+    </el-container>
+
+    <el-container>
+      <el-aside width="100px">
+        <br>
+      </el-aside>
+      <el-header style="text-align: left">
+        合作需求
+      </el-header>
+      <el-main> 111222333</el-main>
+      <el-aside width="100px">
+        <br>
+      </el-aside>
+    </el-container>
+
+    <el-container style="color: #0D64E8">
+      <el-aside width="100px"></el-aside>
+      <el-container>
+        <el-header>
+          <el-row :gutter="24">
+            <el-col :span="1">
+              <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+            </el-col>
+            <el-col :span="23" style="font-size: 32px">
+              合作需求
+            </el-col>
+          </el-row>
+        </el-header>
+        <el-main>
+          <el-row :gutter="24">
+            <el-col :span="2">
+              <img src="static/img/Supplier/u2659.svg" >
+            </el-col>
+            <el-col :span="5">
+              <div>
+                <el-row style="font-size: 20px">感知系统</el-row>
+                <el-row style="font-size: 18px">视觉系统、激光雷达、超声波雷达、红外传感器、力觉传感器、触觉传感器、等感知传感器。</el-row>
+                <el-row>
+                  <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="1">
+              <br>
+            </el-col>
+            <el-col :span="2">
+              <img src="static/img/Supplier/u2666.svg" >
+            </el-col>
+            <el-col :span="5">
+              <div>
+                <el-row style="font-size: 20px">驱动系统</el-row>
+                <el-row style="font-size: 18px">伺服电机、减速器、进步电机、舵机、脚轮、等驱动系统配件。</el-row>
+                <br>
+                <el-row>
+                  <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="1">
+              <br>
+            </el-col>
+            <el-col :span="2">
+              <img src="static/img/Supplier/u2673.svg" >
+            </el-col>
+            <el-col :span="5">
+              <div>
+                <el-row style="font-size: 20px">控制系统</el-row>
+                <el-row style="font-size: 18px">工控机系统、电机控制模块、位姿控制模块、电源控制模块、等各种控制模块。
+                </el-row>
+                <el-row><br></el-row>
+                <el-row>
+                  <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="1">
+              <br>
+            </el-col>
+          </el-row>
+          <el-row :gutter="24"></el-row>
+          <el-row :gutter="24">
+            <el-col :span="2">
+              <img src="static/img/Supplier/u2681.svg" >
+            </el-col>
+            <el-col :span="5">
+              <div>
+                <el-row style="font-size: 20px">GomROS系统</el-row>
+                <el-row style="font-size: 18px">视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。</el-row>
+                <br>
+                <el-row>
+                  <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="1">
+              <br>
+            </el-col>
+            <el-col :span="2">
+              <img src="static/img/Supplier/u2688.svg" >
+            </el-col>
+            <el-col :span="5">
+              <div>
+                <el-row style="font-size: 20px">场景服务系统</el-row>
+                <el-row style="font-size: 18px">调度系统、WMS智能仓储管理系统、MES制造执行系统、ERP企业资源计划管理系统、等数字化管理系统。</el-row>
+                <el-row>
+                  <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="1">
+              <br>
+            </el-col>
+            <el-col :span="2">
+              <img src="static/img/Supplier/u2695.svg" >
+            </el-col>
+            <el-col :span="5">
+              <div>
+                <el-row style="font-size: 20px">云平台识别算法</el-row>
+                <el-row style="font-size: 18px">视觉避障识别算法、视觉定位导航算法、语音识别算法、运动控制算法等先进算法系统。</el-row>
+                <el-row>
+                  <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                </el-row>
+              </div>
+            </el-col>
+            <el-col :span="1">
+              <br>
+            </el-col>
+          </el-row>
+        </el-main>
+      </el-container>
+      <el-aside width="100px"></el-aside>
+    </el-container>
+
+    <!-- 添加或修改供应商合作-供应商合作申请对话框 -->
+    <el-dialog :title="title" :visible.sync="open" width="1200px" append-to-body>
+      <el-form ref="form" :model="form" :rules="rules" label-width="100px" style="font-size: 14px">
+        <el-form-item
+            style="font-size: larger;
+            color: #0d64e8;
+            text-align: center"
+            label-width="0px">
+          <h1>
+            供应商合作申请
+          </h1>
+        </el-form-item>
+        <el-row :gutter="24">
+          <el-col :span="8">
+            <el-form-item label="申请人姓名" prop="applicantName">
+              <el-input v-model="form.applicantName" placeholder="请输入申请人姓名" />
             </el-form-item>
-            <el-form-item label="电话" prop="phone">
-              <el-input v-model="formInline.phone" placeholder="电话"/>
+          </el-col>
+          <el-col :span="8">
+            <el-form-item label="单位名称" prop="companyName">
+              <el-input v-model="form.companyName" placeholder="请输入单位名称" />
             </el-form-item>
-            <el-form-item label="公司" prop="company">
-              <el-input v-model="formInline.company" placeholder="公司"/>
+          </el-col>
+          <el-col :span="8">
+            <el-form-item label="合作方向" prop="cooperationDirection">
+              <el-input v-model="form.cooperationDirection" placeholder="请输入合作方向" />
             </el-form-item>
-            <el-form-item label="邮箱" prop="email">
-              <el-input v-model="formInline.email" placeholder="邮箱"/>
+          </el-col>
+        </el-row>
+        <el-row :gutter="24">
+          <el-col :span="8">
+            <el-form-item label="申请人职务" prop="applicantJob">
+              <el-input v-model="form.applicantJob" placeholder="请输入申请人职务" />
             </el-form-item>
-            <el-form-item label="留言" prop="content">
-              <el-input v-model="formInline.content" type="textarea"/>
-              <el-button type="primary" @click="onSubmit('formInline')" style="margin-top: 10px">留言</el-button>
+          </el-col>
+          <el-col :span="8">
+            <el-form-item label="联系电话" prop="telephone">
+              <el-input v-model="form.telephone" placeholder="请输入联系电话" />
             </el-form-item>
-          </el-form>
-        </el-col>
-        <el-col :span="12">
-          <img src="../../static/xuqui.jpg" style="width: 100%;height: 369px"/>
-        </el-col>
-      </el-row>
-      <h1 style="margin-top: 100px">我们的地址</h1>
-      <h3>ADDRESS</h3>
-      <el-row style="padding: 5%">
-        <el-col :span="14" :offset="1">
-          <img class="aboutimg" src="../../static/address.png" style="width: 95%"/>
-        </el-col>
-        <el-col span="8">
-          <p>企业：山东亚历山大智能科技有限公司</p>
-          <p>邮箱：{{ email }}</p>
-          <p>电话：{{ phone }}</p>
-          <p>地址：{{ address }}</p>
-        </el-col>
-      </el-row>
-    </div>
+          </el-col>
+          <el-col :span="8">
+            <el-form-item label="联系邮箱" prop="mail">
+              <el-input v-model="form.mail" placeholder="请输入联系邮箱" />
+            </el-form-item>
+          </el-col>
+        </el-row>
+        <el-row :gutter="24">
+          <br>
+          <br>
+          <br>
+        </el-row>
+        <el-row :gutter="24">
+          <el-form-item label="合作需求" prop="demand">
+            <el-input v-model="form.demand" type="textarea" :rows="4" placeholder="请输入内容" />
+          </el-form-item>
+        </el-row>
+
+
+
+
+
+
+
+
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="submitForm">确 定</el-button>
+        <el-button @click="cancel">取 消</el-button>
+      </div>
+    </el-dialog>
+
   </div>
 </template>
 
@@ -56,80 +437,92 @@ export default {
   name: "About",
   data() {
     return {
-      pagetitle: '',
-      email: '',
-      phone: '',
-      address: '',
-      formInline: {
-        name: "",
-        phone: "",
-        company: "",
-        email: "",
-        content: ""
-      },
+      title: "",
+      // 是否显示弹出层
+      open: false,
+      // 表单参数
+      form: {},
       rules: {
-        name: [
-          {required: true, message: "请输入姓名", trigger: "blur"},
-          {min: 2, max: 5, message: "长度在 2 到 5 个字符", trigger: "blur"}
+        applicantName: [
+          { required: true, message: "申请人姓名不能为空", trigger: "blur" },
+          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
-        phone: [{required: true, message: "请输入联系电话", trigger: "blur"}],
-        email: [{required: true, message: "请输入联系邮箱", trigger: "blur"}],
-        company: [
-          {required: true, message: "请输入公司名称", trigger: "blur"}
+        companyName: [
+          { required: true, message: "单位名称不能为空", trigger: "blur" },
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
-        content: [{required: true, message: "请输入留言", trigger: "blur"}]
+        cooperationDirection: [
+          { required: true, message: "合作方向不能为空", trigger: "blur" },
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
+        ],
+        applicantJob: [
+          { required: true, message: "申请人职务不能为空", trigger: "blur" },
+          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
+        ],
+        telephone: [
+          { required: true, message: "联系电话不能为空", trigger: "blur" },
+          {max: 11, message: "长度最大为 11 字符", trigger: "blur"}
+        ],
+        mail: [
+          { required: true, message: "联系邮箱不能为空", trigger: "blur" },
+          {max: 255, message: "长度 最大为 255 个字符", trigger: "blur"}
+        ],
       }
     };
   },
   methods: {
-    onSubmit(formName) {
-      this.$refs[formName].validate(valid => {
-        if (valid) {
-          this.createEntity();
-          this.$refs[formName].resetFields();
-        } else {
-          this.$message({
-            type: "error",
-            message: "请检查填写要求"
-          });
-          return false;
+    submitForm(){
+      this.open=true;
+      this.$refs['form'].validate(valid => {
+        if (valid){
+          axios.post('http://localhost:8080/system/supplier',this.form).
+          then(response=> {
+                console.log("response:",response)
+                // this.info = response;
+                if (response !=null && response.status===200){
+                  this.$alert("提交成功");
+                  this.status=response.status;
+                  this.open=false;
+                  this.reset();
+                }
+              }
+          ).catch(error => {
+                console.log(error),
+                    this.$message({
+                      type:'error',
+                      message:error+''
+                    })
+              }
+
+          )
         }
-      });
+      })
     },
-    createEntity() {
-      axios
-          .post("/message/CreateMessage", {
-            Id: this.formInline.id,
-            IsMess: false,
-            Name: this.formInline.name,
-            Phone: this.formInline.phone,
-            Email: this.formInline.email,
-            Company: this.formInline.company,
-            Content: this.formInline.content
-          })
-          .then(response => {
-            console.log(response.status);
-            this.$message({
-              type: "success",
-              message: "留言成功!"
-            });
-          })
-    }
+    cancel(){
+      this.open = false;
+      this.reset();
+    },
+    reset(){
+      this.form = {
+        id: null,
+        formId: null,
+        applicantName: null,
+        companyName: null,
+        cooperationDirection: null,
+        applicantJob: null,
+        telephone: null,
+        mail: null,
+        demand: null,
+        source: null,
+        isHandle: null,
+        isDelete: null,
+        createTime: null,
+        createBy: null,
+        updateTime: null,
+        updateBy: null
+      };
+    },
   },
-  created: function () {
-    axios
-        .get("/DataDictionary/GetDataDictionaryAll", {
-          params: {
-            key: "联系我们标题,邮箱,电话,地址"
-          }
-        })
-        .then(response => {
-          this.pagetitle = response.data[0].Content;
-          this.email = response.data[1].Content;
-          this.phone = response.data[2].Content;
-          this.address = response.data[3].Content;
-        })
-  }
 };
 </script>
 <style scoped>
@@ -160,5 +553,19 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+}
+.el-step__icon.is-text {
+  border-radius: 50%;
+  border: 4px solid;
+  width: 50px;
+  height: 50px;
+  border-color: inherit;
+}
+.el-step__icon.is-icon {
+  border-radius: 50%;
+  border: 4px solid;
+  width: 50px;
+  height: 50px;
+  border-color: inherit;
 }
 </style>
