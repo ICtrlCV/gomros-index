@@ -174,7 +174,6 @@
         </el-aside>
       </el-container>
     </el-container>
-
     <el-container style="text-align: left;background-color: #f2f6fa">
       <el-aside width="100px"></el-aside>
       <el-main>
@@ -224,20 +223,6 @@
       <!--      </el-container>-->
       <el-aside width="100px"></el-aside>
     </el-container>
-
-    <el-container>
-      <el-aside width="100px">
-        <br>
-      </el-aside>
-      <el-header style="text-align: left">
-        合作需求
-      </el-header>
-      <el-main> 111222333</el-main>
-      <el-aside width="100px">
-        <br>
-      </el-aside>
-    </el-container>
-
     <el-container style="color: #0D64E8">
       <el-aside width="100px"></el-aside>
       <el-container>
@@ -412,14 +397,6 @@
             <el-input v-model="form.demand" type="textarea" :rows="4" placeholder="请输入内容" />
           </el-form-item>
         </el-row>
-
-
-
-
-
-
-
-
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button type="primary" @click="submitForm">确 定</el-button>
@@ -526,16 +503,9 @@ export default {
 };
 </script>
 <style scoped>
-#about {
-  background-color: rgb(20, 103, 159);
-}
 
-#content-box {
-  width: 85%;
-  background: #fff url(../../static/waitanbg.png) no-repeat bottom center;
-  margin: 0 auto;
-  padding-top: 100px;
-}
+
+
 
 #content-box h1,
 #content-box h3 {
@@ -548,24 +518,6 @@ p {
   color: #444444;
 }
 
-.require-box {
-  border: 1px solid #1767a1;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-.el-step__icon.is-text {
-  border-radius: 50%;
-  border: 4px solid;
-  width: 50px;
-  height: 50px;
-  border-color: inherit;
-}
-.el-step__icon.is-icon {
-  border-radius: 50%;
-  border: 4px solid;
-  width: 50px;
-  height: 50px;
-  border-color: inherit;
-}
+
+
 </style>
