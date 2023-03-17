@@ -120,10 +120,10 @@ const router = new Router({
                 require(['../components/RobotOperateSystem'], resolve)
             }
         }, {
-            path: '/robotCase',
-            name: 'RobotCase',
+            path: '/cloudPlatform',
+            name: 'CloudPlatform',
             component: (resolve) => {
-                require(['../components/RobotCase'], resolve)
+                require(['../components/CloudPlatform'], resolve)
             }
         }, {
             path: '/admin',
