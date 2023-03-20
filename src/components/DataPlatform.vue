@@ -1,7 +1,6 @@
 <template>
   <div id="data-platform">
-    <el-container id="top-content"
-                  style="height:400px;">
+    <el-container id="top-content" style="height:400px;">
       <el-row style="width: 100%">
         <el-col :span="15" style="background-color: #00192f">
           <el-row type="flex" justify="start" style="padding: 10px">
