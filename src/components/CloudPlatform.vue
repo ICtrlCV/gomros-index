@@ -46,7 +46,7 @@
           <p style="font-size: 30px;color: #0d64e8;font-weight: bolder;">平台优势</p>
         </el-row>
         <el-row style="text-align: center;width: 100%;">
-          <el-col :span="3" style="border:5px solid #0d64e8;">
+          <el-col :span="3" style="border:5px solid #0d64e8;width: 240px">
             <el-row style="background-color: #0d64e8">
               <p style="font-weight: bolder;color: white;font-size: 25px">领先的技术</p>
             </el-row>
@@ -57,7 +57,7 @@
             </el-row>
           </el-col>
           <el-col span="1">&nbsp;</el-col>
-          <el-col :span="3" style="border:5px solid #0d64e8;">
+          <el-col :span="3" style="border:5px solid #0d64e8;;width: 240px">
             <el-row style="background-color: #0d64e8">
               <p style="font-weight: bolder;color: white;font-size: 25px">产品矩阵优势</p>
             </el-row>
@@ -68,7 +68,7 @@
             </el-row>
           </el-col>
           <el-col span="1">&nbsp;</el-col>
-          <el-col :span="3" style="border:5px solid #0d64e8;">
+          <el-col :span="3" style="border:5px solid #0d64e8;;width: 240px">
             <el-row style="background-color: #0d64e8">
               <p style="font-weight: bolder;color: white;font-size: 25px">灵活开放的生态</p>
             </el-row>
@@ -78,8 +78,8 @@
               </div>
             </el-row>
           </el-col>
-          <el-col span="1">&nbsp;</el-col>
-          <el-col :span="3" style="border:5px solid #0d64e8;">
+          <el-col :span="1">&nbsp;</el-col>
+          <el-col :span="3" style="border:5px solid #0d64e8;;width: 240px">
             <el-row style="background-color: #0d64e8">
               <p style="font-weight: bolder;color: white;font-size: 25px">产品和数据支持</p>
             </el-row>
@@ -90,8 +90,8 @@
               </div>
             </el-row>
           </el-col>
-          <el-col span="1">&nbsp;</el-col>
-          <el-col :span="3" style="border:5px solid #0d64e8;">
+          <el-col :span="1">&nbsp;</el-col>
+          <el-col :span="3" style="border:5px solid #0d64e8;;width: 220px">
             <el-row style="background-color: #0d64e8">
               <p style="font-weight: bolder;color: white;font-size: 25px">一体化的服务</p>
             </el-row>
@@ -342,7 +342,8 @@
                 <el-col :span="15" style="text-align: left">
                   <p style="font-weight: bolder;font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前商用清洁机器人的应用场景以室内清洁为主导，
                     场景主要集中在办公楼和商场。如果从商用清洁市场的发展脉络，可清晰看到，伴随市场的孕育和新生，产品也经历了不同的迭代历程。</p>
-                  <p style="font-weight: bolder;font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商用清洁机器人，主要应用于商超、医院、
+                  <p style="font-weight: bolder;font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    商用清洁机器人，主要应用于商超、医院、
                     写字楼等室内场景的清洗推尘,杀菌消毒等工作。</p>
                 </el-col>
               </el-row>
@@ -369,7 +370,8 @@
                   <p style="font-weight: bolder;font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;医疗机器人属于服务机器人中的特种服务机器人分类，
                     是指应用于医院、诊所的医疗或辅助医疗的半自主或全自主工作的机器人，它能够完成有益于人类健康的服务工作，但不包括从事生产活动的设备。具体可分为手术机器人、康复机器人、
                     辅助机器人以及医疗服务机器人四大类。</p>
-                  <p style="font-weight: bolder;font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 医疗机器人在我国医疗领域的普及率处于较低水平。
+                  <p style="font-weight: bolder;font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    医疗机器人在我国医疗领域的普及率处于较低水平。
                     在政策利好、老龄化加剧、消费群体增加和产业化发展提速等综合因素影响下，中国医疗机器人市场高速发展。</p>
                 </el-col>
               </el-row>
@@ -381,32 +383,132 @@
       <!--      第六行 -云平台架构图    -->
       <el-row>
         <el-row style="font-size: 30px;color: #0d64e8;font-weight: bolder;">云平台架构图</el-row>
+        <el-row :gutter="40" type="flex" style="text-align: center">
+          <el-col :span="1" style="background-color: #0d64e8;margin-left:5%;margin-right: 10px">
+            <p style="font-size: 30px;color: white;font-weight: bolder;margin-top: 500%">智能云平台</p>
+          </el-col>
+          <el-col :span="20">
+            <el-row :gutter="20" type="flex" style="background-color: white">
+              <el-col :span="4">
+                <p style="font-weight: bolder">行业解决方案</p>
+                <p style="font-weight: bolder">行业智能应用</p>
+              </el-col>
+              <el-col :span="4">
+                <p style="font-weight: bolder;background-color: #f2f6fa">医药行业</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa">智能搬运</p>
+              </el-col>
+              <el-col :span="4">
+                <p style="font-weight: bolder;background-color: #f2f6fa">汽车行业</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa">智能存储</p>
+              </el-col>
+              <el-col :span="4">
+                <p style="font-weight: bolder;background-color: #f2f6fa">电子制造</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa">智能物流</p>
+              </el-col>
+              <el-col :span="4">
+                <p style="font-weight: bolder;background-color: #f2f6fa">电商行业</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa">智能配送</p>
+              </el-col>
+              <el-col :span="4">
+                <p style="font-weight: bolder;background-color: #f2f6fa;width: 90%;">…</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa;width: 90%;">…</p>
+              </el-col>
+            </el-row>
+            <el-row style="width:100%;height: 5px;padding: 10px"></el-row>
+            <el-row :gutter="5" type="flex" style="background-color: white">
+              <el-col :span="2" style="margin-right: 4%">
+                <p style="font-size:25px;font-weight: bolder"><br>平台云</p>
+              </el-col>
+              <el-col>
+                <p>
+                  <el-col :span="5"
+                          style="font-weight: bolder;background-color: #f2f6fa;width: 48%;margin-right: 2%">场景服务系统
+                  </el-col>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 48%">业务信息系统</el-col>
+                </p>
+                <p>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 22%;margin-right: 4%">
+                    远程管理
+                  </el-col>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 22%;margin-right: 2%">
+                    远程控制
+                  </el-col>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 22%;margin-right: 4%">
+                    业务数据对接
+                  </el-col>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 22%">业务指标管控</el-col>
+                </p>
+                <p>
+                  <el-col :span="5"
+                          style="font-weight: bolder;background-color: #f2f6fa;width: 48%;margin-right: 2%">管理平台
+                  </el-col>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 48%">业务平台</el-col>
+                </p>
+                <p style="font-weight: bolder;background-color: #f2f6fa;width: 98%;">基础云平台</p>
+              </el-col>
+            </el-row>
+            <el-row style="height: 5px;padding: 10px"></el-row>
+            <el-row :gutter="10" type="flex" style="background-color: white;text-align: center">
+              <el-col :span="2" style="margin-right: 4%">
+                <p style="font-size:25px;font-weight: bolder"><br>智能云</p>
+              </el-col>
+              <el-col :span="6">
+                <p style="font-weight: bolder;background-color: #f2f6fa">感知层</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa">能力层</p>
+                <p style="font-weight: bolder;background-color: #f2f6fa;height: 60px"><br>基础层</p>
+              </el-col>
+              <el-col :span="10">
+                <p style="font-weight: bolder;background-color: #f2f6fa">环境感知交互</p>
+                <p>
+                  <el-col :span="8"
+                          style="font-weight: bolder;background-color: #f2f6fa;width: 30%;margin-right: 5%">运动控制
+                  </el-col>
+                  <el-col :span="8" style="font-weight: bolder;background-color: #f2f6fa;width: 30%;margin-right: 5%">
+                    视觉
+                  </el-col>
+                  <el-col :span="8" style="font-weight: bolder;background-color: #f2f6fa;width: 30%">语言</el-col>
+                </p>
+                <p style="font-weight: bolder;background-color: #f2f6fa">深度学习平台</p>
+                <p>
+                  <el-col :span="5"
+                          style="font-weight: bolder;background-color: #f2f6fa;width: 45%;margin-right: 10%">数据
+                  </el-col>
+                  <el-col :span="5" style="font-weight: bolder;background-color: #f2f6fa;width: 45%">算力</el-col>
+                </p>
+              </el-col>
+              <el-col :span="6">
+                <p style="font-size:25px;font-weight: bolder;background-color: #f2f6fa;height:78%;width: 90%;margin-top: 15px"><br>安全
+                </p>
+              </el-col>
+            </el-row>
+          </el-col>
+        </el-row>
       </el-row>
 
       <!--      第七行     -->
-      <el-row  style="background-color: white">
+      <el-row style="background-color: white">
         <el-row style="font-size: 30px;color: #0d64e8;font-weight: bolder;">行业合作伙伴</el-row>
         <el-row style="text-align: center" :gutter="40" type="flex">
           <el-col :span="5.5" style="background-color: #f2f6fa">
             <p style="font-weight: bolder;font-size: 20px">泛汽车制造行业</p>
-            <img src="static/img/cloudPlatform/u557.png"  style="width: 310px;height: 300px;">
+            <img src="static/img/cloudPlatform/u557.png" style="width: 310px;height: 300px;">
           </el-col>
           <el-col :span="0.5">&nbsp;</el-col>
           <el-col :span="5.5" style="background-color: #f2f6fa">
             <p style="font-weight: bolder;font-size: 20px">泛流程生产行业</p>
-            <img src="static/img/cloudPlatform/u561.png"  style="width: 310px;height: 300px;">
+            <img src="static/img/cloudPlatform/u561.png" style="width: 310px;height: 300px;">
           </el-col>
           <el-col :span="0.5">&nbsp;</el-col>
           <el-col :span="5.5" style="background-color: #f2f6fa">
             <p style="font-weight: bolder;font-size: 20px">泛电力配套行业</p>
-            <img src="static/img/cloudPlatform/u563.png"  style="width: 310px;height: 300px;">
+            <img src="static/img/cloudPlatform/u563.png" style="width: 310px;height: 300px;">
           </el-col>
           <el-col :span="0.5">&nbsp;</el-col>
           <el-col :span="6" style="background-color: #f2f6fa">
             <p style="font-weight: bolder;font-size: 20px">专业机器人生产及集成合作伙伴</p>
             <el-col>
               <el-row>
-                <img src="static/img/cloudPlatform/u565.png"  style="width: 250px;height: 110px;">
+                <img src="static/img/cloudPlatform/u565.png" style="width: 250px;height: 110px;">
               </el-row>
               <el-row>
                 <el-col :span="8">
@@ -417,7 +519,7 @@
                 </el-col>
               </el-row>
               <el-row>
-                <img src="static/img/cloudPlatform/u568.png"  style="width: 200px;height: 50px;">
+                <img src="static/img/cloudPlatform/u568.png" style="width: 200px;height: 50px;">
               </el-row>
             </el-col>
           </el-col>
