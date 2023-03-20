@@ -125,6 +125,12 @@ const router = new Router({
             component: (resolve) => {
                 require(['../components/CloudPlatform'], resolve)
             }
+        },{
+            path: '/dataPlatform',
+            name: 'DataPlatform',
+            component: (resolve) => {
+                require(['../components/DataPlatform'], resolve)
+            }
         }, {
             path: '/admin',
             name: 'Admin',
