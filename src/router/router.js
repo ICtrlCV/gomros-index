@@ -132,6 +132,18 @@ const router = new Router({
                 require(['../components/DataPlatform'], resolve)
             }
         }, {
+            path: '/scenarioService',
+            name: 'ScenarioService',
+            component: (resolve) => {
+                require(['../components/ScenarioService'], resolve)
+            }
+        }, {
+            path: '/hardwareDriver',
+            name: 'HardwareDriver',
+            component: (resolve) => {
+                require(['../components/HardwareDriver'], resolve)
+            }
+        }, {
             path: '/admin',
             name: 'Admin',
             // 需要登录才能进入的页面可以增加一个meta属性

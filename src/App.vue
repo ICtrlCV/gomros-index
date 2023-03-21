@@ -20,8 +20,8 @@
             <template slot="title">移动机器人配套系统</template>
             <el-menu-item index="/cloudPlatform">云平台</el-menu-item>
             <el-menu-item index="/dataPlatform">移动机器人数据平台</el-menu-item>
-            <el-menu-item index="/help">场景服务软件系统</el-menu-item>
-            <el-menu-item index="/recruitment">硬件控制及驱动系统</el-menu-item>
+            <el-menu-item index="/scenarioService">场景服务软件系统</el-menu-item>
+            <el-menu-item index="/hardwareDriver">硬件控制及驱动系统</el-menu-item>
           </el-submenu>
         </el-submenu>
         <el-submenu index="4">
