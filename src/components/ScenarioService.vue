@@ -27,7 +27,7 @@
     </el-container>
 
     <div style="margin-top: 10px;">
-      <!--    第一行   -->
+      <!--    第一行 机器人场景服务系统  -->
       <el-row :gutter="20" type="flex" style="background-color: white">
         <el-col :span="8" style="margin-top:2%;margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人场景服务系统</p>
@@ -77,7 +77,7 @@
         </el-col>
       </el-row>
 
-      <!--    第二行   -->
+      <!--    第二行 AGV调度系统  -->
       <el-row style="margin-bottom: 2%">
         <el-col style="width:100%;margin-left: 6%">
           <el-row>
@@ -102,7 +102,7 @@
         </el-col>
       </el-row>
 
-      <!--    第三行   -->
+      <!--    第三行  WMS智能仓储管理系统 -->
       <el-row style="background-color: white">
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
@@ -127,7 +127,7 @@
         </el-col>
       </el-row>
 
-      <!--    第四行   -->
+      <!--    第四行  MES制造执行系统 -->
       <el-row style="margin-bottom: 2%">
         <el-col style="width:100%;margin-left: 6%">
           <el-row>
@@ -151,7 +151,7 @@
         </el-col>
       </el-row>
 
-      <!--    第五行   -->
+      <!--    第五行 ERP企业资源计划管理系统  -->
       <el-row style="background-color: white;margin-bottom: 2%">
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
@@ -174,7 +174,7 @@
         </el-col>
       </el-row>
 
-      <!--    第六行   -->
+      <!--    第六行  数字化工厂管理系统 -->
       <el-row>
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>

@@ -25,7 +25,7 @@
     </el-container>
 
     <div>
-      <!--    第一行   -->
+      <!--    第一行 什么是机器人操作系统  -->
       <el-row style="background-color: white">
         <el-col :span="10" style="align-content: center;margin-left: 5%">
           <el-row :gutter="2" type="flex">
@@ -56,7 +56,7 @@
         </el-row>
       </el-row>
 
-      <!--    第二行   -->
+      <!--    第二行 为什么做机器人操作系统  -->
       <el-row style="margin: unset">
         <el-col :span="12" style="margin-left: 8%;margin-right: 8%;width: 45%">
           <h4>{{ '为什么做机器人操作系统？' }}</h4>
@@ -78,7 +78,7 @@
         </el-col>
       </el-row>
 
-      <!--    第三行   -->
+      <!--    第三行 机器人操作系统有哪些应用  -->
       <el-row style="background-color: white">
         <el-col>
           <el-row>
@@ -157,18 +157,18 @@
         </el-col>
       </el-row>
 
-      <!--    第四行   -->
+      <!--    第四行  我们的应用案例 -->
       <el-row>
-        <el-col :span="8" style="margin-left: 80px">
+        <el-col :span="6" style="margin-left: 80px">
           <h4>{{ '我们的应用案例' }}</h4>
           <p style="font-size: 30px">GomROS机器人操作系统</p>
           <p style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的服务机器人和搬运机器人全部基于GomROS系统搭建。</p>
-          <p style="font-size: 30px">参考我们的机器人开发项目。</p>
+          <p style="font-size: 30px">参考我们的机器人开发项目</p>
         </el-col>
-        <el-col :span="14" style="align-content: center">
+        <el-col :span="15" style="align-content: center">
           <el-row :gutter="2" type="flex" style="height: 300px">
             <el-col :span="5" style="text-align: center;font-size: 25px;font-weight: bolder"><br><br><br>软件系统</el-col>
-            <el-row :gutter="10" type="flex" style="text-align: center;border:5px dashed lightblue;width: 100%;">
+            <el-row :gutter="10" type="flex" style="text-align: center;border:2px dashed dodgerblue;width: 100%;">
               <el-col :span="8" style="text-align: center">
                 <img src="static/img/RobotOperateSystem/u831.png" style="width: 95%;height: 85%">
                 <p style="width:100%;font-size:20px;font-weight: bolder">云平台</p>
@@ -183,13 +183,13 @@
               </el-col>
             </el-row>
           </el-row>
-          <el-row :gutter="2" type="flex" style="height: 300px">
+          <el-row :gutter="2" type="flex" style="width:100%;height: 260px;">
             <el-col :span="6" style="text-align: center;font-size: 25px;font-weight: bolder"><br><br><br>产品应用</el-col>
-            <el-row :span="10" style="text-align: center;border:5px dashed lightblue;width: 200%">
-              <img src="static/img/RobotOperateSystem/u809.png" style="height:90%;width: 100%;">
+            <el-row :span="10" style="text-align: center;border:2px dashed dodgerblue;width: 200%">
+              <img src="static/img/RobotOperateSystem/u809.png" style="height:85%;width: 100%;">
               <p>
                 <span
-                    style="width:100%;font-size:20px;font-weight: bolder;margin-left:6%;margin-right: 20%">工业AMR</span>
+                    style="width:100%;font-size:20px;font-weight: bolder;margin-left:6%;margin-right: 20%;padding-bottom: 10px">工业AMR</span>
                 <span style="width:100%;font-size:20px;font-weight: bolder;margin-right: 20%">公共服务AVR</span><span
                   style="width:100%;font-size:20px;font-weight: bolder;">复合应用AMB</span>
               </p>
@@ -199,7 +199,7 @@
             <el-col :span="5" style="text-align: center;font-size: 25px;font-weight: bolder"><br><br><br>硬件驱动/控制
             </el-col>
             <el-row :gutter="12" type="flex"
-                    style="text-align: center;border:5px dashed lightblue;width: 100%;">
+                    style="text-align: center;border:2px dashed dodgerblue;width: 100%;">
               <el-col :span="8" style="text-align: center">
                 <img src="static/img/RobotOperateSystem/u814.png" style="width: 95%;height: 60%">
                 <p style="width:100%;font-size:20px;font-weight: bolder">激光雷达</p>
@@ -225,15 +225,16 @@
         </el-col>
       </el-row>
 
+      <!--      底部     -->
       <el-container id="bottom" style="width: 100%">
         <el-aside width="50px"><br></el-aside>
         <el-main style="background: #0d64e8;font-size: 30px">
           <el-row :gutter="24">
-            <el-col :span="11" style="color: white;text-align: left;font-size: 35px;font-weight: bolder">
+            <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder">
               欢迎咨询GomRos系统相关专家获取解决方案
             </el-col>
             <el-col :span="1"></el-col>
-            <el-col :span="13" style="text-align: right;">
+            <el-col :span="11" style="text-align: right;">
               <el-button @click="$router.push('/about')"
                          style="font-size: 30px; background-color: #0d64e8;border-color: white;color: white">
                 联系我们

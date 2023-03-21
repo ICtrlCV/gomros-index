@@ -27,20 +27,20 @@
     </el-container>
 
     <div style="margin-top: 50px;background-color: #f2f6fa">
-      <!--    第一行   -->
+      <!--    第一行 移动机器人数据安全  -->
       <el-row :gutter="20" type="flex">
-        <el-col :span="12" style="width:50%;margin-left: 6%;margin-right: 3%">
+        <el-col :span="12" style="width:50%;margin-top: 2%;margin-left: 6%;margin-right: 3%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">移动机器人数据安全</p>
           <p style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机器人配备了多种多样的传感器，在工作过程中可以搜集到很多的信息，包括视觉数据，语音数据，位置数据等，这些重要的隐私数据都需要得到保护。</p>
           <p style="font-size: 20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机器人系统需要完整的数据安全保障机制，既要求保证端到端的安全传输，也要保障在服务器端的安全存储。</p>
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">保护用户的隐私数据的安全变得尤其重要。</p>
         </el-col>
         <el-col :span="9" style="align-content: center">
-          <img class="img-box" src="static/img/dataPlatform/u1644.png" style="width: 80%;height: 75%;margin-top: 5%">
+          <img class="img-box" src="static/img/dataPlatform/u1644.png" style="width: 80%;height: 75%;margin-top: 12%">
         </el-col>
       </el-row>
 
-      <!--    第二行   -->
+      <!--    第二行 移动机器人数据平台架构  -->
       <el-row :gutter="20" type="flex" style="background-color: white;">
         <el-col style="width:100%;margin-left: 6%">
           <el-row>
@@ -52,7 +52,7 @@
         </el-col>
       </el-row>
 
-      <!--    第三行   -->
+      <!--    第三行  移动机器人数据应用 -->
       <el-row>
         <el-col style="width:100%;margin-left: 6%;margin-bottom: 2%">
           <el-row>
@@ -83,7 +83,7 @@
         </el-col>
       </el-row>
 
-      <!--    第四行   -->
+      <!--    第四行  数据采集及数据迭代 -->
       <el-row :gutter="20" type="flex" style="background-color: white">
         <el-col style="width:100%;margin-left: 6%;margin-bottom: 2%">
           <el-row>

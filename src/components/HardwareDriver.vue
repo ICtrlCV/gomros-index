@@ -2,21 +2,21 @@
   <div id="hardware-driver">
     <el-container id="top-content" style="height:400px;">
       <el-row style="width: 100%">
-        <el-col :span="14" style="background-color: #222325;height: 400px">
+        <el-col :span="15" style="background-color: #222325;height: 400px">
           <el-row type="flex" justify="start" style="padding: 10px">
-            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 100px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
               <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
             </el-col>
             <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">硬件驱动及控制系统</span>
-                <span style="font-size: 20px;color: #0D64E8;font-weight: bolder">移动机器人基础服务系统</span></p>
-              <p style="font-size: 30px;color: white;margin-right: 8%;text-shadow: none;font-weight: bolder">
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">移动机器人基础服务系统</span></p>
+              <p style="font-size: 25px;color: white;margin-right: 8%;text-shadow: none;font-weight: bolder">
                 一个机器人最主要的控制量就是控制机器人的移动，无论是自身的移动还是手臂等关节的移动，所以机器人驱动器中最根本的问题就是控制电机。</p>
             </el-col>
           </el-row>
         </el-col>
-        <el-col :span="10"
+        <el-col :span="9"
                 style="height:100%;background-image: url(../../static/img/hardwareDriver/u1415.jpg);background-size: cover">
           &nbsp;
         </el-col>
@@ -27,7 +27,7 @@
     </el-container>
 
     <div>
-      <!--    第一行   -->
+      <!--    第一行  机器人硬件驱动及控制系统 -->
       <el-row :gutter="20" type="flex">
         <el-col :span="10" style="margin-top:2%;margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
@@ -41,7 +41,7 @@
         </el-col>
       </el-row>
 
-      <!--    第二行   -->
+      <!--    第二行  机器人控制系统 -->
       <el-row style="background-color: white">
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
@@ -170,7 +170,7 @@
                       <img src="static/img/hardwareDriver/u1442.png" style="width: 120px;height: 70px;">
                     </el-col>
                     <el-col :span="4">
-                      <img src="static/img/hardwareDriver/u1446.png" style="width: 100px;height: 50px;">
+                      <img src="static/img/hardwareDriver/u1446.png" style="width: 80px;height: 50px;">
                     </el-col>
                   </el-row>
                 </el-col>
@@ -180,7 +180,7 @@
         </el-col>
       </el-row>
 
-      <!--    第三行   -->
+      <!--    第三行 机器人硬件驱动系统  -->
       <el-row>
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
@@ -232,7 +232,7 @@
         </el-col>
       </el-row>
 
-      <!--    第四行   -->
+      <!--    第四行 硬件设备合作开发  -->
       <el-row style="background-color: white">
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
