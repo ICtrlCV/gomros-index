@@ -436,6 +436,9 @@
           </el-col>
         </el-row>
       </el-main>
+      <el-aside style="background-color: #0d64e8" width="100px">
+        <br>
+      </el-aside>
     </el-container>
 
     <el-dialog :title="title" :visible.sync="open" width="800px" append-to-body>

@@ -273,6 +273,9 @@
           </el-col>
         </el-row>
       </el-main>
+      <el-aside style="background-color: #0d64e8" width="100px">
+        <br>
+      </el-aside>
     </el-container>
 
   </div>
