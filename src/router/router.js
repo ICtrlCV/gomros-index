@@ -125,6 +125,24 @@ const router = new Router({
             component: (resolve) => {
                 require(['../components/CloudPlatform'], resolve)
             }
+        },{
+            path: '/dataPlatform',
+            name: 'DataPlatform',
+            component: (resolve) => {
+                require(['../components/DataPlatform'], resolve)
+            }
+        }, {
+            path: '/scenarioService',
+            name: 'ScenarioService',
+            component: (resolve) => {
+                require(['../components/ScenarioService'], resolve)
+            }
+        }, {
+            path: '/hardwareDriver',
+            name: 'HardwareDriver',
+            component: (resolve) => {
+                require(['../components/HardwareDriver'], resolve)
+            }
         }, {
             path: '/admin',
             name: 'Admin',
