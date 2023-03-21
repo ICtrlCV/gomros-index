@@ -10,7 +10,7 @@
         <el-menu-item index="/">首页</el-menu-item>
         <el-submenu  index="2">
           <template slot="title">机器人操作系统</template>
-          <el-menu-item index="/robotCase">系统介绍</el-menu-item>
+          <el-menu-item index="/robotOperateSystem">系统介绍</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">移动机器人</template>
@@ -18,10 +18,10 @@
           <!--        <el-menu-item index="2-1">移动机器人技术介绍</el-menu-item>-->
           <el-submenu index="2-2">
             <template slot="title">移动机器人配套系统</template>
-            <el-menu-item index="/case">云平台</el-menu-item>
-            <el-menu-item index="/goto">移动机器人数据平台</el-menu-item>
-            <el-menu-item index="/help">场景服务软件系统</el-menu-item>
-            <el-menu-item index="/recruitment">硬件控制及驱动系统</el-menu-item>
+            <el-menu-item index="/cloudPlatform">云平台</el-menu-item>
+            <el-menu-item index="/dataPlatform">移动机器人数据平台</el-menu-item>
+            <el-menu-item index="/scenarioService">场景服务软件系统</el-menu-item>
+            <el-menu-item index="/hardwareDriver">硬件控制及驱动系统</el-menu-item>
           </el-submenu>
         </el-submenu>
         <el-submenu index="4">
