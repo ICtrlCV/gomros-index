@@ -7,7 +7,7 @@
 <!--          <el-avatar :size="60" :src="circleUrl"></el-avatar>-->
           <img src="../../gomros-index/static/product/logo-small.png" style="width: 60px">
         </el-menu-item>
-        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="/index">首页</el-menu-item>
         <el-submenu  index="2">
           <template slot="title">机器人操作系统</template>
           <el-menu-item index="/robotOperateSystem">系统介绍</el-menu-item>

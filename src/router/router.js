@@ -33,6 +33,12 @@ const router = new Router({
         component: (resolve) => {
             require(['../components/Technology'], resolve)
         }
+    },{
+        path: '/index',
+        name: 'index',
+        component: (resolve) => {
+            require(['../components/index'], resolve)
+        }
     },
         {
             path: '/opencommunity',
