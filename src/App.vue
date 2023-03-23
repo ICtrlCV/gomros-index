@@ -7,14 +7,14 @@
 <!--          <el-avatar :size="60" :src="circleUrl"></el-avatar>-->
           <img src="../../gomros-index/static/product/logo-small.png" style="width: 60px">
         </el-menu-item>
-        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="/index">首页</el-menu-item>
         <el-submenu  index="2">
           <template slot="title">机器人操作系统</template>
           <el-menu-item index="/robotOperateSystem">系统介绍</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">移动机器人</template>
-          <el-menu-item index="/product">移动机器人技术介绍</el-menu-item>
+          <el-menu-item index="/technology">移动机器人技术介绍</el-menu-item>
           <!--        <el-menu-item index="2-1">移动机器人技术介绍</el-menu-item>-->
           <el-submenu index="2-2">
             <template slot="title">移动机器人配套系统</template>
@@ -26,7 +26,7 @@
         </el-submenu>
         <el-submenu index="4">
           <template slot="title">GomROS开放平台</template>
-          <el-menu-item index="/contact">开放平台介绍</el-menu-item>
+          <el-menu-item index="/opencommunity">开放平台介绍</el-menu-item>
           <el-menu-item index="/study">开发者社区</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
@@ -116,6 +116,11 @@ export default {
           {
             href: "/study",
             text: "学习模块"
+          },
+          {
+            href: "/opencommunity",
+            text: "开放平台介绍"
+
           }
         ],
         [

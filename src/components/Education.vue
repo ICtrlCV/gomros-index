@@ -239,9 +239,7 @@
       <el-aside width="200px"></el-aside>
     </el-container>
     <el-container id="bottom">
-      <el-aside width="50px">
-        <br>
-      </el-aside>
+
       <el-main style="background: #0d64e8;font-size: 25px">
         <el-row :gutter="24">
           <el-col :span="10" style="color: white;text-align: left">
@@ -257,7 +255,7 @@
           </el-col>
         </el-row>
       </el-main>
-      <el-aside width="50px">
+      <el-aside style="background-color: #0d64e8" width="100px">
         <br>
       </el-aside>
     </el-container>

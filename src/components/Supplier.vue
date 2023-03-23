@@ -20,7 +20,7 @@
               </el-col>
               <el-col :span="4" style="font-size: 15px">
                 <br>
-                <br>工业基础软件
+<!--                <br>工业基础软件-->
               </el-col>
             </el-row>
             <el-row :gutter="10" type="flex">
@@ -29,7 +29,7 @@
               </el-col>
               <el-col :span="4" style="font-size: 15px">
                 <br>
-                <br>协同发展平台
+<!--                <br>协同发展平台-->
               </el-col>
             </el-row>
             <el-row>
@@ -340,6 +340,26 @@
       </el-container>
       <el-aside width="100px"></el-aside>
     </el-container>
+    <el-container id="bottom">
+      <el-main style="background: #0d64e8;font-size: 25px">
+        <el-row :gutter="24">
+          <el-col :span="10" style="color: white;text-align: left">
+            欢迎咨询供应商合作相关产品
+          </el-col>
+          <el-col :span="2">
+          </el-col>
+          <el-col :span="14" style="text-align: right;font-size: 20px">
+            <el-button @click="routerToContact()"
+                       style="background-color: #0d64e8;border-color: white;color: white">
+              联系我们
+            </el-button>
+          </el-col>
+        </el-row>
+      </el-main>
+      <el-aside style="background-color: #0d64e8" width="100px">
+        <br>
+      </el-aside>
+    </el-container>
 
     <!-- 添加或修改供应商合作-供应商合作申请对话框 -->
     <el-dialog :title="title" :visible.sync="open" width="1200px" append-to-body>
@@ -448,6 +468,9 @@ export default {
     };
   },
   methods: {
+    routerToContact() {
+      this.$router.push('/about')
+    },
     submitForm(){
       this.open=true;
       this.$refs['form'].validate(valid => {
@@ -503,21 +526,13 @@ export default {
 };
 </script>
 <style scoped>
-
-
-
-
 #content-box h1,
 #content-box h3 {
   text-align: center;
   font-weight: 400;
   color: #1767a1;
 }
-
 p {
   color: #444444;
 }
-
-
-
 </style>

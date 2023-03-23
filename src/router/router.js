@@ -28,6 +28,26 @@ const router = new Router({
                 require(['../components/Product'], resolve)
             }
         }, {
+        path: '/technology',
+        name: 'Technology',
+        component: (resolve) => {
+            require(['../components/Technology'], resolve)
+        }
+    },{
+        path: '/index',
+        name: 'index',
+        component: (resolve) => {
+            require(['../components/index'], resolve)
+        }
+    },
+        {
+            path: '/opencommunity',
+            name: 'OpenCommunity',
+            component: (resolve) => {
+                require(['../components/OpenCommunity'], resolve)
+            }
+        }
+        , {
             path: '/case',
             name: 'Case',
             component: (resolve) => {

@@ -1,51 +1,125 @@
 <template>
-  <div id="about">
-    <div class="page-top" style="background-image: url(./static/abouttop.jpg)">
-      <h1>关于我们</h1>
-    </div>
-    <div id="content-box">
-      <h1>您的需求</h1>
-      <h3>REQUIREMENT</h3>
-      <el-row class="require-box">
-        <el-col :span="12">
-          <el-form class="demo-form-inline" :inline="true" :rules="rules" ref="formInline" :model="formInline"
-                   label-width="80px">
-            <el-form-item label="姓名" prop="name">
-              <el-input v-model="formInline.name" placeholder="姓名"/>
-            </el-form-item>
-            <el-form-item label="电话" prop="phone">
-              <el-input v-model="formInline.phone" placeholder="电话"/>
-            </el-form-item>
-            <el-form-item label="公司" prop="company">
-              <el-input v-model="formInline.company" placeholder="公司"/>
-            </el-form-item>
-            <el-form-item label="邮箱" prop="email">
-              <el-input v-model="formInline.email" placeholder="邮箱"/>
-            </el-form-item>
-            <el-form-item label="留言" prop="content">
-              <el-input v-model="formInline.content" type="textarea"/>
-              <el-button type="primary" @click="onSubmit('formInline')" style="margin-top: 10px">留言</el-button>
-            </el-form-item>
-          </el-form>
-        </el-col>
-        <el-col :span="12">
-          <img src="../../static/xuqui.jpg" style="width: 100%;height: 369px"/>
-        </el-col>
-      </el-row>
-      <h1 style="margin-top: 100px">我们的地址</h1>
-      <h3>ADDRESS</h3>
-      <el-row style="padding: 5%">
-        <el-col :span="14" :offset="1">
-          <img class="aboutimg" src="../../static/address.png" style="width: 95%"/>
-        </el-col>
-        <el-col span="8">
-          <p>企业：山东亚历山大智能科技有限公司</p>
-          <p>邮箱：{{ email }}</p>
-          <p>电话：{{ phone }}</p>
-          <p>地址：{{ address }}</p>
-        </el-col>
-      </el-row>
-    </div>
+  <div id="About">
+    <el-container id="top-img"
+                  style="background-image: url(static/img/Contact/u2074.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  height: 100%;
+                  width: 100%">
+      <el-main>
+        <el-container id="img-text">
+          <el-aside width="100px">
+            <br>
+            <br>
+            <img src="static/img/Development/u3.png">
+          </el-aside>
+          <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
+            <el-row :gutter="10" type="flex">
+              <el-col :span="6" style="font-size:60px">
+                GomROS
+              </el-col>
+              <el-col :span="4" style="font-size: 15px">
+                <br>
+                <!--                <br>工业基础软件-->
+              </el-col>
+            </el-row>
+            <el-row :gutter="10" type="flex">
+              <el-col :span="6" style="font-size:60px">
+                联系我们
+              </el-col>
+              <el-col :span="4" style="font-size: 15px">
+                <br>
+                <!--                <br>协同发展平台-->
+              </el-col>
+            </el-row>
+            <el-row>
+              <br>
+            </el-row>
+            <el-row style="color: white;font-size: 30px;text-shadow: none">
+              山东亚历山大智能科技有限公司<br>
+              服务热线：13065039691
+            </el-row>
+          </el-main>
+        </el-container>
+      </el-main>
+      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px">
+        联系我们
+      </el-footer>
+    </el-container>
+    <br>
+    <br>
+    <el-container>
+      <div >
+        <el-row :gutter="24">
+          <el-col :span="2">
+            <br>
+          </el-col>
+          <el-col :span="10">
+            <img src="static/img/Contact/u3512.png"
+                 style="width: 120%">
+          </el-col>
+          <el-col :span="2">
+            <br>
+          </el-col>
+          <el-col :span="10">
+            <div>
+              <el-row :gutter="24" style="font-size: 20px">
+                <el-col :span="2">
+                  <br>
+                </el-col>
+                <el-col :span="21">
+                  <br>
+                  <br>
+                  办公地址：山东省济南市历下区经十路13777号中润世纪城9号楼102
+                  <br>
+                  <br>
+                  工作时间：周一至周日9:00-22:00
+                  <br>
+                  <br>
+                  联系电话：13065039691
+                  <br>
+                  <br>
+                  企业邮箱：xbc@alesmart.com
+                  <br>
+                  <br>
+                  备案编号：鲁ICP备17053761号-1
+                  <br><br>
+                </el-col>
+                <el-col :span="1">
+                  <br>
+                </el-col>
+              </el-row>
+            </div>
+          </el-col>
+          <el-col :span="1">
+            <br>
+            <br>
+            <br>
+          </el-col>
+        </el-row>
+      </div>
+    </el-container>
+    <el-row>
+      <br>
+      <br>
+      <br>
+      <br>
+    </el-row>
+    <el-container id="bottom">
+      <el-main style="background: #0d64e8;font-size: 25px">
+        <el-row :gutter="24">
+          <el-col :span="10" style="color: white;text-align: left;font-size: 32px">
+            欢迎致电我们:13065039691
+          </el-col>
+          <el-col :span="2">
+          </el-col>
+          <el-col :span="14" style="text-align: right;font-size: 20px">
+          </el-col>
+        </el-row>
+      </el-main>
+    </el-container>
+
+
   </div>
 </template>
 

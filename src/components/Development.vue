@@ -153,10 +153,8 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <br>
-                    <br>
                     <img src="static/img/Development/u1955.jpg"
-                         style="width: 100%;height: 100%">
+                         style="width: 400px;height: 250px">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
@@ -195,7 +193,7 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="static/img/Development/u1965.jpg"
-                         style="width: 100%;height: 100%">
+                         style="width: 400px;height: 250px">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
@@ -236,7 +234,7 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="static/img/Development/u1975.jpeg"
-                         style="width: 100%;height: 100%">
+                         style="width: 400px;height: 250px">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
@@ -273,7 +271,7 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="static/img/Development/u1985.png"
-                         style="width: 100%;height: 100%">
+                         style="width: 400px;height: 250px">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
@@ -312,7 +310,7 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="static/img/Development/u1995.jpg"
-                         style="width: 100%;height: 100%">
+                         style="width: 400px;height: 250px">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
@@ -351,7 +349,7 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="static/img/Development/u2005.jpg"
-                         style="width: 100%;height: 100%">
+                         style="width: 400px;height: 250px">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
@@ -422,9 +420,7 @@
     </el-container>
     <br>
     <el-container id="bottom">
-      <el-aside width="50px">
-        <br>
-      </el-aside>
+
       <el-main style="background: #0d64e8;font-size: 25px">
         <el-row :gutter="24">
           <el-col :span="10" style="color: white;text-align: left">
@@ -440,7 +436,7 @@
           </el-col>
         </el-row>
       </el-main>
-      <el-aside width="50px">
+      <el-aside style="background-color: #0d64e8" width="100px">
         <br>
       </el-aside>
     </el-container>
