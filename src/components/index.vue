@@ -145,10 +145,12 @@ background-size: cover">
         <el-main>
           <div class="section"
                style="font-size: 32px;font-weight: bolder;color: #0d64e8;text-align: center">
-
+            <el-row style="text-align: left">
+              我们的平台优势
+            </el-row>
             <el-row :gutter="24">
               <el-col :span="4">
-                我们的平台优势
+                <br>
               </el-col>
               <el-col :span="16">
                 <img src="static/img/Home/u3075.png" style="width: 1200px;height:600px;filter: brightness(0.8)">
@@ -161,9 +163,12 @@ background-size: cover">
               <br>
               <br>
             </el-row>
+            <el-row style="text-align: left">
+              客户和合作伙伴
+            </el-row>
             <el-row :gutter="24">
               <el-col :span="4">
-                客户和合作伙伴
+                <br>
               </el-col>
               <el-col :span="16">
                 <img src="static/img/Home/u3153.png" style="width: 90%">

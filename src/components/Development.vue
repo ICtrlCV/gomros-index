@@ -133,7 +133,7 @@
       <el-header style="text-align: center">
         <el-row style="text-align: center;line-height: normal;color: #0D64E8">
           <br>
-          <h1>我们的优势</h1>
+          <h1 style="font-weight: bolder">我们的优势</h1>
           <br>
           <br>
         </el-row>
@@ -159,25 +159,25 @@
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
                     <div style="color: #2372EA">
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         用心
                       </el-row>
                       <el-row style="font-size: 14px">
                         用心关注产品使用价值、关注质量与细节；关怀合作企业与团队，创造出能够体现企业对用户的关爱的好产品。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         专注
                       </el-row>
                       <el-row style="font-size: 14px">
                         以结果为导向，专注于如何做得更好，创造出有特色、有核心竞争力的好产品。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         创新
                       </el-row>
                       <el-row style="font-size: 14px">
                         不断探索、超越，突破创新局限，创造出富有创新性的好产品。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         简化
                       </el-row>
                       <el-row style="font-size: 14px">
@@ -198,25 +198,25 @@
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
                     <div style="color: #2372EA">
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         团队稳定
                       </el-row>
                       <el-row style="font-size: 14px">
                         我们拥有一支长期稳定的研发团队，技术经验及技术规范都已形成标准文档，确保能够稳定规范的输出产品。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         目标专注
                       </el-row>
                       <el-row style="font-size: 14px">
                         我们的团队成员目标保持专注，每个参与成员的核心关注力都在产品的开发阶段，全体成员目标保持一致。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         保持工作节奏
                       </el-row>
                       <el-row style="font-size: 14px">
                         我们的团队成员必须以可持续的节奏工作，平衡项目前后的工作量。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         跨组织合作
                       </el-row>
                       <el-row style="font-size: 14px">
@@ -239,13 +239,13 @@
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
                     <div style="color: #2372EA">
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         高品质
                       </el-row>
                       <el-row style="font-size: 14px">
                         对产品的检查上要做到全方位的检查，细心、认真，不要放过一丝一毫的空间，严格落实日常质量管理体系及标准。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         低成本
                       </el-row>
                       <el-row style="font-size: 14px">
@@ -255,7 +255,7 @@
                         4、运用绩效指标改善法，提升效率。<br>
                         5、用MES系统实现工厂可视化管理。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         交期快
                       </el-row>
                       <el-row style="font-size: 14px">
@@ -276,25 +276,25 @@
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
                     <div style="color: #2372EA">
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         感知
                       </el-row>
                       <el-row style="font-size: 14px">
                         实时捕捉业务动态，监控经营趋势，发现经营问题。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         策略
                       </el-row>
                       <el-row style="font-size: 14px">
                         沉淀运营管理经验，形成场景卡片，从而实现运营管理能力的自动化。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         指挥
                       </el-row>
                       <el-row style="font-size: 14px">
                         将管理决策和任务自动化下达到各业务系统，形成自动运营管理闭环。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         决策
                       </el-row>
                       <el-row style="font-size: 14px">
@@ -315,25 +315,25 @@
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
                     <div style="color: #2372EA">
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         调度
                       </el-row>
                       <el-row style="font-size: 14px">
                         负责全部机器人的任务分配、调度及运行监控。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         智能仓储管理
                       </el-row>
                       <el-row style="font-size: 14px">
                         可为企业提供更为完整企业物流管理流程和财务管理信息。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         制造执行系统
                       </el-row>
                       <el-row style="font-size: 14px">
                         可以为企业提供包括制造数据管理、计划排程管理、生产调度管理、库存管理、质量管理、人力资源管理、工作中心/设备管理等等多项管理模块。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         资源计划管理
                       </el-row>
                       <el-row style="font-size: 14px">
@@ -354,25 +354,25 @@
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
                     <div style="color: #2372EA">
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         领先的技术
                       </el-row>
                       <el-row style="font-size: 14px">
                         我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         产品矩阵优势
                       </el-row>
                       <el-row style="font-size: 14px">
                         我们有10余款生态机器人产品，覆盖多种使用场景，向各行各业的客户提供硬件设备和服务，可定制，售后有保障的软硬件一体解决方案。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         灵活开放的生态
                       </el-row>
                       <el-row style="font-size: 14px">
                         二次开发灵活性强，第三方设备和应用可以快速接入，开放的开发者社区，学校人才聚集，聚集金融机构支持。
                       </el-row>
-                      <el-row style="font-size: 18px">
+                      <el-row style="font-size: 18px;font-weight: bolder">
                         产品和数据支持
                       </el-row>
                       <el-row style="font-size: 14px">

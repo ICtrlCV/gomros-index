@@ -18,7 +18,6 @@
         </el-col>
         <el-col :span="9"
                 style="height:100%;background-image: url(../../static/img/hardwareDriver/u1415.jpg);background-size: cover">
-          &nbsp;
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
@@ -26,9 +25,9 @@
       </el-footer>
     </el-container>
 
-    <div>
+    <div style="margin-top: 60px;">
       <!--    第一行  机器人硬件驱动及控制系统 -->
-      <el-row :gutter="20" type="flex">
+      <el-row :gutter="20" type="flex" style="background-color: white">
         <el-col :span="10" style="margin-top:2%;margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
           <p style="font-size: 25px;font-weight: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
@@ -42,7 +41,7 @@
       </el-row>
 
       <!--    第二行  机器人控制系统 -->
-      <el-row style="background-color: white">
+      <el-row >
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
             <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人控制系统</p>
@@ -181,8 +180,8 @@
       </el-row>
 
       <!--    第三行 机器人硬件驱动系统  -->
-      <el-row>
-        <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
+      <el-row style="background-color: white">
+        <el-col style="width:100%;margin-left: 6%;margin-bottom:2%" >
           <el-row>
             <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动系统</p>
           </el-row>
@@ -233,7 +232,7 @@
       </el-row>
 
       <!--    第四行 硬件设备合作开发  -->
-      <el-row style="background-color: white">
+      <el-row>
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
             <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">硬件设备合作开发</p>

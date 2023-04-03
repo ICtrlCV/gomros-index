@@ -20,7 +20,6 @@
               </el-col>
               <el-col :span="4" style="font-size: 15px">
                 <br>
-<!--                <br>工业基础软件-->
               </el-col>
             </el-row>
             <el-row :gutter="10" type="flex">
@@ -41,7 +40,14 @@
         </el-container>
       </el-main>
       <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px;font-weight: bold">
-        供应商合作
+        <el-row :gutter="24">
+          <el-col :span="1">
+            <br>
+          </el-col>
+          <el-col :span="2">
+            公司介绍
+          </el-col>
+        </el-row>
       </el-footer>
     </el-container>
     <el-container>
@@ -77,7 +83,7 @@
                   <br>
                   <br>
                 </el-row>
-                <el-row>
+                <el-row style="text-align: center;">
                   <img src="static/img/CorporateProfile/u3294.png">
                 </el-row>
               </div>
@@ -86,7 +92,7 @@
               <br>
               <br>
             </el-col>
-            <el-col :span="8">
+            <el-col :span="8" align="center">
               <br><br>
               <img src="static/img/CorporateProfile/u233.png"
               style="width: 700px;
@@ -222,37 +228,48 @@
             <el-col :span="1">
               <br>
             </el-col>
-          <el-col :span="5" style="font-size: 32px;font-weight: bold">
+          <el-col :span="4" style="font-size: 40px;font-weight: bold">
             发展历程
           </el-col>
-          <el-col :span="12">
+          <el-col :span="12" align="center">
             <br>
             <br>
             <br>
             <img src="static/img/CorporateProfile/u3365.png"
-              style="width: 1300px;height: 900px">
+              style="width: 1300px;height: 900px" >
           </el-col>
           <el-col :span="6">
             <br>
           </el-col>
           </el-row>
-          <el-row :gutter="24">
-            <el-col :span="1">
+          <div style="background-color: rgba(242, 246, 250, 1)">
+            <el-row style="text-align: left;font-size: 40px;font-weight: bold" :gutter="24">
+              <el-col :span="1">
+                <br>
+              </el-col>
+              <el-col :span="4">
+                <br>
+                客户和合作伙伴
+              </el-col>
+            </el-row>
+            <el-row :gutter="24">
+              <el-col :span="2">
+                <br>
+              </el-col>
+              <el-col :span="20" align="center">
+                <br>
+                <br>
+                <img src="static/img/CorporateProfile/u3153.png"
+                     style="width: 100%">
+              </el-col>
+              <el-col :span="2">
+                <br>
+              </el-col>
+            </el-row>
+            <el-row>
               <br>
-            </el-col>
-            <el-col :span="4" style="font-size: 32px;font-weight: bold">
-              客户和合作伙伴
-            </el-col>
-            <el-col :span="16">
-              <br>
-              <br>
-              <img src="static/img/CorporateProfile/u3153.png"
-                style="width: 100%">
-            </el-col>
-            <el-col :span="2">
-              <br>
-            </el-col>
-          </el-row>
+            </el-row>
+          </div>
         </div>
       </el-main>
     </el-container>

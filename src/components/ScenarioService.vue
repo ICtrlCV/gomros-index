@@ -21,12 +21,12 @@
           &nbsp;
         </el-col>
       </el-row>
-      <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 3%">移动机器人场景服务系统</p>
+      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px">
+        移动机器人场景服务系统
       </el-footer>
     </el-container>
 
-    <div style="margin-top: 10px;">
+    <div style="margin-top: 50px;">
       <!--    第一行 机器人场景服务系统  -->
       <el-row :gutter="20" type="flex" style="background-color: white">
         <el-col :span="8" style="margin-top:2%;margin-left: 6%;margin-right: 8%">

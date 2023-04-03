@@ -55,10 +55,10 @@
         <el-aside width="100px">
           <br>
         </el-aside>
-        <el-main style="text-align: left">
+        <el-main style="text-align: left;height: 100%;width: 100%">
           <div>
             <el-row :gutter="24">
-              <el-col :span="15" style="background-color: #f2f6fa">
+              <el-col :span="15" style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
                 <div>
                   <el-row>
                     <br>
@@ -101,13 +101,13 @@
                 <div>
                   <el-row :gutter="24">
                     <div>
-                      <div style="background-color: #f2f6fa">
+                      <div style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
                         <br>
                         <el-row :gutter="24" style="font-size: 32px">
                           <el-col :span="2">
                             <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
                           </el-col>
-                          <el-col :span="20">
+                          <el-col :span="20" >
                             理念
                           </el-col>
                           <el-col :span="2">
@@ -134,7 +134,7 @@
                       <div>
                         <br>
                       </div>
-                      <div style="background-color: #f2f6fa">
+                      <div style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
                         <el-row :gutter="24" style="font-size: 32px">
                           <br>
                           <el-col :span="2">
@@ -194,14 +194,16 @@
           <el-col :span="1">
             <br>
           </el-col>
-          <el-col :span="22">
-            <el-steps :active="5" align-center style="font-size: 50px">
-              <el-step description="信息填报"></el-step>
-              <el-step description="资质审核"></el-step>
-              <el-step description="意向洽谈"></el-step>
-              <el-step description="现场考察"></el-step>
-              <el-step description="商务合作"></el-step>
-            </el-steps>
+          <el-col :span="22" align="center">
+            <img src="static/img/Supplier/u330.png" style="height: 200px">
+
+<!--            <el-steps :active="5" style="font-size: 120px;">-->
+<!--              <el-step description="信息填报" style="width:100px;height:100px"></el-step>-->
+<!--              <el-step description="资质审核"></el-step>-->
+<!--              <el-step description="意向洽谈"></el-step>-->
+<!--              <el-step description="现场考察"></el-step>-->
+<!--              <el-step description="商务合作"></el-step>-->
+<!--            </el-steps>-->
           </el-col>
           <el-col :span="1"></el-col>
         </el-row>
@@ -223,6 +225,7 @@
       <!--      </el-container>-->
       <el-aside width="100px"></el-aside>
     </el-container>
+    <br>
     <el-container style="color: #0D64E8">
       <el-aside width="100px"></el-aside>
       <el-container>
@@ -243,7 +246,7 @@
             </el-col>
             <el-col :span="5">
               <div>
-                <el-row style="font-size: 20px">感知系统</el-row>
+                <el-row style="font-size: 20px;font-weight: bolder">感知系统</el-row>
                 <el-row style="font-size: 18px">视觉系统、激光雷达、超声波雷达、红外传感器、力觉传感器、触觉传感器、等感知传感器。</el-row>
                 <el-row>
                   <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
@@ -258,7 +261,7 @@
             </el-col>
             <el-col :span="5">
               <div>
-                <el-row style="font-size: 20px">驱动系统</el-row>
+                <el-row style="font-size: 20px;font-weight: bolder">驱动系统</el-row>
                 <el-row style="font-size: 18px">伺服电机、减速器、进步电机、舵机、脚轮、等驱动系统配件。</el-row>
                 <br>
                 <el-row>
@@ -274,7 +277,7 @@
             </el-col>
             <el-col :span="5">
               <div>
-                <el-row style="font-size: 20px">控制系统</el-row>
+                <el-row style="font-size: 20px;font-weight: bolder">控制系统</el-row>
                 <el-row style="font-size: 18px">工控机系统、电机控制模块、位姿控制模块、电源控制模块、等各种控制模块。
                 </el-row>
                 <el-row><br></el-row>
@@ -294,7 +297,7 @@
             </el-col>
             <el-col :span="5">
               <div>
-                <el-row style="font-size: 20px">GomROS系统</el-row>
+                <el-row style="font-size: 20px;font-weight: bolder">GomROS系统</el-row>
                 <el-row style="font-size: 18px">视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。</el-row>
                 <br>
                 <el-row>
@@ -310,7 +313,7 @@
             </el-col>
             <el-col :span="5">
               <div>
-                <el-row style="font-size: 20px">场景服务系统</el-row>
+                <el-row style="font-size: 20px;font-weight: bolder">场景服务系统</el-row>
                 <el-row style="font-size: 18px">调度系统、WMS智能仓储管理系统、MES制造执行系统、ERP企业资源计划管理系统、等数字化管理系统。</el-row>
                 <el-row>
                   <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
@@ -325,7 +328,7 @@
             </el-col>
             <el-col :span="5">
               <div>
-                <el-row style="font-size: 20px">云平台识别算法</el-row>
+                <el-row style="font-size: 20px;font-weight: bolder">云平台识别算法</el-row>
                 <el-row style="font-size: 18px">视觉避障识别算法、视觉定位导航算法、语音识别算法、运动控制算法等先进算法系统。</el-row>
                 <el-row>
                   <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>

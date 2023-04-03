@@ -528,12 +528,13 @@
             <img src="../../static/img/Technology/u117.svg">
           </el-col>
           <el-col :span="7">
-            <img src="../../static/img/Technology/u118.png">
+            <img src="../../static/img/Technology/u120.png" >
           </el-col>
           <el-col :span="2">
             <br>
           </el-col>
         </el-row>
+        <el-row><br></el-row>
         <el-row>
           <div>
             <el-row :gutter="24">

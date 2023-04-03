@@ -22,11 +22,13 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 3%">移动机器人数据安全</p>
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 3%">
+          移动机器人数据安全
+        </p>
       </el-footer>
     </el-container>
 
-    <div style="margin-top: 50px;background-color: #f2f6fa">
+    <div style="margin-top: 60px;background-color: #f2f6fa">
       <!--    第一行 移动机器人数据安全  -->
       <el-row :gutter="20" type="flex">
         <el-col :span="12" style="width:50%;margin-top: 2%;margin-left: 6%;margin-right: 3%">
@@ -58,7 +60,7 @@
           <el-row>
             <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">移动机器人数据应用</p>
           </el-row>
-          <el-row :gutter="40" type="flex" style="margin-left: 4%">
+          <el-row :gutter="40" type="flex" style="margin-left: 4%;text-align: center" >
             <el-col :span="4">
               <p style="font-size: 15px;font-weight: bolder">调度可视化展示</p>
               <img class="img-box" src="static/img/dataPlatform/u1655.png" style="width: 240px;height: 200px">
