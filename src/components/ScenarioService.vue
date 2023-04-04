@@ -11,7 +11,7 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">场景服务系统</span>
                 <span style="font-size: 20px;color: #0D64E8;font-weight: bolder">移动机器人基础服务系统</span></p>
-              <p style="font-size: 30px;color: white;margin-right: 8%;text-shadow: none">
+              <p style="font-size: 30px;color: white;margin-right: 8%;text-shadow: none;font-weight: bolder">
                 场景服务系统是服务于各种应用场景，支撑各类管理系统的互联互通。</p>
             </el-col>
           </el-row>
@@ -21,17 +21,17 @@
           &nbsp;
         </el-col>
       </el-row>
-      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px">
-        移动机器人场景服务系统
+      <el-footer style="background-color: #0d64e8">
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 5%">移动机器人场景服务系统</p>
       </el-footer>
     </el-container>
 
-    <div style="margin-top: 50px;">
+    <div style="margin-top: 10px;">
       <!--    第一行 机器人场景服务系统  -->
-      <el-row :gutter="20" type="flex" style="background-color: white">
-        <el-col :span="8" style="margin-top:2%;margin-left: 6%;margin-right: 8%">
+      <el-row :gutter="20" type="flex" style="background-color: white;height: 360px">
+        <el-col :span="8" style="margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人场景服务系统</p>
-          <p style="font-size: 25px;font-weight: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;移动机器人在执行任务时，需要调度系统进行任务分配及路径规划等支撑，同时需要对接各类管理系统进行资源调用或结果反馈。</p>
+          <p style="font-size: 25px;font-weight: bolder;color: #0d64e8;margin-left: 2%">移动机器人在执行任务时，需要调度系统进行任务分配及路径规划等支撑，同时需要对接各类管理系统进行资源调用或结果反馈。</p>
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">让机器人集群能协调在一起工作，互相合作又互不影响，发挥出最大的效能。</p>
         </el-col>
         <el-col :span="12" style="align-content: center;margin-top: 5%">
@@ -85,7 +85,7 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
-              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;">
+              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;color: #0d64e8">
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机器人调度系统，负责全部机器人的任务分配、调度及运行监控。调度系统采用基于深度强化学习的人工智能调度算法，
                 实现了任务的最优分配、多机器人路径规划以及机器人交通管理。调度系统还负责监控机器人的运行状态，根据每个机器人的历史情况和当前状态，来决定是否需要进行具体项目的保养维护，
                 并结合充电站的运行状态和当前的任务执行情况，合理的安排有需要的机器人进行自主充电，补充能源，并记录分析和汇总全部机器人的告警信息，及时通知运维人员，给出相应的检查和处理的建议，
@@ -110,7 +110,7 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
-              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;">
+              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;color: #0d64e8">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 WMS是仓库管理系统(Warehouse Management System) 的缩写，仓库管理系统是通过入库业务、出库业务、仓库调拨、库存调拨和虚仓管理等功能，对批次管理、物料对应、库存盘点、
                 质检管理、虚仓管理和即时库存管理等功能综合运用的管理系统，有效控制并跟踪仓库业务的物流和成本管理全过程，实现或完善企业的仓储信息管理。该系统可以独立执行库存操作，
@@ -135,7 +135,7 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
-              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;">
+              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;color: #0d64e8">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MES即制造执行系统（Manufacturing Execution System），它是一套面向制造企业车间执行层的生产信息化管理系统，
                 可以为企业提供包括制造数据管理、计划排程管理、生产调度管理、库存管理、质量管理、人力资源管理、工作中心/设备管理等等多项管理模块。通过这些管理模块对整个车间制造过程进行优化管理，
                 从而提高生产效率和质量。
@@ -159,7 +159,7 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
-              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;">
+              <p style="width: 80%;height:240px;padding: 5px;border:2px solid #0d64e8;color: #0d64e8">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP是一种主要面向制造行业进行物质资源、资金资源和信息资源集成一体化管理的企业信息管理系统。ERP是一个以管理会计为核心可以提供跨地区、
                 跨部门、甚至跨公司整合实时信息的企业管理软件。针对物资资源管理（物流）、人力资源管理（人流）、财务资源管理（财流）、信息资源管理（信息流）集成一体化的企业管理软件。
                 <br><br>
