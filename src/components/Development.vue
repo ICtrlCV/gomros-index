@@ -46,7 +46,7 @@
         协同研发平台
       </el-footer>
     </el-container>
-    <el-container id="pain-shot" style="height: 600px">
+    <el-container id="pain-shot" style="height: 600px;font-weight: bolder">
       <el-header
           style="text-align: center;
           height: 200px;
@@ -56,16 +56,16 @@
         企业研发痛点
       </el-header>
       <el-main style="text-align: center;color:#0D64E8;">
-        <el-row :gutter="24">
+        <el-row :gutter="24" >
           <el-col :span="3">
             <br>
           </el-col>
-          <el-col :span="6" style="background: #e5e9f2">
+          <el-col :span="6" class="cost" style="border-style: solid;border-color: #eeeeee" >
             <div>
               <br>
               <br>
             </div>
-            <div>
+            <div >
               <el-row>
                 <img src="static/img/Development/u1802.svg">
               </el-row>
@@ -81,12 +81,12 @@
               <br>
             </div>
           </el-col>
-          <el-col :span="6" style="background: #e5e9f2">
+          <el-col :span="6"  class="efficient" style="border-style: solid;border-color: #eeeeee">
             <div>
               <br>
               <br>
             </div>
-            <div>
+            <div >
               <el-row>
                 <img src="static/img/Development/u1813.svg">
               </el-row>
@@ -102,12 +102,12 @@
               <br>
             </div>
           </el-col>
-          <el-col :span="6" style="background: #e5e9f2">
+          <el-col :span="6" class="manage" style="border-style: solid;border-color: #eeeeee">
             <div>
               <br>
               <br>
             </div>
-            <div>
+            <div >
               <el-row>
                 <img src="static/img/Development/u1823.svg">
               </el-row>
@@ -604,5 +604,14 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+}
+.cost:hover{
+  background-color: rgba(242, 246, 250, 1);
+}
+.efficient:hover{
+  background-color: rgba(242, 246, 250, 1);
+}
+.manage:hover{
+  background-color: rgba(242, 246, 250, 1);
 }
 </style>

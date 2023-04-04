@@ -102,7 +102,8 @@
                   background-size: cover;
                   width: 640px;
                   height: 400px;
-                  text-align: left;"
+                  text-align: left;
+                  "
               >
                 <el-row><br></el-row>
                 <el-row style="color: red;font-size: 32px">GomRos车载系统</el-row>
@@ -515,12 +516,11 @@
 
 
     <el-container>
-      <el-header>
-        <br>
-      </el-header>
+
       <el-main>
-        <el-row :gutter="24">
-          <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold">
+        <el-row style="background-color: rgba(242, 246, 250, 1)"><br><br></el-row>
+        <el-row :gutter="24" style="background-color: rgba(242, 246, 250, 1)">
+          <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;">
             <div style="font-size: 72px">GomRos</div>
             <div style="font-size: 32px">机器人产品应用</div>
           </el-col>
@@ -534,6 +534,8 @@
             <br>
           </el-col>
         </el-row>
+        <el-row style="background-color: rgba(242, 246, 250, 1)"><br><br></el-row>
+        <el-row><br></el-row>
         <el-row><br></el-row>
         <el-row>
           <div>

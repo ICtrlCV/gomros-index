@@ -58,7 +58,10 @@
         <el-main style="text-align: left;height: 100%;width: 100%">
           <div>
             <el-row :gutter="24">
-              <el-col :span="15" style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
+              <el-col :span="15"
+                      style="border-style: ridge;border-color: #f2f6fa;border-width: thin"
+                      class="introduction"
+                      >
                 <div>
                   <el-row>
                     <br>
@@ -100,8 +103,8 @@
               <el-col :span="8">
                 <div>
                   <el-row :gutter="24">
-                    <div>
-                      <div style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
+                    <div >
+                      <div class="brief" style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
                         <br>
                         <el-row :gutter="24" style="font-size: 32px">
                           <el-col :span="2">
@@ -134,7 +137,8 @@
                       <div>
                         <br>
                       </div>
-                      <div style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
+                      <div class="apply"
+                          style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
                         <el-row :gutter="24" style="font-size: 32px">
                           <br>
                           <el-col :span="2">
@@ -153,7 +157,8 @@
                           </el-col>
                           <el-col :span="20">
                             <br>
-                            <el-button style="background-color: #2372EA;color: white" @click="submitForm" >申请合作</el-button>
+                            <el-button class="applyButton"
+                                style="background-color: rgba(242, 246, 250, 1);color: #0d64e8" @click="submitForm" >申请合作</el-button>
                           </el-col>
                           <el-col :span="2">
                           </el-col>
@@ -538,4 +543,21 @@ export default {
 p {
   color: #444444;
 }
+.introduction:hover{
+  background-color: rgba(242, 246, 250, 1);
+}
+.brief:hover{
+  background-color: rgba(242, 246, 250, 1);
+}
+.apply:hover{
+  background-color: rgba(242, 246, 250, 1);
+}
+.apply:hover{
+  background-color: rgba(242, 246, 250, 1);
+}
+.applyButton:hover{
+  background-color: #2372EA;
+  color: white;
+}
+
 </style>
