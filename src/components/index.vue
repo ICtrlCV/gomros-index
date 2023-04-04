@@ -45,95 +45,146 @@ background-size: cover">
         <el-row>
           <br><br><br><br>
         </el-row>
-        <el-footer style="color: white;font-size: 18px;text-align: center" height="180px">
+        <el-footer style="color: white;font-size: 24px;text-align: center" height="240px">
           <el-row :gutter="24">
             <el-col :span="8">
-              <div id="robotSystem" style="border: 2px solid white" onclick="window.location.href='/#/robotOperateSystem'">
+              <div class="robotSystem">
                 <el-row><br></el-row>
                 <el-row style="font-size: 24px">机器人操作系统</el-row>
                 <el-row>GomROS（句芒）是一款为机器人、自动化设</el-row>
                 <el-row>备等高端智能装备提供的国产原创操作系统。</el-row>
                 <el-row><br><br></el-row>
+                <div class="robotSystemIn"
+                     style="background-image: url(static/img/index/u159.jpg);">
+                  <el-row><br><br></el-row>
+                  <el-row style="font-size: 24px">机器人操作系统</el-row>
+                  <el-row>GomROS（句芒）是一款为机器人、自动化设</el-row>
+                  <el-row>备等高端智能装备提供的国产原创操作系统。</el-row>
+                  <el-row style="text-decoration: underline"
+                          onclick="window.location.href='/#/robotOperateSystem'">
+                    查看详情
+                  </el-row>
+                  <el-row><br></el-row>
+                </div>
               </div>
             </el-col>
             <el-col :span="8">
-              <div id="moveRobot" style="border: 2px solid white">
+              <div class="moveRobot" >
                 <el-row><br></el-row>
-                <el-row style="font-size: 24px" onclick="window.location.href='/#/technology'">移动机器人</el-row>
+                <el-row style="font-size: 24px">移动机器人</el-row>
                 <el-row>移动机器人，是一个集环境感知、动态决策与规</el-row>
                 <el-row>划、行为控制与执行等多功能于一体的综合系统。</el-row>
                 <el-row><br><br></el-row>
+                <div class="moveRobotIn"
+                     style="background-image: url(static/img/index/u2.jpg);">
+                  <el-row><br></el-row>
+                  <el-row style="font-size: 24px">移动机器人</el-row>
+                  <el-row>移动机器人，是一个集环境感知、动态决策与规</el-row>
+                  <el-row>划、行为控制与执行等多功能于一体的综合系统。</el-row>
+                  <el-row
+                      style="text-decoration: underline"
+                          onclick="window.location.href='/#/technology'">
+                    查看详情
+                  </el-row>
+                  <el-row><br><br></el-row>
+                </div>
               </div>
             </el-col>
             <el-col :span="8">
-              <div id="openPlat" style="border: 2px solid white">
+              <div class="openPlat" >
                 <el-row><br></el-row>
-                <el-row style="font-size: 24px" onclick="window.location.href='/#/opencommunity'">GomROS开放平台</el-row>
+                <el-row style="font-size: 24px" onclick="window.location.href='/#/opencommunity'">GomROS开放平台
+                </el-row>
                 <el-row>提供智能机器人应用开放平台，支持全场景应</el-row>
                 <el-row>用开发，助力合作伙伴快速完成机器人应用开发。</el-row>
                 <el-row><br><br></el-row>
+                <div class="openPlatIn"
+                     style="background-image: url(static/img/index/u197.jpg);">
+                  <el-row><br></el-row>
+                  <el-row style="font-size: 24px">GomROS开放平台</el-row>
+                  <el-row>提供智能机器人应用开放平台，支持全场景应</el-row>
+                  <el-row>用开发，助力合作伙伴快速完成机器人应用开发。</el-row>
+                  <el-row style="text-decoration: underline"
+                          onclick="window.location.href='/#/opencommunity'">
+                    查看详情
+                  </el-row>
+                  <el-row><br><br></el-row>
+                </div>
               </div>
             </el-col>
           </el-row>
         </el-footer>
       </el-container>
     </div>
-    <div style="background-color: rgba(51, 51, 51, 0.847058823529412)">
+
+
+    <div style="background-color: rgba(51, 51, 51, 0.847058823529412);">
       <el-container>
         <el-header>
           <br>
         </el-header>
-        <el-container>
-          <el-aside width="50px">
-            <br>
-          </el-aside>
-          <el-main >
-            <div class="section"
-                 style="background-image: url(static/img/Home/u3090.gif);background-size: cover;
-           font-size: 32px;font-weight: bolder;color: white;text-align: center;width: 100%;height: 100%">
-              <el-row :gutter="24">
-                <el-col :span="6">
-                  <div id="cloud">
-                    <br><br><br><br><br>
-                    云平台
-                    <br><br><br><br><br>
-                  </div>
-
-                </el-col>
-                <el-col :span="6" >
-                  <div id="data" style="background-color: rgba(51, 51, 51, 0.698039215686274)">
-                    <br><br><br><br><br>
-                    数据平台
-                    <br><br><br><br><br>
-                  </div>
-                </el-col>
-                <el-col :span="6">
-                  <div id="service">
-                    <br><br><br><br><br>
-                    服务场景系统
-                    <br><br><br><br><br>
-                  </div>
-                </el-col>
-                <el-col :span="6" style="background-color: rgba(51, 51, 51, 0.698039215686274)">
-                  <div id="hardware">
-                    <br><br><br><br><br>
-                    硬件控制及驱动系统
-                    <br><br><br><br><br>
-                  </div>
-                </el-col>
-              </el-row>
+        <el-aside>
+          <br>
+        </el-aside>
+          <div class="showPage">
+            <div class="platForm">
+              云平台
+              <div class="platFormIn">
+                <el-row>
+                  云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台
+                </el-row>
+                <el-row style="text-decoration: underline;text-align: center"
+                        onclick="window.location.href='/#/cloudPlatform'">
+                  查看详情
+                </el-row>
+              </div>
             </div>
-          </el-main>
-          <el-aside width="50px">
-            <br>
-          </el-aside>
-        </el-container>
+            <div class="dataPlat">
+              <h4 style="margin-top: 450px">数据平台</h4>
+              <div class="dataPlatIn">
+                <el-row>
+                  数据成为驱动经济增长的核心生产要素。大数据和云计算等技术的融合，推动了物联网的迅速发展，实现了人与人、人与物、物与物的互联互通，导致数据量呈现爆发式增长。
+                </el-row>
+                <el-row style="text-decoration: underline;text-align: center"
+                        onclick="window.location.href='/#/dataPlatform'">
+                  查看详情
+                </el-row>
+              </div>
+            </div>
+            <div class="serviceSystem">
+              服务场景系统
+              <div class="serviceSystemIn">
+                <el-row>
+                  场景服务系统是服务于各种应用场景，支撑各类管理系统的互联互通。
+                </el-row>
+                <el-row style="text-decoration: underline;text-align: center"
+                        onclick="window.location.href='/#/scenarioService'">
+                  查看详情
+                </el-row>
+              </div>
+            </div>
+            <div class="hardware">
+              <h4 style="margin-top: 450px">硬件控制及驱动系统</h4>
+              <div class="hardwareIn">
+                <el-row>
+                  一个机器人最主要的控制量就是控制机器人的移动，无论是自身的移动还是手臂等关节的移动，所以机器人驱动器中最根本的问题就是控制电机。
+                </el-row>
+                <el-row style="text-decoration: underline;text-align: center"
+                        onclick="window.location.href='/#/hardwareDriver'">
+                  查看详情
+                </el-row>
+              </div>
+            </div>
+          </div>
+
+        <el-aside>
+          <br>
+        </el-aside>
       </el-container>
       <br>
       <br>
       <br>
     </div>
-
     <el-container style="background-color: rgba(51, 51, 51, 0.196078431372549);">
       <el-header>
         <br>
@@ -145,13 +196,16 @@ background-size: cover">
         <el-main>
           <div class="section"
                style="font-size: 32px;font-weight: bolder;color: #0d64e8;text-align: center">
-
+            <el-row style="text-align: left">
+              我们的平台优势
+            </el-row>
             <el-row :gutter="24">
               <el-col :span="4">
-                我们的平台优势
+                <br>
               </el-col>
               <el-col :span="16">
-                <img src="static/img/Home/u3075.png" style="width: 1200px;height:600px;filter: brightness(0.8)">
+<!--                <img src="static/img/Home/u3075.png" style="width: 1800px;height:600px;filter: brightness(0.8)">-->
+                <img src="static/img/Home/u3075.png" style="width: 80%;height: 60%;filter: brightness(0.8)">
               </el-col>
               <el-col :span="4">
                 <br>
@@ -161,9 +215,12 @@ background-size: cover">
               <br>
               <br>
             </el-row>
+            <el-row style="text-align: left">
+              客户和合作伙伴
+            </el-row>
             <el-row :gutter="24">
               <el-col :span="4">
-                客户和合作伙伴
+                <br>
               </el-col>
               <el-col :span="16">
                 <img src="static/img/Home/u3153.png" style="width: 90%">
@@ -611,5 +668,185 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.robotSystem:hover .robotSystemIn {
+  display: block;
+}
+
+.robotSystemIn {
+  display: none;
+  background-color: grey;
+  background-size: 100% auto;
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.moveRobot:hover .moveRobotIn {
+  display: block;
+
+}
+
+.moveRobotIn {
+  display: none;
+  background-color: grey;
+  background-size: 100% auto;
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.openPlat:hover .openPlatIn {
+  display: block;
+}
+
+.openPlatIn {
+  display: none;
+  background-color: grey;
+  background-size: 100% auto;
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.openPlat{
+  border: 2px solid white;
+  position: relative;
+}
+.moveRobot{
+  border: 2px solid white;
+  position: relative;
+}
+.robotSystem{
+  border: 2px solid white;
+  position: relative;
+}
+
+
+
+
+.platFormIn {
+  display: none;
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 300px;
+  font-size: 25px;
+  text-align: left;
+}
+
+.platForm:hover .platFormIn {
+  display: block;
+  /*height: 500px;*/
+}
+
+.platForm:hover ~ .showPage {
+  background-image: url("../../static/img/Home/u264.jpg");
+}
+
+.dataPlat:hover ~ .showPage {
+  background-image: url("../../static/img/Home/u1634.jpg");
+}
+.serviceSystem:hover ~ .showPage {
+  background-image: url("../../static/img/Home/u1240.png");
+}
+.hardware:hover ~ .showPage {
+  background-image: url("../../static/img/Home/u1420.jpg");
+}
+
+.dataPlatIn {
+  display: none;
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 300px;
+  font-size: 25px;
+  text-align: left;
+}
+
+.dataPlat:hover .dataPlatIn {
+  display: block;
+}
+
+.serviceSystemIn {
+  display: none;
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 300px;
+  font-size: 25px;
+  text-align: left;
+}
+
+.serviceSystem:hover .serviceSystemIn {
+  display: block;
+}
+
+.hardwareIn {
+  display: none;
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 300px;
+  font-size: 25px;
+  text-align: left;
+
+}
+
+.hardware:hover .hardwareIn {
+  display: block;
+}
+
+.dataPlat {
+  display: inline;
+  float: left;
+}
+
+
+
+.serviceSystem {
+  display: inline;
+  float: left;
+}
+
+.hardware {
+  display: inline;
+  float: right;
+}
+.showPage{
+  /*background-image: url(./static/img/Home/u3090.gif);*/
+  background-image: url("../../static/img/Home/u3090.gif");
+  background-size: cover;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  width: 2400px;
+  height: 1000px;
+  margin: auto;
+}
+.platForm {
+  display: inline;
+  float: left;
+  width: 600px;
+  margin-top: 450px;
+
+}
+.dataPlat{
+  width: 600px;
+  height:1000px;
+  background-color: rgba(51, 51, 51, 0.70);
+
+}
+.serviceSystem{
+  width: 600px;
+  height: 100%;
+  margin-top: 450px;
+
+}
+.hardware{
+  width: 600px;
+  height: 1000px;
+  background-color: rgba(51, 51, 51, 0.70);
+
 }
 </style>

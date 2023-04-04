@@ -109,27 +109,32 @@
           </el-col>
           <el-col :span="8">
             <div style="background-color: white">
-              <el-row style="font-size: 32px;font-weight: bolder">
-                &nbsp;&nbsp;文章查看
+              <el-row style="font-size: 32px;font-weight: bolder;margin-left: 20px">
+                文章查看
               </el-row>
+              <el-row><br></el-row>
               <el-row>
                 &nbsp;&nbsp;&nbsp;
                 <el-button @click="article()"
-                           style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8">查看详情
+                           style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 120px">查看详情
                 </el-button>
               </el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row style="font-size: 32px;font-weight: bolder">
-                &nbsp;&nbsp;开发文档
+              <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
+              <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
+              <el-row style="font-size: 32px;font-weight: bolder;margin-left: 20px">
+                开发文档
               </el-row>
+              <el-row><br></el-row>
               <el-row>
-                &nbsp;&nbsp;&nbsp;
                 <el-button
                     @click="apiDocument()"
-                    style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8">查看详情
+                    style="font-size: 13px;
+                    text-align: center;
+                    border-color: #0d64e8;
+                    color: #0d64e8;
+                    margin-left: 20px;
+                    width: 120px" >
+                查看详情
                 </el-button>
               </el-row>
               <el-row><br></el-row>
@@ -137,7 +142,8 @@
           </el-col>
           <el-col :span="10">
             <div style="background-color: white">
-              <el-row style="font-size: 32px;font-weight: bolder">&nbsp;&nbsp;软件下载</el-row>
+              <el-row style="font-size: 32px;font-weight: bolder;margin-left: 5px">&nbsp;
+                软件下载</el-row>
               <el-row> &nbsp;&nbsp;&nbsp; 基于软件包的方式进行安装，方便开发者快速安装、快速体验。</el-row>
               <el-row><br></el-row>
               <el-row> &nbsp;&nbsp;&nbsp; GomROS版本：1.1版</el-row>
@@ -148,10 +154,15 @@
               <el-row><br></el-row>
               <el-row>
                 <el-row>
-                  &nbsp;&nbsp;&nbsp;
                   <el-button
                       @click="softwareDownload()"
-                      style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8">下载
+                      style="font-size: 13px;
+                      text-align: center;
+                      border-color: #0d64e8;
+                      color: #0d64e8;
+                      margin-left: 10px;
+                      width: 120px">
+                    下载
                   </el-button>
                 </el-row>
               </el-row>
@@ -197,8 +208,8 @@
             </el-col>
             <el-col :span="17">
               <div>
-                <el-row :gutter="24" style="background-color: rgba(209, 222, 237, 1)">
-                  <el-col :span="6" style="font-size: 28px;background-color: rgba(209, 222, 237, 1)">
+                <el-row :gutter="24" style="background-color: rgba(223, 235, 251, 1)">
+                  <el-col :span="6" style="font-size: 28px;">
                     <el-row><br></el-row>
                     机器人操作系统
                     <el-row><br></el-row>
@@ -209,7 +220,7 @@
                   <el-col :span="5">
                     <br>
                   </el-col>
-                  <el-col :span="12" style="background-color: rgba(209, 222, 237, 1)">
+                  <el-col :span="12"">
                     <div style="font-size: 16px">
                       <el-row><br></el-row>
                       <el-row>
@@ -292,7 +303,7 @@
                   </el-col>
                 </el-row>
                 <el-row><br></el-row>
-                <el-row :gutter="24" style="background-color: rgba(209, 222, 237, 1)">
+                <el-row :gutter="24" style="background-color: rgba(223, 235, 251, 1)">
                   <el-col :span="6" style="font-size: 28px">
                     <br>
                     供需合作

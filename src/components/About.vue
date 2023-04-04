@@ -63,11 +63,11 @@
           </el-col>
           <el-col :span="10">
             <div>
-              <el-row :gutter="24" style="font-size: 20px">
+              <el-row :gutter="24" style="font-size: 26px">
                 <el-col :span="2">
                   <br>
                 </el-col>
-                <el-col :span="21">
+                <el-col :span="22">
                   <br>
                   <br>
                   办公地址：山东省济南市历下区经十路13777号中润世纪城9号楼102
@@ -85,9 +85,7 @@
                   备案编号：鲁ICP备17053761号-1
                   <br><br>
                 </el-col>
-                <el-col :span="1">
-                  <br>
-                </el-col>
+
               </el-row>
             </div>
           </el-col>
