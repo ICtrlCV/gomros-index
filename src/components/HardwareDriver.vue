@@ -2,7 +2,7 @@
   <div id="hardware-driver">
     <el-container id="top-content" style="height:400px;">
       <el-row style="width: 100%">
-        <el-col :span="15" style="background-color: #222325;height: 400px">
+        <el-col :span="15" style="background-color: #222325;">
           <el-row type="flex" justify="start" style="padding: 10px">
             <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
               <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
@@ -11,7 +11,7 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">硬件驱动及控制系统</span>
                 <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">移动机器人基础服务系统</span></p>
-              <p style="font-size: 25px;color: white;margin-right: 8%;text-shadow: none;font-weight: bolder">
+              <p style="font-size: 28px;color: white;text-shadow: none;font-weight: bolder">
                 一个机器人最主要的控制量就是控制机器人的移动，无论是自身的移动还是手臂等关节的移动，所以机器人驱动器中最根本的问题就是控制电机。</p>
             </el-col>
           </el-row>
@@ -22,21 +22,21 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 3%">移动机器人硬件驱动及控制系统</p>
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 5%">移动机器人硬件驱动及控制系统</p>
       </el-footer>
     </el-container>
 
     <div>
       <!--    第一行  机器人硬件驱动及控制系统 -->
       <el-row :gutter="20" type="flex">
-        <el-col :span="10" style="margin-top:4%;margin-left: 6%;margin-right: 8%">
+        <el-col :span="10" style="margin-top:1%;margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
           <p style="font-size: 25px;font-weight: bolder;color: #0d64e8;margin-left: 2%">由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
             就需要高性能的交流伺服驱动系统，因此研制高性能的交流伺服驱动系统是工业机器人的关键技术之一。
           </p>
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">我们必须自力更生，掌握高性能移动机器人的关键技术，并在原来的基础上有所创新。</p>
         </el-col>
-        <el-col :span="8" style="align-content: center;margin-top: 8%">
+        <el-col :span="8" style="align-content: center;margin-top: 4%">
           <img class="img-box" src="static/img/hardwareDriver/u1431.jpg" style="width: 85%;height: 70%;">
         </el-col>
       </el-row>

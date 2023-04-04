@@ -17,7 +17,7 @@
 }
 
 #top-content {
-    padding: 10px;
+    height:400px;
 }
 
 #company-logo {
@@ -63,7 +63,7 @@
     font-weight: bolder;
     color: white;
     margin-top: 10px;
-    margin-left: 3%;
+    margin-left: 7%;
     height: 100px;
 }
 

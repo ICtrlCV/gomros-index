@@ -126,7 +126,7 @@
       </el-row>
       <el-row style="padding-top: 2px">
         <el-col :span="10">
-          <el-row>
+          <el-row style="margin-left: 3%;width: 100%">
             <p style="font-size: 30px;color: #0d64e8;font-weight: bolder">GomROS机器人操作系统</p>
             <p style="font-size: 20px;color: #0d64e8;font-weight: bolder">可用于多种行业、可用于多种类型机器人开发、可用于各类硬件设备驱动和控制。</p>
             <p style="font-size: 30px;color: #0d64e8;font-weight: bolder">GomROS可以帮助您快速完成机器人开发项目。</p>
