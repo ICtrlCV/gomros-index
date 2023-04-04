@@ -29,14 +29,14 @@
     <div>
       <!--    第一行  机器人硬件驱动及控制系统 -->
       <el-row :gutter="20" type="flex">
-        <el-col :span="10" style="margin-top:2%;margin-left: 6%;margin-right: 8%">
+        <el-col :span="10" style="margin-top:4%;margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
-          <p style="font-size: 25px;font-weight: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
+          <p style="font-size: 25px;font-weight: bolder;color: #0d64e8;margin-left: 2%">由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
             就需要高性能的交流伺服驱动系统，因此研制高性能的交流伺服驱动系统是工业机器人的关键技术之一。
           </p>
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">我们必须自力更生，掌握高性能移动机器人的关键技术，并在原来的基础上有所创新。</p>
         </el-col>
-        <el-col :span="8" style="align-content: center;margin-top: 5%">
+        <el-col :span="8" style="align-content: center;margin-top: 8%">
           <img class="img-box" src="static/img/hardwareDriver/u1431.jpg" style="width: 85%;height: 70%;">
         </el-col>
       </el-row>
@@ -49,19 +49,19 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="8" style="margin-left: 1%;margin-right: 2%">
-              <p style="font-size: 18px;">
+              <p style="font-size: 18px;color: #0d64e8">
                 机器人控制系统一般分为四部分组成，输入、输出、控制元件和算法
               </p>
-              <p style="font-size: 18px;">
+              <p style="font-size: 18px;color: #0d64e8">
                 输入：激光雷达、毫米波雷达、红外、超声波雷达、摄像头、陀螺仪
               </p>
-              <p style="font-size: 18px;">
+              <p style="font-size: 18px;color: #0d64e8">
                 输出：伺服电机、进步电机、舵机
               </p>
-              <p style="font-size: 18px;">
+              <p style="font-size: 18px;color: #0d64e8">
                 控制元件：工控机、模拟量控制、I/O量控制
               </p>
-              <p style="font-size: 18px;">
+              <p style="font-size: 18px;color: #0d64e8">
                 算法：速度控制、位置控制、绕障控制、轨迹校正等算法
               </p>
             </el-col>
@@ -188,8 +188,7 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="8" style="width: 30%;margin-left: 1%;margin-right: 8%">
-              <p style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                机器人控制系统可以驱动大部分厂家的设备，测距设备、2D测距设备、3D传感器、音频/语音识别设备、摄像机、扭矩/触摸传感器、位姿传感器、电源、速度、无线射频传感器、和 IO 接口等设备
+              <p style="font-size: 18px;color: #0d64e8">机器人控制系统可以驱动大部分厂家的设备，测距设备、2D测距设备、3D传感器、音频/语音识别设备、摄像机、扭矩/触摸传感器、位姿传感器、电源、速度、无线射频传感器、和 IO 接口等设备
               </p>
             </el-col>
             <el-col :span="14" style="text-align: center">
@@ -240,7 +239,7 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="5" style="width: 30%;margin-left: 1%;margin-right: 8%">
-              <p style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;硬核研发团队，工程师团队成员均来自国内外顶尖高校和科研机构，掌握机器人领域的专业知识和核心技术。
+              <p style="font-size: 18px;color: #0d64e8">硬核研发团队，工程师团队成员均来自国内外顶尖高校和科研机构，掌握机器人领域的专业知识和核心技术。
                 致力于为用户带来体验卓越、灵敏智能又具有超高性价比的移动机器人产品。
               </p>
             </el-col>
@@ -258,6 +257,17 @@
               </el-row>
             </el-col>
           </el-row>
+        </el-col>
+      </el-row>
+
+      <!--    第五行 硬件设备支持  -->
+      <el-row :gutter="20" type="flex" style="height: 400px">
+        <el-col :span="8" style="margin-top:2%;margin-left: 6%;margin-right: 2%">
+          <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">硬件设备支持</p>
+          <p style="font-size: 20px;color: #0d64e8;margin-left: 2%">机器人控制系统可适配各大品牌配件</p>
+        </el-col>
+        <el-col :span="12" style="align-content: center;margin-top: 4%;margin-left: 3%">
+          <img class="img-box" src="static/img/hardwareDriver/u1498.png" style="width: 85%;height: 95%;">
         </el-col>
       </el-row>
 
