@@ -33,19 +33,16 @@
       </el-aside>
       <el-main>
         <div style="color: white;text-align: center">
-          <el-row>
+            <el-row style="margin-top: 2%;margin-left: 20%">
             <el-col
-                style="width: 50%;
+                style="width: 35%;
                 background-image: url(static/img/Education/u2063.jpg);
                   background-position: center;
                   background-size: cover;
-                  height: 300px;
-                  ">
-              <div>
-                <br>
-                <br>
-                <br>
-                <br>
+                  height: 400px;
+                  margin-right: 1%"
+                  >
+              <div style="margin-top: 150px">
                 <el-row>
                   培训
                 </el-row>
@@ -54,23 +51,20 @@
                 </el-row>
                 <el-row>
                   <el-button
-                      @click="trainForm()"
-                      style="background-color: white;color: black;border-color: #4e5559">
+                      @click="trainForm()" class="button-style">
                     申请合作
                   </el-button>
                 </el-row>
               </div>
             </el-col>
+
             <el-col
-                style="width: 50%;
+                style="width: 35%;
                 background-image: url(static/img/Education/u2074.jpg);
                 background-size: cover;
-                height: 300px;">
-              <div>
-                <br>
-                <br>
-                <br>
-                <br>
+                height: 400px;
+                margin-left: 1%">
+              <div style="margin-top: 150px">
                 <el-row>
                   校企合作
                 </el-row>
@@ -80,28 +74,22 @@
                 </el-row>
                 <el-row>
                   <el-button
-                      @click="schoolForm()"
-                      style="background-color: white;color: black;border-color: #4e5559">
+                      @click="schoolForm()" class="button-style">
                     申请合作
                   </el-button>
                 </el-row>
               </div>
             </el-col>
           </el-row>
-<!--          <el-row>-->
-<!--            <br>-->
-<!--          </el-row>-->
-          <el-row>
+
+          <el-row style="margin-top: 2%;margin-left: 20%">
             <el-col
-                style="width: 50%;
+                style="width: 35%;
                 background-image: url(static/img/Education/u2085.jpg);
                 background-size: cover;
-                height: 300px;">
-              <div>
-                <br>
-                <br>
-                <br>
-                <br>
+                height: 400px;
+                margin-right: 1%">
+              <div style="margin-top: 150px">
                 <el-row>
                   产品
                 </el-row>
@@ -111,22 +99,19 @@
                 <el-row>
                   <el-button
                       @click="productForm()"
-                      style="background-color: white;color: black;border-color: #4e5559">
+                      class="button-style">
                     申请合作
                   </el-button>
                 </el-row>
               </div>
             </el-col>
             <el-col
-                style="width: 50%;
+                style="width: 35%;
                 background-image: url(static/img/Education/u2095.jpg);
                 background-size: cover;
-                height: 300px">
-              <div>
-                <br>
-                <br>
-                <br>
-                <br>
+                height: 400px;
+                margin-left: 1%">
+              <div style="margin-top: 150px">
                 <el-row>
                   讲师合作
                 </el-row>
@@ -135,8 +120,7 @@
                 </el-row>
                 <el-row>
                   <el-button
-                      @click="lecturerForm()"
-                      style="background-color: white;color: black;border-color: #4e5559">
+                      @click="lecturerForm()" class="button-style">
                     申请合作
                   </el-button>
                 </el-row>
@@ -951,5 +935,12 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+}
+.button-style{
+    background-color: white;
+    color: black;
+    border-color: #4e5559;
+    width: 30%;
+    margin-top: 4%
 }
 </style>

@@ -682,6 +682,7 @@ p {
   position: absolute;
   width: 100%;
   bottom: 0;
+
 }
 
 .moveRobot:hover .moveRobotIn {
