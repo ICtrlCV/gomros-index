@@ -11,7 +11,8 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
                 <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">关于我们</span></p>
-              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">山东亚历山大智能科技有限公司</p>
+              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">
+                山东亚历山大智能科技有限公司</p>
             </el-col>
           </el-row>
         </el-col>
@@ -21,13 +22,14 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">公司介绍</p>
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+          公司介绍</p>
       </el-footer>
     </el-container>
     <el-container>
       <el-main style="color: #0D64E8;font-size: 18px">
         <div>
-          <el-row :gutter="24" >
+          <el-row :gutter="24">
             <el-col :span="1">
               <br>
             </el-col>
@@ -41,7 +43,7 @@
                 <el-row>
                   <br>
                 </el-row>
-                <el-row >
+                <el-row>
                   智能装备方面，公司产品涵盖烟草物流输送生产线、异形电子元件插件生产线、木工家具生产线、机床自动上下料设
                   备、钣金生产自动化输送线、胶管试压清洗设备、高压及超高压液压系统、中药生产智能管控体系、工程机械领域胶管/
                   硬管/油缸生产等。智能检测系统方面，公司研发了发动机活塞无损高速检测装备、玻璃纤维无人质检实验室、农机关键
@@ -69,7 +71,7 @@
             <el-col :span="8" align="center">
               <br><br>
               <img src="static/img/CorporateProfile/u233.png"
-              style="width: 700px;
+                   style="width: 700px;
                       height: 500px">
             </el-col>
             <el-col :span="1">
@@ -113,17 +115,17 @@
                       <div>
                         <el-row :gutter="24">
                           <el-col :span="7" style="color: #D9001B;font-weight: bold">
-                              <div>
-                                <el-row><br></el-row>
-                                <el-row>ISO9001认证企业</el-row>
-                                <el-row><br></el-row>
-                                <el-row>获高新技术企业称号</el-row>
-                                <el-row><br></el-row>
-                                <el-row>获泰山产业领军人才支持</el-row>
-                                <el-row><br></el-row>
-                                <el-row>获济南市“专精特新”企业称号</el-row>
+                            <div>
+                              <el-row><br></el-row>
+                              <el-row>ISO9001认证企业</el-row>
+                              <el-row><br></el-row>
+                              <el-row>获高新技术企业称号</el-row>
+                              <el-row><br></el-row>
+                              <el-row>获泰山产业领军人才支持</el-row>
+                              <el-row><br></el-row>
+                              <el-row>获济南市“专精特新”企业称号</el-row>
 
-                              </div>
+                            </div>
                           </el-col>
                           <el-col :span="5">
                             <br><br><br><br>
@@ -136,11 +138,11 @@
                           <el-col :span="3">
                             <br><br><br>
                             <img src="static/img/Contact/u3346.png">
-                            </el-col>
+                          </el-col>
                           <el-col :span="34">
                             <br><br><br>
                             <img src="static/img/Contact/u3347.png">
-                            </el-col>
+                          </el-col>
                         </el-row>
                       </div>
                     </el-tab-pane>
@@ -202,19 +204,18 @@
             <el-col :span="1">
               <br>
             </el-col>
-          <el-col :span="4" style="font-size: 40px;font-weight: bold">
-            发展历程
-          </el-col>
-          <el-col :span="12" align="center">
-            <br>
-            <br>
-            <br>
-            <img src="static/img/CorporateProfile/u3365.png"
-              style="width: 1300px;height: 900px" >
-          </el-col>
-          <el-col :span="6">
-            <br>
-          </el-col>
+            <el-col :span="4" style="font-size: 40px;font-weight: bold">
+              发展历程
+            </el-col>
+            <el-col :span="12" align="center">
+              <br>
+              <br>
+              <br>
+              <img src="static/img/CorporateProfile/u3367.png" style="width: 120%;height: 95%">
+            </el-col>
+            <el-col :span="6">
+              <br>
+            </el-col>
           </el-row>
           <div style="background-color: rgba(242, 246, 250, 1)">
             <el-row style="text-align: left;font-size: 40px;font-weight: bold" :gutter="24">
@@ -279,7 +280,7 @@ export default {
   name: "About",
   data() {
     return {
-      activeName:'first',
+      activeName: 'first',
       rules: {}
     };
   },
