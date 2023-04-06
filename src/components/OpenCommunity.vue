@@ -6,42 +6,26 @@
                   background-size: cover;
                   height: 100%;
                   width: 100%">
-      <el-main>
-        <el-container id="img-text">
-          <el-aside width="100px">
-            <br>
-            <br>
-            <img src="static/img/Development/u3.png">
-          </el-aside>
-          <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                GomROS
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <br>工业基础软件
-              </el-col>
-            </el-row>
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                开放平台
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <!--                <br>协同发展平台-->
-              </el-col>
-            </el-row>
-            <el-row>
-              <br>
-            </el-row>
-            <el-row style="color: white;font-size: 30px;text-shadow: none">
-              提供智能机器人应用开放平台，支持全场景应用开<br>
-              发，助力合作伙伴快速完成机器人应用开发
-            </el-row>
-          </el-main>
-        </el-container>
-      </el-main>
+      <el-row style="width: 100%;height:400px;">
+        <el-col :span="15" style="height: 100%">
+          <el-row type="flex" justify="start" style="padding: 10px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
+              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            </el-col>
+            <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span>
+              </p>
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">开放平台</span></p>
+              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 30%">
+                提供智能机器人应用开放平台，支持全场景应用开发，助力合作伙伴快速完成机器人应用开发</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9">
+          &nbsp;
+        </el-col>
+      </el-row>
     </el-container>
 
     <el-row>
@@ -59,9 +43,9 @@
               </el-col>
             </el-row>
           </div>
-          <div v-if="item===2" >
-              <br>
-              <br>
+          <div v-if="item===2">
+            <br>
+            <br>
             <el-row :gutter="24">
               <el-col :span="4">
                 <br>
@@ -70,12 +54,12 @@
                 <img src="static/img/OpenCommunity/u981.png" style="width: 1400px;height: 800px">
               </el-col>
               <el-col :span="12">
-                  <br>
+                <br>
               </el-col>
             </el-row>
 
           </div>
-          <div v-if="item===3" >
+          <div v-if="item===3">
             <br>
             <br>
             <el-row :gutter="24">
@@ -116,7 +100,8 @@
               <el-row>
                 &nbsp;&nbsp;&nbsp;
                 <el-button @click="article()"
-                           style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 120px">查看详情
+                           style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 120px">
+                  查看详情
                 </el-button>
               </el-row>
               <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
@@ -133,8 +118,8 @@
                     border-color: #0d64e8;
                     color: #0d64e8;
                     margin-left: 20px;
-                    width: 120px" >
-                查看详情
+                    width: 120px">
+                  查看详情
                 </el-button>
               </el-row>
               <el-row><br></el-row>
@@ -143,7 +128,8 @@
           <el-col :span="10">
             <div style="background-color: white">
               <el-row style="font-size: 32px;font-weight: bolder;margin-left: 5px">&nbsp;
-                软件下载</el-row>
+                软件下载
+              </el-row>
               <el-row> &nbsp;&nbsp;&nbsp; 基于软件包的方式进行安装，方便开发者快速安装、快速体验。</el-row>
               <el-row><br></el-row>
               <el-row> &nbsp;&nbsp;&nbsp; GomROS版本：1.1版</el-row>
@@ -220,7 +206,7 @@
                   <el-col :span="5">
                     <br>
                   </el-col>
-                  <el-col :span="12"">
+                  <el-col :span="12">
                     <div style="font-size: 16px">
                       <el-row><br></el-row>
                       <el-row>

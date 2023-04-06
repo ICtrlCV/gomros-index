@@ -1,8 +1,8 @@
 <template>
   <div id="scenario-service">
-    <el-container id="top-content" style="height:400px;">
-      <el-row style="width: 100%">
-        <el-col :span="13" style="background-color: #010f1b">
+    <el-container id="top-content">
+      <el-row style="width: 100%;height:400px;">
+        <el-col :span="13" style="background-color: #010f1b;height: 100%">
           <el-row type="flex" justify="start" style="padding: 10px">
             <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 100px">
               <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
@@ -22,11 +22,11 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-left: 5%">移动机器人场景服务系统</p>
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">移动机器人场景服务系统</p>
       </el-footer>
     </el-container>
 
-    <div style="margin-top: 10px;">
+    <div>
       <!--    第一行 机器人场景服务系统  -->
       <el-row :gutter="20" type="flex" style="background-color: white;height: 360px">
         <el-col :span="8" style="margin-left: 6%;margin-right: 8%">

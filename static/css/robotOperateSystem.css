@@ -1,29 +1,19 @@
-#robot-box {
-    /*background-color: #f2f6fa;*/
-}
-
-#top-container {
-    height: 400px;
-}
 
 #top-outline {
     width: 100%;
     padding: 0;
+    height: 400px;
 }
 
 #top-bc {
     background-color: #36353b;
-    height: 350px;
-}
-
-#top-content {
-    height:400px;
+    height: 100%;
 }
 
 #company-logo {
     padding-top: 50px;
     padding-left: 30px;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .cl-img {
@@ -33,23 +23,22 @@
 
 #tc-text {
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 20px;
     text-shadow: 2px 2px 5px white;
 }
 
 .font_basic {
-    font-size: 20px;
+    font-size: 18px;
     color: #0D64E8;
     font-weight: bolder;
 }
 
 #top_explain {
-    font-size: 30px;
+    font-size: 28px;
     color: white;
-    height: 100%;
-    margin-right: 5%;
     text-shadow: none;
     font-weight: bolder;
+    margin-right: 10%;
 }
 
 #top-bcr {
@@ -63,6 +52,7 @@
     font-weight: bolder;
     color: white;
     margin-top: 10px;
+    margin-bottom: 0;
     margin-left: 7%;
     height: 100px;
 }

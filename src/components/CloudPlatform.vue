@@ -1,27 +1,34 @@
 <template>
   <div id="cloud-platform">
-    <el-container id="top-content"
-                  style="height:400px;background-image: url(static/img/cloudPlatform/u265.jpg);background-size: contain">
-        <el-row type="flex" justify="start" style="padding: 10px">
-          <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
-            <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
-          </el-col>
-          <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 8px white">
-            <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
-            <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">云平台</span>
-              <span style="font-size: 20px;color: #0D64E8;font-weight: bolder">移动机器人基础服务平台</span></p>
-            <p style="font-size: 35px;color: white;width: 60%;text-shadow: none">云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台。</p>
-          </el-col>
-        </el-row>
+    <el-container id="top-content">
+      <el-row style="width: 100%;height: 400px;padding: 0">
+        <el-col :span="15" style="background-color: #0e0f21;height: 100%">
+          <el-row type="flex" justify="start" style="padding: 10px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
+              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            </el-col>
+            <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">云平台</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">移动机器人基础服务平台</span></p>
+              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 25%">云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台。</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9"
+                style="height:100%;background-image: url(static/img/cloudPlatform/u265.jpg);background-size: cover">
+          &nbsp;
+        </el-col>
+      </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 0px;margin-left: 3%">
-          云平台
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 8%">
+          移动机器人云平台
         </p>
       </el-footer>
     </el-container>
 
 
-    <div style="margin-top: 60px;">
+    <div>
       <!--第一行 移动机器人云平台-->
       <el-row :gutter="20" type="flex" style="margin: unset;background-color: white">
         <el-col :span="12" style="margin-left: 80px;margin-right: 5%;width: 45%">
@@ -48,7 +55,7 @@
               </el-row>
               <el-row>
                 <div style="height: 250px;color: #0d64e8;text-align: left">
-                    我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
+                  我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
                 </div>
               </el-row>
             </el-col>
@@ -59,7 +66,7 @@
                   <p style="font-weight: bolder;color: white;font-size: 18px">产品矩阵优势</p>
                 </el-row>
                 <el-row>
-                  <div style="height: 250px;text-align: left;color: #0d64e8" >
+                  <div style="height: 250px;text-align: left;color: #0d64e8">
                     我们有10余款生态机器人产品，覆盖多种使用场景，向各行各业的客户提供硬件设备和服务，可定制，售后有保障的软硬件一体解决方案。
                   </div>
                 </el-row>
@@ -71,7 +78,7 @@
                 <p style="font-weight: bolder;color: white;font-size: 18px">灵活开放的生态</p>
               </el-row>
               <el-row>
-                <div style="height: 250px;text-align: left;color: #0d64e8" >
+                <div style="height: 250px;text-align: left;color: #0d64e8">
                   二次开发灵活性强，第三方设备和应用可以快速接入，开放的开发者社区，学校人才聚集，聚集金融机构支持。
                 </div>
               </el-row>
@@ -245,7 +252,7 @@
               <el-row>
                 <img src="static/img/cloudPlatform/u397.png">
               </el-row>
-              <el-row style="text-align: center":gutter="24">
+              <el-row style="text-align: center" :gutter="24">
                 <el-col :span="2">&nbsp;</el-col>
                 <el-col :span="7">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">隧道探测</p>
@@ -259,7 +266,7 @@
               </el-row>
             </el-tab-pane>
             <el-tab-pane>
-              <span slot="label" style="font-size: 18px;font-weight: bolder" >服务系列</span>
+              <span slot="label" style="font-size: 18px;font-weight: bolder">服务系列</span>
               <el-row align="center" :gutter="24">
                 <el-col :span="2">
                   <br>
@@ -501,7 +508,7 @@
       <el-row style="background-color: white">
         <div>
           <el-row style="font-size: 30px;color: #0d64e8;font-weight: bolder;">行业合作伙伴</el-row>
-          <el-row style="text-align: center;margin-left: 5%" :gutter="24" type="flex" >
+          <el-row style="text-align: center;margin-left: 5%" :gutter="24" type="flex">
             <el-col :span="5.5" style="background-color: #f2f6fa">
               <p style="font-weight: bolder;font-size: 20px">泛汽车制造行业</p>
               <img src="static/img/cloudPlatform/u557.png" style="width: 90%;height: 80%;">
@@ -573,9 +580,6 @@ export default {
 </script>
 
 <style scoped>
-#cloud-platform {
-  background-color: #f2f6fa;
-}
 
 .img-box img:hover {
   /*animation: pulse 1s;*/
@@ -609,4 +613,9 @@ export default {
 .el-col p:hover {
   color: #14679f;
 }
+
+#cloud-platform {
+  background-color: #f2f6fa;
+}
+
 </style>

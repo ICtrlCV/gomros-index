@@ -1,49 +1,29 @@
 <template>
   <div id="development" style="background: white;">
-    <el-container id="top-img"
-                  style="background-image: url(../../static/abouttop.jpg);
-                  height: 500px;
-                  width: auto">
-      <el-main>
-        <el-container id="img-text">
-          <el-aside width="100px">
-            <br>
-            <br>
-            <img src="static/img/Development/u3.png">
-          </el-aside>
-          <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                GomROS
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <br>工业基础软件
-              </el-col>
-            </el-row>
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                生态合作
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <br>协同发展平台
-              </el-col>
-            </el-row>
-            <el-row>
-              <br>
-              <br>
-              <br>
-            </el-row>
-            <el-row style="color: white;font-size: 30px;text-shadow: none">
-              构建工业互联网时代绿色生态系统，携手合作伙<br>
-              伴加速数字化发展，塑造可持续发展的未来。
-            </el-row>
-          </el-main>
-        </el-container>
-      </el-main>
-      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px">
-        协同研发平台
+    <el-container id="top-img" style="background-image: url(../../static/abouttop.jpg);">
+      <el-row style="width: 100%;height:400px;">
+        <el-col :span="15" style="height: 100%">
+          <el-row type="flex" justify="start" style="padding: 10px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
+              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            </el-col>
+            <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span></p>
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">生态合作</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">协同发展平台</span></p>
+              <p style="font-size: 28px;color: white;text-shadow: none;font-weight: bolder;margin-right: 30%">
+                构建工业互联网时代绿色生态系统，携手合作伙伴加速数字化发展，塑造可持续发展的未来。</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9">
+          &nbsp;
+        </el-col>
+      </el-row>
+      <el-footer style="background-color: #0d64e8">
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+          协同研发平台</p>
       </el-footer>
     </el-container>
     <el-container id="pain-shot" style="height: 600px;font-weight: bolder">
@@ -56,16 +36,16 @@
         企业研发痛点
       </el-header>
       <el-main style="text-align: center;color:#0D64E8;">
-        <el-row :gutter="24" >
+        <el-row :gutter="24">
           <el-col :span="3">
             <br>
           </el-col>
-          <el-col :span="6" class="cost" style="border-style: solid;border-color: #eeeeee" >
+          <el-col :span="6" class="cost" style="border-style: solid;border-color: #eeeeee">
             <div>
               <br>
               <br>
             </div>
-            <div >
+            <div>
               <el-row>
                 <img src="static/img/Development/u1802.svg">
               </el-row>
@@ -81,12 +61,12 @@
               <br>
             </div>
           </el-col>
-          <el-col :span="6"  class="efficient" style="border-style: solid;border-color: #eeeeee">
+          <el-col :span="6" class="efficient" style="border-style: solid;border-color: #eeeeee">
             <div>
               <br>
               <br>
             </div>
-            <div >
+            <div>
               <el-row>
                 <img src="static/img/Development/u1813.svg">
               </el-row>
@@ -107,7 +87,7 @@
               <br>
               <br>
             </div>
-            <div >
+            <div>
               <el-row>
                 <img src="static/img/Development/u1823.svg">
               </el-row>
@@ -407,7 +387,7 @@
         </div>
         <h1 style="color: white;text-align: center">
           <el-button @click="submitForm()"
-              style="background: #0d64e8;color: white">
+                     style="background: #0d64e8;color: white">
             <b>
               申请合作
             </b>
@@ -430,7 +410,7 @@
           </el-col>
           <el-col :span="14" style="text-align: right;font-size: 20px">
             <el-button @click="routerToContact()"
-                style="background-color: #0d64e8;border-color: white;color: white">
+                       style="background-color: #0d64e8;border-color: white;color: white">
               联系我们
             </el-button>
           </el-col>
@@ -453,19 +433,19 @@
           </h1>
         </el-form-item>
         <el-form-item label="企业名称" prop="companyName">
-          <el-input v-model="form.companyName" placeholder="请输入企业名称" />
+          <el-input v-model="form.companyName" placeholder="请输入企业名称"/>
         </el-form-item>
         <el-form-item label="姓名" prop="userName">
-          <el-input v-model="form.userName" placeholder="请输入姓名" />
+          <el-input v-model="form.userName" placeholder="请输入姓名"/>
         </el-form-item>
         <el-form-item label="手机号" prop="telephone">
-          <el-input v-model="form.telephone" placeholder="请输入手机号" />
+          <el-input v-model="form.telephone" placeholder="请输入手机号"/>
         </el-form-item>
         <el-form-item label="邮箱" prop="mail">
-          <el-input v-model="form.mail" placeholder="请输入邮箱" />
+          <el-input v-model="form.mail" placeholder="请输入邮箱"/>
         </el-form-item>
         <el-form-item label="合作项目说明" prop="description">
-          <el-input v-model="form.description" type="textarea" :rows="4" placeholder="请输入内容" />
+          <el-input v-model="form.description" type="textarea" :rows="4" placeholder="请输入内容"/>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -490,9 +470,9 @@ export default {
       pagetitle: '',
       email: '',
       phone: '',
-      response:'',
+      response: '',
       address: '',
-      status:0,
+      status: 0,
       formInline: {
         name: "",
         phone: "",
@@ -504,71 +484,69 @@ export default {
       title: "",
       // 是否显示弹出层
       open: false,
-      fromObject:{
-        companyName:null,
-        userName:null,
-        telephone:null,
-        mail:null,
-        description:null,
+      fromObject: {
+        companyName: null,
+        userName: null,
+        telephone: null,
+        mail: null,
+        description: null,
       },
       //表单数据
-      form:{},
+      form: {},
       rules: {
-        companyName:[
-          { required: true, message: "企业名称不能为空", trigger: "blur" },
+        companyName: [
+          {required: true, message: "企业名称不能为空", trigger: "blur"},
           {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
         ],
-        userName:[
-          { required: true, message: "姓名不能为空", trigger: "blur" },
+        userName: [
+          {required: true, message: "姓名不能为空", trigger: "blur"},
           {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
         ],
-        telephone:[
-          { required: true, message: "手机号不能为空", trigger: "blur" },
+        telephone: [
+          {required: true, message: "手机号不能为空", trigger: "blur"},
           {max: 11, message: "长度最大为 11 位", trigger: "blur"}
         ],
       }
     };
   },
   methods: {
-    cancel(){
+    cancel() {
       this.open = false;
       this.reset();
     },
-    reset(){
-     this.form={
-       companyName:null,
-       userName:null,
-       telephone:null,
-       mail:null,
-       description:null,
-     };
+    reset() {
+      this.form = {
+        companyName: null,
+        userName: null,
+        telephone: null,
+        mail: null,
+        description: null,
+      };
     },
-    routerToContact(){
+    routerToContact() {
       this.$router.push('/about')
     },
-    submitForm(){
-      this.open=true;
+    submitForm() {
+      this.open = true;
       this.$refs['form'].validate(valid => {
-        if (valid){
-          axios.post('http://localhost:8080/system/development',this.form).
-          then(response=> {
-            console.log("response:",response)
-            // this.info = response;
-            if (response !=null && response.status===200){
-              this.$alert("提交成功");
-              this.status=response.status;
-              this.open=false;
-              this.reset();
-            }
-          }
+        if (valid) {
+          axios.post('http://localhost:8080/system/development', this.form).then(response => {
+                console.log("response:", response)
+                // this.info = response;
+                if (response != null && response.status === 200) {
+                  this.$alert("提交成功");
+                  this.status = response.status;
+                  this.open = false;
+                  this.reset();
+                }
+              }
           ).catch(error => {
-            console.log(error),
-                this.$message({
-                  type:'error',
-                  message:error+''
-                })
-          }
-
+                console.log(error),
+                    this.$message({
+                      type: 'error',
+                      message: error + ''
+                    })
+              }
           )
         }
       })
@@ -605,13 +583,16 @@ p {
   margin: 0 auto;
   padding: 20px;
 }
-.cost:hover{
+
+.cost:hover {
   background-color: rgba(242, 246, 250, 1);
 }
-.efficient:hover{
+
+.efficient:hover {
   background-color: rgba(242, 246, 250, 1);
 }
-.manage:hover{
+
+.manage:hover {
   background-color: rgba(242, 246, 250, 1);
 }
 </style>
