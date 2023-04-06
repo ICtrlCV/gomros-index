@@ -131,11 +131,8 @@
     </el-container>
     <el-container id="our-advantage" style="background: #f2f6fa">
       <el-header style="text-align: center">
-        <el-row style="text-align: center;line-height: normal;color: #0D64E8">
-          <br>
+        <el-row style="text-align: center;line-height: normal;color: #0D64E8;margin-top: 2%;margin-bottom: 2%">
           <h1 style="font-weight: bolder">我们的优势</h1>
-          <br>
-          <br>
         </el-row>
       </el-header>
       <el-main>
@@ -153,12 +150,12 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <img src="static/img/Development/u1955.jpg"
-                         style="width: 400px;height: 250px">
+                    <img src="../../static/img/Development/u1955.jpg"
+                         style="width: 400px;height: 250px;margin-right: 1%">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA">
+                    <div style="color: #2372EA;margin-left: 1%">
                       <el-row style="font-size: 18px;font-weight: bolder">
                         用心
                       </el-row>
@@ -192,12 +189,12 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <img src="static/img/Development/u1965.jpg"
-                         style="width: 400px;height: 250px">
+                    <img src="../../static/img/Development/u1965.jpg"
+                         style="width: 400px;height: 250px;margin-right: 1%">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA">
+                    <div style="color: #2372EA;margin-left: 1%">
                       <el-row style="font-size: 18px;font-weight: bolder">
                         团队稳定
                       </el-row>
@@ -233,12 +230,12 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <img src="static/img/Development/u1975.jpeg"
-                         style="width: 400px;height: 250px">
+                    <img src="../../static/img/Development/u1975.jpeg"
+                         style="width: 400px;height: 250px;margin-right: 1%">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA">
+                    <div style="color: #2372EA;margin-left: 1%">
                       <el-row style="font-size: 18px;font-weight: bolder">
                         高品质
                       </el-row>
@@ -270,12 +267,12 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <img src="static/img/Development/u1985.png"
-                         style="width: 400px;height: 250px">
+                    <img src="../../static/img/Development/u1985.png"
+                         style="width: 400px;height: 250px;margin-right: 1%">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA">
+                    <div style="color: #2372EA;margin-left: 1%">
                       <el-row style="font-size: 18px;font-weight: bolder">
                         感知
                       </el-row>
@@ -309,12 +306,12 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <img src="static/img/Development/u1995.jpg"
-                         style="width: 400px;height: 250px">
+                    <img src="../../static/img/Development/u1995.jpg"
+                         style="width: 400px;height: 250px;margin-right: 1%">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA">
+                    <div style="color: #2372EA;margin-left: 1%">
                       <el-row style="font-size: 18px;font-weight: bolder">
                         调度
                       </el-row>
@@ -348,12 +345,12 @@
                 <br>
                 <el-row :gutter="24">
                   <el-col :span="8">
-                    <img src="static/img/Development/u2005.jpg"
-                         style="width: 400px;height: 250px">
+                    <img src="../../static/img/Development/u2005.jpg"
+                         style="width: 400px;height: 250px;margin-right: 1%">
                   </el-col>
                   <el-col :span="2"></el-col>
                   <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA">
+                    <div style="color: #2372EA;margin-left: 1%">
                       <el-row style="font-size: 18px;font-weight: bolder">
                         领先的技术
                       </el-row>
