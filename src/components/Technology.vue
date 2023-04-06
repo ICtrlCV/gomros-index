@@ -11,7 +11,7 @@
           <el-aside width="100px">
             <br>
             <br>
-            <img src="static/img/Development/u3.png">
+            <img src="../../static/img/Development/u3.png">
           </el-aside>
           <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
             <el-row :gutter="10" type="flex">
@@ -95,60 +95,60 @@
       <!--      <el-carousel :interval="5000" arrow="always" style="height: 800px;filter: brightness(0.6)" >-->
       <el-carousel-item v-for="item in 3" :key="item" style="height: 800px">
         <div v-if="item===1" style="text-align: center;font-weight: bold">
-          <el-row :gutter="24">
+          <el-row :gutter="24" class="container">
             <el-col :span="8">
-              <div style="background-image: url(static/img/Technology/u17.png);
+              <div style="background-image: url(../../static/img/Technology/u17.png);
                   background-position: center;
                   background-size: cover;
+                  background-color: rgba(0,0,0,0.533);
                   width: 640px;
                   height: 400px;
-                  text-align: left;
-                  "
-              >
+                  text-align: left;">
                 <el-row><br></el-row>
-                <el-row style="color: red;font-size: 32px">GomRos车载系统</el-row>
-                <el-row style="color: red;font-size: 18px">GomRos 车载系统可适配各大品牌电子元器件</el-row>
+                <el-row style="color: white;font-size: 32px">GomRos车载系统</el-row>
+                <el-row style="color: white;font-size: 18px">GomRos 车载系统可适配各大品牌电子元器件</el-row>
               </div>
               <!--                            <img src="../../static/img/Technology/u17.png"-->
               <!--                                 style="width: 640px;height: 400px">-->
             </el-col>
             <el-col :span="8">
               <img src="../../static/img/Technology/u20.gif"
-                   style="width: 640px;height: 400px">
+                   style="width: 640px;height: 400px;background-color: rgba(0,0,0,0.533);">
             </el-col>
             <el-col :span="8">
-              <div>
-                <el-row :gutter="24">
+              <div >
+                <el-row :gutter="24" class="container">
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u22.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533);">
                   </el-col>
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u23.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533);">
                   </el-col>
                 </el-row>
-                <el-row :gutter="24">
+                <el-row :gutter="24" class="container">
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u21.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533);">
                   </el-col>
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u24.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533);">
                   </el-col>
                 </el-row>
               </div>
             </el-col>
           </el-row>
-          <el-row :gutter="24">
-            <el-col :span="8">
+          <el-row :gutter="24" class="container">
+            <el-col :span="8" >
               <div style="background-image: url(static/img/Technology/u18.jpg);
                   background-position: center;
                   background-size: cover;
                   width: 640px;
                   height: 400px;
-                  text-align: left;"
+                  text-align: left;
+                  background-color: rgba(0,0,0,0.533)"
               >
                 <el-row><br></el-row>
                 <el-row style="color: white;font-size: 32px">GomRosss数据处理系统</el-row>
@@ -159,28 +159,28 @@
             </el-col>
             <el-col :span="8">
               <img src="../../static/img/Technology/u25.gif"
-                   style="width: 640px;height: 400px">
+                   style="width: 640px;height: 400px;background-color: rgba(0,0,0,0.533)">
             </el-col>
             <el-col :span="8">
-              <div>
-                <el-row :gutter="24">
+              <div >
+                <el-row :gutter="24" class="container">
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u26.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533)">
                   </el-col>
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u31.jpeg"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533)">
                   </el-col>
                 </el-row>
-                <el-row :gutter="24">
+                <el-row :gutter="24" class="container">
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u30.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533)">
                   </el-col>
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u32.png"
-                         style="width: 320px;height: 200px">
+                         style="width: 320px;height: 200px;background-color: rgba(0,0,0,0.533)">
                   </el-col>
                 </el-row>
               </div>
@@ -205,20 +205,20 @@
                       <br>
                     </el-col>
                     <el-col :span="8">
-                      <img src="static/img/Technology/u70.svg"
-                           style="width: 160px;height: 120px">
+                      <img src="../../static/img/Technology/u70.svg"
+                           style=";width: 160px;height: 120px">
                     </el-col>
                   </el-row>
                   <el-row :gutter="24">
                     <el-col :span="8">
-                      <img src="static/img/Technology/u73.png"
-                           style="width: 200px;height: 180px">
+                      <img src="../../static/img/Technology/u73.png"
+                           style="width: 200px;height: 180px;">
                     </el-col>
                     <el-col :span="8">
-                      <img src="static/img/Technology/u72.jpg"
-                           style="width: 200px;height: 180px">
+                      <img src="../../static/img/Technology/u72.jpg"
+                           style="width: 200px;height: 180px;">
                     </el-col>
-                    <el-col :span="8" style="text-align: center">
+                    <el-col :span="8" style="text-align: center;">
                       远程控制
                     </el-col>
                   </el-row>
@@ -249,18 +249,18 @@
                       <br>
                     </el-col>
                     <el-col :span="8">
-                      <img src="static/img/Technology/u84.svg"
-                           style="width: 160px;height: 120px">
+                      <img src="../../static/img/Technology/u84.svg"
+                           style="width: 160px;height: 120px;">
                     </el-col>
                   </el-row>
                   <el-row :gutter="24">
                     <el-col :span="8">
-                      <img src="static/img/Technology/u31.jpeg"
-                           style="width: 200px;height: 180px">
+                      <img src="../../static/img/Technology/u31.jpeg"
+                           style="width: 200px;height: 180px;">
                     </el-col>
                     <el-col :span="8">
-                      <img src="static/img/Technology/u90.jpg"
-                           style="width: 200px;height: 180px">
+                      <img src="../../static/img/Technology/u90.jpg"
+                           style="width: 200px;height: 180px;">
                     </el-col>
                     <el-col :span="8" style="text-align: center">
                       地图构建
@@ -293,17 +293,17 @@
                       <br>
                     </el-col>
                     <el-col :span="8">
-                      <img src="static/img/Technology/u98.svg"
+                      <img src="../../static/img/Technology/u98.svg"
                            style="width: 160px;height: 120px">
                     </el-col>
                   </el-row>
                   <el-row :gutter="24">
                     <el-col :span="8">
-                      <img src="static/img/Technology/u103.png"
+                      <img src="../../static/img/Technology/u103.png"
                            style="width: 200px;height: 180px">
                     </el-col>
                     <el-col :span="8">
-                      <img src="static/img/Technology/u104.jpg"
+                      <img src="../../static/img/Technology/u104.jpg"
                            style="width: 200px;height: 180px">
                     </el-col>
                     <el-col :span="8" style="text-align: center">
@@ -460,7 +460,7 @@
 
         </div>
         <div v-if="item===3" style="font-weight: bolder">
-          <el-row :gutter="24">
+          <el-row :gutter="24" >
             <el-col :span="8">
               <div style="background-image: url(static/img/Technology/u43.jpg);
                   background-position: center;
@@ -476,13 +476,17 @@
               <!--              <img src="../../static/img/Technology/u43.jpg"-->
               <!--                   style="width: 640px;height: 400px">-->
             </el-col>
-            <el-col :span="8">
-              <img src="../../static/img/Technology/u50.jpg"
-                   style="width: 640px;height: 400px">
+            <el-col :span="8" >
+                <el-row style="width: 640px" class="container">
+                    <img src="../../static/img/Technology/u50.jpg"
+                         style="width: 640px;height: 400px" >
+                </el-row>
             </el-col>
             <el-col :span="8">
-              <img src="../../static/img/Technology/u55.png"
-                   style="width: 640px;height: 400px">
+                <el-row style="width: 640px" class="container">
+                    <img src="../../static/img/Technology/u55.png"
+                         style="width: 640px;height: 400px">
+                </el-row>
             </el-col>
           </el-row>
           <el-row :gutter="24">
@@ -502,12 +506,17 @@
               <!--                   style="width: 640px;height: 400px">-->
             </el-col>
             <el-col :span="8">
+                <el-row style="width: 640px" class="container">
+
               <img src="../../static/img/Technology/u51.png"
                    style="width: 640px;height: 400px">
+                </el-row>
             </el-col>
             <el-col :span="8">
+                <el-row style="width: 640px" class="container">
               <img src="../../static/img/Technology/u57.png"
                    style="width: 640px;height: 400px">
+                </el-row>
             </el-col>
           </el-row>
         </div>
@@ -525,13 +534,10 @@
             <div style="font-size: 32px">机器人产品应用</div>
           </el-col>
           <el-col :span="10">
-            <img src="../../static/img/Technology/u117.svg">
+            <img src="../../static/img/Technology/u117.svg" style="width: 100%">
           </el-col>
-          <el-col :span="7">
-            <img src="../../static/img/Technology/u120.png" >
-          </el-col>
-          <el-col :span="2">
-            <br>
+          <el-col :span="9">
+            <img src="../../static/img/Technology/u120.png"  style="width: 100%">
           </el-col>
         </el-row>
         <el-row style="background-color: rgba(242, 246, 250, 1)"><br><br></el-row>
@@ -684,5 +690,18 @@ img {
   display: block;
   margin: auto;
 }
-
+.el-main{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+}
+.container::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 </style>

@@ -104,11 +104,11 @@
                 <div>
                   <el-row :gutter="24">
                     <div >
-                      <div class="brief" style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
+                      <div class="brief" style="border-style: ridge;border-color: #f2f6fa;border-width: thin;">
                         <br>
-                        <el-row :gutter="24" style="font-size: 32px">
+                        <el-row :gutter="24" style="font-size: 32px;margin-left: 2px">
                           <el-col :span="2">
-                            <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                            <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
                           </el-col>
                           <el-col :span="20" >
                             理念
@@ -117,7 +117,7 @@
                             <br>
                           </el-col>
                         </el-row>
-                        <el-row :gutter="24">
+                        <el-row :gutter="24" style="margin-left: 1%">
                           <el-col :span="2">
                             <br>
                           </el-col>
@@ -139,12 +139,12 @@
                       </div>
                       <div class="apply"
                           style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
-                        <el-row :gutter="24" style="font-size: 32px">
+                        <el-row :gutter="24" style="font-size: 32px;margin-left: 2px">
                           <br>
                           <el-col :span="2">
-                            <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                            <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
                           </el-col>
-                          <el-col :span="20">
+                          <el-col :span="20" >
                             申请合作
                           </el-col>
                           <el-col :span="2">
@@ -158,7 +158,8 @@
                           <el-col :span="20">
                             <br>
                             <el-button class="applyButton"
-                                style="background-color: rgba(242, 246, 250, 1);color: #0d64e8" @click="submitForm" >申请合作</el-button>
+                                style="background-color: rgba(242, 246, 250, 1);color: #0d64e8;margin-left:5%"
+                                       @click="submitForm" >申请合作</el-button>
                           </el-col>
                           <el-col :span="2">
                           </el-col>
@@ -184,50 +185,25 @@
       <el-main>
         <el-row :gutter="24" style="font-size: 32px">
           <el-col :span="1">
-            <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+            <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
           </el-col>
           <el-col :span="20">
-            合作申请
+            合作流程
           </el-col>
           <el-col :span="2"></el-col>
         </el-row>
-        <el-row>
-          <br>
-          <br>
-        </el-row>
-        <el-row :gutter="24">
-          <el-col :span="1">
-            <br>
-          </el-col>
-          <el-col :span="22" align="center">
-            <img src="static/img/Supplier/u330.png" style="height: 200px">
-
-<!--            <el-steps :active="5" style="font-size: 120px;">-->
-<!--              <el-step description="信息填报" style="width:100px;height:100px"></el-step>-->
-<!--              <el-step description="资质审核"></el-step>-->
-<!--              <el-step description="意向洽谈"></el-step>-->
-<!--              <el-step description="现场考察"></el-step>-->
-<!--              <el-step description="商务合作"></el-step>-->
-<!--            </el-steps>-->
-          </el-col>
-          <el-col :span="1"></el-col>
+        <el-row style="margin-top: 30px;margin-bottom: 30px">
+            <div class="">
+                <el-steps :active="5" align-center>
+                    <el-step title="" description="信息填报"></el-step>
+                    <el-step title="" description="资质审核"></el-step>
+                    <el-step title="" description="意向洽谈"></el-step>
+                    <el-step title="" description="现场考察"></el-step>
+                    <el-step title="" description="商务合作"></el-step>
+                </el-steps>
+            </div>
         </el-row>
       </el-main>
-      <!--      <el-container>-->
-      <!--        <el-header style="text-align: left">-->
-      <!--          <br>-->
-      <!--          合作流程-->
-      <!--        </el-header>-->
-      <!--        <el-main>-->
-      <!--          <el-steps :active="5" align-center style="font-size: 50px" >-->
-      <!--            <el-step description="信息填报"></el-step>-->
-      <!--            <el-step description="资质审核"></el-step>-->
-      <!--            <el-step description="意向洽谈"></el-step>-->
-      <!--            <el-step description="现场考察"></el-step>-->
-      <!--            <el-step description="商务合作"></el-step>-->
-      <!--          </el-steps>-->
-      <!--        </el-main>-->
-      <!--      </el-container>-->
       <el-aside width="100px"></el-aside>
     </el-container>
     <br>
@@ -237,7 +213,7 @@
         <el-header>
           <el-row :gutter="24">
             <el-col :span="1">
-              <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+              <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
             </el-col>
             <el-col :span="23" style="font-size: 32px">
               合作需求
@@ -247,7 +223,7 @@
         <el-main>
           <el-row :gutter="24">
             <el-col :span="2">
-              <img src="static/img/Supplier/u2659.svg" >
+              <img src="../../static/img/Supplier/u2659.svg" class="el-image__inner" >
             </el-col>
             <el-col :span="5">
               <div>
@@ -262,7 +238,7 @@
               <br>
             </el-col>
             <el-col :span="2">
-              <img src="static/img/Supplier/u2666.svg" >
+              <img src="../../static/img/Supplier/u2666.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
               <div>
@@ -278,7 +254,7 @@
               <br>
             </el-col>
             <el-col :span="2">
-              <img src="static/img/Supplier/u2673.svg" >
+              <img src="../../static/img/Supplier/u2673.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
               <div>
@@ -298,7 +274,7 @@
           <el-row :gutter="24"></el-row>
           <el-row :gutter="24">
             <el-col :span="2">
-              <img src="static/img/Supplier/u2681.svg" >
+              <img src="../../static/img/Supplier/u2681.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
               <div>
@@ -314,7 +290,7 @@
               <br>
             </el-col>
             <el-col :span="2">
-              <img src="static/img/Supplier/u2688.svg" >
+              <img src="../../static/img/Supplier/u2688.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
               <div>
@@ -329,7 +305,7 @@
               <br>
             </el-col>
             <el-col :span="2">
-              <img src="static/img/Supplier/u2695.svg" >
+              <img src="../../static/img/Supplier/u2695.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
               <div>
@@ -437,9 +413,15 @@
 
 <script>
 import axios from "../router/http";
+import icon from "element-ui/packages/icon";
 
 export default {
   name: "About",
+    computed: {
+        icon() {
+            return icon
+        }
+    },
   data() {
     return {
       title: "",
@@ -559,5 +541,17 @@ p {
   background-color: #2372EA;
   color: white;
 }
-
+.el-main {
+    overflow-x: hidden;
+}
+::v-deep .el-step__icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 60px;
+}
+.el-image__inner {
+    border-radius: 50%;
+    border: 1px solid #375EA0;
+    padding: 20px;
+}
 </style>
