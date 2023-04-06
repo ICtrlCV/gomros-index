@@ -11,7 +11,8 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">云平台</span>
                 <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">移动机器人基础服务平台</span></p>
-              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 25%">云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台。</p>
+              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 25%">
+                云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台。</p>
             </el-col>
           </el-row>
         </el-col>
@@ -169,54 +170,93 @@
       </el-row>
 
       <!--      第四行   平台产品系列  -->
-      <el-row>
+      <el-row style="padding-bottom: 0">
         <el-row style="font-size: 30px;color: #0d64e8;font-weight: bolder;">平台产品系列</el-row>
         <el-row style="text-align: center;margin-left: 5%">
           <el-tabs style="text-align: center; width: 92%;" :stretch="true">
             <el-tab-pane>
-              <span slot="label" style="font-size: 18px;font-weight: bolder">产品设计</span>
-              <el-row>
-                <img src="static/img/MobileRobot/u124.png">
-              </el-row>
-              <el-row :gutter="24" type="flex" align="center">
-                <el-col :span="1">&nbsp;</el-col>
-                <el-col :span="3" style="font-weight: bolder;font-size: 15px;color: #0d64e8">50kg</el-col>
-                <el-col :span="4" style="font-weight: bolder;font-size: 15px;color: #0d64e8">100kg</el-col>
-                <el-col :span="3" style="font-weight: bolder;font-size: 15px;color: #0d64e8">300kg</el-col>
-                <el-col :span="4" style="font-weight: bolder;font-size: 15px;color: #0d64e8">800kg</el-col>
-                <el-col :span="4" style="font-weight: bolder;font-size: 15px;color: #0d64e8">1000kg</el-col>
-                <el-col :span="5" style="font-weight: bolder;font-size: 15px;color: #0d64e8">3000kg</el-col>
-
+              <span slot="label" style="font-size: 18px;font-weight: bolder">背负系列</span>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="2">
+                  <br>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/bf1.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">50kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/bf2.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">100kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/bf3.jpg" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">300kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/bf4.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">800kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/bf5.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">1000kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/bf6.jpg" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">3000kg</p>
+                </el-col>
+                <el-col :span="2">
+                  <br>
+                </el-col>
               </el-row>
             </el-tab-pane>
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">顶升系列</span>
               <el-row>
-                <img src="static/img/MobileRobot/u125.png">
-              </el-row>
-              <el-row :gutter="24" type="flex" align="center">
-                <el-col :span="1">&nbsp;</el-col>
-                <el-col :span="3" style="font-weight: bolder;font-size: 15px;color: #0d64e8">300kg</el-col>
-                <el-col :span="4" style="font-weight: bolder;font-size: 15px;color: #0d64e8">600kg</el-col>
-                <el-col :span="3" style="font-weight: bolder;font-size: 15px;color: #0d64e8">600kg</el-col>
-                <el-col :span="4" style="font-weight: bolder;font-size: 15px;color: #0d64e8">1000kg</el-col>
-                <el-col :span="4" style="font-weight: bolder;font-size: 15px;color: #0d64e8">1500kg</el-col>
-                <el-col :span="5" style="font-weight: bolder;font-size: 15px;color: #0d64e8">5000kg</el-col>
+                <el-col :span="0.5">
+                  <br>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/ds1.jpg" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">300kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/ds2.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">600kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/ds3.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">600kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/ds4.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">1000kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/ds5.jpg" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">1500kg</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/ds6.png" style="width: 150px;height: 100px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">5000kg</p>
+                </el-col>
+                <el-col :span="0.5">
+                  <br>
+                </el-col>
               </el-row>
             </el-tab-pane>
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">牵引系列</span>
               <el-row>
                 <el-col :span="8">
-                  <img src="static/img/cloudPlatform/u370.png" style="width: 50%;height: 150px;">
+                  <img src="static/img/cloudPlatform/u370.png" style="width: 50%;height: 120px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">200kg</p>
                 </el-col>
                 <el-col :span="8">
-                  <img src="static/img/cloudPlatform/u368.png" style="width: 50%;height: 150px;">
+                  <img src="static/img/cloudPlatform/u368.png" style="width: 50%;height: 120px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">300kg</p>
                 </el-col>
                 <el-col :span="8">
-                  <img src="static/img/cloudPlatform/u369.png" style="width: 50%;height: 150px;">
+                  <img src="static/img/cloudPlatform/u369.png" style="width: 50%;height: 120px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">500kg</p>
                 </el-col>
               </el-row>
@@ -224,44 +264,50 @@
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">叉车系列</span>
               <el-row>
-                <el-col :span="4">&nbsp;</el-col>
-                <el-col :span="8">
-                  <img src="static/img/MobileRobot/u127.png">
-                  <el-row>
-                    <el-col :span="10">
-                      <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">叉车</p>
-                    </el-col>
-                    <el-col :span="3">&nbsp;</el-col>
-                    <el-col :span="10">
-                      <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">中药送料叉车</p>
-                    </el-col>
-                  </el-row>
+                <el-col :span="4">
+                  <br>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u385.png" style="height: 115px">
+                  <img src="static/img/cloudPlatform/cc1.png" style="width: 150px;height: 180px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">叉车</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/cc2.png" style="width: 150px;height: 180px;">
+                  <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">中药送料叉车</p>
+                </el-col>
+                <el-col :span="4">
+                  <img src="static/img/cloudPlatform/cc3.png" style="width: 150px;height: 180px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">前移式叉车</p>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u387.png" style="height: 115px;">
+                  <img src="static/img/cloudPlatform/cc4.png" style="width: 150px;height: 180px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">托盘推高式叉车</p>
+                </el-col>
+                <el-col :span="4">
+                  <br>
                 </el-col>
               </el-row>
             </el-tab-pane>
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">特殊行业</span>
-              <el-row>
-                <img src="static/img/cloudPlatform/u397.png">
-              </el-row>
-              <el-row style="text-align: center" :gutter="24">
-                <el-col :span="2">&nbsp;</el-col>
-                <el-col :span="7">
+              <el-row :gutter="30" type="flex">
+                <el-col :span="4">
+                  <br>
+                </el-col>
+                <el-col :span="5">
+                  <img src="static/img/cloudPlatform/ts1.jpg" style="width: 100%;height: 180px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">隧道探测</p>
                 </el-col>
                 <el-col :span="5">
+                  <img src="static/img/cloudPlatform/ts2.jpg" style="width: 100%;height: 180px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">激光清洗</p>
                 </el-col>
-                <el-col :span="8">
+                <el-col :span="5">
+                  <img src="static/img/cloudPlatform/ts3.jpg" style="width: 100%;height: 180px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">建筑机器人</p>
+                </el-col>
+                <el-col :span="4">
+                  <br>
                 </el-col>
               </el-row>
             </el-tab-pane>
@@ -508,40 +554,21 @@
       <el-row style="background-color: white">
         <div>
           <el-row style="font-size: 30px;color: #0d64e8;font-weight: bolder;">行业合作伙伴</el-row>
-          <el-row style="text-align: center;margin-left: 5%" :gutter="24" type="flex">
-            <el-col :span="5.5" style="background-color: #f2f6fa">
-              <p style="font-weight: bolder;font-size: 20px">泛汽车制造行业</p>
-              <img src="static/img/cloudPlatform/u557.png" style="width: 90%;height: 80%;">
+          <el-row style="text-align: center;margin-left: 5%;height: 400px" :gutter="24" type="flex">
+            <el-col :span="5.5">
+              <img src="static/img/cloudPlatform/co1.png" style="width: 95%;height: 100%;">
             </el-col>
             <el-col :span="0.5">&nbsp;</el-col>
-            <el-col :span="5.5" style="background-color: #f2f6fa">
-              <p style="font-weight: bolder;font-size: 20px">泛流程生产行业</p>
-              <img src="static/img/cloudPlatform/u561.png" style="width: 90%;height: 80%;">
+            <el-col :span="5.5">
+              <img src="static/img/cloudPlatform/co2.png" style="width: 95%;height: 100%;">
             </el-col>
             <el-col :span="0.5">&nbsp;</el-col>
-            <el-col :span="5.5" style="background-color: #f2f6fa">
-              <p style="font-weight: bolder;font-size: 20px">泛电力配套行业</p>
-              <img src="static/img/cloudPlatform/u563.png" style="width: 90%;height: 80%;">
+            <el-col :span="5.5">
+              <img src="static/img/cloudPlatform/co3.png" style="width: 95%;height: 100%;">
             </el-col>
             <el-col :span="0.5">&nbsp;</el-col>
-            <el-col :span="5.5" style="background-color: #f2f6fa">
-              <p style="font-weight: bolder;font-size: 20px">专业机器人生产及集成合作伙伴</p>
-              <el-col>
-                <el-row>
-                  <img src="static/img/cloudPlatform/u565.png" style="width: 90%;height: 80%;">
-                </el-row>
-                <el-row>
-                  <el-col :span="12">
-                    <img src="static/img/cloudPlatform/u566.png">
-                  </el-col>
-                  <el-col :span="10">
-                    <img src="static/img/cloudPlatform/u567.png">
-                  </el-col>
-                </el-row>
-                <el-row>
-                  <img src="static/img/cloudPlatform/u568.png" style="width: 200px;height: 50px;">
-                </el-row>
-              </el-col>
+            <el-col :span="5.5">
+              <img src="static/img/cloudPlatform/co4.png" style="width: 95%;height: 100%;">
             </el-col>
             <el-col :span="0.5">&nbsp;</el-col>
           </el-row>

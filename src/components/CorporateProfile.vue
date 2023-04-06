@@ -191,7 +191,7 @@
               <br><br>
               <img src="static/img/CorporateProfile/u3338.png"
                    style="width: 700px;
-                      height: 500px">>
+                      height: 500px">
             </el-col>
             <el-col :span="1">
               <br>
