@@ -2,22 +2,22 @@
   <div id="robot-box">
     <el-container id="top-container">
       <el-row id="top-outline">
-        <el-col :span="14" id="top-bc">
-          <el-row id="top-content" type="flex" justify="start">
+        <el-col id="top-bc" :span="13">
+          <el-row type="flex" justify="start" style="padding: 10px">
             <el-col id="company-logo" :span="3">
               <img src="static/img/MobileRobot/u3.png" class="cl-img">
             </el-col>
-            <el-col id="tc-text" :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
-              <p><span style="font-size: 60px" class="font_basic">GomROS</span>-->
+            <el-col id="tc-text" :span="20">
+              <p><span style="font-size: 60px"  class="font_basic">GomROS</span>
                 <span class="font_basic">工业基础软件</span></p>
-              <p><span style="font-size: 60px" class="font_basic">机器人操作系统</span>
-                <span class="font_basic">机器人系统软件</span></p>
+              <p><span style="font-size: 60px"  class="font_basic">机器人操作系统</span>
+                <span  class="font_basic">机器人系统软件</span></p>
               <p id="top_explain">
                 GomROS（句芒）是一款为机器人、自动化设备等高端智能装备提供的国产原创操作系统</p>
             </el-col>
           </el-row>
         </el-col>
-        <el-col id="top-bcr" :span="10">
+        <el-col id="top-bcr" :span="11">
           &nbsp;
         </el-col>
       </el-row>

@@ -6,43 +6,27 @@
                   background-size: cover;
                   height: 100%;
                   width: 100%">
-            <el-main>
-                <el-container id="img-text">
-                    <el-aside width="100px">
-                        <br>
-                        <br>
-                        <img src="../../static/img/Development/u3.png">
-                    </el-aside>
-                    <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
-                        <el-row :gutter="10" type="flex">
-                            <el-col :span="6" style="font-size:60px">
-                                GomROS
-                            </el-col>
-                            <el-col :span="4" style="font-size: 15px">
-                                <br>
-                                <br>工业基础软件
-                            </el-col>
-                        </el-row>
-                        <el-row :gutter="10" type="flex">
-                            <el-col :span="6" style="font-size:60px">
-                                开放平台
-                            </el-col>
-                            <el-col :span="4" style="font-size: 15px">
-                                <br>
-                                <!--                <br>协同发展平台-->
-                            </el-col>
-                        </el-row>
-                        <el-row>
-                            <br>
-                        </el-row>
-                        <el-row style="color: white;font-size: 30px;text-shadow: none">
-                            提供智能机器人应用开放平台，支持全场景应用开<br>
-                            发，助力合作伙伴快速完成机器人应用开发
-                        </el-row>
-                    </el-main>
-                </el-container>
-            </el-main>
-        </el-container>
+      <el-row style="width: 100%;height:400px;">
+        <el-col :span="15" style="height: 100%">
+          <el-row type="flex" justify="start" style="padding: 10px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
+              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            </el-col>
+            <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span>
+              </p>
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">开放平台</span></p>
+              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 30%">
+                提供智能机器人应用开放平台，支持全场景应用开发，助力合作伙伴快速完成机器人应用开发</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9">
+          &nbsp;
+        </el-col>
+      </el-row>
+    </el-container>
 
         <el-row>
             <el-carousel :interval="5000" height="1000px" :indicator-position="'none'">

@@ -1,61 +1,38 @@
 <template>
   <div id="Supplier" style="color: #0D64E8">
-    <el-container id="top-img"
-                  style="background-image: url(static/img/Technology/u2.jpg);
-                  background-position: top;
-                  background-size: cover;
-                  height: 100%;
-                  width: 100%">
-      <el-main>
-        <el-container id="img-text">
-          <el-aside width="100px">
-            <br>
-            <br>
-            <img src="../../static/img/Development/u3.png">
-          </el-aside>
-          <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                GomROS
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <!--                <br>工业基础软件-->
-              </el-col>
-            </el-row>
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                移动机器人
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <!--                <br>协同发展平台-->
-              </el-col>
-            </el-row>
-            <el-row>
-              <br>
-            </el-row>
-            <el-row style="color: white;font-size: 30px;text-shadow: none">
-              移动机器人，是一个集环境感知、动态决策与规划、行为控制与执行等<br>
-              多功能于一体的综合系统。它集中了传感器技术、信息处理、电子工<br>
-              程、计算机工程、自动化控制工程以及人工智能等多学科的研究成果<br>
-              ，代表机电一体化的最高成就，是目前科学技术发展最活跃的领域之一
-            </el-row>
-          </el-main>
-        </el-container>
-      </el-main>
-      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px;height: 100%">
-        <el-row :gutter="24" style="text-align: center;font-size: 32px">
+    <el-container id="top-img">
+      <el-row style="width: 100%;height: 400px">
+        <el-col :span="15" style="background-color: #010954;height: 100%">
+          <el-row type="flex" justify="start" style="padding: 10px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
+              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            </el-col>
+            <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软禁</span></p>
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">移动机器人介绍</span></p>
+              <p style="font-size: 25px;color: white;text-shadow: none;font-weight: bolder;margin-right: 10%">
+                移动机器人，是一个集环境感知、动态决策与规划、行为控制与执行等多功能于一体的综合系统。它集中了传感器技术、信息处理、电子工程、计算机工程、自动化控制工程以及人工智能等多学科的研究成果，代表机电一体化的最高成就，是目前科学技术发展最活跃的领域之一。</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9"
+                style="height:100%;background-image: url(static/img/Technology/u2.jpg);background-size: cover">
+          &nbsp;
+        </el-col>
+      </el-row>
+      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px;height: 100%;">
+        <el-row :gutter="24" style="text-align: center;font-size: 32px;margin-bottom: 5px">
           <el-col :span="8" style="color: #FFFFFF">
             <div>
               <el-row>
                 <el-button @click="changeCarousel(0)"
-                           style="font-size: 32px;background-color: #0d64e8;color: white;border-color: #0d64e8 ">
+                           style="font-size: 32px;background-color: #0d64e8;color: white;border-color: #0d64e8;font-weight: bolder">
                   车载系统
                 </el-button>
-                <br>
               </el-row>
-              <el-row style="font-size: 18px">
+              <el-row style="font-size: 18px;font-weight: bolder">
                 环境感知系统 数据处理系统 控制系统 输入输出系统
               </el-row>
             </div>
@@ -64,12 +41,11 @@
             <div>
               <el-row>
                 <el-button @click="changeCarousel(1)"
-                           style="font-size: 32px;background-color: white;color: #0d64e8;border-color: white ">
+                           style="font-size: 32px;background-color: white;color: #0d64e8;border-color: white;font-weight: bolder">
                   云平台系统
                 </el-button>
-
               </el-row>
-              <el-row style="font-size: 18px">
+              <el-row style="font-size: 18px;font-weight: bolder">
                 智能管控 数据分析 数据处理 互联互通
               </el-row>
             </div>
@@ -78,12 +54,11 @@
             <div>
               <el-row>
                 <el-button @click="changeCarousel(2)"
-                           style="font-size: 32px;background-color: #0d64e8;color: white;border-color: #0d64e8 ">
+                           style="font-size: 32px;background-color: #0d64e8;color: white;border-color: #0d64e8;font-weight: bolder">
                   场景服务系统
                 </el-button>
-
               </el-row>
-              <el-row style="font-size: 18px">
+              <el-row style="font-size: 18px;font-weight: bolder">
                 调度系统 任务处理系统 手机APP
               </el-row>
             </div>
@@ -91,7 +66,8 @@
         </el-row>
       </el-footer>
     </el-container>
-    <el-carousel :interval="5000" arrow="always" :autoplay="true" style="height: 800px" ref="banner">
+
+    <el-carousel :interval="5000" arrow="always" :autoplay="true" style="height: 800px;" ref="banner">
       <!--      <el-carousel :interval="5000" arrow="always" style="height: 800px;filter: brightness(0.6)" >-->
       <el-carousel-item v-for="item in 3" :key="item" style="height: 800px">
         <div v-if="item===1" style="text-align: center;font-weight: bold">
@@ -105,8 +81,12 @@
                   height: 400px;
                   text-align: left;">
                 <el-row><br></el-row>
-                <el-row style="color: white;font-size: 32px">GomRos车载系统</el-row>
-                <el-row style="color: white;font-size: 18px">GomRos 车载系统可适配各大品牌电子元器件</el-row>
+                <el-row>
+                  <p style="margin-left: 2%;width: 280px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
+                    GomRos车载系统</p>
+                  <p style="margin-left: 2%;width: 380px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
+                    GomRos车载系统可适配各大品牌电子元器件</p>
+                </el-row>
               </div>
               <!--                            <img src="../../static/img/Technology/u17.png"-->
               <!--                                 style="width: 640px;height: 400px">-->
@@ -151,8 +131,12 @@
                   background-color: rgba(0,0,0,0.533)"
               >
                 <el-row><br></el-row>
-                <el-row style="color: white;font-size: 32px">GomRosss数据处理系统</el-row>
-                <el-row style="color: white;font-size: 18px">GomRos 自动数据处理，自动输出结果</el-row>
+                <el-row>
+                  <p style="margin-left: 2%;width: 390px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
+                    GomRosss数据处理系统</p>
+                  <p style="margin-left: 2%;width: 340px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
+                    GomRos 自动数据处理，自动输出结果</p>
+                </el-row>
               </div>
               <!--              <img src="../../static/img/Technology/u18.jpg"-->
               <!--                   style="width: 640px;height: 400px">-->
@@ -188,8 +172,7 @@
           </el-row>
         </div>
 
-
-        <div v-if="item===2" style="font-size: 18px;font-weight: bold">
+        <div v-if="item===2" style="font-size: 18px;font-weight: bold;margin: 20px">
           <div>
             <el-row :gutter="24">
               <el-col :span="8">
@@ -470,8 +453,12 @@
                   text-align: left;"
               >
                 <el-row><br></el-row>
-                <el-row style="color: white;font-size: 32px">多场景服务系统</el-row>
-                <el-row style="color: white;font-size: 18px">GomRos-满足各行业业务需求</el-row>
+                <el-row>
+                  <p style="margin-left: 2%;width: 240px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
+                    多场景服务系统</p>
+                  <p style="margin-left: 2%;width: 260px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
+                    GomRos-满足各行业业务需求</p>
+                </el-row>
               </div>
               <!--              <img src="../../static/img/Technology/u43.jpg"-->
               <!--                   style="width: 640px;height: 400px">-->
@@ -499,8 +486,12 @@
                   text-align: left;"
               >
                 <el-row><br></el-row>
-                <el-row style="color: white;font-size: 32px">Pc/手机/车载</el-row>
-                <el-row style="color: white;font-size: 18px">GomRos-满足各类显示操控客户端</el-row>
+                <el-row>
+                  <p style="margin-left: 2%;width: 220px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
+                    Pc/手机/车载</p>
+                  <p style="margin-left: 2%;width: 300px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
+                    GomRos-满足各类显示操控客户端</p>
+                </el-row>
               </div>
               <!--              <img src="../../static/img/Technology/u44.jpg"-->
               <!--                   style="width: 640px;height: 400px">-->

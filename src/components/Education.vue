@@ -1,49 +1,28 @@
 <template>
   <div id="education">
-    <el-container id="top-img"
-                  style="background-image: url(static/img/Education/ccc__u2048.jpg);
-                  background-position: center;
-                  background-size: cover;
-                  height: 100%;
-                  width: 100%">
-      <el-main>
-        <el-container id="img-text">
-          <el-aside width="100px">
-            <br>
-            <br>
-            <img src="static/img/Development/u3.png">
-          </el-aside>
-          <el-main style="width: 100%;color: #0D64E8;text-shadow: 2px 2px 8px white">
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                GomROS
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <br>工业基础软件
-              </el-col>
-            </el-row>
-            <el-row :gutter="10" type="flex">
-              <el-col :span="6" style="font-size:60px">
-                生态合作
-              </el-col>
-              <el-col :span="4" style="font-size: 15px">
-                <br>
-                <br>协同发展平台
-              </el-col>
-            </el-row>
-            <el-row>
-              <br>
-            </el-row>
-            <el-row style="color: white;font-size: 30px;text-shadow: none">
-              致力于培养GomROS开发人才，与合作伙伴共建<br>
-              生态，促进行业发展。
-            </el-row>
-          </el-main>
-        </el-container>
-      </el-main>
-      <el-footer id="img-footer" style="background: #0d64e8;color: white;font-size: 30px">
-        教育培训合作
+    <el-container id="top-img">
+      <el-row style="width: 100%;height:400px;">
+        <el-col :span="15" style="background-color: #435b7f;height: 100%">
+          <el-row type="flex" justify="start" style="padding: 10px">
+            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
+              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            </el-col>
+            <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span></p>
+              <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">生态合作</span>
+                <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">教育培训合作</span></p>
+              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">致力于培养GomROS开发人才，与合作伙伴共建生态，促进行业发展。</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9"
+                style="height:100%;background-image: url(../../static/img/Education/ccc__u2048.jpg);background-size: cover">
+          &nbsp;
+        </el-col>
+      </el-row>
+      <el-footer style="background-color: #0d64e8">
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">移动机器人硬件驱动及控制系统</p>
       </el-footer>
     </el-container>
 
