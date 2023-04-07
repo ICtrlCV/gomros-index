@@ -56,7 +56,7 @@ background-size: cover">
                                 <el-row><br><br></el-row>
                                 <div class="robotSystemIn"
                                      style="background-image: url(static/img/index/u159.jpg);">
-                                    <el-row><br><br></el-row>
+                                    <el-row><br></el-row>
                                     <el-row style="font-size: 24px">机器人操作系统</el-row>
                                     <el-row>GomROS（句芒）是一款为机器人、自动化设</el-row>
                                     <el-row>备等高端智能装备提供的国产原创操作系统。</el-row>
@@ -337,11 +337,14 @@ p {
 }
 
 .robotSystem:hover .robotSystemIn {
-    display: block;
+    /*display: block;*/
+    opacity: 1;
 }
 
 .robotSystemIn {
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    transition: opacity 0.5s ease;
     background-color: grey;
     background-size: 100% auto;
     height: 300px;
@@ -352,12 +355,14 @@ p {
 }
 
 .moveRobot:hover .moveRobotIn {
-    display: block;
-
+    /*display: block;*/
+    opacity: 1;
 }
 
 .moveRobotIn {
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    transition: opacity 0.5s ease;
     background-color: grey;
     background-size: 100% auto;
     height: 300px;
@@ -367,11 +372,14 @@ p {
 }
 
 .openPlat:hover .openPlatIn {
-    display: block;
+    /*display: block;*/
+    opacity: 1;
 }
 
 .openPlatIn {
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    transition: opacity 0.5s ease;
     background-color: grey;
     background-size: 100% auto;
     height: 300px;
@@ -481,6 +489,7 @@ p {
     float: left;
     width: 25%;
     height: 1000px;
+
 }
 
 .hardware {
