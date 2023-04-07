@@ -277,7 +277,7 @@
             <el-col :span="13" id="bottom-text">
               欢迎咨询GomRos系统相关专家获取解决方案
             </el-col>
-            <el-col :span="11" style="text-align: right;">
+            <el-col :span="11" style="text-align: right;padding-right: 1%">
               <el-button id="bottom-button" @click="$router.push('/about')">
                 联系我们
               </el-button>

@@ -544,26 +544,20 @@
     </el-container>
 
     <el-container id="bottom">
-      <el-main style="background: #0d64e8;font-size: 25px">
-        <el-row :gutter="24">
-          <el-col :span="10" style="color: white;text-align: left;font-weight: bolder">
+      <el-main style="background: #0d64e8;font-size: 30px;">
+        <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
+          <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
             欢迎咨询移动机器人相关产品
           </el-col>
-          <el-col :span="2">
-          </el-col>
-          <el-col :span="14" style="text-align: right;font-size: 20px">
+          <el-col :span="11" style="text-align: right;padding-right: 3%">
             <el-button @click="routerToContact()"
-                       style="background-color: #0d64e8;border-color: white;color: white;font-weight: bolder">
+                       style="font-size: 30px;background-color: #0d64e8;border-color: white;color: white;">
               联系我们
             </el-button>
           </el-col>
         </el-row>
       </el-main>
-      <el-aside style="background-color: #0d64e8" width="100px">
-        <br>
-      </el-aside>
     </el-container>
-
   </div>
 </template>
 

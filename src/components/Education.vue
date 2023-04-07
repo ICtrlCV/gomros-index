@@ -123,12 +123,14 @@
             <el-col :span="5">
               <img src="static/img/Education/u2438.png" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>学习资源</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">我们有丰富的学习资源，用于帮助我们的合作伙伴快速学习使用GomROS平台。</p>
+              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">
+                我们有丰富的学习资源，用于帮助我们的合作伙伴快速学习使用GomROS平台。</p>
             </el-col>
             <el-col :span="5">
               <img src="static/img/Education/u2439.jpg" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>专家讲师</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">我们有经验丰富的专家讲师辅导我们的合作伙伴，迅速吸收理解所学知识。</p>
+              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">
+                我们有经验丰富的专家讲师辅导我们的合作伙伴，迅速吸收理解所学知识。</p>
             </el-col>
             <el-col :span="5">
               <img src="static/img/Education/u2440.jpg" style="width: 280px;height: 150px">
@@ -138,7 +140,8 @@
             <el-col :span="5">
               <img src="static/img/Education/u2441.jpg" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>就业支持</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">我们有丰富的学习资源，用于帮助我们的合作伙伴快速学习使用GomROS平台。</p>
+              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">
+                我们有丰富的学习资源，用于帮助我们的合作伙伴快速学习使用GomROS平台。</p>
             </el-col>
             <el-col :span="2">&nbsp;</el-col>
           </el-row>
@@ -147,25 +150,20 @@
       <el-aside width="200px"></el-aside>
     </el-container>
 
-    <el-container id="bottom">
-      <el-main style="background: #0d64e8;font-size: 25px">
-        <el-row :gutter="24">
-          <el-col :span="10" style="color: white;text-align: left;font-weight: bolder">
+    <el-container style="width: 100%">
+      <el-main style="background: #0d64e8;font-size: 30px;">
+        <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
+          <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
             欢迎咨询教育培训合作相关产品
           </el-col>
-          <el-col :span="2">
-          </el-col>
-          <el-col :span="14" style="text-align: right;font-size: 20px">
+          <el-col :span="11" style="text-align: right;padding-right: 3%">
             <el-button @click="routerToContact()"
-                       style="background-color: #0d64e8;border-color: white;color: white;font-weight: bolder">
+                       style="font-size: 30px;background-color: #0d64e8;border-color: white;color: white;">
               联系我们
             </el-button>
           </el-col>
         </el-row>
       </el-main>
-      <el-aside style="background-color: #0d64e8" width="100px">
-        <br>
-      </el-aside>
     </el-container>
 
     <!--培训对话框-->
@@ -470,7 +468,6 @@
         <el-button @click="lecturerCancel()">取 消</el-button>
       </div>
     </el-dialog>
-
   </div>
 </template>
 
