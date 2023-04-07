@@ -104,7 +104,7 @@
                                     查看详情
                                 </el-button>
                             </el-row>
-                            <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
+                            <el-row><br></el-row>
                             <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
                             <el-row style="font-size: 32px;font-weight: bolder;margin-left: 20px">
                                 开发文档
