@@ -103,9 +103,9 @@
       </el-row>
 
       <!--    第二行 为什么做机器人操作系统  -->
-      <el-row style="background-color: #0d64e8;height: 100px">
+      <el-footer style="background-color: #0d64e8;height: 80px">
         <p class="footer">为什么做机器人操作系统？</p>
-      </el-row>
+      </el-footer>
       <el-row>
         <el-col id="row-two" :span="8">
           <p style="font-size: 30px;color: #0d64e8;font-weight: bolder">GomROS机器人操作系统</p>
@@ -121,9 +121,9 @@
       </el-row>
 
       <!--    第三行 机器人操作系统有哪些应用  -->
-      <el-row style="background-color: #0d64e8;height: 100px">
+      <el-footer style="background-color: #0d64e8;height: 80px">
         <p class="footer">机器人操作系统有哪些应用？</p>
-      </el-row>
+      </el-footer>
       <el-row style="padding-top: 2px">
         <el-col :span="10">
           <el-row style="margin-left: 3%;width: 100%">
@@ -200,9 +200,9 @@
       </el-row>
 
       <!--    第四行  我们的应用案例 -->
-      <el-row style="background-color: #0d64e8;height: 100px">
+      <el-footer style="background-color: #0d64e8;height: 80px">
         <p class="footer">我们的应用案例</p>
-      </el-row>
+      </el-footer>
       <el-row>
         <el-col :span="6" style="margin-left: 80px">
           <p style="font-size: 30px;color: #0d64e8;font-weight: bolder">GomROS机器人操作系统</p>
@@ -272,23 +272,18 @@
 
       <!--      底部     -->
       <el-container id="bottom">
-        <el-aside width="50px"><br></el-aside>
         <el-main id="bottom-main">
-          <el-row :gutter="24">
+          <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
             <el-col :span="13" id="bottom-text">
               欢迎咨询GomRos系统相关专家获取解决方案
             </el-col>
-            <el-col :span="1"></el-col>
-            <el-col :span="11" style="text-align: right;">
+            <el-col :span="11" style="text-align: right;padding-right: 1%">
               <el-button id="bottom-button" @click="$router.push('/about')">
                 联系我们
               </el-button>
             </el-col>
           </el-row>
         </el-main>
-        <el-aside width="50px">
-          <br>
-        </el-aside>
       </el-container>
     </div>
   </div>

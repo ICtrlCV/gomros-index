@@ -68,9 +68,8 @@
     </el-container>
 
     <el-carousel :interval="5000" arrow="always" :autoplay="true" style="height: 800px;" ref="banner">
-      <!--      <el-carousel :interval="5000" arrow="always" style="height: 800px;filter: brightness(0.6)" >-->
       <el-carousel-item v-for="item in 3" :key="item" style="height: 800px">
-        <div v-if="item===1" style="text-align: center;font-weight: bold">
+        <div v-if="item===1" style="text-align: center;font-weight: bold;width: 100%;">
           <el-row :gutter="24" class="container">
             <el-col :span="8">
               <div style="background-image: url(../../static/img/Technology/u17.png);
@@ -88,15 +87,13 @@
                     GomRos车载系统可适配各大品牌电子元器件</p>
                 </el-row>
               </div>
-              <!--                            <img src="../../static/img/Technology/u17.png"-->
-              <!--                                 style="width: 640px;height: 400px">-->
             </el-col>
             <el-col :span="8">
               <img src="../../static/img/Technology/u20.gif"
                    style="width: 640px;height: 400px;background-color: rgba(0,0,0,0.533);">
             </el-col>
             <el-col :span="8">
-              <div >
+              <div>
                 <el-row :gutter="24" class="container">
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u22.png"
@@ -121,7 +118,7 @@
             </el-col>
           </el-row>
           <el-row :gutter="24" class="container">
-            <el-col :span="8" >
+            <el-col :span="8">
               <div style="background-image: url(static/img/Technology/u18.jpg);
                   background-position: center;
                   background-size: cover;
@@ -133,7 +130,7 @@
                 <el-row><br></el-row>
                 <el-row>
                   <p style="margin-left: 2%;width: 390px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
-                    GomRosss数据处理系统</p>
+                    GomRos数据处理系统</p>
                   <p style="margin-left: 2%;width: 340px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
                     GomRos 自动数据处理，自动输出结果</p>
                 </el-row>
@@ -144,7 +141,7 @@
                    style="width: 640px;height: 400px;background-color: rgba(0,0,0,0.533)">
             </el-col>
             <el-col :span="8">
-              <div >
+              <div>
                 <el-row :gutter="24" class="container">
                   <el-col :span="12">
                     <img src="../../static/img/Technology/u26.png"
@@ -170,278 +167,245 @@
           </el-row>
         </div>
 
-        <div v-if="item===2" style="font-size: 18px;font-weight: bold;margin: 20px">
-          <div>
-            <el-row :gutter="24">
-              <el-col :span="8">
-                <div style="border-bottom: 4px dashed;border-right: 4px dashed">
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <div>
-                        <el-row style="font-size: 32px"> 云端远程控制</el-row>
-                        <el-row> GomROS远程管理控制</el-row>
-                      </div>
-                    </el-col>
-                    <el-col :span="6">
-                      <br>
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u70.svg"
-                           style=";width: 160px;height: 120px">
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u73.png"
-                           style="width: 200px;height: 180px;">
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u72.jpg"
-                           style="width: 200px;height: 180px;">
-                    </el-col>
-                    <el-col :span="8" style="text-align: center;">
-                      远程控制
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="16">
-                      <br>机器人云端远程控制管理
-                    </el-col>
-                    <el-col :span="8">
-                      <br>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
-              <el-col :span="8">
-                <div style="border-right: 4px dashed;border-bottom: 4px dashed">
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <div>
-                        <el-row style="font-size: 32px">
-                          云端地图管理
-                        </el-row>
-                        <el-row>
-                          GomROS 云端地图构建 云端定位计算
-                        </el-row>
-                      </div>
-                    </el-col>
-                    <el-col :span="6">
-                      <br>
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u84.svg"
-                           style="width: 160px;height: 120px;">
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u31.jpeg"
-                           style="width: 200px;height: 180px;">
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u90.jpg"
-                           style="width: 200px;height: 180px;">
-                    </el-col>
-                    <el-col :span="8" style="text-align: center">
-                      地图构建
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="16">
-                      <br>机器人云端云端地图管理 云端定位管理
-                    </el-col>
-                    <el-col :span="8">
-                      <br>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
-              <el-col :span="8">
-                <div style="border-bottom: 4px dashed;">
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <div>
-                        <el-row style="font-size: 32px">
-                          云端任务管理
-                        </el-row>
-                        <el-row>
-                          GomRos 云端任务管理 云端线路规划
-                        </el-row>
-                      </div>
-                    </el-col>
-                    <el-col :span="6">
-                      <br>
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u98.svg"
-                           style="width: 160px;height: 120px">
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u103.png"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="../../static/img/Technology/u104.jpg"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="8" style="text-align: center">
-                      任务管理
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="16">
-                      <br>机器人云端任务管理 云端线路规划管理
-                    </el-col>
-                    <el-col :span="8">
-                      <br>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
-            </el-row>
-            <el-row :gutter="24">
-              <el-col :span="8">
-                <div style="border-right: 4px dashed">
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <div>
-                        <el-row style="font-size: 32px">
-                          云端数据分析
-                        </el-row>
-                        <el-row>
-                          GomRos 云端数据分析 数据可视化展示
-                        </el-row>
-                      </div>
-                    </el-col>
-                    <el-col :span="6">
-                      <br>
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="static/img/Technology/u75.svg"
-                           style="width: 160px;height: 120px">
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <img src="static/img/Technology/u78.png"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="6">
-                      <img src="static/img/Technology/u79.png"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="8" style="text-align: center">
-                      数据分析
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="16">
-                      <br>机器人云端数据分析数据展示
-                    </el-col>
-                    <el-col :span="8">
-                      <br>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
-              <el-col :span="8">
-                <div style="border-right: 4px dashed">
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <div>
-                        <el-row style="font-size: 32px">
-                          云端识别交互
-                        </el-row>
-                        <el-row>
-                          GomRos 云端视觉识别 云端语音识别
-                        </el-row>
-                      </div>
-                    </el-col>
-                    <el-col :span="6">
-                      <br>
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="static/img/Technology/u91.svg"
-                           style="width: 160px;height: 120px">
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <img src="static/img/Technology/u30.png"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="6">
-                      <img src="static/img/Technology/u97.png"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="8" style="text-align: center">
-                      交互模型部署
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="16">
-                      <br>机器人视觉识别 语音识别
-                    </el-col>
-                    <el-col :span="8">
-                      <br>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
-              <el-col :span="8">
-                <div>
-                  <el-row :gutter="24">
-                    <el-col :span="10">
-                      <div>
-                        <el-row style="font-size: 32px">
-                          云端更新推送
-                        </el-row>
-                        <el-row>
-                          GomRos 广告内容推送 云端系统更新
-                        </el-row>
-                      </div>
-                    </el-col>
-                    <el-col :span="6">
-                      <br>
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="static/img/Technology/u110.svg"
-                           style="width: 160px;height: 120px">
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="8">
-                      <img src="static/img/Technology/u112.png"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="8">
-                      <img src="static/img/Technology/u113.gif"
-                           style="width: 200px;height: 180px">
-                    </el-col>
-                    <el-col :span="8" style="text-align:center">
-                      推送更新
-                    </el-col>
-                  </el-row>
-                  <el-row :gutter="24">
-                    <el-col :span="16">
-                      <br> 机器人广告更新 系统更新
-                    </el-col>
-                    <el-col :span="8">
-                      <br>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
-            </el-row>
-          </div>
-
-
+        <div v-if="item===2"
+             style="font-size: 18px;font-weight: bold;margin: 20px;padding-left: 1%;padding-right: 1%">
+          <el-row :gutter="24">
+            <el-col :span="8"
+                    style="border-bottom: 2px dashed;border-right: 2px dashed;padding-bottom: 1%;padding-right: 1%">
+              <el-row :gutter="24">
+                <el-col :span="10" style="width: 55%;padding-top: 4%">
+                  <el-row style="font-size: 32px">机器人云管控平台</el-row>
+                  <el-row style="font-size: 15px"> GomROS远程管理控制</el-row>
+                </el-col>
+                <el-col :span="6">&nbsp;</el-col>
+                <el-col :span="8" style="padding-left: 12%;padding-top: 0;">
+                  <div
+                      style="width:160px;height:120px;background-image: url(static/img/Technology/u70.svg);background-size: cover;text-align: center">
+                    <br>
+                    <p style="color: white">远程控制</p>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="8">
+                  <img src="../../static/img/Technology/u73.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="margin-left: 50px">
+                  <img src="../../static/img/Technology/u72.jpg" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="6" style="text-align: center;">
+                  &nbsp;
+                </el-col>
+              </el-row>
+              <el-row :gutter="24">
+                <el-col :span="16">
+                  <br>机器人云端远程控制管理
+                </el-col>
+                <el-col :span="8"><br></el-col>
+              </el-row>
+            </el-col>
+            <el-col :span="8"
+                    style="border-right: 2px dashed;border-bottom: 2px dashed;padding-bottom: 1%;padding-right: 1%;padding-left: 1%">
+              <el-row :gutter="24">
+                <el-col :span="10" style="width: 59%;padding-top: 4%">
+                  <el-row style="font-size: 32px">云端地图管理</el-row>
+                  <el-row style="font-size: 15px">GomROS 云端地图构建 云端定位计算</el-row>
+                </el-col>
+                <el-col :span="6">
+                  <br>
+                </el-col>
+                <el-col :span="8" style="padding-left: 8%;padding-top: 0">
+                  <div
+                      style="width:160px;height:120px;background-image: url(static/img/Technology/u84.svg);background-size: cover;text-align: center">
+                    <br>
+                    <p style="color: white;background-color: #0d64e8">云端地图构建</p>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="8">
+                  <img src="../../static/img/Technology/u31.jpeg" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="margin-left: 50px">
+                  <img src="../../static/img/Technology/u90.jpg" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="text-align: center">&nbsp;</el-col>
+              </el-row>
+              <el-row :gutter="24">
+                <el-col :span="16">
+                  <br>机器人云端云端地图管理 云端定位管理
+                </el-col>
+                <el-col :span="8">
+                  <br>
+                </el-col>
+              </el-row>
+            </el-col>
+            <el-col :span="8" style="border-bottom: 2px dashed;padding-bottom: 1%;padding-left: 1%">
+              <el-row :gutter="24">
+                <el-col :span="10" style="width: 59%;padding-top: 4%">
+                  <el-row style="font-size: 32px">云端任务管理</el-row>
+                  <el-row style="font-size: 15px">GomRos 云端任务管理 云端线路规划</el-row>
+                </el-col>
+                <el-col :span="6">
+                  <br>
+                </el-col>
+                <el-col :span="8" style="padding-left: 12%;padding-top: 0">
+                  <div
+                      style="width:160px;height:120px;background-image: url(static/img/Technology/u98.svg);background-size: cover;text-align: center">
+                    <br>
+                    <p style="color: white;background-color: #0d64e8">云端任务管理</p>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="8">
+                  <img src="../../static/img/Technology/u103.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="margin-left: 50px">
+                  <img src="../../static/img/Technology/u104.jpg" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8">
+                  &nbsp;
+                </el-col>
+              </el-row>
+              <el-row :gutter="24">
+                <el-col :span="16">
+                  <br>机器人云端任务管理 云端线路规划管理
+                </el-col>
+                <el-col :span="8">
+                  <br>
+                </el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+          <el-row :gutter="24">
+            <el-col :span="8" style="border-right: 2px dashed;padding-top: 1%;padding-right: 1%">
+              <el-row :gutter="24">
+                <el-col :span="10" style="width: 59%;padding-top: 4%">
+                  <el-row style="font-size: 32px">云端数据分析</el-row>
+                  <el-row style="font-size: 15px">GomRos 云端数据分析 数据可视化展示</el-row>
+                </el-col>
+                <el-col :span="6"><br></el-col>
+                <el-col :span="8" style="padding-left: 8%;padding-top: 0;">
+                  <div
+                      style="width:160px;height:120px;background-image: url(static/img/Technology/u75.svg);background-size: cover;text-align: center">
+                    <br>
+                    <el-row style="height: 20px;margin-top: 5px">
+                      <el-col :span="6">&nbsp;
+                      </el-col>
+                      <el-col :span="12">
+                        <p style="width: 100%;color:white;background-color: #0d64e8">数据分析</p>
+                      </el-col>
+                      <el-col :span="6">
+                        &nbsp;
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="8">
+                  <img src="static/img/Technology/u78.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="margin-left: 50px">
+                  <img src="static/img/Technology/u79.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="6" style="text-align: center">
+                  &nbsp;
+                </el-col>
+              </el-row>
+              <el-row :gutter="24">
+                <el-col :span="16">
+                  <br>机器人云端数据分析数据展示
+                </el-col>
+                <el-col :span="8">
+                  <br>
+                </el-col>
+              </el-row>
+            </el-col>
+            <el-col :span="8" style="border-right: 2px dashed;padding-top: 1%;padding-right: 1%">
+              <el-row :gutter="24">
+                <el-col :span="10" style="width: 59%;padding-top: 4%">
+                  <el-row style="font-size: 32px">云端识别交互</el-row>
+                  <el-row style="font-size: 15px">GomRos 云端视觉识别 云端语音识别</el-row>
+                </el-col>
+                <el-col :span="6"><br></el-col>
+                <el-col :span="8" style="padding-left: 8%;padding-top: 0;">
+                  <div
+                      style="width:160px;height:120px;background-image: url(static/img/Technology/u91.svg);background-size: cover;text-align: center">
+                    <br>
+                    <el-row style="height: 20px">
+                      <el-col :span="2">&nbsp;
+                      </el-col>
+                      <el-col :span="18">
+                        <p style="width: 100%;color:white;background-color: #0d64e8">交互模型部署</p>
+                      </el-col>
+                      <el-col :span="1">
+                        &nbsp;
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="8">
+                  <img src="static/img/Technology/u30.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="margin-left: 50px">
+                  <img src="static/img/Technology/u97.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="6">
+                  &nbsp;
+                </el-col>
+              </el-row>
+              <el-row :gutter="24">
+                <el-col :span="16"><br>机器人视觉识别 语音识别</el-col>
+                <el-col :span="8"><br></el-col>
+              </el-row>
+            </el-col>
+            <el-col :span="8" style="padding-top: 1%">
+              <el-row :gutter="24">
+                <el-col :span="10" style="width: 59%;padding-top: 4%">
+                  <el-row style="font-size: 32px">云端更新推送</el-row>
+                  <el-row style="font-size: 15px">GomRos 广告内容推送 云端系统更新</el-row>
+                </el-col>
+                <el-col :span="6"><br></el-col>
+                <el-col :span="8" style="padding-left: 10%;padding-top: 0;">
+                  <div
+                      style="width:160px;height:120px;background-image: url(static/img/Technology/u110.svg);background-size: cover;text-align: center">
+                    <br>
+                    <el-row style="height: 20px">
+                      <el-col :span="2">&nbsp;
+                      </el-col>
+                      <el-col :span="18">
+                        <p style="width: 100%;color:white;background-color: #0d64e8">推送更新</p>
+                      </el-col>
+                      <el-col :span="1">
+                        &nbsp;
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" type="flex">
+                <el-col :span="8">
+                  <img src="static/img/Technology/u112.png" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="8" style="margin-left: 50px">
+                  <img src="static/img/Technology/u113.gif" style="width: 180px;height: 160px;">
+                </el-col>
+                <el-col :span="6" style="text-align:center">&nbsp;</el-col>
+              </el-row>
+              <el-row :gutter="24">
+                <el-col :span="16"><br> 机器人广告更新 系统更新</el-col>
+                <el-col :span="8"><br></el-col>
+              </el-row>
+            </el-col>
+          </el-row>
         </div>
+
         <div v-if="item===3" style="font-weight: bolder">
-          <el-row :gutter="24" >
+          <el-row :gutter="24">
             <el-col :span="8">
               <div style="background-image: url(static/img/Technology/u43.jpg);
                   background-position: center;
@@ -458,20 +422,18 @@
                     GomRos-满足各行业业务需求</p>
                 </el-row>
               </div>
-              <!--              <img src="../../static/img/Technology/u43.jpg"-->
-              <!--                   style="width: 640px;height: 400px">-->
-            </el-col>
-            <el-col :span="8" >
-                <el-row style="width: 640px" class="container">
-                    <img src="../../static/img/Technology/u50.jpg"
-                         style="width: 640px;height: 400px" >
-                </el-row>
             </el-col>
             <el-col :span="8">
-                <el-row style="width: 640px" class="container">
-                    <img src="../../static/img/Technology/u55.png"
-                         style="width: 640px;height: 400px">
-                </el-row>
+              <el-row style="width: 640px" class="container">
+                <img src="../../static/img/Technology/u50.jpg"
+                     style="width: 640px;height: 400px">
+              </el-row>
+            </el-col>
+            <el-col :span="8">
+              <el-row style="width: 640px" class="container">
+                <img src="../../static/img/Technology/u55.png"
+                     style="width: 640px;height: 400px">
+              </el-row>
             </el-col>
           </el-row>
           <el-row :gutter="24">
@@ -491,51 +453,47 @@
                     GomRos-满足各类显示操控客户端</p>
                 </el-row>
               </div>
-              <!--              <img src="../../static/img/Technology/u44.jpg"-->
-              <!--                   style="width: 640px;height: 400px">-->
             </el-col>
             <el-col :span="8">
-                <el-row style="width: 640px" class="container">
+              <el-row style="width: 640px" class="container">
 
-              <img src="../../static/img/Technology/u51.png"
-                   style="width: 640px;height: 400px">
-                </el-row>
+                <img src="../../static/img/Technology/u51.png"
+                     style="width: 640px;height: 400px">
+              </el-row>
             </el-col>
             <el-col :span="8">
-                <el-row style="width: 640px" class="container">
-              <img src="../../static/img/Technology/u57.png"
-                   style="width: 640px;height: 400px">
-                </el-row>
+              <el-row style="width: 640px" class="container">
+                <img src="../../static/img/Technology/u57.png"
+                     style="width: 640px;height: 400px">
+              </el-row>
             </el-col>
           </el-row>
         </div>
       </el-carousel-item>
     </el-carousel>
 
-
     <el-container>
-
       <el-main>
-        <el-row style="background-color: rgba(242, 246, 250, 1)"><br><br></el-row>
-        <el-row :gutter="24" style="background-color: rgba(242, 246, 250, 1)">
-          <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;">
+        <el-row><br><br></el-row>
+        <el-row :gutter="24">
+          <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;margin-left: 2%">
             <div style="font-size: 72px">GomRos</div>
             <div style="font-size: 32px">机器人产品应用</div>
           </el-col>
-          <el-col :span="10">
-            <img src="../../static/img/Technology/u117.svg" style="width: 100%">
+          <el-col :span="8">
+            <img src="../../static/img/Technology/u117.svg" style="width: 95%;height: auto;margin-left:0;margin-right: 0">
           </el-col>
-          <el-col :span="9">
-            <img src="../../static/img/Technology/u120.png"  style="width: 100%">
+          <el-col :span="8">
+            <img src="../../static/img/Technology/u120.png" style="width: 85%;height: auto;margin: 0">
           </el-col>
         </el-row>
-        <el-row style="background-color: rgba(242, 246, 250, 1)"><br><br></el-row>
+        <el-row><br><br></el-row>
         <el-row><br></el-row>
         <el-row><br></el-row>
         <el-row>
           <div>
             <el-row :gutter="24">
-              <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold">
+              <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;">
                 <div style="font-size: 72px">GomRos</div>
                 <div style="font-size: 32px">我们的产品</div>
               </el-col>
@@ -555,7 +513,6 @@
               </el-col>
               <el-col :span="4">
                 <img src="../../static/img/Technology/u128.png">
-
               </el-col>
               <el-col :span="16">
                 <div>
@@ -582,33 +539,25 @@
               </el-col>
             </el-row>
           </div>
-
         </el-row>
       </el-main>
     </el-container>
 
     <el-container id="bottom">
-
-      <el-main style="background: #0d64e8;font-size: 25px">
-        <el-row :gutter="24">
-          <el-col :span="10" style="color: white;text-align: left">
+      <el-main style="background: #0d64e8;font-size: 30px;">
+        <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
+          <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
             欢迎咨询移动机器人相关产品
           </el-col>
-          <el-col :span="2">
-          </el-col>
-          <el-col :span="14" style="text-align: right;font-size: 20px">
+          <el-col :span="11" style="text-align: right;padding-right: 3%">
             <el-button @click="routerToContact()"
-                       style="background-color: #0d64e8;border-color: white;color: white">
+                       style="font-size: 30px;background-color: #0d64e8;border-color: white;color: white;">
               联系我们
             </el-button>
           </el-col>
         </el-row>
       </el-main>
-      <el-aside style="background-color: #0d64e8" width="100px">
-        <br>
-      </el-aside>
     </el-container>
-
   </div>
 </template>
 
@@ -679,18 +628,21 @@ img {
   display: block;
   margin: auto;
 }
-.el-main{
-    overflow-x: hidden;
+
+.el-main {
+  overflow-x: hidden;
 }
-.container{
-    position: relative;
+
+.container {
+  position: relative;
 }
-.container::before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+
+.container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 </style>
