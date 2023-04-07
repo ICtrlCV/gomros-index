@@ -22,17 +22,16 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 8%">
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           移动机器人云平台
         </p>
       </el-footer>
     </el-container>
 
-
     <div>
       <!--第一行 移动机器人云平台-->
       <el-row :gutter="20" type="flex" style="margin: unset;background-color: white">
-        <el-col :span="12" style="margin-left: 80px;margin-right: 5%;width: 45%">
+        <el-col :span="12" style="margin-left: 3%;margin-right: 5%;width: 45%">
           <p style="font-size: 35px;font-weight: bolder;color: #0d64e8">移动机器人云平台</p>
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人云平台</p>
           <p style="font-size: 20px;color: #0d64e8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平台产品可实现运动控制、集群调度、视觉识别、语音识别等多种人机交互及管理控制功能。</p>
@@ -44,10 +43,10 @@
       </el-row>
 
       <!--第二行 平台优势-->
-      <el-row :gutter="10" type="flex">
+      <el-row :gutter="10" type="flex" style="padding-top: 0">
         <el-col>
           <el-row>
-            <p style="font-size: 30px;color: #0d64e8;font-weight: bolder;">平台优势</p>
+            <p style="font-size: 30px;color: #0d64e8;font-weight: bolder;margin-bottom: 0">平台优势</p>
           </el-row>
           <el-row style="text-align: center;width: 100%;margin-left: 5%">
             <el-col :span="3" style="border:5px solid #0d64e8;width: 15%">
@@ -55,8 +54,8 @@
                 <p style="font-weight: bolder;color: white;font-size: 18px">领先的技术</p>
               </el-row>
               <el-row>
-                <div style="height: 250px;color: #0d64e8;text-align: left">
-                  我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
+                <div style="height: 250px;color: #0d64e8;text-align: center">
+                  <br>我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
                 </div>
               </el-row>
             </el-col>
@@ -67,8 +66,8 @@
                   <p style="font-weight: bolder;color: white;font-size: 18px">产品矩阵优势</p>
                 </el-row>
                 <el-row>
-                  <div style="height: 250px;text-align: left;color: #0d64e8">
-                    我们有10余款生态机器人产品，覆盖多种使用场景，向各行各业的客户提供硬件设备和服务，可定制，售后有保障的软硬件一体解决方案。
+                  <div style="height: 250px;text-align: center;color: #0d64e8">
+                    <br>我们有10余款生态机器人产品，覆盖多种使用场景，向各行各业的客户提供硬件设备和服务，可定制，售后有保障的软硬件一体解决方案。
                   </div>
                 </el-row>
               </div>
@@ -79,8 +78,8 @@
                 <p style="font-weight: bolder;color: white;font-size: 18px">灵活开放的生态</p>
               </el-row>
               <el-row>
-                <div style="height: 250px;text-align: left;color: #0d64e8">
-                  二次开发灵活性强，第三方设备和应用可以快速接入，开放的开发者社区，学校人才聚集，聚集金融机构支持。
+                <div style="height: 250px;text-align: center;color: #0d64e8">
+                  <br>二次开发灵活性强，第三方设备和应用可以快速接入，开放的开发者社区，学校人才聚集，聚集金融机构支持。
                 </div>
               </el-row>
             </el-col>
@@ -90,10 +89,9 @@
                 <p style="font-weight: bolder;color: white;font-size: 18px">产品和数据支持</p>
               </el-row>
               <el-row>
-                <div style="height: 250px;text-align: left;color: #0d64e8">
-                  平台有机器人调度系统、服务机器人管控系统、机器人操作控制软件系统、ERP系统、MES系统、WMS系统、WCS系统等产品及工具。
-                  <br>
-                  积累大量历史数据、用于迭代更新系统。
+                <div style="height: 250px;text-align: center;color: #0d64e8">
+                  <br>平台有机器人调度系统、服务机器人管控系统、机器人操作控制软件系统、ERP系统、MES系统、WMS系统、WCS系统等产品及工具。
+                  <br><br>积累大量历史数据、用于迭代更新系统。
                 </div>
               </el-row>
             </el-col>
@@ -103,8 +101,8 @@
                 <p style="font-weight: bolder;color: white;font-size: 18px">一体化的服务</p>
               </el-row>
               <el-row>
-                <div style="height: 250px;text-align: left;color: #0d64e8">
-                  为合作伙伴和客户提供，人机交互设计、软硬件管理控制软件，软硬件的产品订制开发，拥有强力的品牌价值保障。
+                <div style="height: 250px;text-align: center;color: #0d64e8">
+                  <br>为合作伙伴和客户提供，人机交互设计、软硬件管理控制软件，软硬件的产品订制开发，拥有强力的品牌价值保障。
                 </div>
               </el-row>
             </el-col>
@@ -247,18 +245,20 @@
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">牵引系列</span>
               <el-row>
-                <el-col :span="8">
+                <el-col :span="4">&nbsp;</el-col>
+                <el-col :span="5">
                   <img src="static/img/cloudPlatform/u370.png" style="width: 50%;height: 120px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">200kg</p>
                 </el-col>
-                <el-col :span="8">
+                <el-col :span="5">
                   <img src="static/img/cloudPlatform/u368.png" style="width: 50%;height: 120px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">300kg</p>
                 </el-col>
-                <el-col :span="8">
+                <el-col :span="5">
                   <img src="static/img/cloudPlatform/u369.png" style="width: 50%;height: 120px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">500kg</p>
                 </el-col>
+                <el-col :span="4">&nbsp;</el-col>
               </el-row>
             </el-tab-pane>
             <el-tab-pane>
@@ -314,30 +314,28 @@
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">服务系列</span>
               <el-row align="center" :gutter="24">
-                <el-col :span="2">
-                  <br>
-                </el-col>
+                <el-col :span="2"><br></el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u409.png" style="width: 200px;height: 200px;">
+                  <img src="static/img/cloudPlatform/u409.png" style="width: 150px;height: 150px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">精准喷雾消毒机器人</p>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u410.png" style="width: 200px;height: 200px;">
+                  <img src="static/img/cloudPlatform/u410.png" style="width: 150px;height: 150px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">紫外线喷雾消毒机器人</p>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u411.jpg" style="width: 200px;height: 200px;">
+                  <img src="static/img/cloudPlatform/u411.jpg" style="width: 150px;height: 150px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">喷雾消毒机器人</p>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u412.png" style="width: 200px;height: 200px;">
+                  <img src="static/img/cloudPlatform/u412.png" style="width: 150px;height: 150px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">送餐机器人</p>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/u413.png" style="width: 200px;height: 200px;">
+                  <img src="static/img/cloudPlatform/u413.png" style="width: 150px;height: 150px;">
                   <p style="font-weight: bolder;font-size: 15px;color: #0d64e8">送药机器人</p>
                 </el-col>
-                <el-col :span="2">
+                <el-col :span="1">
                   <br>
                 </el-col>
               </el-row>
