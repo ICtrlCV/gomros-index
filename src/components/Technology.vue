@@ -135,8 +135,6 @@
                     GomRos 自动数据处理，自动输出结果</p>
                 </el-row>
               </div>
-              <!--              <img src="../../static/img/Technology/u18.jpg"-->
-              <!--                   style="width: 640px;height: 400px">-->
             </el-col>
             <el-col :span="8">
               <img src="../../static/img/Technology/u25.gif"
