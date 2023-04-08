@@ -3,8 +3,7 @@
     <div>
       <el-menu mode="horizontal" class="el-menu-demo" :default-active="$route.path" active-text-color="#409eff"
                v-bind:class="{ toppost : $route.path === '/' }" router>
-        <el-menu-item index="/" style="margin-left: 20%;height: auto" >
-<!--          <el-avatar :size="60" :src="circleUrl"></el-avatar>-->
+        <el-menu-item style="margin-left: 20%;height: auto">
           <img src="../../gomros-index/static/product/logo-small.png" style="width: 60px">
         </el-menu-item>
         <el-menu-item index="/index">首页</el-menu-item>

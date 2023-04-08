@@ -1,115 +1,81 @@
 <template>
   <div id="index">
-    <div class="section" style="background-image: url(static/img/Home/u2927.gif);
-background-size: cover">
+    <div class="section"
+         style="background-image: url(static/img/Home/u2927.gif);background-size: cover;filter: grayscale(10%)">
       <el-container style="color: #0D64E8;font-size: 72px;font-weight: bolder">
-        <el-header>
-          <br>
-        </el-header>
         <el-container
-            style="color: #0D64E8;font-size: 72px;font-weight: bolder;
-              text-shadow: 2px 2px 8px white;text-align: left;">
-          <el-aside width="50px">
-            <br>
-          </el-aside>
+            style="color: #0D64E8;font-size: 72px;font-weight: bolder;text-shadow: 4px 2px 5px rgba(255,255,255,1);text-align: left;">
           <el-main>
-            <el-row style="">
-              山东亚历山大智能科技有限公司
-            </el-row>
             <el-row :gutter="24">
-              <el-col :span="8">
-                GomROS平台
+              <el-col :span="15" style="margin-top: 8%;margin-left: 8%">
+                <p style="color: #0d64e8;margin-top: 0;margin-bottom: 0">山东亚历山大智能科技有限公司</p>
+                <p style="margin-top: 0;margin-bottom: 0;padding-top: 1%"><span style="color: #0d64e8">GomROS平台</span>
+                  <span style="color: #0d64e8;font-size: 24px">工业基础软件</span>
+                </p>
+                <p style="color: white;font-size: 32px;text-shadow: none;margin-top: 0;margin-bottom: 0">让机器人开发更简单</p>
               </el-col>
-              <el-col :span="12" style="font-size: 24px">
-                <div>
-                  <el-row>
-                    <br>
-                  </el-row>
-                  <el-row>
-                    <br>
-                  </el-row>
-                  <el-row>
-                    工业基础软件
-                  </el-row>
-                </div>
-              </el-col>
-            </el-row>
-            <el-row style="text-align: left;color: white;font-size: 32px;text-shadow: none">
-              让机器人开发更简单
+              <el-col :span="12" style="font-size: 24px">&nbsp;</el-col>
             </el-row>
           </el-main>
-          <el-aside width="50px">
-            <br>
-          </el-aside>
         </el-container>
-        <el-row>
-          <br><br><br><br>
-        </el-row>
-        <el-footer style="color: white;font-size: 24px;text-align: center" height="240px">
-          <el-row :gutter="24">
+        <el-footer
+            style="color: white;font-size: 24px;text-align: center;margin-top: 15%;padding-left: 0;padding-right: 0"
+            height="188px">
+          <el-row style="">
             <el-col :span="8">
               <div class="robotSystem">
-                <el-row><br></el-row>
-                <el-row style="font-size: 24px">机器人操作系统</el-row>
-                <el-row>GomROS（句芒）是一款为机器人、自动化设</el-row>
-                <el-row>备等高端智能装备提供的国产原创操作系统。</el-row>
-                <el-row><br><br></el-row>
+                <el-row style="padding-top: 8%">机器人操作系统</el-row>
+                <el-row style="font-size: 18px;padding-top: 2%;width: 78%;padding-left: 16%;padding-bottom: 7%">
+                  GomROS（句芒）是一款为机器人、自动化设备等高端智能装备提供的国产原创操作系统。
+                </el-row>
                 <div class="robotSystemIn"
-                     style="background-image: url(static/img/index/u159.jpg);">
-                  <el-row><br><br></el-row>
-                  <el-row style="font-size: 24px">机器人操作系统</el-row>
-                  <el-row>GomROS（句芒）是一款为机器人、自动化设</el-row>
-                  <el-row>备等高端智能装备提供的国产原创操作系统。</el-row>
-                  <el-row style="text-decoration: underline"
-                          onclick="window.location.href='/#/robotOperateSystem'">
-                    查看详情
+                     style="background-image: url(static/img/index/u159.jpg);filter: grayscale(20%)">
+                  <el-row style="padding-top: 12%">机器人操作系统</el-row>
+                  <el-row style="font-size: 18px;width: 80%;padding-left: 15%;padding-top: 4%">
+                    GomROS（句芒）是一款为机器人、自动化设备等高端智能装备提供的国产原创操作系统。
                   </el-row>
-                  <el-row><br></el-row>
+                  <el-row style="font-size: 18px;padding-top: 4%;cursor: pointer"
+                          onclick="window.location.href='/#/robotOperateSystem'">
+                    查看详情 →
+                  </el-row>
                 </div>
               </div>
             </el-col>
             <el-col :span="8">
               <div class="moveRobot">
-                <el-row><br></el-row>
-                <el-row style="font-size: 24px">移动机器人</el-row>
-                <el-row>移动机器人，是一个集环境感知、动态决策与规</el-row>
-                <el-row>划、行为控制与执行等多功能于一体的综合系统。</el-row>
-                <el-row><br><br></el-row>
+                <el-row style="padding-top: 8%">移动机器人</el-row>
+                <el-row style="font-size: 18px;padding-top: 2%;width: 82%;padding-left: 15%;padding-bottom: 7%">
+                  移动机器人，是一个集环境感知、动态决策与规划、行为控制与执行等多功能于一体的综合系统。
+                </el-row>
                 <div class="moveRobotIn"
-                     style="background-image: url(static/img/index/u2.jpg);">
-                  <el-row><br></el-row>
-                  <el-row style="font-size: 24px">移动机器人</el-row>
-                  <el-row>移动机器人，是一个集环境感知、动态决策与规</el-row>
-                  <el-row>划、行为控制与执行等多功能于一体的综合系统。</el-row>
-                  <el-row
-                      style="text-decoration: underline"
-                      onclick="window.location.href='/#/technology'">
-                    查看详情
+                     style="background-image: url(static/img/index/u2.jpg);filter: grayscale(50%)">
+                  <el-row style="padding-top: 12%">移动机器人</el-row>
+                  <el-row style="font-size: 18px;width: 80%;padding-left: 15%;padding-top: 4%">
+                    移动机器人，是一个集环境感知、动态决策与规划、行为控制与执行等多功能于一体的综合系统。
                   </el-row>
-                  <el-row><br><br></el-row>
+                  <el-row style="font-size: 18px;padding-top: 4%;cursor: pointer"
+                          onclick="window.location.href='/#/technology'">
+                    查看详情 →
+                  </el-row>
                 </div>
               </div>
             </el-col>
             <el-col :span="8">
               <div class="openPlat">
-                <el-row><br></el-row>
-                <el-row style="font-size: 24px" onclick="window.location.href='/#/opencommunity'">
-                  GomROS开放平台
+                <el-row style="padding-top: 8%">GomROS开放平台</el-row>
+                <el-row style="font-size: 18px;padding-top: 2%;width: 82%;padding-left: 15%;padding-bottom: 7%">
+                  提供智能机器人应用开放平台，支持全场景应用开发，助力合作伙伴快速完成机器人应用开发。
                 </el-row>
-                <el-row>提供智能机器人应用开放平台，支持全场景应</el-row>
-                <el-row>用开发，助力合作伙伴快速完成机器人应用开发。</el-row>
-                <el-row><br><br></el-row>
                 <div class="openPlatIn"
-                     style="background-image: url(static/img/index/u197.jpg);">
-                  <el-row><br></el-row>
-                  <el-row style="font-size: 24px">GomROS开放平台</el-row>
-                  <el-row>提供智能机器人应用开放平台，支持全场景应</el-row>
-                  <el-row>用开发，助力合作伙伴快速完成机器人应用开发。</el-row>
-                  <el-row style="text-decoration: underline"
-                          onclick="window.location.href='/#/opencommunity'">
-                    查看详情
+                     style="background-image: url(static/img/index/u197.jpg);filter: grayscale(50%)">
+                  <el-row style="padding-top: 12%">GomROS开放平台</el-row>
+                  <el-row style="font-size: 18px;width: 84%;padding-left: 15%;padding-top: 4%">
+                    提供智能机器人应用开放平台，支持全场景应用开发，助力合作伙伴快速完成机器人应用开发。
                   </el-row>
-                  <el-row><br><br></el-row>
+                  <el-row style="font-size: 18px;padding-top: 4%;cursor: pointer"
+                          onclick="window.location.href='/#/opencommunity'">
+                    查看详情 →
+                  </el-row>
                 </div>
               </div>
             </el-col>
@@ -117,7 +83,6 @@ background-size: cover">
         </el-footer>
       </el-container>
     </div>
-
 
     <div style="background-color: rgba(51, 51, 51, 0.847058823529412)">
       <el-container>
@@ -128,9 +93,9 @@ background-size: cover">
               <el-row>
                 云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台
               </el-row>
-              <el-row style="text-decoration: underline;text-align: center;"
+              <el-row style="cursor:pointer;text-align: center;padding-top: 25%"
                       onclick="window.location.href='/#/cloudPlatform'">
-                查看详情
+                查看详情 →
               </el-row>
             </div>
           </div>
@@ -140,9 +105,9 @@ background-size: cover">
               <el-row>
                 数据成为驱动经济增长的核心生产要素。大数据和云计算等技术的融合，推动了物联网的迅速发展，实现了人与人、人与物、物与物的互联互通，导致数据量呈现爆发式增长。
               </el-row>
-              <el-row style="text-decoration: underline;text-align: center"
+              <el-row style="cursor:pointer;text-align: center;padding-top: 25%"
                       onclick="window.location.href='/#/dataPlatform'">
-                查看详情
+                查看详情 →
               </el-row>
             </div>
           </div>
@@ -152,9 +117,9 @@ background-size: cover">
               <el-row>
                 场景服务系统是服务于各种应用场景，支撑各类管理系统的互联互通。
               </el-row>
-              <el-row style="text-decoration: underline;text-align: center;"
+              <el-row style="cursor:pointer;text-align: center;padding-top: 25%"
                       onclick="window.location.href='/#/scenarioService'">
-                查看详情
+                查看详情 →
               </el-row>
             </div>
           </div>
@@ -164,66 +129,32 @@ background-size: cover">
               <el-row>
                 一个机器人最主要的控制量就是控制机器人的移动，无论是自身的移动还是手臂等关节的移动，所以机器人驱动器中最根本的问题就是控制电机。
               </el-row>
-              <el-row style="text-decoration: underline;text-align: center;"
+              <el-row style="cursor:pointer;text-align: center;padding-top: 25%"
                       onclick="window.location.href='/#/hardwareDriver'">
-                查看详情
+                查看详情 →
               </el-row>
             </div>
           </div>
         </div>
-
       </el-container>
     </div>
     <el-container style="background-color: rgba(51, 51, 51, 0.196078431372549);">
-      <el-header>
-        <br>
-      </el-header>
       <el-container>
-        <el-aside width="50px">
-          <br>
-        </el-aside>
         <el-main>
           <div class="section"
                style="font-size: 32px;font-weight: bolder;color: #0d64e8;text-align: center">
-            <el-row style="text-align: left">
-              我们的平台优势
-            </el-row>
-            <el-row :gutter="24">
-              <el-col :span="4">
-                <br>
-              </el-col>
-              <el-col :span="16">
-                <!--                <img src="static/img/Home/u3075.png" style="width: 1800px;height:600px;filter: brightness(0.8)">-->
-                <img src="../../static/img/Home/u3075.png"
-                     style="width: 80%;height: 60%;filter: brightness(0.8)">
-              </el-col>
-              <el-col :span="4">
-                <br>
-              </el-col>
-            </el-row>
+            <el-row style="text-align: left;margin-top: 2%;margin-left: 5%">我们的平台优势</el-row>
             <el-row>
-              <br>
-              <br>
+              <img src="../../static/img/Home/u3075.png"
+                   style="padding-top: 2%;width: 60%;height: 650px;filter: brightness(0.8)">
             </el-row>
-            <el-row style="text-align: left">
-              客户和合作伙伴
-            </el-row>
+            <el-row style="text-align: left;margin-top: 4%;margin-left: 5%">客户和合作伙伴</el-row>
             <el-row :gutter="24">
-              <el-col :span="4">
-                <br>
-              </el-col>
-              <el-col :span="16">
-                <img src="../../static/img/Home/u3153.png" style="width: 90%">
-              </el-col>
-              <el-col :span="4">
-                <br>
-              </el-col>
+              <img src="../../static/img/Home/u3153.png"
+                   style="padding-top: 2%;padding-bottom:1%;width: 65%;height: 400px;filter: brightness(0.9)">
             </el-row>
           </div>
         </el-main>
-        <el-aside width="50px">
-          <br>
-        </el-aside>
       </el-container>
     </el-container>
     <el-container id="bottom">
@@ -374,17 +305,17 @@ p {
 }
 
 .openPlat {
-  border: 2px solid white;
+  border: 1px solid #7f7f7f;
   position: relative;
 }
 
 .moveRobot {
-  border: 2px solid white;
+  border: 1px solid #7f7f7f;
   position: relative;
 }
 
 .robotSystem {
-  border: 2px solid white;
+  border: 1px solid #7f7f7f;
   position: relative;
 }
 
