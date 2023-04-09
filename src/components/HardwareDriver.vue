@@ -272,25 +272,20 @@
       </el-row>
 
       <!--      底部     -->
-      <el-container id="bottom" style="width: 100%">
-        <el-aside width="50px"><br></el-aside>
-        <el-main style="background: #0d64e8;font-size: 30px;width: 100%">
-          <el-row :gutter="24">
-            <el-col :span="11" style="color: white;text-align: left;font-size: 35px;font-weight: bolder">
+      <el-container style="width: 100%">
+        <el-main style="background: #0d64e8;font-size: 30px;">
+          <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
+            <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
               欢迎咨询硬件驱动及控制系统相关产品
             </el-col>
-            <el-col :span="1"></el-col>
-            <el-col :span="13" style="text-align: right;">
+            <el-col :span="11" style="text-align: right;padding-right: 3%">
               <el-button @click="$router.push('/about')"
-                         style="font-size: 30px; background-color: #0d64e8;border-color: white;color: white">
+                         style="font-size: 30px;background-color: #0d64e8;border-color: white;color: white;">
                 联系我们
               </el-button>
             </el-col>
           </el-row>
         </el-main>
-        <el-aside width="50px">
-          <br>
-        </el-aside>
       </el-container>
     </div>
   </div>
