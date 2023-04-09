@@ -7,7 +7,7 @@ const router = new Router({
     routes: [{
             path: '/',
             component: (resolve) => {
-                require(['../components/Home'], resolve)
+                require(['../components/index'], resolve)
             }
         }, {
             path: '/news',
