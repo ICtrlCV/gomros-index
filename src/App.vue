@@ -1,322 +1,326 @@
 <template>
-    <div id="app">
-        <div>
-            <el-row :gutter="24" style="margin-top: 1%;" >
-                <el-col :span="4">
-                    <img src="../../gomros-index/static/product/logo-small.png"
-                         style="width: 20%;margin-left: 20%;margin-top: -10%;margin-bottom: -10%">
+  <div id="app">
+    <div>
+      <!--  导航栏  -->
+      <el-row :gutter="24" style="margin-top: 1%;">
+        <el-col :span="3">&nbsp;</el-col>
+        <el-col :span="3">
+          <img src="../../gomros-index/static/product/logo-small.png"
+               style="width: 30%;margin-left: 20%;margin-top: -8%;margin-bottom: -10%">
+        </el-col>
+        <el-col :span="2">
+          <button class="button-box" id="index-button" @click="routerToIndex()" ref="buttonShowCarousel">
+            首页
+          </button>
+        </el-col>
+        <el-col :span="3">
+          <button class="button-box" @click="changeCarousel(1)" id="robot-operate-system-button"
+                  ref="buttonShowCarousel">
+            机器人操作系统
+          </button>
+        </el-col>
+        <el-col :span="2">
+          <button class="button-box" @click="changeCarousel(2)" id="move-robot-button" ref="buttonShowCarousel2">
+            移动机器人
+          </button>
+        </el-col>
+        <el-col :span="3">
+          <button class="button-box" @click="changeCarousel(3)" id="GomRos-open_community-button"
+                  ref="buttonShowCarousel3">
+            GomRos开放平台
+          </button>
+        </el-col>
+        <el-col :span="2">
+          <button class="button-box" @click="changeCarousel(4)" id="corporate-button" ref="buttonShowCarousel4">
+            生态合作
+          </button>
+        </el-col>
+        <el-col :span="2">
+          <button class="button-box" @click="changeCarousel(5)" id="about-button" ref="buttonShowCarousel5">
+            关于我们
+          </button>
+        </el-col>
+      </el-row>
+      <br>
+      <!--  导航栏动画部分  -->
+      <div class="div-carousel-style" ref="carouselStyle">
+        <el-carousel :interval="5000" height="500px"
+                     :indicator-position="'none'" ref="banner"
+                     :autoplay="false" arrow="never">
+          <el-carousel-item v-for="item in 5" :key="item">
+            <!--      机器人操作系统      -->
+            <div v-if="item===1">
+              <el-row :gutter="24" style="height: 400px;background-color: white">
+                <el-col :span="6" class="left-font-style" style="height:100%;border-right: 1px solid #f2f2f2">
+                  <p style="margin-top: 20%;margin-right: 25%">机器人操作系统</p>
                 </el-col>
-                <el-col :span="3">
-                    <button class="button-box" id="index-button" @click="routerToIndex()" ref="buttonShowCarousel">
-                        首页
-                    </button>
+                <el-col :span="10">
+                  <el-row :gutter="24" style="width: 40%;height:400px;border-right: 1px solid #f2f2f2">
+                    <el-col :span="12" class="center-font-style" id="system-introduce"
+                            ref="systemIntroduce" @click="routerToRobotOperateSystem()"
+                            style="padding-top: 32%;padding-left: 4%">
+                      <a href="/#/robotOperateSystem" class="center-href-button">系统介绍</a>
+                    </el-col>
+                    <el-col :span="12" style="padding-top: 32%;">
+                      <img src="../static/img/index/u153p002.png" class="center-image"
+                           ref="systemIntroduceImg" id="systemIntroduceImg">
+                    </el-col>
+                  </el-row>
                 </el-col>
-                <el-col :span="3">
-                    <button class="button-box" @click="changeCarousel(1)" id="robot-operate-system-button" ref="buttonShowCarousel">
-                        机器人操作系统
-                    </button>
+                <el-col :span="8">
+                  <img src="../static/img/index/u159.jpg" style="width: 100%;height: 400px;padding: 2px;">
                 </el-col>
-                <el-col :span="3">
-                    <button class="button-box" @click="changeCarousel(2)" id="move-robot-button" ref="buttonShowCarousel2">
-                        移动机器人
-                    </button>
+              </el-row>
+              <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
+                <el-col :span="8" class="bottom-font-style" style="padding-top: 2%">
+                  安全开放的机器人操作系统
                 </el-col>
-                <el-col :span="4">
-                    <button class="button-box" @click="changeCarousel(3)" id="GomRos-open_community-button" ref="buttonShowCarousel3">
-                        GomRos开放平台
-                    </button>
+                <el-col :span="8"><br></el-col>
+                <el-col :span="8" class="bottom-font-style" ref="closeCarousel" style="padding-top: 2%">
+                  机器人操作系统
+                  <img src="../../gomros-index/static/img/index/u153p002.png" style="margin-left: 5%">
                 </el-col>
-                <el-col :span="3">
-                    <button class="button-box" @click="changeCarousel(4)" id="corporate-button" ref="buttonShowCarousel4">
-                        生态合作
-                    </button>
-                </el-col>
-                <el-col :span="3">
-                    <button class="button-box" @click="changeCarousel(5)" id="about-button" ref="buttonShowCarousel5">
-                        关于我们
-                    </button>
-                </el-col>
-            </el-row>
-            <br>
-            <div class="div-carousel-style" ref="carouselStyle" style="display: none">
-                <el-carousel :interval="5000" height="1000px"
-                             :indicator-position="'none'" ref="banner"
-                             :autoplay="false" arrow="never"
-                >
-                    <!--                    :initial-index="1"-->
-                    <el-carousel-item v-for="item in 5" :key="item">
-                        <div v-if="item===1">
-                            <el-row :gutter="24">
-                                <el-col :span="6" class="left-font-style" >
-                                    机器人操作系统
-                                </el-col>
-                                <el-col :span="12">
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="system-introduce"
-                                                ref="systemIntroduce" @click="routerToRobotOperateSystem()">
-                                            <a href="/#/robotOperateSystem"  class="center-href-button">
-                                                系统介绍
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="systemIntroduceImg" id="systemIntroduceImg">
-                                        </el-col>
-                                    </el-row>
-                                </el-col>
-                                <el-col :span="6">
-                                    <img src="../static/img/index/u159.jpg" style="width: 100%">
-                                </el-col>
-                            </el-row>
-                            <el-row :gutter="24">
-                                <el-col :span="8" class="bottom-font-style">
-                                    安全开放的机器人操作系统
-                                </el-col>
-                                <el-col :span="8">
-                                    <br>
-                                </el-col>
-                                <el-col :span="8" class="bottom-font-style" ref="closeCarousel">
-                                        机器人操作系统
-                                    <img src="../../gomros-index/static/img/index/u153p002.png">
-                                </el-col>
-                            </el-row>
-                        </div>
-                        <div v-if="item===2">
-                            <el-row :gutter="24">
-                                <el-col :span="6" class="left-font-style">
-                                    移动机器人
-                                </el-col>
-                                <el-col :span="12">
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="technology-introduce"
-                                                ref="technologyIntroduce">
-                                            <a href="/#/technology"  class="center-href-button">
-                                                移动机器人技术介绍
-                                            </a>
-
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="technologyIntroduceImg" id="technologyIntroduceImg">
-                                        </el-col>
-                                    </el-row>
-                                    <el-row :gutter="24" style="position: relative">
-                                        <el-col :span="12" class="center-font-style" id="auxiliary-system"
-                                                ref="auxiliarySystem">
-                                            移动机器人配套系统
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="auxiliarySystemImg" id="auxiliarySystemImg">
-                                        </el-col>
-                                        <div
-                                            id="rightDiv"
-                                            class="center-font-style" ref="rightDiv">
-                                            <el-row ref="cloudPlat" id="el-row-cloudPlat">
-                                                <a href="/#/cloudPlatform"  class="center-href-button">
-                                                    云平台
-                                                </a>
-
-                                            </el-row>
-                                            <el-row ref="dataPlat" id="el-row-dataPlat">
-                                                <a href="/#/dataPlatform"  class="center-href-button">
-                                                    移动机器人数据平台
-                                                </a>
-                                            </el-row>
-                                            <el-row ref="serviceSystem" id="el-row-serviceSystem">
-                                                <a href="/#/scenarioService"  class="center-href-button">
-                                                    场景服务软件系统
-                                                </a>
-                                            </el-row>
-                                            <el-row ref="hardwareSystem" id="el-row-hardwareSystem">
-                                                <a href="/#/hardwareDriver"  class="center-href-button">
-                                                    硬件控制及驱动系统
-                                                </a>
-                                            </el-row>
-                                        </div>
-                                    </el-row>
-
-                                </el-col>
-                                <el-col :span="6">
-                                    <img src="../static/img/index/u2.jpg" style="width: 100%">
-                                </el-col>
-                            </el-row>
-                            <el-row :gutter="24">
-                                <el-col :span="8" class="bottom-font-style">
-                                    移动机器人是自动执行工作的机器装置
-                                </el-col>
-                                <el-col :span="8">
-                                    <br>
-                                </el-col>
-                                <el-col :span="8" class="bottom-font-style" ref="closeCarousel2">
-                                    移动机器人
-                                    <img src="../../gomros-index/static/img/index/u153p002.png" >
-                                </el-col>
-                            </el-row>
-                        </div>
-                        <div v-if="item===3">
-                            <el-row :gutter="24">
-                                <el-col :span="6" class="left-font-style">
-                                    GomROS开放平台
-                                </el-col>
-                                <el-col :span="12">
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="open-plat-introduce"
-                                                ref="openPlatIntroduce">
-                                            <a href="/#/openCommunity"  class="center-href-button">
-                                                开放平台介绍
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="openPlatIntroduceImg" id="openPlatIntroduceImg">
-                                        </el-col>
-                                    </el-row>
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="open-community"
-                                                ref="openCommunity">
-                                            <a href="/#/development"  class="center-href-button">
-                                                开发者社区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="openCommunityImg" id="openCommunityImg">
-                                        </el-col>
-                                    </el-row>
-                                </el-col>
-                                <el-col :span="6">
-                                    <img src="../static/img/index/u197.jpg" style="width: 100%">
-                                </el-col>
-                            </el-row>
-                            <el-row :gutter="24">
-                                <el-col :span="8" class="bottom-font-style">
-                                    安全开放的工业互联网平台
-                                </el-col>
-                                <el-col :span="8">
-                                    <br>
-                                </el-col>
-                                <el-col :span="8" class="bottom-font-style" ref="closeCarousel3">
-                                    GomRos开放平台
-                                    <img src="../../gomros-index/static/img/index/u153p002.png" >
-                                </el-col>
-                            </el-row>
-                        </div>
-                        <div v-if="item===4">
-                            <el-row :gutter="24">
-                                <el-col :span="6" class="left-font-style">
-                                    生态合作
-                                </el-col>
-                                <el-col :span="12">
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="collaborative-dev-plat"
-                                                ref="collaborativeDevPlat">
-                                            <a href="/#/development"  class="center-href-button">
-                                                协同研发平台
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="collaborativeDevPlatImg" id="collaborativeDevPlatImg">
-                                        </el-col>
-                                    </el-row>
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="edu-train-cooperation"
-                                                ref="eduTrainCooperation">
-                                            <a href="/#/education"  class="center-href-button">
-                                                教育培训合作
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="eduTrainCooperationImg" id="eduTrainCooperationImg">
-                                        </el-col>
-                                    </el-row>
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="supplier-cooperation"
-                                                ref="supplierCooperation">
-                                            <a href="/#/supplier"  class="center-href-button">
-                                                供应商合作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="supplierCooperationImg" id="supplierCooperationImg">
-                                        </el-col>
-                                    </el-row>
-                                </el-col>
-                                <el-col :span="6">
-                                    <img src="../static/img/index/u215.png" style="width: 100%">
-                                </el-col>
-                            </el-row>
-                            <el-row :gutter="24">
-                                <el-col :span="8" class="bottom-font-style">
-                                    合作打造可持续发展的生态系统
-                                </el-col>
-                                <el-col :span="8">
-                                    <br>
-                                </el-col>
-                                <el-col :span="8" class="bottom-font-style" ref="closeCarousel4">
-                                    生态合作
-                                    <img src="../../gomros-index/static/img/index/u153p002.png" >
-                                </el-col>
-                            </el-row>
-                        </div>
-                        <div v-if="item===5">
-                            <el-row :gutter="24">
-                                <el-col :span="6" class="left-font-style">
-                                    关于我们
-                                </el-col>
-                                <el-col :span="12">
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="enterprise-introduction"
-                                                ref="enterpriseIntroduction">
-                                            <a href="/#/corporateProfile"  class="center-href-button">
-                                                企业简介
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="enterpriseIntroductionImg" id="enterpriseIntroductionImg">
-                                        </el-col>
-                                    </el-row>
-                                    <el-row :gutter="24">
-                                        <el-col :span="12" class="center-font-style" id="contact-us" ref="contactUs">
-                                            <a href="/#/about"  class="center-href-button">
-                                                联系我们
-                                            </a>
-                                        </el-col>
-                                        <el-col :span="12">
-                                            <img src="../static/img/index/u153p002.png" class="center-image"
-                                                 ref="contactUsImg" id="contactUsImg">
-                                        </el-col>
-                                    </el-row>
-                                </el-col>
-                                <el-col :span="6">
-                                    <img src="../static/img/index/u233.png" style="width: 100%">
-                                </el-col>
-                            </el-row>
-                            <el-row :gutter="24">
-                                <el-col :span="8" class="bottom-font-style">
-                                    企业发展历程介绍
-                                </el-col>
-                                <el-col :span="8">
-                                    <br>
-                                </el-col>
-                                <el-col :span="8" class="bottom-font-style" ref="closeCarousel5">
-                                    关于我们
-                                    <img src="../../gomros-index/static/img/index/u153p002.png" >
-                                </el-col>
-                            </el-row>
-                        </div>
-                    </el-carousel-item>
-                </el-carousel>
+              </el-row>
             </div>
-        </div>
-        <transition enter-active-class="animated">
-            <router-view></router-view>
-        </transition>
+            <!--      移动机器人      -->
+            <div v-if="item===2">
+              <el-row :gutter="24" style="height: 400px;background-color: white">
+                <el-col :span="6" class="left-font-style" style="height: 100%;border-right: 1px solid #f2f2f2">
+                  <p style="margin-top: 20%;margin-right: 25%">移动机器人</p>
+                </el-col>
+                <el-col :span="10">
+                  <el-row :gutter="24">
+                    <el-col :span="8" style="width: 40%;height: 400px;border-right: 1px solid #f2f2f2;padding: 0">
+                      <el-row style="margin-top: 12%;margin-left: 4%">
+                        <el-col :span="18" class="center-font-style" id="technology-introduce"
+                                ref="technologyIntroduce" style="padding-top: 8%;">
+                          <a href="/#/technology" class="center-href-button">
+                            移动机器人技术介绍
+                          </a>
+                        </el-col>
+                        <el-col :span="4" style="padding-top: 8%;">
+                          <img src="../static/img/index/u153p002.png" class="center-image"
+                               ref="technologyIntroduceImg" id="technologyIntroduceImg">
+                        </el-col>
+                      </el-row>
+                      <el-row style="margin-top: 10%;margin-left: 4%">
+                        <el-col :span="18" class="center-font-style" id="auxiliary-system"
+                                ref="auxiliarySystem">
+                          移动机器人配套系统
+                        </el-col>
+                        <el-col :span="4">
+                          <img src="../static/img/index/u153p002.png" class="center-image"
+                               ref="auxiliarySystemImg" id="auxiliarySystemImg">
+                        </el-col>
+                      </el-row>
+                    </el-col>
+                    <el-col :span="14" style="height: 400px;">
+                      <div id="rightDiv" class="center-font-style" ref="rightDiv"
+                           style="margin-top: 30%;margin-left: 10%">
+                        <el-row ref="cloudPlat" id="el-row-cloudPlat">
+                          <a href="/#/cloudPlatform" class="center-href-button">
+                            云平台
+                          </a>
+                        </el-row>
+                        <el-row ref="dataPlat" id="el-row-dataPlat">
+                          <a href="/#/dataPlatform" class="center-href-button">
+                            移动机器人数据平台
+                          </a>
+                        </el-row>
+                        <el-row ref="serviceSystem" id="el-row-serviceSystem">
+                          <a href="/#/scenarioService" class="center-href-button">
+                            场景服务软件系统
+                          </a>
+                        </el-row>
+                        <el-row ref="hardwareSystem" id="el-row-hardwareSystem">
+                          <a href="/#/hardwareDriver" class="center-href-button">
+                            硬件控制及驱动系统
+                          </a>
+                        </el-row>
+                      </div>
+                    </el-col>
+                  </el-row>
+                </el-col>
+                <el-col :span="8">
+                  <img src="../static/img/index/u2.jpg" style="width: 100%;height: 400px;padding: 2px;">
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
+                <el-col :span="8" class="bottom-font-style" style="padding-top: 2%">
+                  移动机器人是自动执行工作的机器装置
+                </el-col>
+                <el-col :span="8"><br></el-col>
+                <el-col :span="8" class="bottom-font-style" ref="closeCarousel2" style="padding-top: 2%">
+                  移动机器人
+                  <img src="../../gomros-index/static/img/index/u153p002.png" style="margin-left: 5%">
+                </el-col>
+              </el-row>
+            </div>
+            <!--      GomROS开放平台      -->
+            <div v-if="item===3">
+              <el-row :gutter="24" style="height: 400px;background-color: white">
+                <el-col :span="6" class="left-font-style" style="height:100%;border-right: 1px solid #f2f2f2">
+                  <p style="margin-top: 20%;margin-right: 18%">GomROS开放平台</p>
+                </el-col>
+                <el-col :span="10" style="height: 400px;padding: 0">
+                  <el-row style="width: 40%;height: 100%;border-right: 1px solid #f2f2f2;">
+                    <el-row :gutter="24" style="padding-top: 20%;padding-left: 12%">
+                      <el-col :span="12" class="center-font-style" id="open-plat-introduce"
+                              ref="openPlatIntroduce" style="text-align: left">
+                        <a href="/#/openCommunity" class="center-href-button">开放平台介绍</a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="openPlatIntroduceImg" id="openPlatIntroduceImg">
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
+                      <el-col :span="12" class="center-font-style" id="open-community"
+                              ref="openCommunity" style="text-align: left">
+                        <a href="/#/development" class="center-href-button">开发者社区</a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="openCommunityImg" id="openCommunityImg">
+                      </el-col>
+                    </el-row>
+                  </el-row>
+                </el-col>
+                <el-col :span="8">
+                  <img src="../static/img/index/u197.jpg" style="width: 100%;height: 400px;padding: 2px;">
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
+                <el-col :span="8" class="bottom-font-style" style="padding-top: 2%">
+                  安全开放的工业互联网平台
+                </el-col>
+                <el-col :span="8"><br></el-col>
+                <el-col :span="8" class="bottom-font-style" ref="closeCarousel3" style="padding-top: 2%">
+                  GomRos开放平台
+                  <img src="../../gomros-index/static/img/index/u153p002.png" style="padding-left: 4%">
+                </el-col>
+              </el-row>
+            </div>
+            <!--      生态合作      -->
+            <div v-if="item===4">
+              <el-row :gutter="24" style="height: 400px;background-color: white">
+                <el-col :span="6" class="left-font-style" style="height:100%;border-right: 1px solid #f2f2f2">
+                  <p style="margin-top: 20%;margin-right: 25%">生态合作</p>
+                </el-col>
+                <el-col :span="10" style="height: 400px">
+                  <el-row style="width: 40%;height: 100%;border-right: 1px solid #f2f2f2;">
+                    <el-row :gutter="24" style="padding-top: 12%;padding-left: 12%">
+                      <el-col :span="12" class="center-font-style" id="collaborative-dev-plat"
+                              ref="collaborativeDevPlat">
+                        <a href="/#/development" class="center-href-button">
+                          协同研发平台
+                        </a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="collaborativeDevPlatImg" id="collaborativeDevPlatImg">
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
+                      <el-col :span="12" class="center-font-style" id="edu-train-cooperation"
+                              ref="eduTrainCooperation">
+                        <a href="/#/education" class="center-href-button">
+                          教育培训合作
+                        </a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="eduTrainCooperationImg" id="eduTrainCooperationImg">
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
+                      <el-col :span="12" class="center-font-style" id="supplier-cooperation"
+                              ref="supplierCooperation" style="text-align: left">
+                        <a href="/#/supplier" class="center-href-button">
+                          供应商合作
+                        </a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="supplierCooperationImg" id="supplierCooperationImg">
+                      </el-col>
+                    </el-row>
+                  </el-row>
+                </el-col>
+                <el-col :span="8">
+                  <img src="../static/img/index/u215.png"  style="width: 100%;height: 400px;padding: 2px;">
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
+                <el-col :span="8" class="bottom-font-style" style="padding-top: 2%">
+                  合作打造可持续发展的生态系统
+                </el-col>
+                <el-col :span="8"><br></el-col>
+                <el-col :span="8" class="bottom-font-style" ref="closeCarousel4" style="padding-top: 2%">
+                  生态合作
+                  <img src="../../gomros-index/static/img/index/u153p002.png" style="padding-left: 4%">
+                </el-col>
+              </el-row>
+            </div>
+            <!--      关于我们      -->
+            <div v-if="item===5">
+              <el-row :gutter="24" style="height: 400px;background-color: white">
+                <el-col :span="6" class="left-font-style" style="height:100%;border-right: 1px solid #f2f2f2">
+                   <p style="margin-top: 20%;margin-right: 25%">关于我们</p>
+                </el-col>
+                <el-col :span="10" style="height: 400px">
+                  <el-row style="width: 40%;height: 100%;border-right: 1px solid #f2f2f2;">
+                    <el-row :gutter="24" style="padding-top: 20%;padding-left: 4%">
+                      <el-col :span="12" class="center-font-style" id="enterprise-introduction"
+                              ref="enterpriseIntroduction">
+                        <a href="/#/corporateProfile" class="center-href-button">
+                          企业简介
+                        </a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="enterpriseIntroductionImg" id="enterpriseIntroductionImg">
+                      </el-col>
+                    </el-row>
+                    <el-row :gutter="24" style="padding-top: 12%;padding-left: 4%">
+                      <el-col :span="12" class="center-font-style" id="contact-us" ref="contactUs">
+                        <a href="/#/about" class="center-href-button">
+                          联系我们
+                        </a>
+                      </el-col>
+                      <el-col :span="12">
+                        <img src="../static/img/index/u153p002.png" class="center-image"
+                             ref="contactUsImg" id="contactUsImg">
+                      </el-col>
+                    </el-row>
+                  </el-row>
+
+                </el-col>
+                <el-col :span="8">
+                  <img src="../static/img/index/u233.png"  style="width: 100%;height: 400px;padding: 2px;">
+                </el-col>
+              </el-row>
+              <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
+                <el-col :span="8" class="bottom-font-style" style="padding-top: 2%">
+                  企业发展历程介绍
+                </el-col>
+                <el-col :span="8">
+                  <br>
+                </el-col>
+                <el-col :span="8" class="bottom-font-style" ref="closeCarousel5" style="padding-top: 2%">
+                  关于我们
+                  <img src="../../gomros-index/static/img/index/u153p002.png" style="padding-left: 4%">
+                </el-col>
+              </el-row>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
     </div>
+    <transition enter-active-class="animated">
+      <router-view></router-view>
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -324,344 +328,341 @@ import axios from "./router/http";
 import message from "element-ui/packages/message";
 
 export default {
-    name: "App",
-    data() {
-        return {
-            circleUrl: "../../gomros-index/static/product/logo-small.png",
-            appurl: '',
-            transitionName: '',
-            activeIndex: '/',
-            hrefdata: [
-                [
-                    {
-                        href: "/goto",
-                        text: "走进GomRos"
-                    },
-                    {
-                        href: "/goto",
-                        text: "发展历程"
-                    },
-                    {
-                        href: "/goto",
-                        text: "GomRos文化"
-                    },
-                    {
-                        href: "/goto",
-                        text: "资质荣誉"
-                    },
-                    {
-                        href: "/goto",
-                        text: "合作伙伴"
-                    }
-                ],
-                [
-                    {
-                        href: "/news",
-                        text: "新闻资讯"
-                    },
-                    {
-                        href: "/news",
-                        text: "公司新闻"
-                    },
-                    {
-                        href: "/news",
-                        text: "行业动态"
-                    }
-                ],
-                [
-                    {
-                        href: "/product",
-                        text: "产品中心"
-                    }
-                ],
-                [
-                    {
-                        href: "/case",
-                        text: "经典案例"
-                    },
-                    {
-                        href: "/recruitment",
-                        text: "诚聘英才"
-                    },
-                    {
-                        href: "/study",
-                        text: "学习模块"
-                    },
-                    {
-                        href: "/opencommunity",
-                        text: "开放平台介绍"
+  name: "App",
+  data() {
+    return {
+      circleUrl: "../../gomros-index/static/product/logo-small.png",
+      appurl: '',
+      transitionName: '',
+      activeIndex: '/',
+      hrefdata: [
+        [
+          {
+            href: "/goto",
+            text: "走进GomRos"
+          },
+          {
+            href: "/goto",
+            text: "发展历程"
+          },
+          {
+            href: "/goto",
+            text: "GomRos文化"
+          },
+          {
+            href: "/goto",
+            text: "资质荣誉"
+          },
+          {
+            href: "/goto",
+            text: "合作伙伴"
+          }
+        ],
+        [
+          {
+            href: "/news",
+            text: "新闻资讯"
+          },
+          {
+            href: "/news",
+            text: "公司新闻"
+          },
+          {
+            href: "/news",
+            text: "行业动态"
+          }
+        ],
+        [
+          {
+            href: "/product",
+            text: "产品中心"
+          }
+        ],
+        [
+          {
+            href: "/case",
+            text: "经典案例"
+          },
+          {
+            href: "/recruitment",
+            text: "诚聘英才"
+          },
+          {
+            href: "/study",
+            text: "学习模块"
+          },
+          {
+            href: "/opencommunity",
+            text: "开放平台介绍"
 
-                    }
-                ],
-                [
-                    {
-                        href: "/help",
-                        text: "帮助中心"
-                    },
-                ],
-                [
-                    {
-                        href: '/about',
-                        text: "关于我们"
-                    },
-                    {
-                        href: '/contact',
-                        text: "联系我们"
-                    },
-                    {
-                        href: '/corporateprofile',
-                        text: "企业简介"
-                    },
-                    {
-                        href: '/development',
-                        text: "协同研发平台"
-                    },
-                    {
-                        href: '/education',
-                        text: "教育培训合作"
-                    },
-                    {
-                        href: 'supplier',
-                        text: "供应商合作"
-                    },
-                    {
-                        href: '/honor',
-                        text: "荣耀"
-                    },
-                ]
-            ]
-        };
+          }
+        ],
+        [
+          {
+            href: "/help",
+            text: "帮助中心"
+          },
+        ],
+        [
+          {
+            href: '/about',
+            text: "关于我们"
+          },
+          {
+            href: '/contact',
+            text: "联系我们"
+          },
+          {
+            href: '/corporateprofile',
+            text: "企业简介"
+          },
+          {
+            href: '/development',
+            text: "协同研发平台"
+          },
+          {
+            href: '/education',
+            text: "教育培训合作"
+          },
+          {
+            href: 'supplier',
+            text: "供应商合作"
+          },
+          {
+            href: '/honor',
+            text: "荣耀"
+          },
+        ]
+      ]
+    };
+  },
+  methods: {
+    changeCarousel(index) {
+      this.$refs.banner.setActiveItem(index - 1)
     },
-    methods: {
-        changeCarousel(index) {
-            this.$refs.banner.setActiveItem(index - 1)
-
-        },
-        routerToIndex() {
-            this.$router.push('/index')
-            console.log("index")
-        },
-        routerToRobotOperateSystem() {
-            this.$router.push('/robotOperateSystem')
-            console.log("robotOperateSystem")
-        },
-        routerToTechnology() {
-            this.$router.push('/technology')
-            console.log("technology")
-        },
-        routerToCloudPlatform() {
-            this.$router.push('/cloudPlatform')
-        },
-        routerToDataPlatform() {
-            this.$router.push('/dataPlatform')
-        },
-        routerToScenarioService() {
-            this.$router.push('/scenarioService')
-        },
-        routerToHardwareDriver() {
-            this.$router.push('/hardwareDriver')
-        },
-        routerToOpencommunity() {
-            this.$router.push('/openCommunity')
-        },
-        routerToDevelopment() {
-            this.$router.push('/development')
-        },
-        routerToEducation() {
-            this.$router.push('/education')
-        },
-        routerToSupplier() {
-            this.$router.push('/supplier')
-        },
-        routerToCorporateprofile() {
-            this.$router.push('/corporateProfile')
-        },
-        routerToAbout() {
-            this.$router.push('/about')
-        },
-
-
+    routerToIndex() {
+      this.$router.push('/index')
+      console.log("index")
     },
-    mounted() {
-        this.$nextTick(() => {
-            const systemIntroduce = this.$refs.systemIntroduce[0].$el;
-            const systemIntroduceImg = this.$refs.systemIntroduceImg[0];
-            const technologyIntroduce = this.$refs.technologyIntroduce[0].$el;
-            const technologyIntroduceImg = this.$refs.technologyIntroduceImg[0];
-            const auxiliarySystem = this.$refs.auxiliarySystem[0].$el;
-            const auxiliarySystemImg = this.$refs.auxiliarySystemImg[0];
-            const openPlatIntroduce = this.$refs.openPlatIntroduce[0].$el;
-            const openPlatIntroduceImg = this.$refs.openPlatIntroduceImg[0];
-            const openCommunity = this.$refs.openCommunity[0].$el;
-            const openCommunityImg = this.$refs.openCommunityImg[0];
-            const collaborativeDevPlat = this.$refs.collaborativeDevPlat[0].$el;
-            const collaborativeDevPlatImg = this.$refs.collaborativeDevPlatImg[0];
-            const eduTrainCooperation = this.$refs.eduTrainCooperation[0].$el;
-            const eduTrainCooperationImg = this.$refs.eduTrainCooperationImg[0];
-            const supplierCooperation = this.$refs.supplierCooperation[0].$el;
-            const supplierCooperationImg = this.$refs.supplierCooperationImg[0];
-            const enterpriseIntroduction = this.$refs.enterpriseIntroduction[0].$el;
-            const enterpriseIntroductionImg = this.$refs.enterpriseIntroductionImg[0];
-            const contactUs = this.$refs.contactUs[0].$el;
-            const contactUsImg = this.$refs.contactUsImg[0];
-            const rightDiv = this.$refs.rightDiv[0];
-            const cloudPlat = this.$refs.cloudPlat[0].$el;
-            const dataPlat = this.$refs.dataPlat[0].$el;
-            const serviceSystem = this.$refs.serviceSystem[0].$el;
-            const hardwareSystem = this.$refs.hardwareSystem[0].$el;
-            const carouselStyle = this.$refs.carouselStyle;
-            const buttonShowCarousel = this.$refs.buttonShowCarousel;
-            const buttonShowCarousel2 = this.$refs.buttonShowCarousel2;
-            const buttonShowCarousel3 = this.$refs.buttonShowCarousel3;
-            const buttonShowCarousel4 = this.$refs.buttonShowCarousel4;
-            const buttonShowCarousel5 = this.$refs.buttonShowCarousel5;
-            const closeCarousel =this.$refs.closeCarousel[0].$el;
-            const closeCarousel2 =this.$refs.closeCarousel2[0].$el;
-            const closeCarousel3 =this.$refs.closeCarousel3[0].$el;
-            const closeCarousel4 =this.$refs.closeCarousel4[0].$el;
-            const closeCarousel5 =this.$refs.closeCarousel5[0].$el;
-            // 触发方法
-            systemIntroduce.addEventListener("mouseover", () => {
-                systemIntroduce.style.color = "#0d64e8"
-                systemIntroduceImg.style.display = "block"
-            })
-            systemIntroduce.addEventListener("mouseout", () => {
-                systemIntroduce.style.color = "#7F7F7F"
-                systemIntroduceImg.style.display = "none"
-            })
-            technologyIntroduce.addEventListener("mouseover", () => {
-                technologyIntroduce.style.color = "#0d64e8"
-                technologyIntroduceImg.style.display = "block"
-            })
-            technologyIntroduce.addEventListener("mouseout", () => {
-                technologyIntroduce.style.color = "#7F7F7F"
-                technologyIntroduceImg.style.display = "none"
-            })
-            auxiliarySystem.addEventListener("mouseover", () => {
-                auxiliarySystem.style.color = "#0d64e8"
-                auxiliarySystemImg.style.display = "block"
-                rightDiv.style.display = "block"
-                rightDiv.style.textAlign = "left"
-
-            })
-            auxiliarySystem.addEventListener("mouseout", () => {
-                auxiliarySystem.style.color = "#7F7F7F"
-                auxiliarySystemImg.style.display = "none"
-            })
-            openPlatIntroduce.addEventListener("mouseover", () => {
-                openPlatIntroduce.style.color = "#0d64e8"
-                openPlatIntroduceImg.style.display = "block"
-            })
-            openPlatIntroduce.addEventListener("mouseout", () => {
-                openPlatIntroduce.style.color = "#7F7F7F"
-                openPlatIntroduceImg.style.display = "none"
-            })
-            openCommunity.addEventListener("mouseover", () => {
-                openCommunity.style.color = "#0d64e8"
-                openCommunityImg.style.display = "block"
-            })
-            openCommunity.addEventListener("mouseout", () => {
-                openCommunity.style.color = "#7F7F7F"
-                openCommunityImg.style.display = "none"
-            })
-            collaborativeDevPlat.addEventListener("mouseover", () => {
-                collaborativeDevPlat.style.color = "#0d64e8"
-                collaborativeDevPlatImg.style.display = "block"
-            })
-            collaborativeDevPlat.addEventListener("mouseout", () => {
-                collaborativeDevPlat.style.color = "#7F7F7F"
-                collaborativeDevPlatImg.style.display = "none"
-            })
-            eduTrainCooperation.addEventListener("mouseover", () => {
-                eduTrainCooperation.style.color = "#0d64e8"
-                eduTrainCooperationImg.style.display = "block"
-            })
-            eduTrainCooperation.addEventListener("mouseout", () => {
-                eduTrainCooperation.style.color = "#7F7F7F"
-                eduTrainCooperationImg.style.display = "none"
-            })
-            supplierCooperation.addEventListener("mouseover", () => {
-                supplierCooperation.style.color = "#0d64e8"
-                supplierCooperationImg.style.display = "block"
-            })
-            supplierCooperation.addEventListener("mouseout", () => {
-                supplierCooperation.style.color = "#7F7F7F"
-                supplierCooperationImg.style.display = "none"
-            })
-            enterpriseIntroduction.addEventListener("mouseover", () => {
-                enterpriseIntroduction.style.color = "#0d64e8"
-                enterpriseIntroductionImg.style.display = "block"
-            })
-            enterpriseIntroduction.addEventListener("mouseout", () => {
-                enterpriseIntroduction.style.color = "#7F7F7F"
-                enterpriseIntroductionImg.style.display = "none"
-            })
-            contactUs.addEventListener("mouseover", () => {
-                contactUs.style.color = "#0d64e8"
-                contactUsImg.style.display = "block"
-            })
-            contactUs.addEventListener("mouseout", () => {
-                contactUs.style.color = "#7F7F7F"
-                contactUsImg.style.display = "none"
-            })
-            cloudPlat.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            cloudPlat.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            dataPlat.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            dataPlat.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            serviceSystem.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            serviceSystem.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            hardwareSystem.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            hardwareSystem.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            buttonShowCarousel.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel2.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel3.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel4.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel5.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            closeCarousel.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel2.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel3.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel4.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel5.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-
-        });
+    routerToRobotOperateSystem() {
+      this.$router.push('/robotOperateSystem')
+      console.log("robotOperateSystem")
+    },
+    routerToTechnology() {
+      this.$router.push('/technology')
+      console.log("technology")
+    },
+    routerToCloudPlatform() {
+      this.$router.push('/cloudPlatform')
+    },
+    routerToDataPlatform() {
+      this.$router.push('/dataPlatform')
+    },
+    routerToScenarioService() {
+      this.$router.push('/scenarioService')
+    },
+    routerToHardwareDriver() {
+      this.$router.push('/hardwareDriver')
+    },
+    routerToOpencommunity() {
+      this.$router.push('/openCommunity')
+    },
+    routerToDevelopment() {
+      this.$router.push('/development')
+    },
+    routerToEducation() {
+      this.$router.push('/education')
+    },
+    routerToSupplier() {
+      this.$router.push('/supplier')
+    },
+    routerToCorporateprofile() {
+      this.$router.push('/corporateProfile')
+    },
+    routerToAbout() {
+      this.$router.push('/about')
     },
 
+
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const systemIntroduce = this.$refs.systemIntroduce[0].$el;
+      const systemIntroduceImg = this.$refs.systemIntroduceImg[0];
+      const technologyIntroduce = this.$refs.technologyIntroduce[0].$el;
+      const technologyIntroduceImg = this.$refs.technologyIntroduceImg[0];
+      const auxiliarySystem = this.$refs.auxiliarySystem[0].$el;
+      const auxiliarySystemImg = this.$refs.auxiliarySystemImg[0];
+      const openPlatIntroduce = this.$refs.openPlatIntroduce[0].$el;
+      const openPlatIntroduceImg = this.$refs.openPlatIntroduceImg[0];
+      const openCommunity = this.$refs.openCommunity[0].$el;
+      const openCommunityImg = this.$refs.openCommunityImg[0];
+      const collaborativeDevPlat = this.$refs.collaborativeDevPlat[0].$el;
+      const collaborativeDevPlatImg = this.$refs.collaborativeDevPlatImg[0];
+      const eduTrainCooperation = this.$refs.eduTrainCooperation[0].$el;
+      const eduTrainCooperationImg = this.$refs.eduTrainCooperationImg[0];
+      const supplierCooperation = this.$refs.supplierCooperation[0].$el;
+      const supplierCooperationImg = this.$refs.supplierCooperationImg[0];
+      const enterpriseIntroduction = this.$refs.enterpriseIntroduction[0].$el;
+      const enterpriseIntroductionImg = this.$refs.enterpriseIntroductionImg[0];
+      const contactUs = this.$refs.contactUs[0].$el;
+      const contactUsImg = this.$refs.contactUsImg[0];
+      const rightDiv = this.$refs.rightDiv[0];
+      const cloudPlat = this.$refs.cloudPlat[0].$el;
+      const dataPlat = this.$refs.dataPlat[0].$el;
+      const serviceSystem = this.$refs.serviceSystem[0].$el;
+      const hardwareSystem = this.$refs.hardwareSystem[0].$el;
+      const carouselStyle = this.$refs.carouselStyle;
+      const buttonShowCarousel = this.$refs.buttonShowCarousel;
+      const buttonShowCarousel2 = this.$refs.buttonShowCarousel2;
+      const buttonShowCarousel3 = this.$refs.buttonShowCarousel3;
+      const buttonShowCarousel4 = this.$refs.buttonShowCarousel4;
+      const buttonShowCarousel5 = this.$refs.buttonShowCarousel5;
+      const closeCarousel = this.$refs.closeCarousel[0].$el;
+      const closeCarousel2 = this.$refs.closeCarousel2[0].$el;
+      const closeCarousel3 = this.$refs.closeCarousel3[0].$el;
+      const closeCarousel4 = this.$refs.closeCarousel4[0].$el;
+      const closeCarousel5 = this.$refs.closeCarousel5[0].$el;
+      // 触发方法
+      systemIntroduce.addEventListener("mouseover", () => {
+        systemIntroduce.style.color = "#0d64e8"
+        systemIntroduceImg.style.display = "block"
+      })
+      systemIntroduce.addEventListener("mouseout", () => {
+        systemIntroduce.style.color = "#7F7F7F"
+        systemIntroduceImg.style.display = "none"
+      })
+      technologyIntroduce.addEventListener("mouseover", () => {
+        technologyIntroduce.style.color = "#0d64e8"
+        technologyIntroduceImg.style.display = "block"
+      })
+      technologyIntroduce.addEventListener("mouseout", () => {
+        technologyIntroduce.style.color = "#7F7F7F"
+        technologyIntroduceImg.style.display = "none"
+      })
+      auxiliarySystem.addEventListener("mouseover", () => {
+        auxiliarySystem.style.color = "#0d64e8"
+        auxiliarySystemImg.style.display = "block"
+        rightDiv.style.display = "block"
+        rightDiv.style.textAlign = "left"
+
+      })
+      auxiliarySystem.addEventListener("mouseout", () => {
+        auxiliarySystem.style.color = "#7F7F7F"
+        auxiliarySystemImg.style.display = "none"
+      })
+      openPlatIntroduce.addEventListener("mouseover", () => {
+        openPlatIntroduce.style.color = "#0d64e8"
+        openPlatIntroduceImg.style.display = "block"
+      })
+      openPlatIntroduce.addEventListener("mouseout", () => {
+        openPlatIntroduce.style.color = "#7F7F7F"
+        openPlatIntroduceImg.style.display = "none"
+      })
+      openCommunity.addEventListener("mouseover", () => {
+        openCommunity.style.color = "#0d64e8"
+        openCommunityImg.style.display = "block"
+      })
+      openCommunity.addEventListener("mouseout", () => {
+        openCommunity.style.color = "#7F7F7F"
+        openCommunityImg.style.display = "none"
+      })
+      collaborativeDevPlat.addEventListener("mouseover", () => {
+        collaborativeDevPlat.style.color = "#0d64e8"
+        collaborativeDevPlatImg.style.display = "block"
+      })
+      collaborativeDevPlat.addEventListener("mouseout", () => {
+        collaborativeDevPlat.style.color = "#7F7F7F"
+        collaborativeDevPlatImg.style.display = "none"
+      })
+      eduTrainCooperation.addEventListener("mouseover", () => {
+        eduTrainCooperation.style.color = "#0d64e8"
+        eduTrainCooperationImg.style.display = "block"
+      })
+      eduTrainCooperation.addEventListener("mouseout", () => {
+        eduTrainCooperation.style.color = "#7F7F7F"
+        eduTrainCooperationImg.style.display = "none"
+      })
+      supplierCooperation.addEventListener("mouseover", () => {
+        supplierCooperation.style.color = "#0d64e8"
+        supplierCooperationImg.style.display = "block"
+      })
+      supplierCooperation.addEventListener("mouseout", () => {
+        supplierCooperation.style.color = "#7F7F7F"
+        supplierCooperationImg.style.display = "none"
+      })
+      enterpriseIntroduction.addEventListener("mouseover", () => {
+        enterpriseIntroduction.style.color = "#0d64e8"
+        enterpriseIntroductionImg.style.display = "block"
+      })
+      enterpriseIntroduction.addEventListener("mouseout", () => {
+        enterpriseIntroduction.style.color = "#7F7F7F"
+        enterpriseIntroductionImg.style.display = "none"
+      })
+      contactUs.addEventListener("mouseover", () => {
+        contactUs.style.color = "#0d64e8"
+        contactUsImg.style.display = "block"
+      })
+      contactUs.addEventListener("mouseout", () => {
+        contactUs.style.color = "#7F7F7F"
+        contactUsImg.style.display = "none"
+      })
+      cloudPlat.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      cloudPlat.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      dataPlat.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      dataPlat.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      serviceSystem.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      serviceSystem.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      hardwareSystem.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      hardwareSystem.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      buttonShowCarousel.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel2.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel3.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel4.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel5.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      closeCarousel.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel2.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel3.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel4.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel5.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+    });
+  },
 };
 </script>
 
@@ -885,332 +886,338 @@ a {
 
 <style scoped>
 .toppost {
-    position: absolute;
-    z-index: 999;
-    width: 100% !important;
+  position: absolute;
+  z-index: 999;
+  width: 100% !important;
 }
 
 .el-menu {
-    border-bottom: none;
-    width: 100%;
+  border-bottom: none;
+  width: 100%;
 }
 
 .el-menu-item a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
 }
 
 .bottombox {
-    width: 100%;
-    overflow: hidden;
-    background-color: rgb(23, 103, 161);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding: 1.4% 3%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(23, 103, 161);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 1.4% 3%;
 }
 
 .bottombox ul {
-    float: left;
-    list-style: none;
-    padding: 0 1.5%;
-    min-height: 216px;
+  float: left;
+  list-style: none;
+  padding: 0 1.5%;
+  min-height: 216px;
 }
 
 .bottombox ul:nth-of-type(1) {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 
 .bottombox ul li:first-child {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .bottombox ul li:first-child a:after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: #fff;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
 }
 
 .bottombox ul:nth-child(6) {
-    border-right: 0;
+  border-right: 0;
 }
 
 .bottombox ul:nth-child(6) li:first-child {
-    margin: 0;
+  margin: 0;
 }
 
 .bottombox ul li {
-    line-height: 36px;
+  line-height: 36px;
 }
 
 .bottombox ul li:first-child a {
-    font-size: 20px;
-    color: #d4edff;
+  font-size: 20px;
+  color: #d4edff;
 }
 
 .bottombox ul li a {
-    text-decoration: none;
-    color: #f7f7f7;
-    font-weight: 300;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-weight: 300;
 }
 
 .bottombox ul li a:hover {
-    color: #89d0f9;
+  color: #89d0f9;
 }
 
 .bottomercode {
-    width: 170px;
-    position: absolute;
-    right: 10%;
-    margin-top: 10px;
-    padding: 15px;
-    background: #fff;
-    border: 2px solid #125688;
+  width: 170px;
+  position: absolute;
+  right: 10%;
+  margin-top: 10px;
+  padding: 15px;
+  background: #fff;
+  border: 2px solid #125688;
 }
 
 .topdoli {
-    float: right;
-    line-height: 60px;
-    margin-right: 6%;
+  float: right;
+  line-height: 60px;
+  margin-right: 6%;
 }
 
 .topdoli a {
-    text-decoration: none;
-    color: #808080;
-    font-weight: 300;
+  text-decoration: none;
+  color: #808080;
+  font-weight: 300;
 }
 
 .button-box {
-    color: black;
-    background-color: white;
-    width: 100%;
-    font-size: 15px;
-    border: none;
-}
-
-
-.left-font-style{
-    font-weight: 700;
-    font-style: normal;
-    color: #D7D7D7;
-    font-size: 32px;
-    text-align: right;
-}
-.center-font-style{
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    color: #7F7F7F;
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 10px;
-
-}
-.div-carousel-style{
-    position: absolute;
-    background-color: white;
-    color: black;
-    width: 100%;
-    z-index: 5;
-    height: 1000px
-}
-.center-image{
-    margin-left: -5%;
-}
-#index-button:hover{
-    color: #0d64e8;
-}
-#robot-operate-system-button:hover{
-    color: #0d64e8;
-}
-#move-robot-button:hover{
-    color: #0d64e8;
-}
-#GomRos-open_community-button:hover{
-    color: #0d64e8;
-}
-#corporate-button:hover{
-    color: #0d64e8;
-}
-#about-button:hover{
-    color: #0d64e8;
-}
-
-#systemIntroduceImg {
-    display: none;
-}
-
-#technologyIntroduceImg {
-    display: none;
-}
-
-#auxiliarySystemImg {
-    display: none;
-}
-
-#openPlatIntroduceImg {
-    display: none;
-}
-
-#openCommunityImg {
-    display: none;
-}
-
-#collaborativeDevPlatImg {
-    display: none;
-}
-
-#eduTrainCooperationImg {
-    display: none;
-}
-
-#supplierCooperationImg {
-    display: none;
-}
-
-#enterpriseIntroductionImg {
-    display: none;
-}
-
-#contactUsImg {
-    display: none;
-}
-
-#el-row-cloudPlat {
-    margin-bottom: 10px
-}
-
-#el-row-dataPlat {
-    margin-bottom: 10px
-}
-
-#el-row-serviceSystem {
-    margin-bottom: 10px
-}
-
-#el-row-hardwareSystem {
-    margin-bottom: 10px
-}
-
-#el-row-cloudPlat:hover {
-    color: #0d64e8;
-}
-
-#el-row-dataPlat:hover {
-    color: #0d64e8;
-}
-
-#el-row-serviceSystem:hover {
-    color: #0d64e8;
-}
-
-#el-row-hardwareSystem:hover {
-    color: #0d64e8;
-}
-.button-box {
-    background-color: white;
-    width: 100%;
-    font-size: 18px;
-    border: none;
-    font-weight: 700;
-    color: #7F7F7F;
-    font-style: normal;
+  color: black;
+  background-color: white;
+  width: 100%;
+  font-size: 15px;
+  border: none;
 }
 
 
 .left-font-style {
-    font-weight: 700;
-    font-style: normal;
-    color: #D7D7D7;
-    font-size: 32px;
-    text-align: right;
+  font-weight: 700;
+  font-style: normal;
+  color: #D7D7D7;
+  font-size: 32px;
+  text-align: right;
 }
 
 .center-font-style {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    color: #7F7F7F;
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 10px;
-    position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #7F7F7F;
+  /*text-align: center;*/
+  line-height: normal;
+  margin-bottom: 10px;
+
+}
+
+.div-carousel-style {
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: 100%;
+  z-index: 5;
+  height: 500px;
+  display: none;
+  border-top: 1px solid #f2f2f2
+}
+
+.center-image {
+  margin-left: -5%;
+}
+
+#index-button:hover {
+  color: #0d64e8;
+}
+
+#robot-operate-system-button:hover {
+  color: #0d64e8;
+}
+
+#move-robot-button:hover {
+  color: #0d64e8;
+}
+
+#GomRos-open_community-button:hover {
+  color: #0d64e8;
+}
+
+#corporate-button:hover {
+  color: #0d64e8;
+}
+
+#about-button:hover {
+  color: #0d64e8;
+}
+
+#systemIntroduceImg {
+  display: none;
+}
+
+#technologyIntroduceImg {
+  display: none;
+}
+
+#auxiliarySystemImg {
+  display: none;
+}
+
+#openPlatIntroduceImg {
+  display: none;
+}
+
+#openCommunityImg {
+  display: none;
+}
+
+#collaborativeDevPlatImg {
+  display: none;
+}
+
+#eduTrainCooperationImg {
+  display: none;
+}
+
+#supplierCooperationImg {
+  display: none;
+}
+
+#enterpriseIntroductionImg {
+  display: none;
+}
+
+#contactUsImg {
+  display: none;
+}
+
+#el-row-cloudPlat {
+  margin-bottom: 6%;
+}
+
+#el-row-dataPlat {
+  margin-bottom: 6%;
+}
+
+#el-row-serviceSystem {
+  margin-bottom: 6%;
+}
+
+#el-row-hardwareSystem {
+  margin-bottom: 10px
+}
+
+#el-row-cloudPlat:hover {
+  color: #0d64e8;
+}
+
+#el-row-dataPlat:hover {
+  color: #0d64e8;
+}
+
+#el-row-serviceSystem:hover {
+  color: #0d64e8;
+}
+
+#el-row-hardwareSystem:hover {
+  color: #0d64e8;
+}
+
+.button-box {
+  background-color: white;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  font-weight: 700;
+  color: #7F7F7F;
+  font-style: normal;
+}
+
+
+/*.left-font-style {*/
+/*  font-weight: 700;*/
+/*  font-style: normal;*/
+/*  color: #D7D7D7;*/
+/*  font-size: 32px;*/
+/*  text-align: right;*/
+/*}*/
+
+.center-font-style {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #7F7F7F;
+  text-align: center;
+  line-height: normal;
+  margin-bottom: 10px;
+  position: relative;
 
 }
 
 .bottom-font-style {
-    font-style: normal;
-    font-weight: 400;
-    color: #0d64e8;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 0;
+  font-style: normal;
+  font-weight: 400;
+  color: #0d64e8;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0;
 }
 
-.div-carousel-style {
-    position: absolute;
-    background-color: white;
-    color: black;
-    width: 100%;
-    z-index: 5;
-    height: 300px
-}
+/*.div-carousel-style {*/
+/*  position: absolute;*/
+/*  background-color: white;*/
+/*  color: black;*/
+/*  width: 100%;*/
+/*  z-index: 5;*/
+/*  height: 300px*/
+/*}*/
 
 .center-image {
-    margin-left: -5%;
+  margin-left: -5%;
 }
 
 #index-button:hover {
-    color: #0d64e8;
+  color: #0d64e8;
 }
 
 #robot-operate-system-button:hover {
-    color: #0d64e8;
+  color: #0d64e8;
 }
 
 #move-robot-button:hover {
-    color: #0d64e8;
+  color: #0d64e8;
 }
 
 #GomRos-open_community-button:hover {
-    color: #0d64e8;
+  color: #0d64e8;
 }
 
 #corporate-button:hover {
-    color: #0d64e8;
+  color: #0d64e8;
 }
 
 #about-button:hover {
-    color: #0d64e8;
+  color: #0d64e8;
 }
 
 #rightDiv {
-    display: none;
-    width: 30%;
-    position: absolute;
-    right: 10%;
-    top: -40px;
-    margin-bottom: 10px;
+  display: none;
 }
-.center-href-button{
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    color: #7F7F7F;
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 10px;
-    position: relative;
-    background-color: white;
-    border: none;
+
+.center-href-button {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #7F7F7F;
+  line-height: normal;
+  background-color: white;
+  border: none;
 }
-a:hover{
-    color: #0d64e8;
+
+a:hover {
+  color: #0d64e8;
 }
 </style>
