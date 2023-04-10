@@ -176,55 +176,57 @@
 </template>
 
 <script>
+import axios from "../router/http";
 import {auto} from "html-webpack-plugin/lib/chunksorter";
 
 export default {
-  name: "Education",
-  data() {
-    return {};
-  },
-  methods: {
-    routerToContact() {
-      this.$router.push('/about')
+    name: "Education",
+    data() {
+        return {};
     },
-    auto() {
-      return auto
+    methods: {
+        routerToContact() {
+            this.$router.push('/about')
+        },
+        auto() {
+            return auto
+        },
     },
-  },
-  mounted() {
-    const showPage = this.$refs.showPage;
-    const platForm = this.$refs.platForm;
-    const dataPlat = this.$refs.dataPlat;
-    const serviceSystem = this.$refs.serviceSystem;
-    const hardware = this.$refs.hardware;
-    // 在这里对 showPage 进行操作
-    platForm.addEventListener("mouseover", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u264.jpg\")"
-    })
-    platForm.addEventListener("mouseout", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u3090.gif\")"
-    })
-    dataPlat.addEventListener("mouseover", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u1634.jpg\")"
-    })
-    dataPlat.addEventListener("mouseout", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u3090.gif\")"
-    })
-    serviceSystem.addEventListener("mouseover", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u1240.png\")"
-    })
-    serviceSystem.addEventListener("mouseout", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u3090.gif\")"
-    })
-    hardware.addEventListener("mouseover", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u1420.jpg\")"
-    })
-    hardware.addEventListener("mouseout", () => {
-      showPage.style.backgroundImage = "url(\"../../static/img/Home/u3090.gif\")"
-    })
+    mounted() {
+        const showPage = this.$refs.showPage;
+        const platForm = this.$refs.platForm;
+        const dataPlat = this.$refs.dataPlat;
+        const serviceSystem = this.$refs.serviceSystem;
+        const hardware = this.$refs.hardware;
+        // 在这里对 showPage 进行操作
+        platForm.addEventListener("mouseover",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u264.jpg\")"
+        })
+        platForm.addEventListener("mouseout",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u3090.gif\")"
+        })
+        dataPlat.addEventListener("mouseover",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u1634.jpg\")"
+        })
+        dataPlat.addEventListener("mouseout",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u3090.gif\")"
+        })
+        serviceSystem.addEventListener("mouseover",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u1240.png\")"
+        })
+        serviceSystem.addEventListener("mouseout",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u3090.gif\")"
+        })
+        hardware.addEventListener("mouseover",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u1420.jpg\")"
+        })
+        hardware.addEventListener("mouseout",()=>{
+            showPage.style.backgroundImage="url(\"../../static/img/Home/u3090.gif\")"
+        })
 
 
-  }
+
+    }
 
 };
 
@@ -232,76 +234,84 @@ export default {
 </script>
 <style scoped>
 #about {
-  background-color: rgb(20, 103, 159);
+    background-color: rgb(20, 103, 159);
 }
 
 #content-box {
-  width: 85%;
-  background: #fff url(../../static/waitanbg.png) no-repeat bottom center;
-  margin: 0 auto;
-  padding-top: 100px;
+    width: 85%;
+    background: #fff url(../../static/waitanbg.png) no-repeat bottom center;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 #content-box h1,
 #content-box h3 {
-  text-align: center;
-  font-weight: 400;
-  color: #1767a1;
+    text-align: center;
+    font-weight: 400;
+    color: #1767a1;
 }
 
 p {
-  color: #444444;
+    color: #444444;
 }
 
 .require-box {
-  border: 1px solid #1767a1;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+    border: 1px solid #1767a1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .robotSystem:hover .robotSystemIn {
-  display: block;
+    /*display: block;*/
+    opacity: 1;
 }
 
 .robotSystemIn {
-  display: none;
-  background-color: grey;
-  background-size: 100% auto;
-  height: 300px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+    /*display: none;*/
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: grey;
+    background-size: 100% auto;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 
 }
 
 .moveRobot:hover .moveRobotIn {
-  display: block;
-
+    /*display: block;*/
+    opacity: 1;
 }
 
 .moveRobotIn {
-  display: none;
-  background-color: grey;
-  background-size: 100% auto;
-  height: 300px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+    /*display: none;*/
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: grey;
+    background-size: 100% auto;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .openPlat:hover .openPlatIn {
-  display: block;
+    /*display: block;*/
+    opacity: 1;
 }
 
 .openPlatIn {
-  display: none;
-  background-color: grey;
-  background-size: 100% auto;
-  height: 300px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+    /*display: none;*/
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: grey;
+    background-size: 100% auto;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .openPlat {
@@ -321,124 +331,125 @@ p {
 
 
 .platFormIn {
-  display: none;
-  margin-top: 50px;
-  margin-left: 25%;
-  width: 50%;
-  font-size: 20px;
-  text-align: left;
-  margin-bottom: 30%;
+    display: none;
+    margin-top: 50px;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 30%;
 }
 
 .platForm:hover .platFormIn {
-  display: block;
-  /*height: 500px;*/
+    display: block;
+    /*height: 500px;*/
 }
 
 .platForm:hover ~ .showPage {
-  background-image: url("../../static/img/Home/u264.jpg");
+    background-image: url("../../static/img/Home/u264.jpg");
 }
 
 .dataPlat:hover ~ .showPage {
-  background-image: url("../../static/img/Home/u1634.jpg");
+    background-image: url("../../static/img/Home/u1634.jpg");
 }
 
 .serviceSystem:hover ~ .showPage {
-  background-image: url("../../static/img/Home/u1240.png");
+    background-image: url("../../static/img/Home/u1240.png");
 }
 
 .hardware:hover ~ .showPage {
-  background-image: url("../../static/img/Home/u1420.jpg");
+    background-image: url("../../static/img/Home/u1420.jpg");
 }
 
 .dataPlatIn {
-  display: none;
-  margin-top: 50px;
-  margin-left: 25%;
-  width: 50%;
-  font-size: 20px;
-  text-align: left;
+    display: none;
+    margin-top: 50px;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
 }
 
 .dataPlat:hover .dataPlatIn {
-  display: block;
+    display: block;
 }
 
 .serviceSystemIn {
-  display: none;
-  margin-top: 50px;
-  margin-left: 25%;
-  width: 50%;
-  font-size: 20px;
-  text-align: left;
+    display: none;
+    margin-top: 50px;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
 }
 
 .serviceSystem:hover .serviceSystemIn {
-  display: block;
+    display: block;
 }
 
 .hardwareIn {
-  display: none;
-  margin-top: 50px;
-  margin-left: 25%;
-  width: 50%;
-  font-size: 20px;
-  text-align: left;
+    display: none;
+    margin-top: 50px;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
 
 }
 
 .hardware:hover .hardwareIn {
-  display: block;
+    display: block;
 }
 
 .dataPlat {
-  display: inline;
-  float: left;
-  width: 25%;
-  height: 1000px;
-  background-color: rgba(51, 51, 51, 0.70);
+    display: inline;
+    float: left;
+    width: 25%;
+    height: 1000px;
+    background-color: rgba(51, 51, 51, 0.70);
 }
 
 
 .serviceSystem {
-  display: inline;
-  float: left;
-  width: 25%;
-  height: 1000px;
+    display: inline;
+    float: left;
+    width: 25%;
+    height: 1000px;
+
 }
 
 .hardware {
-  display: inline;
-  float: right;
-  width: 25%;
-  height: 1000px;
-  background-color: rgba(51, 51, 51, 0.70);
+    display: inline;
+    float: right;
+    width: 25%;
+    height: 1000px;
+    background-color: rgba(51, 51, 51, 0.70);
 }
 
 .showPage {
-  /*background-image: url(./static/img/Home/u3090.gif);*/
-  background-image: url("../../static/img/Home/u3090.gif");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  font-size: 35px;
-  font-weight: bolder;
-  color: white;
-  /*width: 80%;*/
-  background-repeat: no-repeat;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 4%;
-  margin-bottom: 4%;
+    /*background-image: url(./static/img/Home/u3090.gif);*/
+    background-image: url("../../static/img/Home/u3090.gif");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    /*width: 80%;*/
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .platForm {
-  display: inline;
-  float: left;
-  width: 25%;
-  height: 1000px;
+    display: inline;
+    float: left;
+    width: 25%;
+    height: 1000px;
 
 }
 </style>
