@@ -481,7 +481,8 @@
             <div style="font-size: 32px">机器人产品应用</div>
           </el-col>
           <el-col :span="8">
-            <img src="../../static/img/Technology/u117.svg" style="width: 95%;height: auto;margin-left:0;margin-right: 0">
+            <img src="../../static/img/Technology/u117.svg"
+                 style="width: 95%;height: auto;margin-left:0;margin-right: 0">
           </el-col>
           <el-col :span="8">
             <img src="../../static/img/Technology/u120.png" style="width: 85%;height: auto;margin: 0">
