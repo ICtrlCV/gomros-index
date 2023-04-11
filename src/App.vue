@@ -59,7 +59,7 @@
                     <el-col :span="12" class="center-font-style" id="system-introduce"
                             ref="systemIntroduce" @click="routerToRobotOperateSystem()"
                             style="padding-top: 32%;padding-left: 4%">
-                      <a href="/#/robotOperateSystem" class="center-href-button">系统介绍</a>
+                      <a href="/#/robotOperateSystem" class="center-href-button" ref="hrefClose">系统介绍</a>
                     </el-col>
                     <el-col :span="12" style="padding-top: 32%;">
                       <img src="../static/img/index/u153p002.png" class="center-image"
@@ -94,7 +94,7 @@
                       <el-row style="margin-top: 12%;margin-left: 4%">
                         <el-col :span="18" class="center-font-style" id="technology-introduce"
                                 ref="technologyIntroduce" style="padding-top: 8%;">
-                          <a href="/#/technology" class="center-href-button">
+                          <a href="/#/technology" class="center-href-button" ref="hrefClose2">
                             移动机器人技术介绍
                           </a>
                         </el-col>
@@ -118,22 +118,22 @@
                       <div id="rightDiv" class="center-font-style" ref="rightDiv"
                            style="margin-top: 30%;margin-left: 10%">
                         <el-row ref="cloudPlat" id="el-row-cloudPlat">
-                          <a href="/#/cloudPlatform" class="center-href-button">
+                          <a href="/#/cloudPlatform" class="center-href-button" ref="hrefClose3">
                             云平台
                           </a>
                         </el-row>
                         <el-row ref="dataPlat" id="el-row-dataPlat">
-                          <a href="/#/dataPlatform" class="center-href-button">
+                          <a href="/#/dataPlatform" class="center-href-button" ref="hrefClose4">
                             移动机器人数据平台
                           </a>
                         </el-row>
                         <el-row ref="serviceSystem" id="el-row-serviceSystem">
-                          <a href="/#/scenarioService" class="center-href-button">
+                          <a href="/#/scenarioService" class="center-href-button" ref="hrefClose5">
                             场景服务软件系统
                           </a>
                         </el-row>
                         <el-row ref="hardwareSystem" id="el-row-hardwareSystem">
-                          <a href="/#/hardwareDriver" class="center-href-button">
+                          <a href="/#/hardwareDriver" class="center-href-button" ref="hrefClose6">
                             硬件控制及驱动系统
                           </a>
                         </el-row>
@@ -167,7 +167,7 @@
                     <el-row :gutter="24" style="padding-top: 20%;padding-left: 12%">
                       <el-col :span="12" class="center-font-style" id="open-plat-introduce"
                               ref="openPlatIntroduce" style="text-align: left">
-                        <a href="/#/openCommunity" class="center-href-button">开放平台介绍</a>
+                        <a href="/#/openCommunity" class="center-href-button" ref="hrefClose7">开放平台介绍</a>
                       </el-col>
                       <el-col :span="12">
                         <img src="../static/img/index/u153p002.png" class="center-image"
@@ -177,7 +177,7 @@
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
                       <el-col :span="12" class="center-font-style" id="open-community"
                               ref="openCommunity" style="text-align: left">
-                        <a href="/#/development" class="center-href-button">开发者社区</a>
+                        <a href="/#/news" class="center-href-button" ref="hrefClose8">开发者社区</a>
                       </el-col>
                       <el-col :span="12">
                         <img src="../static/img/index/u153p002.png" class="center-image"
@@ -212,7 +212,7 @@
                     <el-row :gutter="24" style="padding-top: 12%;padding-left: 12%">
                       <el-col :span="12" class="center-font-style" id="collaborative-dev-plat"
                               ref="collaborativeDevPlat">
-                        <a href="/#/development" class="center-href-button">
+                        <a href="/#/development" class="center-href-button" ref="hrefClose9">
                           协同研发平台
                         </a>
                       </el-col>
@@ -224,7 +224,7 @@
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
                       <el-col :span="12" class="center-font-style" id="edu-train-cooperation"
                               ref="eduTrainCooperation">
-                        <a href="/#/education" class="center-href-button">
+                        <a href="/#/education" class="center-href-button" ref="hrefClose10">
                           教育培训合作
                         </a>
                       </el-col>
@@ -236,7 +236,7 @@
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
                       <el-col :span="12" class="center-font-style" id="supplier-cooperation"
                               ref="supplierCooperation" style="text-align: left">
-                        <a href="/#/supplier" class="center-href-button">
+                        <a href="/#/supplier" class="center-href-button" ref="hrefClose11">
                           供应商合作
                         </a>
                       </el-col>
@@ -273,7 +273,7 @@
                     <el-row :gutter="24" style="padding-top: 20%;padding-left: 4%">
                       <el-col :span="12" class="center-font-style" id="enterprise-introduction"
                               ref="enterpriseIntroduction">
-                        <a href="/#/corporateProfile" class="center-href-button">
+                        <a href="/#/corporateProfile" class="center-href-button" ref="hrefClose12">
                           企业简介
                         </a>
                       </el-col>
@@ -284,7 +284,7 @@
                     </el-row>
                     <el-row :gutter="24" style="padding-top: 12%;padding-left: 4%">
                       <el-col :span="12" class="center-font-style" id="contact-us" ref="contactUs">
-                        <a href="/#/about" class="center-href-button">
+                        <a href="/#/about" class="center-href-button" ref="hrefClose13">
                           联系我们
                         </a>
                       </el-col>
@@ -441,8 +441,9 @@ export default {
       this.$refs.banner.setActiveItem(index - 1)
     },
     routerToIndex() {
-      this.$router.push('/index')
-      console.log("index")
+        const buttonShowCarousel = this.$refs.buttonShowCarousel;
+        console.log(buttonShowCarousel)
+        this.$router.push('/index')
     },
     routerToRobotOperateSystem() {
       this.$router.push('/robotOperateSystem')
@@ -485,184 +486,258 @@ export default {
 
 
   },
-  mounted() {
-    this.$nextTick(() => {
-      const systemIntroduce = this.$refs.systemIntroduce[0].$el;
-      const systemIntroduceImg = this.$refs.systemIntroduceImg[0];
-      const technologyIntroduce = this.$refs.technologyIntroduce[0].$el;
-      const technologyIntroduceImg = this.$refs.technologyIntroduceImg[0];
-      const auxiliarySystem = this.$refs.auxiliarySystem[0].$el;
-      const auxiliarySystemImg = this.$refs.auxiliarySystemImg[0];
-      const openPlatIntroduce = this.$refs.openPlatIntroduce[0].$el;
-      const openPlatIntroduceImg = this.$refs.openPlatIntroduceImg[0];
-      const openCommunity = this.$refs.openCommunity[0].$el;
-      const openCommunityImg = this.$refs.openCommunityImg[0];
-      const collaborativeDevPlat = this.$refs.collaborativeDevPlat[0].$el;
-      const collaborativeDevPlatImg = this.$refs.collaborativeDevPlatImg[0];
-      const eduTrainCooperation = this.$refs.eduTrainCooperation[0].$el;
-      const eduTrainCooperationImg = this.$refs.eduTrainCooperationImg[0];
-      const supplierCooperation = this.$refs.supplierCooperation[0].$el;
-      const supplierCooperationImg = this.$refs.supplierCooperationImg[0];
-      const enterpriseIntroduction = this.$refs.enterpriseIntroduction[0].$el;
-      const enterpriseIntroductionImg = this.$refs.enterpriseIntroductionImg[0];
-      const contactUs = this.$refs.contactUs[0].$el;
-      const contactUsImg = this.$refs.contactUsImg[0];
-      const rightDiv = this.$refs.rightDiv[0];
-      const cloudPlat = this.$refs.cloudPlat[0].$el;
-      const dataPlat = this.$refs.dataPlat[0].$el;
-      const serviceSystem = this.$refs.serviceSystem[0].$el;
-      const hardwareSystem = this.$refs.hardwareSystem[0].$el;
-      const carouselStyle = this.$refs.carouselStyle;
-      const buttonShowCarousel = this.$refs.buttonShowCarousel;
-      const buttonShowCarousel2 = this.$refs.buttonShowCarousel2;
-      const buttonShowCarousel3 = this.$refs.buttonShowCarousel3;
-      const buttonShowCarousel4 = this.$refs.buttonShowCarousel4;
-      const buttonShowCarousel5 = this.$refs.buttonShowCarousel5;
-      const closeCarousel = this.$refs.closeCarousel[0].$el;
-      const closeCarousel2 = this.$refs.closeCarousel2[0].$el;
-      const closeCarousel3 = this.$refs.closeCarousel3[0].$el;
-      const closeCarousel4 = this.$refs.closeCarousel4[0].$el;
-      const closeCarousel5 = this.$refs.closeCarousel5[0].$el;
-      // 触发方法
-      systemIntroduce.addEventListener("mouseover", () => {
-        systemIntroduce.style.color = "#0d64e8"
-        systemIntroduceImg.style.display = "block"
-      })
-      systemIntroduce.addEventListener("mouseout", () => {
-        systemIntroduce.style.color = "#7F7F7F"
-        systemIntroduceImg.style.display = "none"
-      })
-      technologyIntroduce.addEventListener("mouseover", () => {
-        technologyIntroduce.style.color = "#0d64e8"
-        technologyIntroduceImg.style.display = "block"
-      })
-      technologyIntroduce.addEventListener("mouseout", () => {
-        technologyIntroduce.style.color = "#7F7F7F"
-        technologyIntroduceImg.style.display = "none"
-      })
-      auxiliarySystem.addEventListener("mouseover", () => {
-        auxiliarySystem.style.color = "#0d64e8"
-        auxiliarySystemImg.style.display = "block"
-        rightDiv.style.display = "block"
-        rightDiv.style.textAlign = "left"
+    mounted() {
+        this.$nextTick(() => {
+            const systemIntroduce = this.$refs.systemIntroduce[0].$el;
+            const systemIntroduceImg = this.$refs.systemIntroduceImg[0];
+            const technologyIntroduce = this.$refs.technologyIntroduce[0].$el;
+            const technologyIntroduceImg = this.$refs.technologyIntroduceImg[0];
+            const auxiliarySystem = this.$refs.auxiliarySystem[0].$el;
+            const auxiliarySystemImg = this.$refs.auxiliarySystemImg[0];
+            const openPlatIntroduce = this.$refs.openPlatIntroduce[0].$el;
+            const openPlatIntroduceImg = this.$refs.openPlatIntroduceImg[0];
+            const openCommunity = this.$refs.openCommunity[0].$el;
+            const openCommunityImg = this.$refs.openCommunityImg[0];
+            const collaborativeDevPlat = this.$refs.collaborativeDevPlat[0].$el;
+            const collaborativeDevPlatImg = this.$refs.collaborativeDevPlatImg[0];
+            const eduTrainCooperation = this.$refs.eduTrainCooperation[0].$el;
+            const eduTrainCooperationImg = this.$refs.eduTrainCooperationImg[0];
+            const supplierCooperation = this.$refs.supplierCooperation[0].$el;
+            const supplierCooperationImg = this.$refs.supplierCooperationImg[0];
+            const enterpriseIntroduction = this.$refs.enterpriseIntroduction[0].$el;
+            const enterpriseIntroductionImg = this.$refs.enterpriseIntroductionImg[0];
+            const contactUs = this.$refs.contactUs[0].$el;
+            const contactUsImg = this.$refs.contactUsImg[0];
+            const rightDiv = this.$refs.rightDiv[0];
+            const cloudPlat = this.$refs.cloudPlat[0].$el;
+            const dataPlat = this.$refs.dataPlat[0].$el;
+            const serviceSystem = this.$refs.serviceSystem[0].$el;
+            const hardwareSystem = this.$refs.hardwareSystem[0].$el;
+            const carouselStyle = this.$refs.carouselStyle;
+            const buttonShowCarousel = this.$refs.buttonShowCarousel;
+            const buttonShowCarousel2 = this.$refs.buttonShowCarousel2;
+            const buttonShowCarousel3 = this.$refs.buttonShowCarousel3;
+            const buttonShowCarousel4 = this.$refs.buttonShowCarousel4;
+            const buttonShowCarousel5 = this.$refs.buttonShowCarousel5;
+            const closeCarousel =this.$refs.closeCarousel[0].$el;
+            const closeCarousel2 =this.$refs.closeCarousel2[0].$el;
+            const closeCarousel3 =this.$refs.closeCarousel3[0].$el;
+            const closeCarousel4 =this.$refs.closeCarousel4[0].$el;
+            const closeCarousel5 =this.$refs.closeCarousel5[0].$el;
+            const hrefClose = this.$refs.hrefClose[0];
+            const hrefClose2 = this.$refs.hrefClose2[0];
+            const hrefClose3= this.$refs.hrefClose3[0];
+            const hrefClose4 = this.$refs.hrefClose4[0];
+            const hrefClose5 = this.$refs.hrefClose5[0];
+            const hrefClose6 = this.$refs.hrefClose6[0];
+            const hrefClose7 = this.$refs.hrefClose7[0];
+            const hrefClose8 = this.$refs.hrefClose8[0];
+            const hrefClose9 = this.$refs.hrefClose9[0];
+            const hrefClose10 = this.$refs.hrefClose10[0];
+            const hrefClose11 = this.$refs.hrefClose11[0];
+            const hrefClose12 = this.$refs.hrefClose12[0];
+            const hrefClose13 = this.$refs.hrefClose13[0];
+            // console.log(hrefClose2)
+            // 触发方法
+            systemIntroduce.addEventListener("mouseover", () => {
+                systemIntroduce.style.color = "#0d64e8"
+                systemIntroduceImg.style.display = "block"
+            })
+            systemIntroduce.addEventListener("mouseout", () => {
+                systemIntroduce.style.color = "#7F7F7F"
+                systemIntroduceImg.style.display = "none"
+            })
+            technologyIntroduce.addEventListener("mouseover", () => {
+                technologyIntroduce.style.color = "#0d64e8"
+                technologyIntroduceImg.style.display = "block"
+            })
+            technologyIntroduce.addEventListener("mouseout", () => {
+                technologyIntroduce.style.color = "#7F7F7F"
+                technologyIntroduceImg.style.display = "none"
+            })
+            auxiliarySystem.addEventListener("mouseover", () => {
+                auxiliarySystem.style.color = "#0d64e8"
+                auxiliarySystemImg.style.display = "block"
+                rightDiv.style.display = "block"
+                rightDiv.style.textAlign = "left"
 
-      })
-      auxiliarySystem.addEventListener("mouseout", () => {
-        auxiliarySystem.style.color = "#7F7F7F"
-        auxiliarySystemImg.style.display = "none"
-      })
-      openPlatIntroduce.addEventListener("mouseover", () => {
-        openPlatIntroduce.style.color = "#0d64e8"
-        openPlatIntroduceImg.style.display = "block"
-      })
-      openPlatIntroduce.addEventListener("mouseout", () => {
-        openPlatIntroduce.style.color = "#7F7F7F"
-        openPlatIntroduceImg.style.display = "none"
-      })
-      openCommunity.addEventListener("mouseover", () => {
-        openCommunity.style.color = "#0d64e8"
-        openCommunityImg.style.display = "block"
-      })
-      openCommunity.addEventListener("mouseout", () => {
-        openCommunity.style.color = "#7F7F7F"
-        openCommunityImg.style.display = "none"
-      })
-      collaborativeDevPlat.addEventListener("mouseover", () => {
-        collaborativeDevPlat.style.color = "#0d64e8"
-        collaborativeDevPlatImg.style.display = "block"
-      })
-      collaborativeDevPlat.addEventListener("mouseout", () => {
-        collaborativeDevPlat.style.color = "#7F7F7F"
-        collaborativeDevPlatImg.style.display = "none"
-      })
-      eduTrainCooperation.addEventListener("mouseover", () => {
-        eduTrainCooperation.style.color = "#0d64e8"
-        eduTrainCooperationImg.style.display = "block"
-      })
-      eduTrainCooperation.addEventListener("mouseout", () => {
-        eduTrainCooperation.style.color = "#7F7F7F"
-        eduTrainCooperationImg.style.display = "none"
-      })
-      supplierCooperation.addEventListener("mouseover", () => {
-        supplierCooperation.style.color = "#0d64e8"
-        supplierCooperationImg.style.display = "block"
-      })
-      supplierCooperation.addEventListener("mouseout", () => {
-        supplierCooperation.style.color = "#7F7F7F"
-        supplierCooperationImg.style.display = "none"
-      })
-      enterpriseIntroduction.addEventListener("mouseover", () => {
-        enterpriseIntroduction.style.color = "#0d64e8"
-        enterpriseIntroductionImg.style.display = "block"
-      })
-      enterpriseIntroduction.addEventListener("mouseout", () => {
-        enterpriseIntroduction.style.color = "#7F7F7F"
-        enterpriseIntroductionImg.style.display = "none"
-      })
-      contactUs.addEventListener("mouseover", () => {
-        contactUs.style.color = "#0d64e8"
-        contactUsImg.style.display = "block"
-      })
-      contactUs.addEventListener("mouseout", () => {
-        contactUs.style.color = "#7F7F7F"
-        contactUsImg.style.display = "none"
-      })
-      cloudPlat.addEventListener("mouseover", () => {
-        auxiliarySystemImg.style.display = "block"
-      })
-      cloudPlat.addEventListener("mouseout", () => {
-        auxiliarySystemImg.style.display = "none"
-      })
-      dataPlat.addEventListener("mouseover", () => {
-        auxiliarySystemImg.style.display = "block"
-      })
-      dataPlat.addEventListener("mouseout", () => {
-        auxiliarySystemImg.style.display = "none"
-      })
-      serviceSystem.addEventListener("mouseover", () => {
-        auxiliarySystemImg.style.display = "block"
-      })
-      serviceSystem.addEventListener("mouseout", () => {
-        auxiliarySystemImg.style.display = "none"
-      })
-      hardwareSystem.addEventListener("mouseover", () => {
-        auxiliarySystemImg.style.display = "block"
-      })
-      hardwareSystem.addEventListener("mouseout", () => {
-        auxiliarySystemImg.style.display = "none"
-      })
-      buttonShowCarousel.addEventListener("click", () => {
-        carouselStyle.style.display = "block"
-      })
-      buttonShowCarousel2.addEventListener("click", () => {
-        carouselStyle.style.display = "block"
-      })
-      buttonShowCarousel3.addEventListener("click", () => {
-        carouselStyle.style.display = "block"
-      })
-      buttonShowCarousel4.addEventListener("click", () => {
-        carouselStyle.style.display = "block"
-      })
-      buttonShowCarousel5.addEventListener("click", () => {
-        carouselStyle.style.display = "block"
-      })
-      closeCarousel.addEventListener("click", () => {
-        carouselStyle.style.display = "none"
-      })
-      closeCarousel2.addEventListener("click", () => {
-        carouselStyle.style.display = "none"
-      })
-      closeCarousel3.addEventListener("click", () => {
-        carouselStyle.style.display = "none"
-      })
-      closeCarousel4.addEventListener("click", () => {
-        carouselStyle.style.display = "none"
-      })
-      closeCarousel5.addEventListener("click", () => {
-        carouselStyle.style.display = "none"
-      })
-    });
-  },
+            })
+            auxiliarySystem.addEventListener("mouseout", () => {
+                auxiliarySystem.style.color = "#7F7F7F"
+                auxiliarySystemImg.style.display = "none"
+            })
+            openPlatIntroduce.addEventListener("mouseover", () => {
+                openPlatIntroduce.style.color = "#0d64e8"
+                openPlatIntroduceImg.style.display = "block"
+            })
+            openPlatIntroduce.addEventListener("mouseout", () => {
+                openPlatIntroduce.style.color = "#7F7F7F"
+                openPlatIntroduceImg.style.display = "none"
+            })
+            openCommunity.addEventListener("mouseover", () => {
+                openCommunity.style.color = "#0d64e8"
+                openCommunityImg.style.display = "block"
+            })
+            openCommunity.addEventListener("mouseout", () => {
+                openCommunity.style.color = "#7F7F7F"
+                openCommunityImg.style.display = "none"
+            })
+            collaborativeDevPlat.addEventListener("mouseover", () => {
+                collaborativeDevPlat.style.color = "#0d64e8"
+                collaborativeDevPlatImg.style.display = "block"
+            })
+            collaborativeDevPlat.addEventListener("mouseout", () => {
+                collaborativeDevPlat.style.color = "#7F7F7F"
+                collaborativeDevPlatImg.style.display = "none"
+            })
+            eduTrainCooperation.addEventListener("mouseover", () => {
+                eduTrainCooperation.style.color = "#0d64e8"
+                eduTrainCooperationImg.style.display = "block"
+            })
+            eduTrainCooperation.addEventListener("mouseout", () => {
+                eduTrainCooperation.style.color = "#7F7F7F"
+                eduTrainCooperationImg.style.display = "none"
+            })
+            supplierCooperation.addEventListener("mouseover", () => {
+                supplierCooperation.style.color = "#0d64e8"
+                supplierCooperationImg.style.display = "block"
+            })
+            supplierCooperation.addEventListener("mouseout", () => {
+                supplierCooperation.style.color = "#7F7F7F"
+                supplierCooperationImg.style.display = "none"
+            })
+            enterpriseIntroduction.addEventListener("mouseover", () => {
+                enterpriseIntroduction.style.color = "#0d64e8"
+                enterpriseIntroductionImg.style.display = "block"
+            })
+            enterpriseIntroduction.addEventListener("mouseout", () => {
+                enterpriseIntroduction.style.color = "#7F7F7F"
+                enterpriseIntroductionImg.style.display = "none"
+            })
+            contactUs.addEventListener("mouseover", () => {
+                contactUs.style.color = "#0d64e8"
+                contactUsImg.style.display = "block"
+            })
+            contactUs.addEventListener("mouseout", () => {
+                contactUs.style.color = "#7F7F7F"
+                contactUsImg.style.display = "none"
+            })
+            cloudPlat.addEventListener("mouseover", () => {
+                auxiliarySystemImg.style.display = "block"
+            })
+            cloudPlat.addEventListener("mouseout", () => {
+                auxiliarySystemImg.style.display = "none"
+            })
+            dataPlat.addEventListener("mouseover", () => {
+                auxiliarySystemImg.style.display = "block"
+            })
+            dataPlat.addEventListener("mouseout", () => {
+                auxiliarySystemImg.style.display = "none"
+            })
+            serviceSystem.addEventListener("mouseover", () => {
+                auxiliarySystemImg.style.display = "block"
+            })
+            serviceSystem.addEventListener("mouseout", () => {
+                auxiliarySystemImg.style.display = "none"
+            })
+            hardwareSystem.addEventListener("mouseover", () => {
+                auxiliarySystemImg.style.display = "block"
+            })
+            hardwareSystem.addEventListener("mouseout", () => {
+                auxiliarySystemImg.style.display = "none"
+            })
+            buttonShowCarousel.addEventListener("click",()=>{
+                carouselStyle.style.display="block"
+            })
+            buttonShowCarousel2.addEventListener("click",()=>{
+                carouselStyle.style.display="block"
+            })
+            buttonShowCarousel3.addEventListener("click",()=>{
+                carouselStyle.style.display="block"
+            })
+            buttonShowCarousel4.addEventListener("click",()=>{
+                carouselStyle.style.display="block"
+            })
+            buttonShowCarousel5.addEventListener("click",()=>{
+                carouselStyle.style.display="block"
+            })
+            closeCarousel.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+            })
+            closeCarousel2.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+            })
+            closeCarousel3.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+            })
+            closeCarousel4.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+            })
+            closeCarousel5.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+            })
+            hrefClose.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose2.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose3.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose4.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose5.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose6.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose7.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose8.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose9.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose10.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose11.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose12.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+            hrefClose13.addEventListener("click",()=>{
+                carouselStyle.style.display="none"
+                rightDiv.style.display = "none"
+            })
+
+
+
+
+
+
+
+
+        });
+    },
 };
 </script>
 
