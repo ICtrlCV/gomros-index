@@ -1,7 +1,7 @@
 <template>
   <div id="index">
     <div class="section"
-         style="background-image: url(static/img/Home/u2927.gif);background-size: cover;filter: grayscale(10%);height: 867px">
+         style="background-image: url(static/img/Home/u2927.gif);background-size: cover;filter: grayscale(10%);">
       <el-container style="color: #0D64E8;font-size: 72px;font-weight: bolder">
         <el-container
             style="color: #0D64E8;font-size: 72px;font-weight: bolder;text-shadow: 4px 2px 5px rgba(255,255,255,1);text-align: left;">
@@ -19,7 +19,7 @@
           </el-main>
         </el-container>
         <el-footer
-            style="height:22%;color: white;font-size: 24px;text-align: center;margin-top: 14%;padding-left: 0;padding-right: 0">
+            style="height:22%;color: white;font-size: 24px;text-align: center;margin-top: 10%;padding-left: 0;padding-right: 0">
           <el-row>
             <el-col :span="8">
               <div class="robotSystem">
