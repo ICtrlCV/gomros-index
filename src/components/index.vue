@@ -1,7 +1,7 @@
 <template>
   <div id="index">
     <div class="section"
-         style="background-image: url(static/img/Home/u2927.gif);background-size: cover;filter: grayscale(10%);">
+         style="background-image: url(static/img/Home/u2927.gif);background-size: cover;">
       <el-container style="color: #0D64E8;font-size: 72px;font-weight: bolder">
         <el-container
             style="color: #0D64E8;font-size: 72px;font-weight: bolder;text-shadow: 4px 2px 5px rgba(255,255,255,1);text-align: left;">
@@ -85,9 +85,9 @@
 
     <div style="background-color: rgba(51, 51, 51, 0.847058823529412)">
       <el-container>
-        <div ref="showPage" class="showPage">
+        <div ref="showPage" class="showPage" style="height: 700px">
           <div ref="platForm" class="platForm">
-            <h4 style="margin-top: 350px">云平台</h4>
+            <h4 style="margin-top: 50%">云平台</h4>
             <div class="platFormIn">
               <el-row>
                 云平台是为客户和合作伙伴提供软硬件一体的整体产品基础服务平台
@@ -99,7 +99,7 @@
             </div>
           </div>
           <div ref="dataPlat" class="dataPlat">
-            <h4 style="margin-top: 350px">数据平台</h4>
+            <h4 style="margin-top: 50%">数据平台</h4>
             <div class="dataPlatIn">
               <el-row>
                 数据成为驱动经济增长的核心生产要素。大数据和云计算等技术的融合，推动了物联网的迅速发展，实现了人与人、人与物、物与物的互联互通，导致数据量呈现爆发式增长。
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div ref="serviceSystem" class="serviceSystem">
-            <h4 style="margin-top: 350px">服务场景系统</h4>
+            <h4 style="margin-top: 50%">服务场景系统</h4>
             <div class="serviceSystemIn">
               <el-row>
                 场景服务系统是服务于各种应用场景，支撑各类管理系统的互联互通。
@@ -123,7 +123,7 @@
             </div>
           </div>
           <div ref="hardware" class="hardware">
-            <h4 style="margin-top: 350px">硬件控制及驱动系统</h4>
+            <h4 style="margin-top: 50%">硬件控制及驱动系统</h4>
             <div class="hardwareIn">
               <el-row>
                 一个机器人最主要的控制量就是控制机器人的移动，无论是自身的移动还是手臂等关节的移动，所以机器人驱动器中最根本的问题就是控制电机。
@@ -398,7 +398,7 @@ p {
   display: inline;
   float: left;
   width: 25%;
-  height: 1000px;
+  height: 700px;
   background-color: rgba(51, 51, 51, 0.70);
 }
 
@@ -414,7 +414,7 @@ p {
   display: inline;
   float: right;
   width: 25%;
-  height: 1000px;
+  height: 700px;
   background-color: rgba(51, 51, 51, 0.70);
 }
 
