@@ -22,7 +22,8 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">移动机器人硬件驱动及控制系统</p>
+        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+          移动机器人硬件驱动及控制系统</p>
       </el-footer>
     </el-container>
 
@@ -31,7 +32,8 @@
       <el-row :gutter="20" type="flex">
         <el-col :span="10" style="margin-top:1%;margin-left: 6%;margin-right: 8%">
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
-          <p style="font-size: 25px;font-weight: bolder;color: #0d64e8;margin-left: 2%">由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
+          <p style="font-size: 25px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
+            由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
             就需要高性能的交流伺服驱动系统，因此研制高性能的交流伺服驱动系统是工业机器人的关键技术之一。
           </p>
           <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">我们必须自力更生，掌握高性能移动机器人的关键技术，并在原来的基础上有所创新。</p>
@@ -188,7 +190,8 @@
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="8" style="width: 30%;margin-left: 1%;margin-right: 8%">
-              <p style="font-size: 18px;color: #0d64e8">机器人控制系统可以驱动大部分厂家的设备，测距设备、2D测距设备、3D传感器、音频/语音识别设备、摄像机、扭矩/触摸传感器、位姿传感器、电源、速度、无线射频传感器、和 IO 接口等设备
+              <p style="font-size: 18px;color: #0d64e8">
+                机器人控制系统可以驱动大部分厂家的设备，测距设备、2D测距设备、3D传感器、音频/语音识别设备、摄像机、扭矩/触摸传感器、位姿传感器、电源、速度、无线射频传感器、和 IO 接口等设备
               </p>
             </el-col>
             <el-col :span="14" style="text-align: center">
@@ -203,7 +206,7 @@
                     <p style="font-weight: bolder;font-size: 20px">深度相机</p>
                   </el-row>
                 </el-col>
-                <el-col span="1">&nbsp;</el-col>
+                <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 240px">
                   <el-row style="background-color: #0d64e8">
                     <p style="font-weight: bolder;color: white;font-size: 25px;margin: 5px">测距设备</p>
@@ -214,7 +217,7 @@
                     <p style="font-weight: bolder;font-size: 20px">毫米波雷达</p>
                   </el-row>
                 </el-col>
-                <el-col span="1">&nbsp;</el-col>
+                <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 240px">
                   <el-row style="background-color: #0d64e8">
                     <p style="font-weight: bolder;color: white;font-size: 25px;margin: 5px">驱动设备</p>
@@ -275,7 +278,8 @@
       <el-container style="width: 100%">
         <el-main style="background: #0d64e8;font-size: 30px;">
           <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
-            <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
+            <el-col :span="13"
+                    style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
               欢迎咨询硬件驱动及控制系统相关产品
             </el-col>
             <el-col :span="11" style="text-align: right;padding-right: 3%">
