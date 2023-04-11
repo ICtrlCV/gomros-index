@@ -2,8 +2,8 @@
   <div id="app">
     <div>
       <!--  导航栏  -->
-      <el-row :gutter="24" style="margin-top: 1%;">
-        <el-col :span="3">&nbsp;</el-col>
+      <el-row :gutter="24" style="margin-top: 1%;margin-bottom: 1%;">
+        <el-col :span="2">&nbsp;</el-col>
         <el-col :span="3">
           <img src="../../gomros-index/static/product/logo-small.png"
                style="width: 30%;margin-left: 20%;margin-top: -8%;margin-bottom: -10%">
@@ -41,7 +41,6 @@
           </button>
         </el-col>
       </el-row>
-      <br>
       <!--  导航栏动画部分  -->
       <div class="div-carousel-style" ref="carouselStyle">
         <el-carousel :interval="5000" height="500px"
@@ -165,21 +164,21 @@
                 <el-col :span="10" style="height: 400px;padding: 0">
                   <el-row style="width: 40%;height: 100%;border-right: 1px solid #f2f2f2;">
                     <el-row :gutter="24" style="padding-top: 20%;padding-left: 12%">
-                      <el-col :span="12" class="center-font-style" id="open-plat-introduce"
+                      <el-col :span="18" class="center-font-style" id="open-plat-introduce"
                               ref="openPlatIntroduce" style="text-align: left">
                         <a href="/#/openCommunity" class="center-href-button" ref="hrefClose7">开放平台介绍</a>
                       </el-col>
-                      <el-col :span="12">
+                      <el-col :span="4">
                         <img src="../static/img/index/u153p002.png" class="center-image"
                              ref="openPlatIntroduceImg" id="openPlatIntroduceImg">
                       </el-col>
                     </el-row>
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
-                      <el-col :span="12" class="center-font-style" id="open-community"
+                      <el-col :span="18" class="center-font-style" id="open-community"
                               ref="openCommunity" style="text-align: left">
                         <a href="/#/news" class="center-href-button" ref="hrefClose8">开发者社区</a>
                       </el-col>
-                      <el-col :span="12">
+                      <el-col :span="4">
                         <img src="../static/img/index/u153p002.png" class="center-image"
                              ref="openCommunityImg" id="openCommunityImg">
                       </el-col>
@@ -210,37 +209,37 @@
                 <el-col :span="10" style="height: 400px">
                   <el-row style="width: 40%;height: 100%;border-right: 1px solid #f2f2f2;">
                     <el-row :gutter="24" style="padding-top: 12%;padding-left: 12%">
-                      <el-col :span="12" class="center-font-style" id="collaborative-dev-plat"
-                              ref="collaborativeDevPlat">
+                      <el-col :span="18" class="center-font-style" id="collaborative-dev-plat"
+                              ref="collaborativeDevPlat" style="text-align: left">
                         <a href="/#/development" class="center-href-button" ref="hrefClose9">
                           协同研发平台
                         </a>
                       </el-col>
-                      <el-col :span="12">
+                      <el-col :span="4">
                         <img src="../static/img/index/u153p002.png" class="center-image"
                              ref="collaborativeDevPlatImg" id="collaborativeDevPlatImg">
                       </el-col>
                     </el-row>
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
-                      <el-col :span="12" class="center-font-style" id="edu-train-cooperation"
-                              ref="eduTrainCooperation">
+                      <el-col :span="18" class="center-font-style" id="edu-train-cooperation"
+                              ref="eduTrainCooperation" style="text-align: left">
                         <a href="/#/education" class="center-href-button" ref="hrefClose10">
                           教育培训合作
                         </a>
                       </el-col>
-                      <el-col :span="12">
+                      <el-col :span="4">
                         <img src="../static/img/index/u153p002.png" class="center-image"
                              ref="eduTrainCooperationImg" id="eduTrainCooperationImg">
                       </el-col>
                     </el-row>
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
-                      <el-col :span="12" class="center-font-style" id="supplier-cooperation"
+                      <el-col :span="18" class="center-font-style" id="supplier-cooperation"
                               ref="supplierCooperation" style="text-align: left">
                         <a href="/#/supplier" class="center-href-button" ref="hrefClose11">
                           供应商合作
                         </a>
                       </el-col>
-                      <el-col :span="12">
+                      <el-col :span="4">
                         <img src="../static/img/index/u153p002.png" class="center-image"
                              ref="supplierCooperationImg" id="supplierCooperationImg">
                       </el-col>
