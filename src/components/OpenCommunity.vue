@@ -29,172 +29,152 @@
     </el-container>
 
     <el-row>
-      <el-carousel :interval="5000" height="1000px" :indicator-position="'none'">
+      <el-carousel :interval="5000" height="740px" :indicator-position="'none'" style="margin-bottom: 10px">
         <el-carousel-item v-for="item in 3" :key="item">
-          <div v-if="item===1" style="width: 900px;height: 800px;">
-            <br>
-            <br>
-            <el-row :gutter="24">
-              <el-col :span="14">
-                <br>
-              </el-col>
-              <el-col :span="10" center>
-                <img src="../../static/img/OpenCommunity/u975.png" @click="showDialog(item)">
-              </el-col>
+          <div v-if="item===1">
+            <el-row style="margin-left: 32%;margin-top: 2%">
+              <img src="../../static/img/OpenCommunity/u975.png" @click="showDialog(item)"
+                   style="width: 58%;height: 700px">
             </el-row>
           </div>
           <div v-if="item===2">
-            <br>
-            <br>
-            <el-row :gutter="24">
-              <el-col :span="4">
-                <br>
-              </el-col>
-              <el-col :span="8">
-                <img src="../../static/img/OpenCommunity/u981.png" @click="showDialog(item)"
-                     style="width: 1400px;height: 800px">
-              </el-col>
-              <el-col :span="12">
-                <br>
-              </el-col>
+            <el-row style="margin-left: 20%;margin-top: 2%">
+              <img src="../../static/img/OpenCommunity/u981.png" @click="showDialog(item)"
+                   style="width: 80%;height: 700px">
             </el-row>
-
           </div>
           <div v-if="item===3">
-            <br>
-            <br>
-            <el-row :gutter="24">
-              <el-col :span="6">
-                <br>
-              </el-col>
-              <el-col :span="10">
-                <img src="../../static/img/OpenCommunity/u985.jpg" @click="showDialog(item)"
-                     style="width: 900px;height: 800px;">
-              </el-col>
-              <el-col :span="8"></el-col>
+            <el-row style="margin-left: 30%;">
+              <img src="../../static/img/OpenCommunity/u985.jpg" @click="showDialog(item)"
+                   style="width: 60%;height: 62%;">
             </el-row>
           </div>
         </el-carousel-item>
       </el-carousel>
-      <br>
     </el-row>
 
     <el-container style="text-align: left;color: #0d64e8;font-size: 18px;background-color: rgba(242, 246, 250, 1)">
-      <el-header style="font-size: 32px;font-weight: bolder;text-align: center">
-        <br>
+      <el-header style="font-size: 32px;text-align: center;margin-top: 2%">
         GomROS开发者社区
-        <br>
       </el-header>
-      <el-row><br></el-row>
-      <el-row><br></el-row>
-      <el-row><br></el-row>
       <el-main>
         <el-row :gutter="24">
           <el-col :span="4">
             <br>
           </el-col>
           <el-col :span="8">
-            <div style="background-color: white">
-              <el-row style="font-size: 32px;font-weight: bolder;margin-left: 20px">
-                文章查看
+            <div class="bgc">
+              <br>
+              <el-row style="font-size: 32px;margin-left: 5%">
+                <el-col :span="2">
+                  <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                </el-col>
+                <el-col :span="20">文章查看</el-col>
+                <el-col :span="2"><br></el-col>
               </el-row>
-              <el-row><br></el-row>
+              <br>
               <el-row>
-                &nbsp;&nbsp;&nbsp;
-                <el-button @click="article()"
-                           style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 120px">
-                  查看详情
-                </el-button>
-              </el-row>
-              <el-row><br></el-row>
+                <el-col :span="3">
+                  &nbsp;
+                </el-col>
+                <el-col :span="19">
+                  <el-button @click="article()"
+                             style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 80px;height: 20px;padding: 0">
+                    查看详情
+                  </el-button>
+                </el-col>
+                <el-col :span="2">&nbsp;</el-col>
+              </el-row><br><br>
+            </div>
+            <div class="bgc">
               <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
-              <el-row style="font-size: 32px;font-weight: bolder;margin-left: 20px">
-                开发文档
+              <br>
+              <el-row style="font-size: 32px;margin-left: 5%;margin-top: 1%;">
+                <el-col :span="2">
+                  <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                </el-col>
+                <el-col :span="20">开发文档</el-col>
+                <el-col :span="2"><br></el-col>
               </el-row>
-              <el-row><br></el-row>
+              <br>
               <el-row>
-                <el-button
-                    @click="apiDocument()"
-                    style="font-size: 13px;
-                    text-align: center;
-                    border-color: #0d64e8;
-                    color: #0d64e8;
-                    margin-left: 20px;
-                    width: 120px">
-                  查看详情
-                </el-button>
+                <el-col :span="3">&nbsp;</el-col>
+                <el-col :span="19">
+                  <el-button @click="apiDocument()"
+                             style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 80px;height: 20px;padding: 0">
+                    查看详情
+                  </el-button>
+                </el-col>
+                <el-col :span="2">&nbsp;</el-col>
               </el-row>
-              <el-row><br></el-row>
+              <br><br>
             </div>
           </el-col>
           <el-col :span="10">
-            <div style="background-color: white">
-              <el-row style="font-size: 32px;font-weight: bolder;margin-left: 5px">&nbsp;
-                软件下载
+            <div class="bgc">
+              <br>
+              <el-row style="font-size: 32px;margin-left: 5%">
+                <el-col :span="2">
+                  <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                </el-col>
+                <el-col :span="20">软件下载</el-col>
+                <el-col :span="2"><br></el-col>
               </el-row>
-              <el-row> &nbsp;&nbsp;&nbsp; 基于软件包的方式进行安装，方便开发者快速安装、快速体验。</el-row>
-              <el-row><br></el-row>
-              <el-row> &nbsp;&nbsp;&nbsp; GomROS版本：1.1版</el-row>
-              <el-row><br></el-row>
-              <el-row> &nbsp;&nbsp;&nbsp; 操作系统：Ubuntu</el-row>
-              <el-row><br></el-row>
-              <el-row> &nbsp;&nbsp;&nbsp; 操作系统版本：Ubuntu 18.04+</el-row>
-              <el-row><br></el-row>
-              <el-row>
-                <el-row>
-                  <el-button
-                      @click="softwareDownload()"
-                      style="font-size: 13px;
-                      text-align: center;
-                      border-color: #0d64e8;
-                      color: #0d64e8;
-                      margin-left: 10px;
-                      width: 120px">
-                    下载
-                  </el-button>
-                </el-row>
+              <br>
+              <el-row style="padding-left: 5%">
+                <el-col :span="2">&nbsp;</el-col>
+                <el-col :span="20">
+                  <el-row>基于软件包的方式进行安装，方便开发者快速安装、快速体验。</el-row>
+                  <br>
+                  <el-row>GomROS版本：1.1版</el-row>
+                  <br>
+                  <el-row> 操作系统：Ubuntu</el-row>
+                  <br>
+                  <el-row>操作系统版本：Ubuntu 18.04+</el-row>
+                  <br>
+                  <el-row>
+                    <el-button @click="softwareDownload()"
+                               style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 80px;height: 20px;padding: 0">
+                      下载
+                    </el-button>
+                  </el-row>
+                </el-col>
+                <el-col :span="2">&nbsp;</el-col>
               </el-row>
+              <br><br>
             </div>
           </el-col>
-          <el-col :span="2">
-            <br>
-          </el-col>
+          <el-col :span="2"><br></el-col>
         </el-row>
+        <el-row><br></el-row>
       </el-main>
     </el-container>
-
-    <el-row><br></el-row>
-    <el-row><br></el-row>
-    <el-row><br></el-row>
-    <el-row><br></el-row>
-
     <el-container>
-      <el-header>
-        <br>
-      </el-header>
-      <el-main>
+      <el-main style="background-color: #f2f2f2">
         <div style="color: #0d64e8;font-weight: bolder">
           <el-row :gutter="24">
-            <el-col :span="6" style="font-size: 36px;background-color: rgba(209, 222, 237, 1)">
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              GomROS开放平台
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-              <el-row><br></el-row>
-            </el-col>
-            <el-col :span="1">
+            <el-col :span="0.5">
               <br>
             </el-col>
-            <el-col :span="17">
+            <el-col :span="5" style="font-size: 36px;background-color: rgba(209, 222, 237, 1)">
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>GomROS开放平台
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+              <el-row><br></el-row>
+            </el-col>
+            <el-col :span="0.5">
+              <br>
+            </el-col>
+            <el-col :span="18">
               <div>
                 <el-row :gutter="24" style="background-color: rgba(223, 235, 251, 1)">
                   <el-col :span="6" style="font-size: 28px;">
@@ -422,10 +402,6 @@ export default {
   color: #1767a1;
 }
 
-/*p {*/
-/*  color: #444444;*/
-/*}*/
-
 .require-box {
   border: 1px solid #1767a1;
   width: 80%;
@@ -448,4 +424,11 @@ export default {
 /*.el-carousel__item:nth-child(2n+1) {*/
 /*  background-color: #d3dce6;*/
 /*}*/
+.bgc {
+  background-color: white;
+}
+
+.bgc:hover {
+  background-color: rgba(223, 235, 251, 1);
+}
 </style>
