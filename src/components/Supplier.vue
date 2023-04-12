@@ -146,9 +146,9 @@
         </el-row>
       </el-main>
 
-    </el-container>
-    <br>
-    <el-container style="color: #0D64E8">
+        </el-container>
+        <br>
+        <el-container style="color: #0D64E8">
 
       <el-container style="margin-left: 6%">
         <el-header>
@@ -277,86 +277,87 @@
       <el-aside width="100px"></el-aside>
     </el-container>
 
-    <el-container style="width: 100%">
-      <el-main style="background: #0d64e8;font-size: 30px;">
-        <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
-          <el-col :span="13" style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
-            欢迎咨询供应商合作相关产品
-          </el-col>
-          <el-col :span="11" style="text-align: right;padding-right: 3%">
-            <el-button @click="routerToContact()"
-                       style="font-size: 30px;background-color: #0d64e8;border-color: white;color: white;">
-              联系我们
-            </el-button>
-          </el-col>
-        </el-row>
-      </el-main>
-    </el-container>
+        <el-container style="width: 100%">
+            <el-main style="background: #0d64e8;font-size: 30px;">
+                <el-row :gutter="24" style="padding-top: 0;padding-bottom: 0">
+                    <el-col :span="13"
+                            style="color: white;text-align: left;font-size: 35px;font-weight: bolder;padding-left: 5%">
+                        欢迎咨询供应商合作相关产品
+                    </el-col>
+                    <el-col :span="11" style="text-align: right;padding-right: 3%">
+                        <el-button @click="routerToContact()"
+                                   style="font-size: 30px;background-color: #0d64e8;border-color: white;color: white;">
+                            联系我们
+                        </el-button>
+                    </el-col>
+                </el-row>
+            </el-main>
+        </el-container>
 
-    <!-- 添加或修改供应商合作-供应商合作申请对话框 -->
-    <el-dialog :title="title" :visible.sync="open" width="1200px" append-to-body>
-      <el-form ref="form" :model="form" :rules="rules" label-width="100px" style="font-size: 14px">
-        <el-form-item
-            style="font-size: larger;
+        <!-- 添加或修改供应商合作-供应商合作申请对话框 -->
+        <el-dialog :title="title" :visible.sync="open" width="1200px" append-to-body>
+            <el-form ref="form" :model="form" :rules="rules" label-width="100px" style="font-size: 14px">
+                <el-form-item
+                        style="font-size: larger;
             color: #0d64e8;
             text-align: center"
-            label-width="0px">
-          <h1>
-            供应商合作申请
-          </h1>
-        </el-form-item>
-        <el-row :gutter="24">
-          <el-col :span="8">
-            <el-form-item label="申请人姓名" prop="applicantName">
-              <el-input v-model="form.applicantName" placeholder="请输入申请人姓名"/>
-            </el-form-item>
-          </el-col>
-          <el-col :span="8">
-            <el-form-item label="单位名称" prop="companyName">
-              <el-input v-model="form.companyName" placeholder="请输入单位名称"/>
-            </el-form-item>
-          </el-col>
-          <el-col :span="8">
-            <el-form-item label="合作方向" prop="cooperationDirection">
-              <el-input v-model="form.cooperationDirection" placeholder="请输入合作方向"/>
-            </el-form-item>
-          </el-col>
-        </el-row>
-        <el-row :gutter="24">
-          <el-col :span="8">
-            <el-form-item label="申请人职务" prop="applicantJob">
-              <el-input v-model="form.applicantJob" placeholder="请输入申请人职务"/>
-            </el-form-item>
-          </el-col>
-          <el-col :span="8">
-            <el-form-item label="联系电话" prop="telephone">
-              <el-input v-model="form.telephone" placeholder="请输入联系电话"/>
-            </el-form-item>
-          </el-col>
-          <el-col :span="8">
-            <el-form-item label="联系邮箱" prop="mail">
-              <el-input v-model="form.mail" placeholder="请输入联系邮箱"/>
-            </el-form-item>
-          </el-col>
-        </el-row>
-        <el-row :gutter="24">
-          <br>
-          <br>
-          <br>
-        </el-row>
-        <el-row :gutter="24">
-          <el-form-item label="合作需求" prop="demand">
-            <el-input v-model="form.demand" type="textarea" :rows="4" placeholder="请输入内容"/>
-          </el-form-item>
-        </el-row>
-      </el-form>
-      <div slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="submitForm">确 定</el-button>
-        <el-button @click="cancel">取 消</el-button>
-      </div>
-    </el-dialog>
+                        label-width="0px">
+                    <h1>
+                        供应商合作申请
+                    </h1>
+                </el-form-item>
+                <el-row :gutter="24">
+                    <el-col :span="8">
+                        <el-form-item label="申请人姓名" prop="applicantName">
+                            <el-input v-model="form.applicantName" placeholder="请输入申请人姓名"/>
+                        </el-form-item>
+                    </el-col>
+                    <el-col :span="8">
+                        <el-form-item label="单位名称" prop="companyName">
+                            <el-input v-model="form.companyName" placeholder="请输入单位名称"/>
+                        </el-form-item>
+                    </el-col>
+                    <el-col :span="8">
+                        <el-form-item label="合作方向" prop="cooperationDirection">
+                            <el-input v-model="form.cooperationDirection" placeholder="请输入合作方向"/>
+                        </el-form-item>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="24">
+                    <el-col :span="8">
+                        <el-form-item label="申请人职务" prop="applicantJob">
+                            <el-input v-model="form.applicantJob" placeholder="请输入申请人职务"/>
+                        </el-form-item>
+                    </el-col>
+                    <el-col :span="8">
+                        <el-form-item label="联系电话" prop="telephone">
+                            <el-input v-model="form.telephone" placeholder="请输入联系电话"/>
+                        </el-form-item>
+                    </el-col>
+                    <el-col :span="8">
+                        <el-form-item label="联系邮箱" prop="mail">
+                            <el-input v-model="form.mail" placeholder="请输入联系邮箱"/>
+                        </el-form-item>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="24">
+                    <br>
+                    <br>
+                    <br>
+                </el-row>
+                <el-row :gutter="24">
+                    <el-form-item label="合作需求" prop="demand">
+                        <el-input v-model="form.demand" type="textarea" :rows="4" placeholder="请输入内容"/>
+                    </el-form-item>
+                </el-row>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button type="primary" @click="submitForm">确 定</el-button>
+                <el-button @click="cancel">取 消</el-button>
+            </div>
+        </el-dialog>
 
-  </div>
+    </div>
 </template>
 
 <script>
@@ -364,149 +365,162 @@ import axios from "../router/http";
 import icon from "element-ui/packages/icon";
 
 export default {
-  name: "About",
-  computed: {
-    icon() {
-      return icon
-    }
-  },
-  data() {
-    return {
-      title: "",
-      // 是否显示弹出层
-      open: false,
-      // 表单参数
-      form: {},
-      rules: {
-        applicantName: [
-          {required: true, message: "申请人姓名不能为空", trigger: "blur"},
-          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
-        ],
-        companyName: [
-          {required: true, message: "单位名称不能为空", trigger: "blur"},
-          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
-        ],
-        cooperationDirection: [
-          {required: true, message: "合作方向不能为空", trigger: "blur"},
-          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
-        ],
-        applicantJob: [
-          {required: true, message: "申请人职务不能为空", trigger: "blur"},
-          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
-        ],
-        telephone: [
-          {required: true, message: "联系电话不能为空", trigger: "blur"},
-          {max: 11, message: "长度最大为 11 字符", trigger: "blur"}
-        ],
-        mail: [
-          {required: true, message: "联系邮箱不能为空", trigger: "blur"},
-          {max: 255, message: "长度 最大为 255 个字符", trigger: "blur"}
-        ],
-      }
-    };
-  },
-  methods: {
-    routerToContact() {
-      this.$router.push('/about')
-    },
-    submitForm() {
-      this.open = true;
-      this.$refs['form'].validate(valid => {
-        if (valid) {
-          axios.post('http://localhost:8080/system/supplier', this.form).then(response => {
-                console.log("response:", response)
-                // this.info = response;
-                if (response != null && response.status === 200) {
-                  this.$alert("提交成功");
-                  this.status = response.status;
-                  this.open = false;
-                  this.reset();
-                }
-              }
-          ).catch(error => {
-                console.log(error),
-                    this.$message({
-                      type: 'error',
-                      message: error + ''
-                    })
-              }
-          )
+    name: "About",
+    computed: {
+        icon() {
+            return icon
         }
-      })
     },
-    cancel() {
-      this.open = false;
-      this.reset();
+    data() {
+        return {
+            title: "",
+            // 是否显示弹出层
+            open: false,
+            // 表单参数
+            form: {},
+            rules: {
+                applicantName: [
+                    {required: true, message: "申请人姓名不能为空", trigger: "blur"},
+                    {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
+                ],
+                companyName: [
+                    {required: true, message: "单位名称不能为空", trigger: "blur"},
+                    {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
+                ],
+                cooperationDirection: [
+                    {required: true, message: "合作方向不能为空", trigger: "blur"},
+                    {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
+                ],
+                applicantJob: [
+                    {required: true, message: "申请人职务不能为空", trigger: "blur"},
+                    {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
+                ],
+                telephone: [
+                    {required: true, message: "联系电话不能为空", trigger: "blur"},
+                    {max: 11, message: "长度最大为 11 字符", trigger: "blur"}
+                ],
+                mail: [
+                    {required: true, message: "联系邮箱不能为空", trigger: "blur"},
+                    {max: 255, message: "长度 最大为 255 个字符", trigger: "blur"}
+                ],
+            }
+        };
     },
-    reset() {
-      this.form = {
-        id: null,
-        formId: null,
-        applicantName: null,
-        companyName: null,
-        cooperationDirection: null,
-        applicantJob: null,
-        telephone: null,
-        mail: null,
-        demand: null,
-        source: null,
-        isHandle: null,
-        isDelete: null,
-        createTime: null,
-        createBy: null,
-        updateTime: null,
-        updateBy: null
-      };
+    methods: {
+        routerToContact() {
+            this.$router.push('/about')
+        },
+        openDialog() {
+            this.open = true;
+            this.reset();
+        },
+        submitForm() {
+            this.$refs['form'].validate(valid => {
+                if (valid) {
+                    axios.post('http://localhost:8080/forminfo/supplier', this.form).then(response => {
+                            // this.info = response;
+                            if (response != null && response.status === 200) {
+                                this.$alert("期待与您的合作！");
+                                this.status = response.status;
+                                this.open = false;
+                                this.reset();
+                            }
+                        }
+                    ).catch(error => {
+                            console.log(error),
+                                this.$message({
+                                    type: 'error',
+                                    message: error + ''
+                                })
+                        }
+                    )
+                }
+            })
+        },
+        cancel() {
+            this.open = false;
+            this.reset();
+        },
+        reset() {
+            this.form = {
+                id: null,
+                formId: null,
+                applicantName: null,
+                companyName: null,
+                cooperationDirection: null,
+                applicantJob: null,
+                telephone: null,
+                mail: null,
+                demand: null,
+                source: null,
+                isHandle: null,
+                isDelete: null,
+                createTime: null,
+                createBy: null,
+                updateTime: null,
+                updateBy: null
+            };
+        },
     },
-  },
 };
 </script>
 <style scoped>
 #content-box h1,
 #content-box h3 {
-  text-align: center;
-  font-weight: 400;
-  color: #1767a1;
+    text-align: center;
+    font-weight: 400;
+    color: #1767a1;
 }
 
 p {
-  color: #444444;
+    color: #444444;
 }
 
 .introduction:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
 }
 
 .brief:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
 }
 
 .apply:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
 }
 
 .apply:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
+}
+
+.applyButton {
+    background-color: rgba(242, 246, 250, 1);
+    color: #0d64e8;
+}
+
+.apply:hover .applyButton {
+    color: white;
+    background-color: #3c6088;
+
 }
 
 .applyButton:hover {
-  background-color: #2372EA;
-  color: white;
+    background-color: #2372EA;
+    color: white;
 }
 
 .el-main {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 ::v-deep .el-step__icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 60px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 60px;
 }
 
 .el-image__inner {
-  border-radius: 50%;
-  border: 1px solid #375EA0;
-  padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #375EA0;
+    padding: 20px;
 }
 </style>

@@ -405,40 +405,40 @@
       </el-main>
     </el-container>
 
-    <el-dialog :title="title" :visible.sync="open" width="800px" append-to-body>
-      <el-form ref="form" :model="form" :rules="rules" label-width="100px" style="text-align: center">
-        <el-form-item
-            style="font-size: larger;
+        <el-dialog :title="title" :visible.sync="open" width="800px" append-to-body>
+            <el-form ref="form" :model="form" :rules="rules" label-width="100px" style="text-align: center">
+                <el-form-item
+                        style="font-size: larger;
             color: #0d64e8;
             text-align: center"
-            label-width="0px">
-          <h1>
-            合作申请
-          </h1>
-        </el-form-item>
-        <el-form-item label="企业名称" prop="companyName">
-          <el-input v-model="form.companyName" placeholder="请输入企业名称"/>
-        </el-form-item>
-        <el-form-item label="姓名" prop="userName">
-          <el-input v-model="form.userName" placeholder="请输入姓名"/>
-        </el-form-item>
-        <el-form-item label="手机号" prop="telephone">
-          <el-input v-model="form.telephone" placeholder="请输入手机号"/>
-        </el-form-item>
-        <el-form-item label="邮箱" prop="mail">
-          <el-input v-model="form.mail" placeholder="请输入邮箱"/>
-        </el-form-item>
-        <el-form-item label="合作项目说明" prop="description">
-          <el-input v-model="form.description" type="textarea" :rows="4" placeholder="请输入内容"/>
-        </el-form-item>
-      </el-form>
-      <div slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="submitForm">确 定</el-button>
-        <el-button @click="cancel()">取 消</el-button>
-      </div>
-    </el-dialog>
+                        label-width="0px">
+                    <h1>
+                        合作申请
+                    </h1>
+                </el-form-item>
+                <el-form-item label="企业名称" prop="companyName">
+                    <el-input v-model="form.companyName" placeholder="请输入企业名称"/>
+                </el-form-item>
+                <el-form-item label="姓名" prop="userName">
+                    <el-input v-model="form.userName" placeholder="请输入姓名"/>
+                </el-form-item>
+                <el-form-item label="手机号" prop="telephone">
+                    <el-input v-model="form.telephone" placeholder="请输入手机号"/>
+                </el-form-item>
+                <el-form-item label="邮箱" prop="mail">
+                    <el-input v-model="form.mail" placeholder="请输入邮箱"/>
+                </el-form-item>
+                <el-form-item label="合作项目说明" prop="description">
+                    <el-input v-model="form.description" type="textarea" :rows="4" placeholder="请输入内容"/>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button type="primary" @click="submitForm">确 定</el-button>
+                <el-button @click="cancel()">取 消</el-button>
+            </div>
+        </el-dialog>
 
-  </div>
+    </div>
 
 </template>
 
@@ -448,135 +448,135 @@ import axios from "axios";
 import {regexp} from "autoprefixer/lib/utils";
 
 export default {
-  name: "About",
-  data() {
-    return {
-      pagetitle: '',
-      email: '',
-      phone: '',
-      response: '',
-      address: '',
-      status: 0,
-      formInline: {
-        name: "",
-        phone: "",
-        company: "",
-        email: "",
-        content: ""
-      },
-      // 弹出层标题
-      title: "",
-      // 是否显示弹出层
-      open: false,
-      fromObject: {
-        companyName: null,
-        userName: null,
-        telephone: null,
-        mail: null,
-        description: null,
-      },
-      //表单数据
-      form: {},
-      rules: {
-        companyName: [
-          {required: true, message: "企业名称不能为空", trigger: "blur"},
-          {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
-        ],
-        userName: [
-          {required: true, message: "姓名不能为空", trigger: "blur"},
-          {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
-        ],
-        telephone: [
-          {required: true, message: "手机号不能为空", trigger: "blur"},
-          {max: 11, message: "长度最大为 11 位", trigger: "blur"}
-        ],
-      }
-    };
-  },
-  methods: {
-    cancel() {
-      this.open = false;
-      this.reset();
+    name: "About",
+    data() {
+        return {
+            pagetitle: '',
+            email: '',
+            phone: '',
+            response: '',
+            address: '',
+            status: 0,
+            formInline: {
+                name: "",
+                phone: "",
+                company: "",
+                email: "",
+                content: ""
+            },
+            // 弹出层标题
+            title: "",
+            // 是否显示弹出层
+            open: false,
+            fromObject: {
+                companyName: null,
+                userName: null,
+                telephone: null,
+                mail: null,
+                description: null,
+            },
+            //表单数据
+            form: {},
+            rules: {
+                companyName: [
+                    {required: true, message: "企业名称不能为空", trigger: "blur"},
+                    {min: 2, max: 50, message: "长度在 2 到 50 个字符", trigger: "blur"}
+                ],
+                userName: [
+                    {required: true, message: "姓名不能为空", trigger: "blur"},
+                    {min: 2, max: 20, message: "长度在 2 到 20 个字符", trigger: "blur"}
+                ],
+                telephone: [
+                    {required: true, message: "手机号不能为空", trigger: "blur"},
+                    {max: 11, message: "长度最大为 11 位", trigger: "blur"}
+                ],
+            }
+        };
     },
-    reset() {
-      this.form = {
-        companyName: null,
-        userName: null,
-        telephone: null,
-        mail: null,
-        description: null,
-      };
-    },
-    routerToContact() {
-      this.$router.push('/about')
-    },
-    submitForm() {
-      this.open = true;
-      this.$refs['form'].validate(valid => {
-        if (valid) {
-          axios.post('http://localhost:8080/system/development', this.form).then(response => {
-                console.log("response:", response)
-                // this.info = response;
-                if (response != null && response.status === 200) {
-                  this.$alert("提交成功");
-                  this.status = response.status;
-                  this.open = false;
-                  this.reset();
+    methods: {
+        cancel() {
+            this.open = false;
+            this.reset();
+        },
+        reset() {
+            this.form = {
+                companyName: null,
+                userName: null,
+                telephone: null,
+                mail: null,
+                description: null,
+            };
+        },
+        routerToContact() {
+            this.$router.push('/about')
+        },
+        openDialog() {
+            this.open = true;
+            this.reset();
+        },
+        submitForm() {
+            this.$refs['form'].validate(valid => {
+                if (valid) {
+                    axios.post('http://localhost:8080/forminfo/development', this.form).then(response => {
+                            if (response != null && response.status === 200) {
+                                this.$alert("期待与您的合作！");
+                                // this.status = response.status;
+                                this.open = false;
+                            }
+                        }
+                    ).catch(error => {
+                            // console.log(error),
+                            this.$message({
+                                type: 'error',
+                                message: error + ''
+                            })
+                        }
+                    )
                 }
-              }
-          ).catch(error => {
-                console.log(error),
-                    this.$message({
-                      type: 'error',
-                      message: error + ''
-                    })
-              }
-          )
-        }
-      })
-    },
-  }
+            })
+        },
+    }
 };
 </script>
 <style scoped>
 #about {
-  background-color: rgb(20, 103, 159);
+    background-color: rgb(20, 103, 159);
 }
 
 #content-box {
-  width: 85%;
-  background: #fff url(../../static/waitanbg.png) no-repeat bottom center;
-  margin: 0 auto;
-  padding-top: 100px;
+    width: 85%;
+    background: #fff url(../../static/waitanbg.png) no-repeat bottom center;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 #content-box h1,
 #content-box h3 {
-  text-align: center;
-  font-weight: 400;
-  color: #1767a1;
+    text-align: center;
+    font-weight: 400;
+    color: #1767a1;
 }
 
 p {
-  color: #444444;
+    color: #444444;
 }
 
 .require-box {
-  border: 1px solid #1767a1;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+    border: 1px solid #1767a1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .cost:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
 }
 
 .efficient:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
 }
 
 .manage:hover {
-  background-color: rgba(242, 246, 250, 1);
+    background-color: rgba(242, 246, 250, 1);
 }
 </style>
