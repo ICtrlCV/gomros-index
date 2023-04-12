@@ -115,7 +115,7 @@
                     </el-col>
                     <el-col :span="14" style="height: 400px;">
                       <div id="rightDiv" class="center-font-style" ref="rightDiv"
-                           style="margin-top: 30%;margin-left: 10%">
+                           style="padding-top: 100px;margin-left: 10%">
                         <el-row ref="cloudPlat" id="el-row-cloudPlat">
                           <a href="/#/cloudPlatform" class="center-href-button" ref="hrefClose3">
                             云平台

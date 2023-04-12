@@ -31,7 +31,7 @@
       <el-row class="background_white">
         <el-col :span="10" style="margin-left: 80px">
           <p id="ro-text1">GomROS机器人操作系统</p>
-          <p id="ro-text2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是一组软件库和工具,能够帮助您快速构建机器人应用程序。从控制程序到先进算法的集合，
+          <p id="ro-text2">是一组软件库和工具,能够帮助您快速构建机器人应用程序。从控制程序到先进算法的集合，
             并且借助强大的开发人员工具，让您可以快速搭建机器人项目。</p>
           <p id="ro-text3">您需要的软件系统，我们已经给您封装好了，您可以随时调用。</p>
         </el-col>
@@ -40,10 +40,10 @@
             <el-col
                 style="width:100%;height:200px;background-image: url(static/img/MobileRobot/u21.gif);
                 background-size: cover;margin-right: 2%">
-              <el-col :span="9">
+              <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="8">
+              <el-col :span="11">
                 <p id="ro_img1_text">视觉识别算法</p>
               </el-col>
               <el-col :span="7">
@@ -51,10 +51,10 @@
               </el-col>
             </el-col>
             <el-col style="background-image: url(static/img/RobotOperateSystem/u702.gif);background-size: cover">
-              <el-col :span="8">
+              <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="8">
+              <el-col :span="11">
                 <p id="ro_img2_text">路径规划算法</p>
               </el-col>
               <el-col :span="7">
@@ -66,10 +66,10 @@
             <el-col
                 style="width:100%;height:200px;background-image: url(static/img/MobileRobot/u27.gif);
                 background-size: cover;margin-right: 2%">
-              <el-col :span="8">
+              <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="8">
+              <el-col :span="11">
                 <p id="ro_img3_text">激光导航算法</p>
               </el-col>
               <el-col :span="7">
@@ -77,10 +77,10 @@
               </el-col>
             </el-col>
             <el-col style="background-image: url(static/img/RobotOperateSystem/u704.gif);background-size: cover">
-              <el-col :span="8">
+              <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="8">
+              <el-col :span="11">
                 <p id="ro_img4_text">视觉避障算法</p>
               </el-col>
               <el-col :span="7">
@@ -101,7 +101,7 @@
       <el-row>
         <el-col id="row-two" :span="8">
           <p id="rt_text1">GomROS机器人操作系统</p>
-          <p id="rt_text2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在经历了2018年以来的&quot;卡脖子&quot;风波之后，以工业软件、
+          <p id="rt_text2">在经历了2018年以来的&quot;卡脖子&quot;风波之后，以工业软件、
             基础软件为代表的核心技术，自主研发自主拥有知识产权的需求更为强烈。</p>
           <p id="rt_text3">欢迎您加入我们的开发者队伍，我们一起打造国产基础软件系统。</p>
         </el-col>
@@ -118,7 +118,7 @@
         <p class="footer">机器人操作系统有哪些应用？</p>
       </el-footer>
       <el-row id="row3">
-        <el-col :span="10">
+        <el-col :span="11">
           <el-row id="row3_text">
             <p id="row3_text1">GomROS机器人操作系统</p>
             <p id="row3_text2">可用于多种行业、可用于多种类型机器人开发、可用于各类硬件设备驱动和控制。</p>
@@ -139,7 +139,7 @@
             </el-col>
           </el-row>
         </el-col>
-        <el-col :span="12">
+        <el-col :span="11" style="margin-top: 2%">
           <el-row :gutter="20" type="flex" style="margin-left: 18%;margin-top: 10%;">
             <el-col>
               <img src="static/img/RobotOperateSystem/u785.png" class="row3_img1">
@@ -157,7 +157,7 @@
               <img src="static/img/RobotOperateSystem/u789.png" class="row3_img1">
             </el-col>
           </el-row>
-          <el-row :gutter="5" type="flex" style="margin-left: 5%">
+          <el-row :gutter="5" type="flex">
             <el-col>
               <img src="static/img/RobotOperateSystem/u790.jpg" class="row3_img2">
             </el-col>
@@ -196,16 +196,15 @@
       <el-footer class="sub_title">
         <p class="footer">我们的应用案例</p>
       </el-footer>
-      <el-row>
+      <el-row style="padding-bottom: 0">
         <el-col :span="6" style="margin-left: 80px">
           <p id="row4_text1">GomROS机器人操作系统</p>
           <p id="row4_text2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的服务机器人和搬运机器人全部基于GomROS系统搭建。</p>
-          <br>
           <p id="row4_text3">参考我们的机器人开发项目</p>
         </el-col>
         <el-col :span="15" class="row4_right">
           <el-row :gutter="2" type="flex" id="row4_right_row1">
-            <el-col :span="5" class="row4_sub"><br><br><br>软件系统</el-col>
+            <el-col :span="5" class="row4_sub"><br>软件系统</el-col>
             <el-row :gutter="10" type="flex" class="row4_border">
               <el-col :span="8" style="text-align: center">
                 <img src="static/img/RobotOperateSystem/u831.png" class="row4_img1">
@@ -224,7 +223,7 @@
         </el-col>
         <el-row :gutter="2" type="flex" id="row4_right_row2">
           <el-col :span="10">&nbsp;</el-col>
-          <el-col :span="3" class="row4_sub"><br><br><br>产品应用</el-col>
+          <el-col :span="4" class="row4_sub">产品应用</el-col>
           <el-row :span="10" class="row4_border">
             <img src="static/img/RobotOperateSystem/u809.png" class="row4_img2">
             <p>
@@ -234,9 +233,9 @@
             </p>
           </el-row>
         </el-row>
-        <el-row :gutter="2" type="flex" style="height: 240px">
+        <el-row :gutter="2" type="flex" style="height: 240px;padding-top: 0">
           <el-col :span="5">&nbsp;</el-col>
-          <el-col :span="5" class="row4_sub"><br><br><br>硬件驱动/控制
+          <el-col :span="6" class="row4_sub">硬件驱动/控制
           </el-col>
           <el-row :gutter="12" type="flex" class="row4_border">
             <el-col :span="8">
@@ -365,7 +364,7 @@
 }
 
 #tf-text {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bolder;
   color: white;
   margin-top: 10px;
@@ -383,19 +382,19 @@
 }
 
 #ro-text1 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #ro-text2 {
-  font-size: 25px;
+  font-size: 26px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #ro-text3 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
 }
@@ -448,11 +447,14 @@
 }
 
 .footer {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bolder;
   color: white;
   margin-left: 3%;
-  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8px;
+
 }
 
 #row-two {
@@ -462,19 +464,19 @@
 }
 
 #rt_text1 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #rt_text2 {
-  font-size: 20px;
+  font-size: 26px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #rt_text3 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
 }
@@ -482,6 +484,7 @@
 .row2_img {
   width: 80%;
   height: 200px;
+  margin-top: 8%;
 }
 
 #row3 {
@@ -494,21 +497,22 @@
 }
 
 #row3_text1 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #row3_text2 {
-  font-size: 20px;
+  font-size: 26px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #row3_text3 {
-  font-size: 30px;
+  font-size: 26px;
   color: #0d64e8;
   font-weight: bolder;
+  margin-bottom: 0;
 }
 
 .row3_img1 {
@@ -527,21 +531,22 @@
 }
 
 #row4_text1 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #row4_text2 {
-  font-size: 20px;
+  font-size: 26px;
   color: #0d64e8;
   font-weight: bolder;
 }
 
 #row4_text3 {
-  font-size: 30px;
+  font-size: 32px;
   color: #0d64e8;
   font-weight: bolder;
+  margin-top: 10%;
 }
 
 .row4_right {
@@ -577,13 +582,15 @@
 #row4_right_row2 {
   width: 100%;
   height: 260px;
+  padding-top: 0;
 }
 
 .row4_sub {
   text-align: center;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 4%;
 }
 
 .row4_border {

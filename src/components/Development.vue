@@ -22,7 +22,7 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           协同研发平台</p>
       </el-footer>
     </el-container>
@@ -50,10 +50,10 @@
                 <img src="static/img/Development/u1802.svg">
               </el-row>
               <el-row><br></el-row>
-              <el-row style="font-size: 30px">成本高</el-row>
-              <el-row style="font-size: 15px">软硬件研发投入高</el-row>
-              <el-row style="font-size: 15px">自建团队成本高</el-row>
-              <el-row style="font-size: 15px">多系统集成维护成本高</el-row>
+              <el-row style="font-size: 24px">成本高</el-row>
+              <el-row style="font-size: 18px">软硬件研发投入高</el-row>
+              <el-row style="font-size: 18px">自建团队成本高</el-row>
+              <el-row style="font-size: 18px">多系统集成维护成本高</el-row>
             </div>
             <div>
               <br>
@@ -71,10 +71,10 @@
                 <img src="static/img/Development/u1813.svg">
               </el-row>
               <el-row><br></el-row>
-              <el-row style="font-size: 30px">效率低</el-row>
-              <el-row style="font-size: 15px">产品设计标准化低，复用率低</el-row>
-              <el-row style="font-size: 15px">产品数据积累低，应用难</el-row>
-              <el-row style="font-size: 15px">设计协调难，专家评审难</el-row>
+              <el-row style="font-size: 24px">效率低</el-row>
+              <el-row style="font-size: 18px">产品设计标准化低，复用率低</el-row>
+              <el-row style="font-size: 18px">产品数据积累低，应用难</el-row>
+              <el-row style="font-size: 18px">设计协调难，专家评审难</el-row>
             </div>
             <div>
               <br>
@@ -92,10 +92,10 @@
                 <img src="static/img/Development/u1823.svg">
               </el-row>
               <el-row><br></el-row>
-              <el-row style="font-size: 30px">管理难</el-row>
-              <el-row style="font-size: 15px">版本管理混乱，迭代不及时</el-row>
-              <el-row style="font-size: 15px">人员变动带来的产品不稳定</el-row>
-              <el-row style="font-size: 15px">产品缺乏安全稳定运行保障</el-row>
+              <el-row style="font-size: 24px">管理难</el-row>
+              <el-row style="font-size: 18px">版本管理混乱，迭代不及时</el-row>
+              <el-row style="font-size: 18px">人员变动带来的产品不稳定</el-row>
+              <el-row style="font-size: 18px">产品缺乏安全稳定运行保障</el-row>
             </div>
             <div>
               <br>
@@ -111,8 +111,9 @@
     </el-container>
     <el-container id="our-advantage" style="background: #f2f6fa">
       <el-header style="text-align: center">
-        <el-row style="text-align: center;line-height: normal;color: #0D64E8;margin-top: 2%;margin-bottom: 2%">
-          <h1 style="font-weight: bolder">我们的优势</h1>
+        <el-row
+            style="text-align: center;line-height: normal;color: #0D64E8;margin-top: 2%;margin-bottom: 2%;font-size:32px;font-weight: bolder">
+          我们的优势
         </el-row>
       </el-header>
       <el-main>
@@ -122,7 +123,6 @@
           <el-col :span="4">
             <br>
           </el-col>
-
           <el-col :span="16" style="font-size: 20px;">
             <el-tabs style="text-align: center;" :stretch="true">
               <el-tab-pane>
@@ -131,33 +131,32 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="../../static/img/Development/u1955.jpg"
-                         style="width: 400px;height: 250px;margin-right: 1%">
+                         style="width: 400px;height: 280px;">
                   </el-col>
-                  <el-col :span="2"></el-col>
-                  <el-col :span="14" style="text-align: left">
-                    <div style="color: #2372EA;margin-left: 1%">
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                  <el-col :span="14" style="text-align: left;margin-left: 6%;margin-top: 2%">
+                    <div style="color: #2372EA;">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         用心
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px">
                         用心关注产品使用价值、关注质量与细节；关怀合作企业与团队，创造出能够体现企业对用户的关爱的好产品。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         专注
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px">
                         以结果为导向，专注于如何做得更好，创造出有特色、有核心竞争力的好产品。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         创新
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px">
                         不断探索、超越，突破创新局限，创造出富有创新性的好产品。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         简化
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px">
                         以简单应用体现深度设计思想，追求极简的用户体验，创造出令团队和客户感到骄傲的好产品。
                       </el-row>
                     </div>
@@ -170,33 +169,32 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="../../static/img/Development/u1965.jpg"
-                         style="width: 400px;height: 250px;margin-right: 1%">
+                         style="width: 400px;height: 280px;">
                   </el-col>
-                  <el-col :span="2"></el-col>
-                  <el-col :span="14" style="text-align: left">
+                  <el-col :span="14" style="text-align: left;margin-left: 6%">
                     <div style="color: #2372EA;margin-left: 1%">
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         团队稳定
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         我们拥有一支长期稳定的研发团队，技术经验及技术规范都已形成标准文档，确保能够稳定规范的输出产品。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         目标专注
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         我们的团队成员目标保持专注，每个参与成员的核心关注力都在产品的开发阶段，全体成员目标保持一致。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         保持工作节奏
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         我们的团队成员必须以可持续的节奏工作，平衡项目前后的工作量。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         跨组织合作
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         我们开发团队包括架构师、开发工程师、测试人员、数据库管理员和UI设计师等，团队成员必须能够跨职能组合。
                       </el-row>
                     </div>
@@ -211,31 +209,30 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="../../static/img/Development/u1975.jpeg"
-                         style="width: 400px;height: 250px;margin-right: 1%">
+                         style="width: 400px;height: 280px;">
                   </el-col>
-                  <el-col :span="2"></el-col>
-                  <el-col :span="14" style="text-align: left">
+                  <el-col :span="14" style="text-align: left;margin-left: 6%">
                     <div style="color: #2372EA;margin-left: 1%">
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         高品质
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         对产品的检查上要做到全方位的检查，细心、认真，不要放过一丝一毫的空间，严格落实日常质量管理体系及标准。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         低成本
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         1、消除车间浪费，提升生产效率。<br>
                         2、降低计划性损失，提升效率。<br>
                         3、生产管制运作，相互配合，避免等待。<br>
                         4、运用绩效指标改善法，提升效率。<br>
                         5、用MES系统实现工厂可视化管理。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         交期快
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         确保产品计划详尽，辅助部门沟通衔接顺畅。
                       </el-row>
                     </div>
@@ -248,33 +245,32 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="../../static/img/Development/u1985.png"
-                         style="width: 400px;height: 250px;margin-right: 1%">
+                         style="width: 400px;height: 280px;">
                   </el-col>
-                  <el-col :span="2"></el-col>
-                  <el-col :span="14" style="text-align: left">
+                  <el-col :span="14" style="text-align: left;margin-left: 6%;margin-top: 2%">
                     <div style="color: #2372EA;margin-left: 1%">
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         感知
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         实时捕捉业务动态，监控经营趋势，发现经营问题。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         策略
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         沉淀运营管理经验，形成场景卡片，从而实现运营管理能力的自动化。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         指挥
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         将管理决策和任务自动化下达到各业务系统，形成自动运营管理闭环。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         决策
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         基于丰富的算法模型及精准的推演能力，帮助管理层掌握科学的决策方法。
                       </el-row>
                     </div>
@@ -287,33 +283,32 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="../../static/img/Development/u1995.jpg"
-                         style="width: 400px;height: 250px;margin-right: 1%">
+                         style="width: 400px;height: 280px;">
                   </el-col>
-                  <el-col :span="2"></el-col>
-                  <el-col :span="14" style="text-align: left">
+                  <el-col :span="14" style="text-align: left;margin-left: 6%;margin-top: 1%">
                     <div style="color: #2372EA;margin-left: 1%">
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         调度
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         负责全部机器人的任务分配、调度及运行监控。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         智能仓储管理
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         可为企业提供更为完整企业物流管理流程和财务管理信息。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         制造执行系统
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         可以为企业提供包括制造数据管理、计划排程管理、生产调度管理、库存管理、质量管理、人力资源管理、工作中心/设备管理等等多项管理模块。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         资源计划管理
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         ERP是一种主要面向制造行业进行物质资源、资金资源和信息资源集成一体化管理的企业信息管理系统
                       </el-row>
                     </div>
@@ -326,33 +321,32 @@
                 <el-row :gutter="24">
                   <el-col :span="8">
                     <img src="../../static/img/Development/u2005.jpg"
-                         style="width: 400px;height: 250px;margin-right: 1%">
+                         style="width: 400px;height: 280px;">
                   </el-col>
-                  <el-col :span="2"></el-col>
-                  <el-col :span="14" style="text-align: left">
+                  <el-col :span="14" style="text-align: left;margin-left: 6%">
                     <div style="color: #2372EA;margin-left: 1%">
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         领先的技术
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         产品矩阵优势
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         我们有10余款生态机器人产品，覆盖多种使用场景，向各行各业的客户提供硬件设备和服务，可定制，售后有保障的软硬件一体解决方案。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         灵活开放的生态
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         二次开发灵活性强，第三方设备和应用可以快速接入，开放的开发者社区，学校人才聚集，聚集金融机构支持。
                       </el-row>
-                      <el-row style="font-size: 18px;font-weight: bolder">
+                      <el-row style="font-size: 24px;font-weight: bolder">
                         产品和数据支持
                       </el-row>
-                      <el-row style="font-size: 14px">
+                      <el-row style="font-size: 16px;">
                         平台有机器人调度系统、服务机器人管控系统、机器人操作控制软件系统、ERP系统、MES系统、WMS系统、WCS系统等产品及工具、积累大量历史数据、用于迭代更新系统。
                       </el-row>
                     </div>
@@ -375,16 +369,15 @@
           background-image: url(static/img/Development/u2008.jpg);
           background-position: center;
           background-size: cover;
-          /*background-attachment: fixed;*/
           height: 100%;
           width: 100%"
       >
         <div>
-          <h1 style="color: white;font-size: 30px">协同研发平台</h1>
+          <h1 style="color: white;font-size: 72px">协同研发平台</h1>
         </div>
         <h1 style="color: white;text-align: center">
           <el-button @click="submitForm()"
-                     style="background: #0d64e8;color: white">
+                     style="background: #0d64e8;color: white;font-size: 28px">
             <b>
               申请合作
             </b>

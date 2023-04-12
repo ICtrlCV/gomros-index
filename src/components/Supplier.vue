@@ -23,7 +23,7 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           供应商合作</p>
       </el-footer>
     </el-container>
@@ -31,94 +31,91 @@
     <el-container>
       <el-container style="margin-top: 3%;margin-bottom: 2%">
         <el-main style="text-align: left;height: 100%;width: 100%">
-          <div>
-            <el-row :gutter="24">
-              <el-col :span="15"
-                      style="width: 40%;border-style: ridge;border-color: #f2f6fa;border-width: thin;margin-left: 15%"
-                      class="introduction">
-                <el-row><br></el-row>
-                <el-row :gutter="24" style="font-size: 32px;margin-left: 2%">
-                  <el-col :span="2">
-                    <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
-                  </el-col>
-                  <el-col :span="20">简介</el-col>
-                  <el-col :span="2"><br></el-col>
-                </el-row>
-                <el-row :gutter="24" style="margin-left: 2%">
-                  <el-col :span="2"><br></el-col>
-                  <el-col :span="20">
-                    <br><br>
-                    山东亚历山大智能科技有限公司坐落于山东省济南市，比邻千佛山，眺望大明
-                    湖。公司以工业4.0的自动化解决方案为核心技术，长期致力于智能装备、智能
-                    检测系统等相关的自动化生产线、仓储物流系统、群控移动机器人、工业机器
-                    人及生产活动管控软件、辅助教研平台等数字化高端智能装备系统的研发制造。
-                    <br><br><br><br><br><br><br>
-                  </el-col>
-                  <el-col :span="2"><br><br></el-col>
-                </el-row>
-              </el-col>
-              <el-col :span="8" style="margin-left: 2%">
-                <el-row :gutter="24">
-                  <div class="brief" style="border-style: ridge;border-color: #f2f6fa;border-width: thin;">
-                    <br>
-                    <el-row :gutter="24" style="font-size: 32px;margin-left: 2%;">
-                      <el-col :span="2">
-                        <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
-                      </el-col>
-                      <el-col :span="20">理念</el-col>
-                      <el-col :span="2"><br></el-col>
-                    </el-row>
-                    <el-row :gutter="24" style="margin-left: 2%">
-                      <el-col :span="2"><br></el-col>
-                      <el-col :span="20"><br>资源共享，合作共赢</el-col>
-                      <el-col :span="2"></el-col>
-                    </el-row>
-                    <el-row>
-                      <el-row>
-                        <br>
-                        <br>
-                      </el-row>
-                    </el-row>
-                  </div>
-                  <div>
-                    <br>
-                  </div>
-                  <div class="apply"
-                       style="border-style: ridge;border-color: #f2f6fa;border-width: thin">
-                    <el-row :gutter="24" style="font-size: 32px;margin-left: 2%">
-                      <br>
-                      <el-col :span="2">
-                        <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
-                      </el-col>
-                      <el-col :span="20">
-                        申请合作
-                      </el-col>
-                      <el-col :span="2">
-                        <br>
-                      </el-col>
-                    </el-row>
-                    <el-row :gutter="24" style="margin-left: 3%">
-                      <el-col :span="2">
-                        <br>
-                      </el-col>
-                      <el-col :span="20">
-                        <br>
-                        <el-button class="applyButton"
-                                   style="background-color: rgba(242, 246, 250, 1);color: #0d64e8;"
-                                   @click="submitForm">申请合作
-                        </el-button>
-                      </el-col>
-                      <el-col :span="2">
-                      </el-col>
-                    </el-row>
+          <el-row :gutter="24" style="height: 350px">
+            <el-col :span="15"
+                    style="width: 40%;height: 100%;border-style: ridge;border-color: #f2f6fa;border-width: thin;margin-left: 15%"
+                    class="introduction">
+              <el-row><br></el-row>
+              <el-row :gutter="24" style="font-size: 32px;margin-left: 2%">
+                <el-col :span="2">
+                  <img src="static/img/Supplier/u1182.svg" style="width: 20px;">
+                </el-col>
+                <el-col :span="20">简介</el-col>
+                <el-col :span="2"><br></el-col>
+              </el-row>
+              <el-row :gutter="24" style="margin-left: 2%">
+                <el-col :span="2"><br></el-col>
+                <el-col :span="20" style="font-size: 18px">
+                  <br><br>
+                  山东亚历山大智能科技有限公司坐落于山东省济南市，比邻千佛山，眺望大明
+                  湖。公司以工业4.0的自动化解决方案为核心技术，长期致力于智能装备、智能
+                  检测系统等相关的自动化生产线、仓储物流系统、群控移动机器人、工业机器
+                  人及生产活动管控软件、辅助教研平台等数字化高端智能装备系统的研发制造。
+                  <br><br><br><br><br><br>
+                </el-col>
+                <el-col :span="2"><br><br></el-col>
+              </el-row>
+            </el-col>
+            <el-col :span="8" style="margin-left: 2%">
+              <el-row :gutter="24">
+                <div class="brief" style="border-style: ridge;border-color: #f2f6fa;border-width: thin;height: 160px">
+                  <br>
+                  <el-row :gutter="24" style="font-size: 32px;margin-left: 2%;">
+                    <el-col :span="2">
+                      <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
+                    </el-col>
+                    <el-col :span="20">理念</el-col>
+                    <el-col :span="2"><br></el-col>
+                  </el-row>
+                  <el-row :gutter="24" style="margin-left: 2%">
+                    <el-col :span="2"><br></el-col>
+                    <el-col :span="20" style="font-size: 18px"><br>资源共享，合作共赢</el-col>
+                    <el-col :span="2"></el-col>
+                  </el-row>
+                  <el-row>
                     <el-row>
                       <br>
+                      <br>
                     </el-row>
-                  </div>
-                </el-row>
-              </el-col>
-            </el-row>
-          </div>
+                  </el-row>
+                </div>
+                <div class="apply"
+                     style="border-style: ridge;border-color: #f2f6fa;border-width: thin;height:160px;margin-top: 30px">
+                  <el-row :gutter="24" style="font-size: 32px;margin-left: 2%">
+                    <br>
+                    <el-col :span="2">
+                      <img src="../../static/img/Supplier/u1182.svg" style="width: 20px;">
+                    </el-col>
+                    <el-col :span="20">
+                      申请合作
+                    </el-col>
+                    <el-col :span="2">
+                      <br>
+                    </el-col>
+                  </el-row>
+                  <el-row :gutter="24" style="margin-left: 3%">
+                    <el-col :span="2">
+                      <br>
+                    </el-col>
+                    <el-col :span="20">
+                      <br>
+                      <el-button class="applyButton"
+                                 style="background-color: rgba(242, 246, 250, 1);color: #0d64e8;font-size: 13px;
+                                   height: 20px;width: 80px;padding: 0;border: 1px solid #0d64e8"
+                                 @click="submitForm">申请合作
+                      </el-button>
+                      <br><br>
+                    </el-col>
+                    <el-col :span="2">
+                    </el-col>
+                  </el-row>
+                  <el-row>
+                    <br>
+                  </el-row>
+                </div>
+              </el-row>
+            </el-col>
+          </el-row>
         </el-main>
         <el-aside width="100px">
           <br>
@@ -173,7 +170,8 @@
               <el-row style="font-size: 20px;font-weight: bolder">感知系统</el-row>
               <el-row style="font-size: 18px;margin-top: 10px">视觉系统、激光雷达、超声波雷达、红外传感器、力觉传感器、触觉传感器、等感知传感器。</el-row>
               <el-row style="text-align: left;padding-top: 10px">
-                <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white" @click="submitForm">
+                <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
+                           @click="submitForm">
                   申请合作
                 </el-button>
               </el-row>
@@ -185,14 +183,15 @@
               <img src="../../static/img/Supplier/u2666.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
-                <el-row style="font-size: 20px;font-weight: bolder">驱动系统</el-row>
-                <el-row style="font-size: 18px;margin-top: 10px">伺服电机、减速器、进步电机、舵机、脚轮、等驱动系统配件。</el-row>
-                <br>
-                <el-row style="text-align: left;padding-top: 10px">
-                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white" @click="submitForm">
-                    申请合作
-                  </el-button>
-                </el-row>
+              <el-row style="font-size: 20px;font-weight: bolder">驱动系统</el-row>
+              <el-row style="font-size: 18px;margin-top: 10px">伺服电机、减速器、进步电机、舵机、脚轮、等驱动系统配件。</el-row>
+              <br>
+              <el-row style="text-align: left;padding-top: 10px">
+                <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
+                           @click="submitForm">
+                  申请合作
+                </el-button>
+              </el-row>
             </el-col>
             <el-col :span="1">
               <br>
@@ -201,11 +200,12 @@
               <img src="../../static/img/Supplier/u2673.svg" class="el-image__inner">
             </el-col>
             <el-col :span="5">
-                <el-row style="font-size: 20px;font-weight: bolder">控制系统</el-row>
-                <el-row style="font-size: 18px;margin-top: 10px">工控机系统、电机控制模块、位姿控制模块、电源控制模块、等各种控制模块。
-                </el-row>
+              <el-row style="font-size: 20px;font-weight: bolder">控制系统</el-row>
+              <el-row style="font-size: 18px;margin-top: 10px">工控机系统、电机控制模块、位姿控制模块、电源控制模块、等各种控制模块。
+              </el-row>
               <el-row style="text-align: left;padding-top: 10px">
-                <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white" @click="submitForm">
+                <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
+                           @click="submitForm">
                   申请合作
                 </el-button>
               </el-row>
@@ -224,7 +224,8 @@
                 <el-row style="font-size: 20px;font-weight: bolder">GomROS系统</el-row>
                 <el-row style="font-size: 18px;margin-top: 10px">视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。</el-row>
                 <el-row style="text-align: left;padding-top: 10px">
-                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white" @click="submitForm">
+                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
+                             @click="submitForm">
                     申请合作
                   </el-button>
                 </el-row>
@@ -239,9 +240,11 @@
             <el-col :span="5">
               <div>
                 <el-row style="font-size: 20px;font-weight: bolder">场景服务系统</el-row>
-                <el-row style="font-size: 18px;margin-top: 10px">调度系统、WMS智能仓储管理系统、MES制造执行系统、ERP企业资源计划管理系统、等数字化管理系统。</el-row>
+                <el-row style="font-size: 18px;margin-top: 10px">调度系统、WMS智能仓储管理系统、MES制造执行系统、ERP企业资源计划管理系统、等数字化管理系统。
+                </el-row>
                 <el-row style="text-align: left;padding-top: 10px">
-                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white" @click="submitForm">
+                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
+                             @click="submitForm">
                     申请合作
                   </el-button>
                 </el-row>
@@ -258,7 +261,8 @@
                 <el-row style="font-size: 20px;font-weight: bolder">云平台识别算法</el-row>
                 <el-row style="font-size: 18px;margin-top: 10px">视觉避障识别算法、视觉定位导航算法、语音识别算法、运动控制算法等先进算法系统。</el-row>
                 <el-row style="text-align: left;padding-top: 10px">
-                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white" @click="submitForm">
+                  <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
+                             @click="submitForm">
                     申请合作
                   </el-button>
                 </el-row>

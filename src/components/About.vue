@@ -11,7 +11,7 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
                 <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">联系我们</span></p>
-              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">
+              <p style="font-size: 32px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">
                 山东亚历山大智能科技有限公司
                 <br>服务热线：13065039691</p>
             </el-col>
@@ -23,7 +23,7 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           联系我们</p>
       </el-footer>
     </el-container>
@@ -39,7 +39,7 @@
             <img src="static/img/Contact/u3512.png" style="width: 100%;margin-top: 5%;">
           </el-col>
           <el-col :span="10" style="margin-left: 5%;margin-top: 3%;">
-            <el-row :gutter="24" style="font-size: 20px;font-weight: bolder">
+            <el-row :gutter="24" style="font-size: 18px;font-weight: bolder">
               <el-col :span="22">
                 <br>
                 <br>
