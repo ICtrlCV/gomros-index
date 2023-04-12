@@ -115,7 +115,7 @@
                     </el-col>
                     <el-col :span="14" style="height: 400px;">
                       <div id="rightDiv" class="center-font-style" ref="rightDiv"
-                           style="margin-top: 30%;margin-left: 10%">
+                           style="padding-top: 100px;margin-left: 10%">
                         <el-row ref="cloudPlat" id="el-row-cloudPlat">
                           <a href="/#/cloudPlatform" class="center-href-button" ref="hrefClose3">
                             云平台
@@ -247,7 +247,7 @@
                   </el-row>
                 </el-col>
                 <el-col :span="8">
-                  <img src="../static/img/index/u215.png"  style="width: 100%;height: 400px;padding: 2px;">
+                  <img src="../static/img/index/u215.png" style="width: 100%;height: 400px;padding: 2px;">
                 </el-col>
               </el-row>
               <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
@@ -265,7 +265,7 @@
             <div v-if="item===5">
               <el-row :gutter="24" style="height: 400px;background-color: white">
                 <el-col :span="6" class="left-font-style" style="height:100%;border-right: 1px solid #f2f2f2">
-                   <p style="margin-top: 20%;margin-right: 25%">关于我们</p>
+                  <p style="margin-top: 20%;margin-right: 25%">关于我们</p>
                 </el-col>
                 <el-col :span="10" style="height: 400px">
                   <el-row style="width: 40%;height: 100%;border-right: 1px solid #f2f2f2;">
@@ -296,7 +296,7 @@
 
                 </el-col>
                 <el-col :span="8">
-                  <img src="../static/img/index/u233.png"  style="width: 100%;height: 400px;padding: 2px;">
+                  <img src="../static/img/index/u233.png" style="width: 100%;height: 400px;padding: 2px;">
                 </el-col>
               </el-row>
               <el-row :gutter="24" style="height: 100px;background-color: white;border-top: 1px solid #f2f2f2">
@@ -440,9 +440,9 @@ export default {
       this.$refs.banner.setActiveItem(index - 1)
     },
     routerToIndex() {
-        const buttonShowCarousel = this.$refs.buttonShowCarousel;
-        console.log(buttonShowCarousel)
-        this.$router.push('/index')
+      const buttonShowCarousel = this.$refs.buttonShowCarousel;
+      console.log(buttonShowCarousel)
+      this.$router.push('/index')
     },
     routerToRobotOperateSystem() {
       this.$router.push('/robotOperateSystem')
@@ -485,258 +485,252 @@ export default {
 
 
   },
-    mounted() {
-        this.$nextTick(() => {
-            const systemIntroduce = this.$refs.systemIntroduce[0].$el;
-            const systemIntroduceImg = this.$refs.systemIntroduceImg[0];
-            const technologyIntroduce = this.$refs.technologyIntroduce[0].$el;
-            const technologyIntroduceImg = this.$refs.technologyIntroduceImg[0];
-            const auxiliarySystem = this.$refs.auxiliarySystem[0].$el;
-            const auxiliarySystemImg = this.$refs.auxiliarySystemImg[0];
-            const openPlatIntroduce = this.$refs.openPlatIntroduce[0].$el;
-            const openPlatIntroduceImg = this.$refs.openPlatIntroduceImg[0];
-            const openCommunity = this.$refs.openCommunity[0].$el;
-            const openCommunityImg = this.$refs.openCommunityImg[0];
-            const collaborativeDevPlat = this.$refs.collaborativeDevPlat[0].$el;
-            const collaborativeDevPlatImg = this.$refs.collaborativeDevPlatImg[0];
-            const eduTrainCooperation = this.$refs.eduTrainCooperation[0].$el;
-            const eduTrainCooperationImg = this.$refs.eduTrainCooperationImg[0];
-            const supplierCooperation = this.$refs.supplierCooperation[0].$el;
-            const supplierCooperationImg = this.$refs.supplierCooperationImg[0];
-            const enterpriseIntroduction = this.$refs.enterpriseIntroduction[0].$el;
-            const enterpriseIntroductionImg = this.$refs.enterpriseIntroductionImg[0];
-            const contactUs = this.$refs.contactUs[0].$el;
-            const contactUsImg = this.$refs.contactUsImg[0];
-            const rightDiv = this.$refs.rightDiv[0];
-            const cloudPlat = this.$refs.cloudPlat[0].$el;
-            const dataPlat = this.$refs.dataPlat[0].$el;
-            const serviceSystem = this.$refs.serviceSystem[0].$el;
-            const hardwareSystem = this.$refs.hardwareSystem[0].$el;
-            const carouselStyle = this.$refs.carouselStyle;
-            const buttonShowCarousel = this.$refs.buttonShowCarousel;
-            const buttonShowCarousel2 = this.$refs.buttonShowCarousel2;
-            const buttonShowCarousel3 = this.$refs.buttonShowCarousel3;
-            const buttonShowCarousel4 = this.$refs.buttonShowCarousel4;
-            const buttonShowCarousel5 = this.$refs.buttonShowCarousel5;
-            const closeCarousel =this.$refs.closeCarousel[0].$el;
-            const closeCarousel2 =this.$refs.closeCarousel2[0].$el;
-            const closeCarousel3 =this.$refs.closeCarousel3[0].$el;
-            const closeCarousel4 =this.$refs.closeCarousel4[0].$el;
-            const closeCarousel5 =this.$refs.closeCarousel5[0].$el;
-            const hrefClose = this.$refs.hrefClose[0];
-            const hrefClose2 = this.$refs.hrefClose2[0];
-            const hrefClose3= this.$refs.hrefClose3[0];
-            const hrefClose4 = this.$refs.hrefClose4[0];
-            const hrefClose5 = this.$refs.hrefClose5[0];
-            const hrefClose6 = this.$refs.hrefClose6[0];
-            const hrefClose7 = this.$refs.hrefClose7[0];
-            const hrefClose8 = this.$refs.hrefClose8[0];
-            const hrefClose9 = this.$refs.hrefClose9[0];
-            const hrefClose10 = this.$refs.hrefClose10[0];
-            const hrefClose11 = this.$refs.hrefClose11[0];
-            const hrefClose12 = this.$refs.hrefClose12[0];
-            const hrefClose13 = this.$refs.hrefClose13[0];
-            // console.log(hrefClose2)
-            // 触发方法
-            systemIntroduce.addEventListener("mouseover", () => {
-                systemIntroduce.style.color = "#0d64e8"
-                systemIntroduceImg.style.display = "block"
-            })
-            systemIntroduce.addEventListener("mouseout", () => {
-                systemIntroduce.style.color = "#7F7F7F"
-                systemIntroduceImg.style.display = "none"
-            })
-            technologyIntroduce.addEventListener("mouseover", () => {
-                technologyIntroduce.style.color = "#0d64e8"
-                technologyIntroduceImg.style.display = "block"
-            })
-            technologyIntroduce.addEventListener("mouseout", () => {
-                technologyIntroduce.style.color = "#7F7F7F"
-                technologyIntroduceImg.style.display = "none"
-            })
-            auxiliarySystem.addEventListener("mouseover", () => {
-                auxiliarySystem.style.color = "#0d64e8"
-                auxiliarySystemImg.style.display = "block"
-                rightDiv.style.display = "block"
-                rightDiv.style.textAlign = "left"
+  mounted() {
+    this.$nextTick(() => {
+      const systemIntroduce = this.$refs.systemIntroduce[0].$el;
+      const systemIntroduceImg = this.$refs.systemIntroduceImg[0];
+      const technologyIntroduce = this.$refs.technologyIntroduce[0].$el;
+      const technologyIntroduceImg = this.$refs.technologyIntroduceImg[0];
+      const auxiliarySystem = this.$refs.auxiliarySystem[0].$el;
+      const auxiliarySystemImg = this.$refs.auxiliarySystemImg[0];
+      const openPlatIntroduce = this.$refs.openPlatIntroduce[0].$el;
+      const openPlatIntroduceImg = this.$refs.openPlatIntroduceImg[0];
+      const openCommunity = this.$refs.openCommunity[0].$el;
+      const openCommunityImg = this.$refs.openCommunityImg[0];
+      const collaborativeDevPlat = this.$refs.collaborativeDevPlat[0].$el;
+      const collaborativeDevPlatImg = this.$refs.collaborativeDevPlatImg[0];
+      const eduTrainCooperation = this.$refs.eduTrainCooperation[0].$el;
+      const eduTrainCooperationImg = this.$refs.eduTrainCooperationImg[0];
+      const supplierCooperation = this.$refs.supplierCooperation[0].$el;
+      const supplierCooperationImg = this.$refs.supplierCooperationImg[0];
+      const enterpriseIntroduction = this.$refs.enterpriseIntroduction[0].$el;
+      const enterpriseIntroductionImg = this.$refs.enterpriseIntroductionImg[0];
+      const contactUs = this.$refs.contactUs[0].$el;
+      const contactUsImg = this.$refs.contactUsImg[0];
+      const rightDiv = this.$refs.rightDiv[0];
+      const cloudPlat = this.$refs.cloudPlat[0].$el;
+      const dataPlat = this.$refs.dataPlat[0].$el;
+      const serviceSystem = this.$refs.serviceSystem[0].$el;
+      const hardwareSystem = this.$refs.hardwareSystem[0].$el;
+      const carouselStyle = this.$refs.carouselStyle;
+      const buttonShowCarousel = this.$refs.buttonShowCarousel;
+      const buttonShowCarousel2 = this.$refs.buttonShowCarousel2;
+      const buttonShowCarousel3 = this.$refs.buttonShowCarousel3;
+      const buttonShowCarousel4 = this.$refs.buttonShowCarousel4;
+      const buttonShowCarousel5 = this.$refs.buttonShowCarousel5;
+      const closeCarousel = this.$refs.closeCarousel[0].$el;
+      const closeCarousel2 = this.$refs.closeCarousel2[0].$el;
+      const closeCarousel3 = this.$refs.closeCarousel3[0].$el;
+      const closeCarousel4 = this.$refs.closeCarousel4[0].$el;
+      const closeCarousel5 = this.$refs.closeCarousel5[0].$el;
+      const hrefClose = this.$refs.hrefClose[0];
+      const hrefClose2 = this.$refs.hrefClose2[0];
+      const hrefClose3 = this.$refs.hrefClose3[0];
+      const hrefClose4 = this.$refs.hrefClose4[0];
+      const hrefClose5 = this.$refs.hrefClose5[0];
+      const hrefClose6 = this.$refs.hrefClose6[0];
+      const hrefClose7 = this.$refs.hrefClose7[0];
+      const hrefClose8 = this.$refs.hrefClose8[0];
+      const hrefClose9 = this.$refs.hrefClose9[0];
+      const hrefClose10 = this.$refs.hrefClose10[0];
+      const hrefClose11 = this.$refs.hrefClose11[0];
+      const hrefClose12 = this.$refs.hrefClose12[0];
+      const hrefClose13 = this.$refs.hrefClose13[0];
+      // console.log(hrefClose2)
+      // 触发方法
+      systemIntroduce.addEventListener("mouseover", () => {
+        systemIntroduce.style.color = "#0d64e8"
+        systemIntroduceImg.style.display = "block"
+      })
+      systemIntroduce.addEventListener("mouseout", () => {
+        systemIntroduce.style.color = "#7F7F7F"
+        systemIntroduceImg.style.display = "none"
+      })
+      technologyIntroduce.addEventListener("mouseover", () => {
+        technologyIntroduce.style.color = "#0d64e8"
+        technologyIntroduceImg.style.display = "block"
+      })
+      technologyIntroduce.addEventListener("mouseout", () => {
+        technologyIntroduce.style.color = "#7F7F7F"
+        technologyIntroduceImg.style.display = "none"
+      })
+      auxiliarySystem.addEventListener("mouseover", () => {
+        auxiliarySystem.style.color = "#0d64e8"
+        auxiliarySystemImg.style.display = "block"
+        rightDiv.style.display = "block"
+        rightDiv.style.textAlign = "left"
 
-            })
-            auxiliarySystem.addEventListener("mouseout", () => {
-                auxiliarySystem.style.color = "#7F7F7F"
-                auxiliarySystemImg.style.display = "none"
-            })
-            openPlatIntroduce.addEventListener("mouseover", () => {
-                openPlatIntroduce.style.color = "#0d64e8"
-                openPlatIntroduceImg.style.display = "block"
-            })
-            openPlatIntroduce.addEventListener("mouseout", () => {
-                openPlatIntroduce.style.color = "#7F7F7F"
-                openPlatIntroduceImg.style.display = "none"
-            })
-            openCommunity.addEventListener("mouseover", () => {
-                openCommunity.style.color = "#0d64e8"
-                openCommunityImg.style.display = "block"
-            })
-            openCommunity.addEventListener("mouseout", () => {
-                openCommunity.style.color = "#7F7F7F"
-                openCommunityImg.style.display = "none"
-            })
-            collaborativeDevPlat.addEventListener("mouseover", () => {
-                collaborativeDevPlat.style.color = "#0d64e8"
-                collaborativeDevPlatImg.style.display = "block"
-            })
-            collaborativeDevPlat.addEventListener("mouseout", () => {
-                collaborativeDevPlat.style.color = "#7F7F7F"
-                collaborativeDevPlatImg.style.display = "none"
-            })
-            eduTrainCooperation.addEventListener("mouseover", () => {
-                eduTrainCooperation.style.color = "#0d64e8"
-                eduTrainCooperationImg.style.display = "block"
-            })
-            eduTrainCooperation.addEventListener("mouseout", () => {
-                eduTrainCooperation.style.color = "#7F7F7F"
-                eduTrainCooperationImg.style.display = "none"
-            })
-            supplierCooperation.addEventListener("mouseover", () => {
-                supplierCooperation.style.color = "#0d64e8"
-                supplierCooperationImg.style.display = "block"
-            })
-            supplierCooperation.addEventListener("mouseout", () => {
-                supplierCooperation.style.color = "#7F7F7F"
-                supplierCooperationImg.style.display = "none"
-            })
-            enterpriseIntroduction.addEventListener("mouseover", () => {
-                enterpriseIntroduction.style.color = "#0d64e8"
-                enterpriseIntroductionImg.style.display = "block"
-            })
-            enterpriseIntroduction.addEventListener("mouseout", () => {
-                enterpriseIntroduction.style.color = "#7F7F7F"
-                enterpriseIntroductionImg.style.display = "none"
-            })
-            contactUs.addEventListener("mouseover", () => {
-                contactUs.style.color = "#0d64e8"
-                contactUsImg.style.display = "block"
-            })
-            contactUs.addEventListener("mouseout", () => {
-                contactUs.style.color = "#7F7F7F"
-                contactUsImg.style.display = "none"
-            })
-            cloudPlat.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            cloudPlat.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            dataPlat.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            dataPlat.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            serviceSystem.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            serviceSystem.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            hardwareSystem.addEventListener("mouseover", () => {
-                auxiliarySystemImg.style.display = "block"
-            })
-            hardwareSystem.addEventListener("mouseout", () => {
-                auxiliarySystemImg.style.display = "none"
-            })
-            buttonShowCarousel.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel2.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel3.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel4.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            buttonShowCarousel5.addEventListener("click",()=>{
-                carouselStyle.style.display="block"
-            })
-            closeCarousel.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel2.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel3.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel4.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            closeCarousel5.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-            })
-            hrefClose.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose2.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose3.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose4.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose5.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose6.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose7.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose8.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose9.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose10.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose11.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose12.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-            hrefClose13.addEventListener("click",()=>{
-                carouselStyle.style.display="none"
-                rightDiv.style.display = "none"
-            })
-
-
+      })
+      auxiliarySystem.addEventListener("mouseout", () => {
+        auxiliarySystem.style.color = "#7F7F7F"
+        auxiliarySystemImg.style.display = "none"
+      })
+      openPlatIntroduce.addEventListener("mouseover", () => {
+        openPlatIntroduce.style.color = "#0d64e8"
+        openPlatIntroduceImg.style.display = "block"
+      })
+      openPlatIntroduce.addEventListener("mouseout", () => {
+        openPlatIntroduce.style.color = "#7F7F7F"
+        openPlatIntroduceImg.style.display = "none"
+      })
+      openCommunity.addEventListener("mouseover", () => {
+        openCommunity.style.color = "#0d64e8"
+        openCommunityImg.style.display = "block"
+      })
+      openCommunity.addEventListener("mouseout", () => {
+        openCommunity.style.color = "#7F7F7F"
+        openCommunityImg.style.display = "none"
+      })
+      collaborativeDevPlat.addEventListener("mouseover", () => {
+        collaborativeDevPlat.style.color = "#0d64e8"
+        collaborativeDevPlatImg.style.display = "block"
+      })
+      collaborativeDevPlat.addEventListener("mouseout", () => {
+        collaborativeDevPlat.style.color = "#7F7F7F"
+        collaborativeDevPlatImg.style.display = "none"
+      })
+      eduTrainCooperation.addEventListener("mouseover", () => {
+        eduTrainCooperation.style.color = "#0d64e8"
+        eduTrainCooperationImg.style.display = "block"
+      })
+      eduTrainCooperation.addEventListener("mouseout", () => {
+        eduTrainCooperation.style.color = "#7F7F7F"
+        eduTrainCooperationImg.style.display = "none"
+      })
+      supplierCooperation.addEventListener("mouseover", () => {
+        supplierCooperation.style.color = "#0d64e8"
+        supplierCooperationImg.style.display = "block"
+      })
+      supplierCooperation.addEventListener("mouseout", () => {
+        supplierCooperation.style.color = "#7F7F7F"
+        supplierCooperationImg.style.display = "none"
+      })
+      enterpriseIntroduction.addEventListener("mouseover", () => {
+        enterpriseIntroduction.style.color = "#0d64e8"
+        enterpriseIntroductionImg.style.display = "block"
+      })
+      enterpriseIntroduction.addEventListener("mouseout", () => {
+        enterpriseIntroduction.style.color = "#7F7F7F"
+        enterpriseIntroductionImg.style.display = "none"
+      })
+      contactUs.addEventListener("mouseover", () => {
+        contactUs.style.color = "#0d64e8"
+        contactUsImg.style.display = "block"
+      })
+      contactUs.addEventListener("mouseout", () => {
+        contactUs.style.color = "#7F7F7F"
+        contactUsImg.style.display = "none"
+      })
+      cloudPlat.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      cloudPlat.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      dataPlat.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      dataPlat.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      serviceSystem.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      serviceSystem.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      hardwareSystem.addEventListener("mouseover", () => {
+        auxiliarySystemImg.style.display = "block"
+      })
+      hardwareSystem.addEventListener("mouseout", () => {
+        auxiliarySystemImg.style.display = "none"
+      })
+      buttonShowCarousel.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel2.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel3.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel4.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      buttonShowCarousel5.addEventListener("click", () => {
+        carouselStyle.style.display = "block"
+      })
+      closeCarousel.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel2.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel3.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel4.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      closeCarousel5.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+      })
+      hrefClose.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose2.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose3.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose4.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose5.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose6.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose7.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose8.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose9.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose10.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose11.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose12.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
+      hrefClose13.addEventListener("click", () => {
+        carouselStyle.style.display = "none"
+        rightDiv.style.display = "none"
+      })
 
 
-
-
-
-
-        });
-    },
+    });
+  },
 };
 </script>
 

@@ -11,7 +11,7 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
                 <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">工业基础软件</span></p>
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">关于我们</span></p>
-              <p style="font-size: 30px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">
+              <p style="font-size: 32px;color: white;text-shadow: none;font-weight: bolder;margin-right: 28%">
                 山东亚历山大智能科技有限公司</p>
             </el-col>
           </el-row>
@@ -22,7 +22,7 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           公司介绍</p>
       </el-footer>
     </el-container>
@@ -79,11 +79,11 @@
             <br><br>
             <el-row style="margin-left: 1%">
               <el-tabs v-model="activeName" type="card">
-                <el-tab-pane label="权威授权" name="first">
+                <el-tab-pane label="权威授权" name="first" style="font-size: 15px">
                   <div>
                     <el-row :gutter="24">
                       <el-col :span="8" style="color: #D9001B;font-weight: bold">
-                        <div>
+                        <div style="font-size: 18px">
                           <el-row><br></el-row>
                           <el-row>ISO9001认证企业</el-row>
                           <el-row><br></el-row>
@@ -109,11 +109,11 @@
                     </el-row>
                   </div>
                 </el-tab-pane>
-                <el-tab-pane label="荣誉和奖励" name="second">
+                <el-tab-pane label="荣誉和奖励" name="second" style="font-size: 15px">
                   <div>
                     <el-row :gutter="24">
                       <el-col :span="12" style="color: #D9001B;font-weight: bold">
-                        <div>
+                        <div style="font-size: 18px">
                           <el-row><br></el-row>
                           <el-row>国家科技部“科技助力经济2020”重点专项</el-row>
                           <el-row><br></el-row>
@@ -151,7 +151,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="24" style="margin-top: 2%">
-          <el-col :span="4" style="font-size: 40px;font-weight: bold;margin-left: 5%">
+          <el-col :span="4" style="font-size: 32px;font-weight: bold;margin-left: 5%">
             发展历程
           </el-col>
           <el-col :span="12" style="margin-top: 3%">
@@ -164,7 +164,7 @@
       </el-main>
     </el-container>
     <el-row style="background-color: #f2f6fa">
-      <el-row style="text-align: left;color:#0d64e8;font-size: 40px;font-weight: bold;margin-top: 2%;margin-left: 5%">
+      <el-row style="text-align: left;color:#0d64e8;font-size: 32px;font-weight: bold;margin-top: 2%;margin-left: 5%">
         客户和合作伙伴
       </el-row>
       <el-row style="margin-left: 8%;margin-top: 2%">

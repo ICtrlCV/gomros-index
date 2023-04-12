@@ -22,7 +22,7 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="margin-top: 10px;font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="margin-top: 10px;font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           移动机器人数据安全</p>
       </el-footer>
     </el-container>
@@ -30,16 +30,16 @@
     <div style="margin-top: 50px;background-color: #f2f6fa">
       <!--    第一行 移动机器人数据安全  -->
       <el-row :gutter="20" type="flex" style="background-color: white;margin-top: 10px">
-        <el-col :span="12" style="width:40%;margin-left: 6%;margin-right: 10%">
-          <p style="font-size: 30px;font-weight: bolder;color: #0d64e8;margin-top: 0">移动机器人数据安全</p>
-          <p style="font-size: 20px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
+        <el-col :span="12" style="width:45%;margin-left: 6%;margin-right: 8%">
+          <p style="font-size: 32px;font-weight: bolder;color: #0d64e8;margin-top: 0">移动机器人数据安全</p>
+          <p style="font-size: 26px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
             机器人配备了多种多样的传感器，在工作过程中可以搜集到很多的信息，包括视觉数据，语音数据，位置数据等，这些重要的隐私数据都需要得到保护。</p>
-          <p style="font-size: 20px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
+          <p style="font-size: 26px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
             机器人系统需要完整的数据安全保障机制，既要求保证端到端的安全传输，也要保障在服务器端的安全存储。</p>
-          <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">保护用户的隐私数据的安全变得尤其重要。</p>
+          <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">保护用户的隐私数据的安全变得尤其重要。</p>
         </el-col>
-        <el-col :span="9" style="align-content: center">
-          <img class="img-box" src="static/img/dataPlatform/u1644.png" style="width: 80%;height: 75%;margin-top: 4%">
+        <el-col :span="8" style="align-content: center">
+          <img class="img-box" src="static/img/dataPlatform/u1644.png" style="width: 90%;height: 85%;margin-top: 4%">
         </el-col>
       </el-row>
 
@@ -47,7 +47,7 @@
       <el-row :gutter="20" type="flex">
         <el-col style="width:100%;margin-left: 6%">
           <el-row>
-            <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">移动机器人数据平台架构</p>
+            <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">移动机器人数据平台架构</p>
           </el-row>
           <el-row>
             <img class="img-box" src="static/img/dataPlatform/u1645.png" style="width: 85%;height: 80%;margin-left: 5%">
@@ -59,27 +59,27 @@
       <el-row style="background-color: white;margin-top: 1%">
         <el-col style="width:100%;margin-left: 6%;margin-bottom: 2%">
           <el-row>
-            <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">移动机器人数据应用</p>
+            <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">移动机器人数据应用</p>
           </el-row>
           <el-row :gutter="40" type="flex" style="margin-left: 4%">
             <el-col :span="4">
-              <p style="font-size: 15px;font-weight: bolder">调度可视化展示</p>
+              <p style="font-size: 18px;font-weight: bolder">调度可视化展示</p>
               <img class="img-box" src="static/img/dataPlatform/u1655.png" style="width: 240px;height: 200px">
             </el-col>
             <el-col :span="4">
-              <p style="font-size: 15px;font-weight: bolder">数据可视化展示</p>
+              <p style="font-size: 18px;font-weight: bolder">数据可视化展示</p>
               <img class="img-box" src="static/img/dataPlatform/u1647.png" style="width: 240px;height: 200px">
             </el-col>
             <el-col :span="4">
-              <p style="font-size: 15px;font-weight: bolder">工厂可视化展示</p>
+              <p style="font-size: 18px;font-weight: bolder">工厂可视化展示</p>
               <img class="img-box" src="static/img/dataPlatform/u1649.png" style="width: 240px;height: 200px">
             </el-col>
             <el-col :span="4">
-              <p style="font-size: 15px;font-weight: bolder">虚拟仿真展示</p>
+              <p style="font-size: 18px;font-weight: bolder">虚拟仿真展示</p>
               <img class="img-box" src="static/img/dataPlatform/u1651.png" style="width: 240px;height: 200px">
             </el-col>
             <el-col :span="4">
-              <p style="font-size: 15px;font-weight: bolder">高级排产展示</p>
+              <p style="font-size: 18px;font-weight: bolder">高级排产展示</p>
               <img class="img-box" src="static/img/dataPlatform/u1653.png" style="width: 240px;height: 200px">
             </el-col>
           </el-row>
@@ -90,7 +90,7 @@
       <el-row :gutter="20" type="flex">
         <el-col style="width:100%;margin-left: 6%;margin-bottom: 2%">
           <el-row>
-            <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">数据采集及数据迭代</p>
+            <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">数据采集及数据迭代</p>
           </el-row>
           <el-row>
             <img class="img-box" src="static/img/dataPlatform/u1657.png"

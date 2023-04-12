@@ -23,11 +23,10 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           移动机器人硬件驱动及控制系统</p>
       </el-footer>
     </el-container>
-
 
     <el-container>
       <el-aside width="100px">
@@ -45,8 +44,8 @@
                   margin-right: 1%"
             >
               <el-row style="margin-top: 20%">
-                <p style="font-size: 30px;color: white;font-weight: bolder">培训</p>
-                <p style="color: white;font-weight: bolder">面向客户提供GomROS平台应用培训</p>
+                <p style="font-size: 36px;color: white;font-weight: bolder">培训</p>
+                <p style="color: white;font-weight: bolder;font-size: 18px">面向客户提供GomROS平台应用培训</p>
                 <br>
                 <el-button id="train"
                            @click="openTrainDialog()" class="button-style">
@@ -61,8 +60,9 @@
                 height: 400px;
                 margin-left: 1%">
               <el-row style="margin-top: 20%">
-                <p style="font-size: 30px;color: white;font-weight: bolder">校企合作</p>
-                <p style="color: white;font-weight: bolder">协同创新，助力院校开设GomROS相关课程及专业<br>加速推进机器人产业人才培养。</p>
+                <p style="font-size: 36px;color: white;font-weight: bolder">校企合作</p>
+                <p style="color: white;font-weight: bolder;font-size: 18px">协同创新，助力院校开设GomROS相关课程及专业<br>加速推进机器人产业人才培养。
+                </p>
                 <el-button
                     @click="openSchoolDialog()" class="button-style">
                   申请合作
@@ -78,8 +78,8 @@
                 height: 400px;
                 margin-right: 1%">
               <el-row style="margin-top: 20%">
-                <p style="font-size: 30px;color: white;font-weight: bolder">产品</p>
-                <p style="color: white;font-weight: bolder">面向客户提供更多GomROS产品及服务，<br>期待更多合作伙伴加入我们</p>
+                <p style="font-size: 36px;color: white;font-weight: bolder">产品</p>
+                <p style="color: white;font-weight: bolder;font-size: 18px">面向客户提供更多GomROS产品及服务，<br>期待更多合作伙伴加入我们</p>
                 <el-button
                     @click="openProductDialog()" class="button-style">
                   申请合作
@@ -92,11 +92,9 @@
                 background-size: cover;
                 height: 400px;
                 margin-left: 1%">
-
               <el-row style="margin-top: 20%">
-                <p style="font-size: 30px;color: white;font-weight: bolder">讲师合作</p>
-                <p style="color: white;font-weight: bolder">热衷知识传播并致力于在机器人领域发展的个人或组织加入。</p>
-                <br>
+                <p style="font-size: 36px;color: white;font-weight: bolder">讲师合作</p>
+                <p style="color: white;font-weight: bolder;font-size: 18px">热衷知识传播并致力于<br>在机器人领域发展的个人或组织加入。</p>
                 <el-button
                     @click="openLecturerDialog()" class="button-style">
                   申请合作
@@ -113,7 +111,7 @@
 
     <el-container style="background-color: #f2f6fa">
       <el-header style="text-align: center">
-        <p style="font-size: 30px;color: #0d64e8"><b>我们的资源支持</b></p>
+        <p style="font-size: 32px;color: #0d64e8"><b>我们的资源支持</b></p>
       </el-header>
       <el-aside width="200px"></el-aside>
       <el-main style="color: #0d64e8;padding-top: 2%">
@@ -123,24 +121,24 @@
             <el-col :span="5">
               <img src="static/img/Education/u2438.png" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>学习资源</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">
+              <p style="color: #0d64e8;font-size:14px;width: 85%;padding-left: 13%">
                 我们有丰富的学习资源，用于帮助我们的合作伙伴快速学习使用GomROS平台。</p>
             </el-col>
             <el-col :span="5">
               <img src="static/img/Education/u2439.jpg" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>专家讲师</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">
+              <p style="color: #0d64e8;font-size:14px;width: 85%;padding-left: 15%">
                 我们有经验丰富的专家讲师辅导我们的合作伙伴，迅速吸收理解所学知识。</p>
             </el-col>
             <el-col :span="5">
               <img src="static/img/Education/u2440.jpg" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>项目实践</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">我们很多项目合作开发，合作伙伴对于高质量人才有强烈需求。</p>
+              <p style="color: #0d64e8;font-size:14px;width: 85%;padding-left: 15%">我们很多项目合作开发，合作伙伴对于高质量人才有强烈需求。</p>
             </el-col>
             <el-col :span="5">
               <img src="static/img/Education/u2441.jpg" style="width: 280px;height: 150px">
               <p style="color: #0d64e8;font-size: 18px;"><b>就业支持</b></p>
-              <p style="color: #0d64e8;font-size:12px;width: 85%;padding-left: 15%">
+              <p style="color: #0d64e8;font-size:14px;width: 85%;padding-left: 13%">
                 我们有丰富的学习资源，用于帮助我们的合作伙伴快速学习使用GomROS平台。</p>
             </el-col>
             <el-col :span="2">&nbsp;</el-col>
@@ -739,10 +737,10 @@ export default {
         updateBy: null
       };
     },
-      openTrainDialog() {
-          this.trainOpen = true;
-          this.trainReset();
-      },
+    openTrainDialog() {
+      this.trainOpen = true;
+      this.trainReset();
+    },
     //培训按钮
     trainForm() {
       this.$refs['trainform'].validate(valid => {
@@ -755,19 +753,19 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
       })
     },
-      openSchoolDialog() {
-          this.schoolOpen = true;
-          this.schoolReset();
-      },
+    openSchoolDialog() {
+      this.schoolOpen = true;
+      this.schoolReset();
+    },
     //校企合作按钮
     schoolForm() {
       this.schoolOpen = true;
@@ -781,19 +779,19 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
       })
     },
-      openProductDialog() {
-          this.productOpen = true;
-          this.productReset();
-      },
+    openProductDialog() {
+      this.productOpen = true;
+      this.productReset();
+    },
     //产品按钮
     productForm() {
       this.$refs['productform'].validate(valid => {
@@ -806,19 +804,19 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
       })
     },
-      openLecturerDialog() {
-          this.lectureOpen = true;
-          this.lectureReset();
-      },
+    openLecturerDialog() {
+      this.lectureOpen = true;
+      this.lectureReset();
+    },
     //讲师按钮
     lecturerForm() {
       this.$refs['lecturerform'].validate(valid => {
@@ -831,10 +829,10 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
@@ -885,11 +883,13 @@ p {
   border: #0d64e8 2px solid;
   width: 30%;
   margin-top: 2%;
+  font-size: 13px;
 }
-.button-style:hover{
-    background-color: #0d64e8;
-    color: white;
-    width: 30%;
-    margin-top: 2%;
+
+.button-style:hover {
+  background-color: #0d64e8;
+  color: white;
+  width: 30%;
+  margin-top: 2%;
 }
 </style>

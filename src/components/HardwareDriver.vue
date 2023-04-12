@@ -22,7 +22,7 @@
         </el-col>
       </el-row>
       <el-footer style="background-color: #0d64e8">
-        <p style="font-size: 30px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
+        <p style="font-size: 32px;font-weight: bolder;color: white;margin-top: 10px;margin-bottom:0;margin-left: 5%">
           移动机器人硬件驱动及控制系统</p>
       </el-footer>
     </el-container>
@@ -31,14 +31,14 @@
       <!--    第一行  机器人硬件驱动及控制系统 -->
       <el-row :gutter="20" type="flex">
         <el-col :span="10" style="margin-top:1%;margin-left: 6%;margin-right: 8%">
-          <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
-          <p style="font-size: 25px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
+          <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">机器人硬件驱动及控制系统</p>
+          <p style="font-size: 26px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
             由于工业机器人关节的执行器为电机，所以获得电机的良好控制效果是非常重要的，要想获得优良的电机控制性能，
             就需要高性能的交流伺服驱动系统，因此研制高性能的交流伺服驱动系统是工业机器人的关键技术之一。
           </p>
-          <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">我们必须自力更生，掌握高性能移动机器人的关键技术，并在原来的基础上有所创新。</p>
+          <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">我们必须自力更生，掌握高性能移动机器人的关键技术，并在原来的基础上有所创新。</p>
         </el-col>
-        <el-col :span="8" style="align-content: center;margin-top: 4%">
+        <el-col :span="8" style="align-content: center;margin-top: 5%">
           <img class="img-box" src="static/img/hardwareDriver/u1431.jpg" style="width: 85%;height: 70%;">
         </el-col>
       </el-row>
@@ -47,7 +47,7 @@
       <el-row style="background-color: white">
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
-            <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人控制系统</p>
+            <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">机器人控制系统</p>
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="8" style="margin-left: 1%;margin-right: 2%">
@@ -75,25 +75,25 @@
                 <el-col :span="15" style="width: 90%;border:2px dashed dodgerblue;padding: 10px">
                   <el-row :gutter="100" type="flex">
                     <el-col :span="3">
-                      <img src="static/img/RobotOperateSystem/u816.png" style="width: 120px;height: 70px;">
+                      <img src="static/img/RobotOperateSystem/u816.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="3">
-                      <img src="static/img/hardwareDriver/u1453.png" style="width: 120px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1453.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="3">
-                      <img src="static/img/hardwareDriver/u1454.png" style="width: 120px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1454.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="3">
-                      <img src="static/img/hardwareDriver/u1455.png" style="width: 120px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1455.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="3">
-                      <img src="static/img/hardwareDriver/u1456.png" style="width: 120px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1456.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="2">
                       <img src="static/img/hardwareDriver/u142403.png" style="width: 100px;height: 50px;">
                     </el-col>
                     <el-col :span="3">
-                      <img src="static/img/hardwareDriver/u1466.png" style="width: 120px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1466.png" style="width: 100px;height: 70px;">
                     </el-col>
                   </el-row>
                 </el-col>
@@ -110,7 +110,7 @@
                   <p style="font-weight: bolder;font-size: 22px">控制：</p>
                 </el-col>
                 <el-col :span="5" style="width: 15%;border:2px dashed dodgerblue;padding: 10px">
-                  <img src="static/img/RobotOperateSystem/u817.png" style="width: 120px;height: 70px;">
+                  <img src="static/img/RobotOperateSystem/u817.png" style="width: 110px;height: 70px;">
                 </el-col>
                 <el-col :span="1.5" style="margin-left: 5px">
                   <p>
@@ -122,16 +122,16 @@
                 <el-col :span="15" style="width: 68%;border:2px dashed dodgerblue;padding: 10px">
                   <el-row :gutter="50" type="flex">
                     <el-col :span="4">
-                      <img src="static/img/hardwareDriver/u1447.png" style="width: 110px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1447.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="4">
-                      <img src="static/img/hardwareDriver/u1448.png" style="width: 110px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1448.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="4">
-                      <img src="static/img/hardwareDriver/u1449.png" style="width: 110px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1449.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="4">
-                      <img src="static/img/hardwareDriver/u1450.png" style="width: 110px;height: 70px;">
+                      <img src="static/img/hardwareDriver/u1450.png" style="width: 100px;height: 70px;">
                     </el-col>
                     <el-col :span="2">
                       <img src="static/img/hardwareDriver/u142403.png" style="width: 50px;height: 25px;">
@@ -186,7 +186,7 @@
       <el-row>
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
-            <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">机器人硬件驱动系统</p>
+            <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">机器人硬件驱动系统</p>
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="8" style="width: 30%;margin-left: 1%;margin-right: 8%">
@@ -198,34 +198,34 @@
               <el-row>
                 <el-col :span="3" style="width: 240px">
                   <el-row style="background-color: #0d64e8">
-                    <p style="font-weight: bolder;color: white;font-size: 25px;margin: 5px">视觉设备</p>
+                    <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">视觉设备</p>
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="font-weight: bolder;font-size: 20px">单目相机</p>
-                    <p style="font-weight: bolder;font-size: 20px">双目相机</p>
-                    <p style="font-weight: bolder;font-size: 20px">深度相机</p>
+                    <p style="font-weight: bolder;font-size: 18px">单目相机</p>
+                    <p style="font-weight: bolder;font-size: 18px">双目相机</p>
+                    <p style="font-weight: bolder;font-size: 18px">深度相机</p>
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 240px">
                   <el-row style="background-color: #0d64e8">
-                    <p style="font-weight: bolder;color: white;font-size: 25px;margin: 5px">测距设备</p>
+                    <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">测距设备</p>
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="font-weight: bolder;font-size: 20px">超声波雷达</p>
-                    <p style="font-weight: bolder;font-size: 20px">激光雷达</p>
-                    <p style="font-weight: bolder;font-size: 20px">毫米波雷达</p>
+                    <p style="font-weight: bolder;font-size: 18px">超声波雷达</p>
+                    <p style="font-weight: bolder;font-size: 18px">激光雷达</p>
+                    <p style="font-weight: bolder;font-size: 18px">毫米波雷达</p>
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 240px">
                   <el-row style="background-color: #0d64e8">
-                    <p style="font-weight: bolder;color: white;font-size: 25px;margin: 5px">驱动设备</p>
+                    <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">驱动设备</p>
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="font-weight: bolder;font-size: 20px">伺服电机</p>
-                    <p style="font-weight: bolder;font-size: 20px">进步电机</p>
-                    <p style="font-weight: bolder;font-size: 20px">直流无刷电机</p>
+                    <p style="font-weight: bolder;font-size: 18px">伺服电机</p>
+                    <p style="font-weight: bolder;font-size: 18px">进步电机</p>
+                    <p style="font-weight: bolder;font-size: 18px">直流无刷电机</p>
                   </el-row>
                 </el-col>
               </el-row>
@@ -238,7 +238,7 @@
       <el-row style="background-color: white">
         <el-col style="width:100%;margin-left: 6%;margin-bottom:2%">
           <el-row>
-            <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">硬件设备合作开发</p>
+            <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">硬件设备合作开发</p>
           </el-row>
           <el-row style="text-align: left;height: 100%">
             <el-col :span="5" style="width: 30%;margin-left: 1%;margin-right: 8%">
@@ -266,8 +266,8 @@
       <!--    第五行 硬件设备支持  -->
       <el-row :gutter="20" type="flex" style="height: 400px">
         <el-col :span="8" style="margin-top:2%;margin-left: 6%;margin-right: 2%">
-          <p style="font-size: 30px;font-weight: bolder;color: #0d64e8">硬件设备支持</p>
-          <p style="font-size: 20px;color: #0d64e8;margin-left: 2%">机器人控制系统可适配各大品牌配件</p>
+          <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">硬件设备支持</p>
+          <p style="font-size: 18px;color: #0d64e8;margin-left: 2%">机器人控制系统可适配各大品牌配件</p>
         </el-col>
         <el-col :span="12" style="align-content: center;margin-top: 4%;margin-left: 3%">
           <img class="img-box" src="static/img/hardwareDriver/u1498.png" style="width: 85%;height: 95%;">
