@@ -84,7 +84,8 @@
                   </el-button>
                 </el-col>
                 <el-col :span="2">&nbsp;</el-col>
-              </el-row><br><br>
+              </el-row>
+              <br><br>
             </div>
             <div class="bgc">
               <el-row style="background-color: rgba(242, 246, 250, 1)"><br></el-row>
@@ -162,7 +163,8 @@
               <el-row><br></el-row>
               <el-row><br></el-row>
               <el-row><br></el-row>
-              <el-row><br></el-row>GomROS开放平台
+              <el-row><br></el-row>
+              GomROS开放平台
               <el-row><br></el-row>
               <el-row><br></el-row>
               <el-row><br></el-row>
@@ -366,13 +368,13 @@ export default {
       this.currentIndex = index - 1
     },
     article() {
-        window.open('http://localhost:1024/bbs/index/postList', '_blank', 'noopener,noreferrer');
+      window.open('http://localhost:1024/bbs/index/postList', '_blank', 'noopener,noreferrer');
     },
     apiDocument() {
-        window.open('http://localhost:1024/bbs/index/document', '_blank', 'noopener,noreferrer');
+      window.open('http://localhost:1024/bbs/index/document', '_blank', 'noopener,noreferrer');
     },
     softwareDownload() {
-        window.open('http://localhost:1024/bbs/index/download', '_blank', 'noopener,noreferrer');
+      window.open('http://localhost:1024/bbs/index/download', '_blank', 'noopener,noreferrer');
     },
     routerToContact() {
       this.$router.push('/about')

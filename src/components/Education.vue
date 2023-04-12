@@ -737,10 +737,10 @@ export default {
         updateBy: null
       };
     },
-      openTrainDialog() {
-          this.trainOpen = true;
-          this.trainReset();
-      },
+    openTrainDialog() {
+      this.trainOpen = true;
+      this.trainReset();
+    },
     //培训按钮
     trainForm() {
       this.$refs['trainform'].validate(valid => {
@@ -753,19 +753,19 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
       })
     },
-      openSchoolDialog() {
-          this.schoolOpen = true;
-          this.schoolReset();
-      },
+    openSchoolDialog() {
+      this.schoolOpen = true;
+      this.schoolReset();
+    },
     //校企合作按钮
     schoolForm() {
       this.schoolOpen = true;
@@ -779,19 +779,19 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
       })
     },
-      openProductDialog() {
-          this.productOpen = true;
-          this.productReset();
-      },
+    openProductDialog() {
+      this.productOpen = true;
+      this.productReset();
+    },
     //产品按钮
     productForm() {
       this.$refs['productform'].validate(valid => {
@@ -804,19 +804,19 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
       })
     },
-      openLecturerDialog() {
-          this.lectureOpen = true;
-          this.lectureReset();
-      },
+    openLecturerDialog() {
+      this.lectureOpen = true;
+      this.lectureReset();
+    },
     //讲师按钮
     lecturerForm() {
       this.$refs['lecturerform'].validate(valid => {
@@ -829,10 +829,10 @@ export default {
                 }
               }
           ).catch(error => {
-                    this.$message({
-                      type: 'error',
-                      message: error + '  出现未知错误请联系管理员'
-                    })
+                this.$message({
+                  type: 'error',
+                  message: error + '  出现未知错误请联系管理员'
+                })
               }
           )
         }
@@ -885,10 +885,11 @@ p {
   margin-top: 2%;
   font-size: 13px;
 }
-.button-style:hover{
-    background-color: #0d64e8;
-    color: white;
-    width: 30%;
-    margin-top: 2%;
+
+.button-style:hover {
+  background-color: #0d64e8;
+  color: white;
+  width: 30%;
+  margin-top: 2%;
 }
 </style>
