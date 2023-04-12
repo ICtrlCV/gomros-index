@@ -366,13 +366,13 @@ export default {
       this.currentIndex = index - 1
     },
     article() {
-      alert("文章查看")
+        window.open('http://localhost:1024/bbs/index/postList', '_blank', 'noopener,noreferrer');
     },
     apiDocument() {
-      alert("开发文档")
+        window.open('http://localhost:1024/bbs/index/document', '_blank', 'noopener,noreferrer');
     },
     softwareDownload() {
-      alert("软件下载")
+        window.open('http://localhost:1024/bbs/index/download', '_blank', 'noopener,noreferrer');
     },
     routerToContact() {
       this.$router.push('/about')
