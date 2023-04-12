@@ -49,7 +49,7 @@
                 <p style="color: white;font-weight: bolder">面向客户提供GomROS平台应用培训</p>
                 <br>
                 <el-button id="train"
-                           @click="trainForm()" class="button-style">
+                           @click="openTrainDialog()" class="button-style">
                   申请合作
                 </el-button>
               </el-row>
@@ -64,7 +64,7 @@
                 <p style="font-size: 30px;color: white;font-weight: bolder">校企合作</p>
                 <p style="color: white;font-weight: bolder">协同创新，助力院校开设GomROS相关课程及专业<br>加速推进机器人产业人才培养。</p>
                 <el-button
-                    @click="schoolForm()" class="button-style">
+                    @click="openSchoolDialog()" class="button-style">
                   申请合作
                 </el-button>
               </el-row>
@@ -81,7 +81,7 @@
                 <p style="font-size: 30px;color: white;font-weight: bolder">产品</p>
                 <p style="color: white;font-weight: bolder">面向客户提供更多GomROS产品及服务，<br>期待更多合作伙伴加入我们</p>
                 <el-button
-                    @click="productForm()" class="button-style">
+                    @click="openProductDialog()" class="button-style">
                   申请合作
                 </el-button>
               </el-row>
@@ -98,7 +98,7 @@
                 <p style="color: white;font-weight: bolder">热衷知识传播并致力于在机器人领域发展的个人或组织加入。</p>
                 <br>
                 <el-button
-                    @click="lecturerForm()" class="button-style">
+                    @click="openLecturerDialog()" class="button-style">
                   申请合作
                 </el-button>
               </el-row>
@@ -739,22 +739,22 @@ export default {
         updateBy: null
       };
     },
+      openTrainDialog() {
+          this.trainOpen = true;
+          this.trainReset();
+      },
     //培训按钮
     trainForm() {
-      this.trainOpen = true;
       this.$refs['trainform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/system/train', this.trainform).then(response => {
-                console.log("response:", response)
+          axios.post('http://localhost:8080/forminfo/train', this.trainform).then(response => {
                 if (response != null && response.status === 200) {
-                  this.$alert("提交成功");
-                  this.status = response.status;
+                  this.$alert("期待与您的合作！");
+                  // this.status = response.status;
                   this.trainOpen = false;
-                  this.trainReset();
                 }
               }
           ).catch(error => {
-                console.log(error),
                     this.$message({
                       type: 'error',
                       message: error + '  出现未知错误请联系管理员'
@@ -764,22 +764,23 @@ export default {
         }
       })
     },
+      openSchoolDialog() {
+          this.schoolOpen = true;
+          this.schoolReset();
+      },
     //校企合作按钮
     schoolForm() {
       this.schoolOpen = true;
       this.$refs['schoolform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/system/school', this.schoolform).then(response => {
-                console.log("response:", response)
+          axios.post('http://localhost:8080/forminfo/school', this.schoolform).then(response => {
                 if (response != null && response.status === 200) {
-                  this.$alert("提交成功");
-                  this.status = response.status;
+                  this.$alert("期待与您的合作！");
+                  // this.status = response.status;
                   this.schoolOpen = false;
-                  this.schoolReset();
                 }
               }
           ).catch(error => {
-                console.log(error),
                     this.$message({
                       type: 'error',
                       message: error + '  出现未知错误请联系管理员'
@@ -789,22 +790,22 @@ export default {
         }
       })
     },
+      openProductDialog() {
+          this.productOpen = true;
+          this.productReset();
+      },
     //产品按钮
     productForm() {
-      this.productOpen = true;
       this.$refs['productform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/system/product', this.productform).then(response => {
-                console.log("response:", response)
+          axios.post('http://localhost:8080/forminfo/product', this.productform).then(response => {
                 if (response != null && response.status === 200) {
-                  this.$alert("提交成功");
-                  this.status = response.status;
+                  this.$alert("期待与您的合作！");
+                  // this.status = response.status;
                   this.productOpen = false;
-                  this.productReset();
                 }
               }
           ).catch(error => {
-                console.log(error),
                     this.$message({
                       type: 'error',
                       message: error + '  出现未知错误请联系管理员'
@@ -814,22 +815,22 @@ export default {
         }
       })
     },
+      openLecturerDialog() {
+          this.lectureOpen = true;
+          this.lectureReset();
+      },
     //讲师按钮
     lecturerForm() {
-      this.lectureOpen = true;
       this.$refs['lecturerform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/system/lecturer', this.lecturerform).then(response => {
-                console.log("response:", response)
+          axios.post('http://localhost:8080/forminfo/lecturer', this.lecturerform).then(response => {
                 if (response != null && response.status === 200) {
-                  this.$alert("提交成功");
-                  this.status = response.status;
+                  this.$alert("期待与您的合作！");
+                  // this.status = response.status;
                   this.lectureOpen = false;
-                  this.lectureReset();
                 }
               }
           ).catch(error => {
-                console.log(error),
                     this.$message({
                       type: 'error',
                       message: error + '  出现未知错误请联系管理员'
@@ -884,5 +885,11 @@ p {
   border: #0d64e8 2px solid;
   width: 30%;
   margin-top: 2%;
+}
+.button-style:hover{
+    background-color: #0d64e8;
+    color: white;
+    width: 30%;
+    margin-top: 2%;
 }
 </style>
