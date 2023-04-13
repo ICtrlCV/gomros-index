@@ -376,7 +376,7 @@
           <h1 style="color: white;font-size: 72px">协同研发平台</h1>
         </div>
         <h1 style="color: white;text-align: center">
-          <el-button @click="submitForm()"
+          <el-button @click="openDialog()"
                      style="background: #0d64e8;color: white;font-size: 28px">
             <b>
               申请合作
