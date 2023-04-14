@@ -28,8 +28,8 @@
       </el-footer>
     </el-container>
 
-    <el-container>
-      <el-container style="margin-top: 3%;margin-bottom: 2%">
+
+      <div style="margin-top: 3%;margin-bottom: 2%">
         <el-main style="text-align: left;height: 100%;width: 100%">
           <el-row :gutter="24" style="height: 350px">
             <el-col :span="15"
@@ -102,7 +102,7 @@
                       <el-button class="applyButton"
                                  style="background-color: rgba(242, 246, 250, 1);color: #0d64e8;font-size: 13px;
                                    height: 20px;width: 80px;padding: 0;border: 1px solid #0d64e8"
-                                 @click="submitForm">申请合作
+                                 @click="openDialog">申请合作
                       </el-button>
                       <br><br>
                     </el-col>
@@ -120,8 +120,8 @@
         <el-aside width="100px">
           <br>
         </el-aside>
-      </el-container>
-    </el-container>
+      </div>
+
     <el-container style="text-align: left;background-color: #f2f6fa">
       <el-main style="margin-left: 6%;margin-top: 1%;margin-right: 6%">
         <el-row :gutter="24" style="font-size: 32px">
@@ -171,7 +171,7 @@
               <el-row style="font-size: 18px;margin-top: 10px">视觉系统、激光雷达、超声波雷达、红外传感器、力觉传感器、触觉传感器、等感知传感器。</el-row>
               <el-row style="text-align: left;padding-top: 10px">
                 <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
-                           @click="submitForm">
+                           @click="openDialog">
                   申请合作
                 </el-button>
               </el-row>
@@ -188,7 +188,7 @@
               <br>
               <el-row style="text-align: left;padding-top: 10px">
                 <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
-                           @click="submitForm">
+                           @click="openDialog">
                   申请合作
                 </el-button>
               </el-row>
@@ -205,7 +205,7 @@
               </el-row>
               <el-row style="text-align: left;padding-top: 10px">
                 <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
-                           @click="submitForm">
+                           @click="openDialog">
                   申请合作
                 </el-button>
               </el-row>
@@ -225,7 +225,7 @@
                 <el-row style="font-size: 18px;margin-top: 10px">视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。</el-row>
                 <el-row style="text-align: left;padding-top: 10px">
                   <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
-                             @click="submitForm">
+                             @click="openDialog">
                     申请合作
                   </el-button>
                 </el-row>
@@ -244,7 +244,7 @@
                 </el-row>
                 <el-row style="text-align: left;padding-top: 10px">
                   <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
-                             @click="submitForm">
+                             @click="openDialog">
                     申请合作
                   </el-button>
                 </el-row>
@@ -262,7 +262,7 @@
                 <el-row style="font-size: 18px;margin-top: 10px">视觉避障识别算法、视觉定位导航算法、语音识别算法、运动控制算法等先进算法系统。</el-row>
                 <el-row style="text-align: left;padding-top: 10px">
                   <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
-                             @click="submitForm">
+                             @click="openDialog">
                     申请合作
                   </el-button>
                 </el-row>
@@ -417,7 +417,7 @@ export default {
     submitForm() {
       this.$refs['form'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/forminfo/supplier', this.form).then(response => {
+          axios.post('http://124.70.86.111:8097/prod-api/forminfo/supplier', this.form).then(response => {
                 // this.info = response;
                 if (response != null && response.status === 200) {
                   this.$alert("期待与您的合作！");
