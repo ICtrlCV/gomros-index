@@ -517,7 +517,7 @@ export default {
     submitForm() {
       this.$refs['form'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/forminfo/development', this.form).then(response => {
+          axios.post('http://124.70.86.111:8096/prod-api/forminfo/development', this.form).then(response => {
                 if (response != null && response.status === 200) {
                   this.$alert("期待与您的合作！");
                   // this.status = response.status;

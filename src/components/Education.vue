@@ -225,9 +225,16 @@
             </el-form-item>
           </el-col>
           <el-col :span="8">
-            <el-form-item label="举办时间" prop="date">
-              <el-input v-model="trainform.date" placeholder="请输入举办时间"/>
-            </el-form-item>
+              <el-form-item label="举办时间" prop="date" style="text-align: left;">
+                  <el-date-picker clearable
+                                  v-model="trainform.date"
+                                  type="date"
+                                  value-format="yyyy-MM-dd"
+                                  placeholder="请输入举办时间"
+                                  style="width: 270.65px">
+
+                  </el-date-picker>
+              </el-form-item>
           </el-col>
         </el-row>
         <el-row :gutter="24">
@@ -745,7 +752,7 @@ export default {
     trainForm() {
       this.$refs['trainform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/forminfo/train', this.trainform).then(response => {
+          axios.post('http://124.70.86.111:8096/prod-api/forminfo/train', this.trainform).then(response => {
                 if (response != null && response.status === 200) {
                   this.$alert("期待与您的合作！");
                   // this.status = response.status;
@@ -771,7 +778,7 @@ export default {
       this.schoolOpen = true;
       this.$refs['schoolform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/forminfo/school', this.schoolform).then(response => {
+          axios.post('http:/124.70.86.111:8096/prod-api/forminfo/school', this.schoolform).then(response => {
                 if (response != null && response.status === 200) {
                   this.$alert("期待与您的合作！");
                   // this.status = response.status;
@@ -796,7 +803,7 @@ export default {
     productForm() {
       this.$refs['productform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/forminfo/product', this.productform).then(response => {
+          axios.post('http://124.70.86.111:8096/prod-api/forminfo/product', this.productform).then(response => {
                 if (response != null && response.status === 200) {
                   this.$alert("期待与您的合作！");
                   // this.status = response.status;
@@ -821,7 +828,7 @@ export default {
     lecturerForm() {
       this.$refs['lecturerform'].validate(valid => {
         if (valid) {
-          axios.post('http://localhost:8080/forminfo/lecturer', this.lecturerform).then(response => {
+          axios.post('http://124.70.86.111:8096/prod-api/forminfo/lecturer', this.lecturerform).then(response => {
                 if (response != null && response.status === 200) {
                   this.$alert("期待与您的合作！");
                   // this.status = response.status;
