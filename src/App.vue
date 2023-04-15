@@ -176,7 +176,7 @@
                     <el-row :gutter="24" style="padding-top: 10%;padding-left: 12%">
                       <el-col :span="18" class="center-font-style" id="open-community"
                               ref="openCommunity" style="text-align: left">
-                        <a href='http://localhost:1024/bbs/index/index' class="center-href-button" ref="hrefClose8">开发者社区</a>
+                        <a href='http://124.70.86.111:8096/bbs/index/index' class="center-href-button" ref="hrefClose8">开发者社区</a>
                       </el-col>
                       <el-col :span="4">
                         <img src="../static/img/index/u153p002.png" class="center-image"
