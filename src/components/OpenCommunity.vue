@@ -78,8 +78,14 @@
                   &nbsp;
                 </el-col>
                 <el-col :span="19">
-                  <el-button @click="article()"
-                             style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 80px;height: 20px;padding: 0">
+                  <el-button @click="(event)=>article(event)"
+                             style="font-size: 13px;
+                             text-align: center;
+                             border-color: #0d64e8;
+                             color: #0d64e8;
+                             width: 80px;
+                             height: 20px;
+                             padding: 0">
                     查看详情
                   </el-button>
                 </el-col>
@@ -101,7 +107,7 @@
               <el-row>
                 <el-col :span="3">&nbsp;</el-col>
                 <el-col :span="19">
-                  <el-button @click="apiDocument()"
+                  <el-button @click="(event)=>apiDocument(event)"
                              style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 80px;height: 20px;padding: 0">
                     查看详情
                   </el-button>
@@ -134,7 +140,7 @@
                   <el-row>操作系统版本：Ubuntu 18.04+</el-row>
                   <br>
                   <el-row>
-                    <el-button @click="softwareDownload()"
+                    <el-button @click="event=>softwareDownload(event)"
                                style="font-size: 13px;text-align: center;border-color: #0d64e8;color: #0d64e8;width: 80px;height: 20px;padding: 0">
                       下载
                     </el-button>
@@ -367,14 +373,29 @@ export default {
       this.dialogVisible = true
       this.currentIndex = index - 1
     },
-    article() {
-      window.open('http://localhost:1024/bbs/index/postList', '_blank', 'noopener,noreferrer');
+    article(event) {
+      let target = event.target;
+        if (target.nodeName === "BUTTON" || target.nodeName === "SPAN"){
+            target.parentNode.blur();
+        }
+        target.blur();
+      window.open('http://124.70.86.111:8096/bbs/index/postList', '_blank', 'noopener,noreferrer');
     },
-    apiDocument() {
-      window.open('http://localhost:1024/bbs/index/document', '_blank', 'noopener,noreferrer');
+    apiDocument(event) {
+        let target = event.target;
+        if (target.nodeName === "BUTTON" || target.nodeName === "SPAN"){
+            target.parentNode.blur();
+        }
+        target.blur();
+      window.open('http://124.70.86.111:8096/bbs/index/document', '_blank', 'noopener,noreferrer');
     },
-    softwareDownload() {
-      window.open('http://localhost:1024/bbs/index/download', '_blank', 'noopener,noreferrer');
+    softwareDownload(event) {
+        let target = event.target;
+        if (target.nodeName === "BUTTON" || target.nodeName === "SPAN"){
+            target.parentNode.blur();
+        }
+        target.blur();
+      window.open('http://124.70.86.111:8096/bbs/index/download', '_blank', 'noopener,noreferrer');
     },
     routerToContact() {
       this.$router.push('/about')
