@@ -4,8 +4,8 @@
       <el-row style="width: 100%;height:400px;">
         <el-col :span="15" style="background-color: #222325;height: 100%">
           <el-row type="flex" justify="start" style="padding: 10px">
-            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
-              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            <el-col :span="3" style="margin-right: 80px">
+              <img src="static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
             </el-col>
             <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span></p>
@@ -194,9 +194,9 @@
                 机器人控制系统可以驱动大部分厂家的设备，测距设备、2D测距设备、3D传感器、音频/语音识别设备、摄像机、扭矩/触摸传感器、位姿传感器、电源、速度、无线射频传感器、和 IO 接口等设备
               </p>
             </el-col>
-            <el-col :span="14" style="text-align: center">
-              <el-row>
-                <el-col :span="3" style="width: 240px">
+            <el-col :span="13">
+              <el-row style="margin-left: 3%">
+                <el-col :span="3" style="width: 28%;text-align: center">
                   <el-row style="background-color: #0d64e8">
                     <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">视觉设备</p>
                   </el-row>
@@ -207,7 +207,7 @@
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
-                <el-col :span="3" style="width: 240px">
+                <el-col :span="3" style="width: 28%;text-align: center">
                   <el-row style="background-color: #0d64e8">
                     <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">测距设备</p>
                   </el-row>
@@ -218,7 +218,7 @@
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
-                <el-col :span="3" style="width: 240px">
+                <el-col :span="3" style="width: 28%;text-align: center">
                   <el-row style="background-color: #0d64e8">
                     <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">驱动设备</p>
                   </el-row>
@@ -241,21 +241,21 @@
             <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">硬件设备合作开发</p>
           </el-row>
           <el-row style="text-align: left;height: 100%">
-            <el-col :span="5" style="width: 30%;margin-left: 1%;margin-right: 8%">
+            <el-col :span="8" style="width: 30%;margin-left: 1%;margin-right: 8%">
               <p style="font-size: 18px;color: #0d64e8">硬核研发团队，工程师团队成员均来自国内外顶尖高校和科研机构，掌握机器人领域的专业知识和核心技术。
                 致力于为用户带来体验卓越、灵敏智能又具有超高性价比的移动机器人产品。
               </p>
             </el-col>
-            <el-col :span="14" style="text-align: center">
+            <el-col :span="13" style="text-align: center;margin-left: 2.5%">
               <el-row :gutter="40" type="flex">
-                <el-col :span="6">
-                  <img src="static/img/hardwareDriver/u1491.png" style="width: 100%;height: 100%;">
+                <el-col :span="6" style="padding-left: 0;padding-right: 0">
+                  <img src="static/img/hardwareDriver/u1493.png" style="width: 105%;height: 100%;">
                 </el-col>
-                <el-col :span="6">
-                  <img src="static/img/hardwareDriver/u1492.png" style="width: 100%;height: 100%;">
+                <el-col :span="6" style="margin-left: 5%;padding-left: 0;padding-right: 0">
+                  <img src="static/img/hardwareDriver/u1492.png" style="width: 105%;height: 100%;">
                 </el-col>
-                <el-col :span="6">
-                  <img src="static/img/hardwareDriver/u1493.png" style="width: 100%;height: 100%;">
+                <el-col :span="6" style="margin-left: 5%;padding-left: 0;padding-right: 0">
+                  <img src="static/img/hardwareDriver/u1491.png" style="width: 105%;height: 100%;">
                 </el-col>
               </el-row>
             </el-col>
@@ -269,8 +269,8 @@
           <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">硬件设备支持</p>
           <p style="font-size: 18px;color: #0d64e8;margin-left: 2%">机器人控制系统可适配各大品牌配件</p>
         </el-col>
-        <el-col :span="12" style="align-content: center;margin-top: 4%;margin-left: 3%">
-          <img class="img-box" src="static/img/hardwareDriver/u1498.png" style="width: 85%;height: 95%;">
+        <el-col :span="13" style="align-content: center;margin-top: 4%;margin-left: 5%">
+          <img class="img-box" src="static/img/hardwareDriver/u1498.png" style="width: 91%;height: 95%;">
         </el-col>
       </el-row>
 

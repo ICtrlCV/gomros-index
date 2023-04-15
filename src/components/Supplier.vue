@@ -4,8 +4,8 @@
       <el-row style="width: 100%;height:400px;">
         <el-col :span="15" style="background-color: #737678;height: 100%">
           <el-row type="flex" justify="start" style="padding: 10px">
-            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
-              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            <el-col :span="3" style="margin-right: 80px">
+              <img src="static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
             </el-col>
             <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
@@ -168,7 +168,7 @@
             </el-col>
             <el-col :span="5">
               <el-row style="font-size: 20px;font-weight: bolder">感知系统</el-row>
-              <el-row style="font-size: 18px;margin-top: 10px">视觉系统、激光雷达、超声波雷达、红外传感器、力觉传感器、触觉传感器、等感知传感器。</el-row>
+              <el-row style="font-size: 18px;margin-top: 10px;height: 70px">视觉系统、激光雷达、超声波雷达、红外传感器、力觉传感器、触觉传感器、等感知传感器。</el-row>
               <el-row style="text-align: left;padding-top: 10px">
                 <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
                            @click="openDialog">
@@ -184,8 +184,7 @@
             </el-col>
             <el-col :span="5">
               <el-row style="font-size: 20px;font-weight: bolder">驱动系统</el-row>
-              <el-row style="font-size: 18px;margin-top: 10px">伺服电机、减速器、进步电机、舵机、脚轮、等驱动系统配件。</el-row>
-              <br>
+              <el-row style="font-size: 18px;margin-top: 10px;height: 70px">伺服电机、减速器、进步电机、舵机、脚轮、等驱动系统配件。</el-row>
               <el-row style="text-align: left;padding-top: 10px">
                 <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
                            @click="openDialog">
@@ -201,7 +200,7 @@
             </el-col>
             <el-col :span="5">
               <el-row style="font-size: 20px;font-weight: bolder">控制系统</el-row>
-              <el-row style="font-size: 18px;margin-top: 10px">工控机系统、电机控制模块、位姿控制模块、电源控制模块、等各种控制模块。
+              <el-row style="font-size: 18px;margin-top: 10px;height: 70px">工控机系统、电机控制模块、位姿控制模块、电源控制模块、等各种控制模块。
               </el-row>
               <el-row style="text-align: left;padding-top: 10px">
                 <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
@@ -222,7 +221,7 @@
             <el-col :span="5">
               <div>
                 <el-row style="font-size: 20px;font-weight: bolder">GomROS系统</el-row>
-                <el-row style="font-size: 18px;margin-top: 10px">视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。</el-row>
+                <el-row style="font-size: 18px;margin-top: 10px;height: 80px">视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。</el-row>
                 <el-row style="text-align: left;padding-top: 10px">
                   <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
                              @click="openDialog">
@@ -240,7 +239,7 @@
             <el-col :span="5">
               <div>
                 <el-row style="font-size: 20px;font-weight: bolder">场景服务系统</el-row>
-                <el-row style="font-size: 18px;margin-top: 10px">调度系统、WMS智能仓储管理系统、MES制造执行系统、ERP企业资源计划管理系统、等数字化管理系统。
+                <el-row style="font-size: 18px;margin-top: 10px;height: 80px">调度系统、WMS智能仓储管理系统、MES制造执行系统、ERP企业资源计划管理系统、等数字化管理系统。
                 </el-row>
                 <el-row style="text-align: left;padding-top: 10px">
                   <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
@@ -259,7 +258,7 @@
             <el-col :span="5">
               <div>
                 <el-row style="font-size: 20px;font-weight: bolder">云平台识别算法</el-row>
-                <el-row style="font-size: 18px;margin-top: 10px">视觉避障识别算法、视觉定位导航算法、语音识别算法、运动控制算法等先进算法系统。</el-row>
+                <el-row style="font-size: 18px;margin-top: 10px;height: 80px">视觉避障识别算法、视觉定位导航算法、语音识别算法、运动控制算法等先进算法系统。</el-row>
                 <el-row style="text-align: left;padding-top: 10px">
                   <el-button style="width: 90px;padding:0;background-color: #375ea0;color: white;font-size: 13px"
                              @click="openDialog">
