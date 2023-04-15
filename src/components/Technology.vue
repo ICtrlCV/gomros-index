@@ -4,8 +4,8 @@
       <el-row style="width: 100%;height: 400px">
         <el-col :span="15" style="background-color: #010954;height: 100%">
           <el-row type="flex" justify="start" style="padding: 10px">
-            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
-              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            <el-col :span="3" style="margin-right: 80px">
+              <img src="static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
             </el-col>
             <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
@@ -13,7 +13,8 @@
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">移动机器人</span>
                 <span style="font-size: 18px;color: #0D64E8;font-weight: bolder">移动机器人介绍</span></p>
               <p style="font-size: 25px;color: white;text-shadow: none;font-weight: bolder;margin-right: 10%">
-                移动机器人，是一个集环境感知、动态决策与规划、行为控制与执行等多功能于一体的综合系统。它集中了传感器技术、信息处理、电子工程、计算机工程、自动化控制工程以及人工智能等多学科的研究成果，代表机电一体化的最高成就，是目前科学技术发展最活跃的领域之一。</p>
+                移动机器人，是一个集环境感知、动态决策与规划、行为控制与执行等多功能于一体的综合系统。它集中了传感器技术、信息处理、电子工程、
+                计算机工程、自动化控制工程以及人工智能等多学科的研究成果，代表机电一体化的最高成就，是目前科学技术发展最活跃的领域之一。</p>
             </el-col>
           </el-row>
         </el-col>
@@ -476,51 +477,43 @@
       <el-main>
         <el-row><br><br></el-row>
         <el-row :gutter="24">
-          <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;margin-left: 2%">
+          <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;margin-left: 2%;padding-right: 0">
             <div style="font-size: 72px">GomRos</div>
-            <div style="font-size: 32px">机器人产品应用</div>
+            <div style="font-size: 32px;text-align: left;margin-left: 30%">机器人产品应用</div>
           </el-col>
-          <el-col :span="8">
+          <el-col :span="9">
             <img src="../../static/img/Technology/u117.svg"
-                 style="width: 95%;height: auto;margin-left:0;margin-right: 0">
+                 style="width: 100%;height: 370px;margin-left:0;margin-right: 0">
           </el-col>
-          <el-col :span="8">
-            <img src="../../static/img/Technology/u120.png" style="width: 85%;height: auto;margin: 0">
+          <el-col :span="9">
+            <img src="../../static/img/Technology/u120.png" style="width: 100%;height: 382px;margin-top: -5px">
           </el-col>
         </el-row>
         <el-row><br><br></el-row>
-        <el-row><br></el-row>
-        <el-row><br></el-row>
         <el-row>
           <div>
             <el-row :gutter="24">
-              <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;">
+              <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;margin-left: 2%;padding-right: 0">
                 <div style="font-size: 72px">GomRos</div>
-                <div style="font-size: 32px">我们的产品</div>
-              </el-col>
-              <el-col :span="1">
-                <br>
+                <div style="font-size: 32px;text-align: left;margin-left: 30%">我们的产品</div>
               </el-col>
               <el-col :span="5">
                 <img src="../../static/img/Technology/u126.png">
               </el-col>
-              <el-col :span="13">
+              <el-col :span="12">
                 <img src="../../static/img/Technology/u123.png">
               </el-col>
             </el-row>
             <el-row :gutter="24">
-              <el-col :span="4">
+              <el-col :span="3" style="margin-left: 4%">
                 <img src="../../static/img/Technology/u127.png" style="width: 100%">
               </el-col>
               <el-col :span="4">
-                <img src="../../static/img/Technology/u128.png">
+                <img src="../../static/img/Technology/u128.png" style="width: 80%;">
               </el-col>
               <el-col :span="16">
                 <div>
                   <el-row :gutter="24">
-                    <el-col :span="2">
-                      <br>
-                    </el-col>
                     <el-col :span="20">
                       <img src="../../static/img/Technology/u124.png">
                     </el-col>

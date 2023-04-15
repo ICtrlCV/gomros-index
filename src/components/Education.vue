@@ -4,8 +4,8 @@
       <el-row style="width: 100%;height:400px;">
         <el-col :span="15" style="background-color: #435b7f;height: 100%">
           <el-row type="flex" justify="start" style="padding: 10px">
-            <el-col :span="3" style="padding-top: 50px;padding-left: 30px;margin-right: 80px">
-              <img src="static/img/MobileRobot/u3.png" style="width: 150px;height: 150px;">
+            <el-col :span="3" style="margin-right: 80px">
+              <img src="static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
             </el-col>
             <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
