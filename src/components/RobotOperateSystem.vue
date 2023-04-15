@@ -5,7 +5,7 @@
         <el-col id="top-bc" :span="13">
           <el-row type="flex" justify="start" style="padding: 10px">
             <el-col id="company-logo" :span="3">
-              <img src="static/img/MobileRobot/u3.png" class="cl-img">
+              <img src="static/img/MobileRobot/logo1.svg" class="cl-img">
             </el-col>
             <el-col id="tc-text" :span="20">
               <p><span style="font-size: 60px" class="font_basic">GomROS</span>
@@ -35,26 +35,28 @@
             并且借助强大的开发人员工具，让您可以快速搭建机器人项目。</p>
           <p id="ro-text3">您需要的软件系统，我们已经给您封装好了，您可以随时调用。</p>
         </el-col>
-        <el-col id="row-one" :span="10">
+        <el-col id="row-one" :span="11">
           <el-row :gutter="10" type="flex">
             <el-col
-                style="width:100%;height:200px;background-image: url(static/img/MobileRobot/u21.gif);
-                background-size: cover;margin-right: 2%">
+                style="width:800px;height:200px;background-image: url(static/img/MobileRobot/u21.gif);
+                background-size: cover;margin-right: 2%;text-align: center;">
               <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="11">
+              <el-col :span="10">
                 <p id="ro_img1_text">视觉识别算法</p>
               </el-col>
               <el-col :span="7">
                 &nbsp;
               </el-col>
             </el-col>
-            <el-col style="background-image: url(static/img/RobotOperateSystem/u702.gif);background-size: cover">
+            <el-col
+                style="width:800px;background-image: url(static/img/RobotOperateSystem/u702.gif);
+                background-size: cover;text-align: center">
               <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="11">
+              <el-col :span="10">
                 <p id="ro_img2_text">路径规划算法</p>
               </el-col>
               <el-col :span="7">
@@ -64,23 +66,25 @@
           </el-row>
           <el-row :gutter="10" type="flex">
             <el-col
-                style="width:100%;height:200px;background-image: url(static/img/MobileRobot/u27.gif);
-                background-size: cover;margin-right: 2%">
+                style="width:800px;height:200px;background-image: url(static/img/MobileRobot/u27.gif);
+                background-size: cover;margin-right: 2%;text-align: center">
               <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="11">
+              <el-col :span="10">
                 <p id="ro_img3_text">激光导航算法</p>
               </el-col>
               <el-col :span="7">
                 &nbsp;
               </el-col>
             </el-col>
-            <el-col style="background-image: url(static/img/RobotOperateSystem/u704.gif);background-size: cover">
+            <el-col
+                style="width:800px;background-image: url(static/img/RobotOperateSystem/u704.gif);
+                background-size: cover;text-align: center">
               <el-col :span="7">
                 &nbsp;
               </el-col>
-              <el-col :span="11">
+              <el-col :span="10">
                 <p id="ro_img4_text">视觉避障算法</p>
               </el-col>
               <el-col :span="7">
@@ -196,72 +200,77 @@
       <el-footer class="sub_title">
         <p class="footer">我们的应用案例</p>
       </el-footer>
-      <el-row style="padding-bottom: 0">
+      <el-row style="padding-bottom: 0;padding-right: 0">
         <el-col :span="6" style="margin-left: 80px">
           <p id="row4_text1">GomROS机器人操作系统</p>
-          <p id="row4_text2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的服务机器人和搬运机器人全部基于GomROS系统搭建。</p>
+          <p id="row4_text2">我们的服务机器人和搬运机器人全部基于GomROS系统搭建。</p>
           <p id="row4_text3">参考我们的机器人开发项目</p>
         </el-col>
         <el-col :span="15" class="row4_right">
           <el-row :gutter="2" type="flex" id="row4_right_row1">
-            <el-col :span="5" class="row4_sub"><br>软件系统</el-col>
-            <el-row :gutter="10" type="flex" class="row4_border">
-              <el-col :span="8" style="text-align: center">
+            <el-col :span="5" class="row4_sub1">软件系统</el-col>
+            <el-row :gutter="2" type="flex" class="row4_border1">
+              <el-col :span="8" style="margin-right:1%">
                 <img src="static/img/RobotOperateSystem/u831.png" class="row4_img1">
                 <p id="r4right_r1text1">云平台</p>
               </el-col>
-              <el-col :span="8" style="text-align: center">
+              <el-col :span="8" style="margin-right:1%">
                 <img src="static/img/RobotOperateSystem/u822.png" class="row4_img1">
                 <p id="r4right_r1text2">集群调度系统</p>
               </el-col>
-              <el-col :span="8" style="text-align: center">
+              <el-col :span="8">
                 <img src="static/img/RobotOperateSystem/u820.png" class="row4_img1">
                 <p id="r4right_r1text3">控制软件系统</p>
               </el-col>
             </el-row>
           </el-row>
+          <el-row :gutter="2" type="flex" id="row4_right_row2">
+            <el-col :span="4" class="row4_sub2">产品应用</el-col>
+            <el-row :span="10" class="row4_border2">
+              <img src="static/img/RobotOperateSystem/u8090.png" class="row4_img2">
+              <el-col :span="8" class="r4right_r2text1">
+                工业AMR
+              </el-col>
+              <el-col :span="7" class="r4right_r2text2">
+                公共服务AVR
+              </el-col>
+              <el-col :span="7" class="r4right_r2text3">
+                复合应用AMB
+              </el-col>
+            </el-row>
+          </el-row>
         </el-col>
-        <el-row :gutter="2" type="flex" id="row4_right_row2">
-          <el-col :span="10">&nbsp;</el-col>
-          <el-col :span="4" class="row4_sub">产品应用</el-col>
-          <el-row :span="10" class="row4_border">
-            <img src="static/img/RobotOperateSystem/u809.png" class="row4_img2">
-            <p>
-              <span class="r4right_r2text1">工业AMR</span>
-              <span class="r4right_r2text2">公共服务AVR</span>
-              <span class="r4right_r2text3">复合应用AMB</span>
-            </p>
-          </el-row>
-        </el-row>
-        <el-row :gutter="2" type="flex" style="height: 240px;padding-top: 0">
-          <el-col :span="5">&nbsp;</el-col>
-          <el-col :span="6" class="row4_sub">硬件驱动/控制
-          </el-col>
-          <el-row :gutter="12" type="flex" class="row4_border">
-            <el-col :span="8">
-              <img src="static/img/RobotOperateSystem/u814.png" class="row4_img3">
-              <p id="r4right_r3text1">激光雷达</p>
-            </el-col>
-            <el-col :span="8">
-              <img src="static/img/RobotOperateSystem/u815.png" class="row4_img3">
-              <p id="r4right_r3text2">3D视觉传感器</p>
-            </el-col>
-            <el-col :span="8">
-              <img src="static/img/RobotOperateSystem/u816.png" class="row4_img3">
-              <p id="r4right_r3text3">伺服电机</p>
-            </el-col>
-            <el-col :span="8">
-              <img src="static/img/RobotOperateSystem/u817.png" class="row4_img3">
-              <p id="r4right_r3text4">工控机</p>
-            </el-col>
-            <el-col :span="8">
-              <img src="static/img/RobotOperateSystem/u818.png" class="row4_img3">
-              <p id="r4right_r3text5">I/O系统</p>
-            </el-col>
-          </el-row>
-        </el-row>
       </el-row>
-
+      <el-row :gutter="2" type="flex" style="height: 160px;padding-top: 0;margin-right: 2%">
+        <el-col :span="5">&nbsp;</el-col>
+        <el-col :span="5" class="row4_sub3" style="margin-left: 10%">
+          硬件驱动/控制
+        </el-col>
+        <el-row :gutter="12" type="flex" class="row4_border3">
+          <el-col :span="8">
+            <img src="static/img/RobotOperateSystem/u814.png" class="row4_img3">
+            <p id="r4right_r3text1">激光雷达</p>
+          </el-col>
+          <el-col :span="8">
+            <img src="static/img/RobotOperateSystem/u815.png" class="row4_img3">
+            <p id="r4right_r3text2">3D视觉传感器</p>
+          </el-col>
+          <el-col :span="8">
+            <img src="static/img/RobotOperateSystem/u816.png" class="row4_img3">
+            <p id="r4right_r3text3">伺服电机</p>
+          </el-col>
+          <el-col :span="8">
+            <img src="static/img/RobotOperateSystem/u817.png" class="row4_img3">
+            <p id="r4right_r3text4">工控机</p>
+          </el-col>
+          <el-col :span="8">
+            <img src="static/img/RobotOperateSystem/u818.png" class="row4_img3">
+            <p id="r4right_r3text5">I/O系统</p>
+          </el-col>
+        </el-row>
+        <!--          </el-col>-->
+        <el-col :span="1">&nbsp;</el-col>
+      </el-row>
       <!--      底部     -->
       <el-container id="bottom">
         <el-main id="bottom-main">
@@ -323,14 +332,14 @@
 }
 
 #company-logo {
-  padding-top: 50px;
-  padding-left: 30px;
+  /*padding-top: 0px;*/
+  /*padding-left: 0px;*/
   margin-right: 80px;
 }
 
 .cl-img {
-  width: 150px;
-  height: 150px;
+  width: 240px;
+  height: 240px;
 }
 
 #tc-text {
@@ -406,34 +415,34 @@
 
 #ro_img1_text {
   width: 100%;
-  text-align: center;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
+  font-size: 20px;
 }
 
 #ro_img2_text {
   width: 100%;
-  text-align: center;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
+  font-size: 20px;
 }
 
 #ro_img3_text {
   width: 100%;
-  text-align: center;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
+  font-size: 20px;
 }
 
 #ro_img4_text {
   width: 100%;
-  text-align: center;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
+  font-size: 20px;
 }
 
 #ro_down {
@@ -551,11 +560,38 @@
 
 .row4_right {
   align-content: center;
-  margin-left: 6%;
+  /*margin-left: 6%;*/
+}
+
+.row4_sub1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #0d64e8;
+  margin-top: 5%;
+  margin-right: 1px;
 }
 
 #row4_right_row1 {
-  height: 260px;
+  width: 100%;
+  height: 200px;
+  padding-left: 20%;
+  padding-right: 10px;
+
+}
+
+.row4_border1 {
+  text-align: center;
+  border: 2px dashed dodgerblue;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row4_img1 {
+  width: 190px;
+  height: 113px;
 }
 
 #r4right_r1text1 {
@@ -563,6 +599,8 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 #r4right_r1text2 {
@@ -570,6 +608,8 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 #r4right_r1text3 {
@@ -577,69 +617,83 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
-#row4_right_row2 {
-  width: 100%;
-  height: 260px;
-  padding-top: 0;
-}
-
-.row4_sub {
+.row4_sub2 {
   text-align: center;
   font-size: 32px;
   font-weight: bolder;
   color: #0d64e8;
   margin-top: 4%;
+  margin-right: 5px;
 }
 
-.row4_border {
+#row4_right_row2 {
+  width: 100%;
+  height: 160px;
+  padding-right: 10px;
+  padding-left: 10%;
+  padding-top: 0px;
+}
+
+
+.row4_border2 {
   text-align: center;
   border: 2px dashed dodgerblue;
-  width: 100%;
+  width: 85%;
+  padding: 0;
 }
 
-.row4_img1 {
-  width: 95%;
-  height: 85%;
+.row4_img2 {
+  height: 80%;
+  width: 90%;
+  padding: 1%;
 }
 
 .r4right_r2text1 {
-  width: 100%;
   font-size: 15px;
   font-weight: bolder;
-  margin-left: 5%;
-  margin-right: 28%;
-  padding-bottom: 10px;
+  margin-left: 2%;
+  margin-right: 3%;
   color: #0d64e8;
 }
 
 .r4right_r2text2 {
-  width: 100%;
   font-size: 15px;
   font-weight: bolder;
-  margin-right: 25%;
+  margin-right: 2%;
   color: #0d64e8;
 }
 
 .r4right_r2text3 {
-  width: 100%;
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
 
 }
 
-.row4_img2 {
-  height: 90%;
-  width: 90%;
-  padding-left: 1%;
-  padding-right: 1%;
+.row4_sub3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #0d64e8;
+  margin-top: 2%;
+  margin-right: 0px;
+}
+
+.row4_border3 {
+  text-align: center;
+  border: 2px dashed dodgerblue;
+  width: 80%;
+  padding: 0;
 }
 
 .row4_img3 {
-  width: 95%;
+  width: 60%;
   height: 80%;
+  padding-top: 10px;
 }
 
 #r4right_r3text1 {
@@ -647,6 +701,7 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0;
 }
 
 #r4right_r3text2 {
@@ -654,6 +709,7 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0;
 }
 
 #r4right_r3text3 {
@@ -661,6 +717,7 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0;
 }
 
 #r4right_r3text4 {
@@ -668,6 +725,7 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0;
 }
 
 #r4right_r3text5 {
@@ -675,6 +733,7 @@
   font-size: 15px;
   font-weight: bolder;
   color: #0d64e8;
+  margin-top: 0;
 }
 
 #bottom {

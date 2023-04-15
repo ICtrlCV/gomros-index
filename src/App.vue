@@ -3,12 +3,11 @@
     <div>
       <!--  导航栏  -->
       <el-row :gutter="24" style="margin-top: 1%;margin-bottom: 1%;">
-        <el-col :span="2">&nbsp;</el-col>
-        <el-col :span="3">
-          <img src="../../gomros-index/static/product/logo-small.png"
-               style="width: 30%;margin-left: 20%;margin-top: -8%;margin-bottom: -10%">
+        <el-col :span="3" style="margin-left: 6%">
+          <img src="../../gomros-index/static/img/MobileRobot/logo1.svg"
+               style="width: 50%;margin-left: 20%;margin-top: -15%;margin-bottom: -18%">
         </el-col>
-        <el-col :span="2">
+        <el-col :span="3">
           <button class="button-box" id="index-button" @click="routerToIndex()" ref="buttonShowCarousel">
             首页
           </button>
@@ -19,7 +18,7 @@
             机器人操作系统
           </button>
         </el-col>
-        <el-col :span="2">
+        <el-col :span="3">
           <button class="button-box" @click="changeCarousel(2)" id="move-robot-button" ref="buttonShowCarousel2">
             移动机器人
           </button>
@@ -30,12 +29,12 @@
             GomRos开放平台
           </button>
         </el-col>
-        <el-col :span="2">
+        <el-col :span="3">
           <button class="button-box" @click="changeCarousel(4)" id="corporate-button" ref="buttonShowCarousel4">
             生态合作
           </button>
         </el-col>
-        <el-col :span="2">
+        <el-col :span="3">
           <button class="button-box" @click="changeCarousel(5)" id="about-button" ref="buttonShowCarousel5">
             关于我们
           </button>
@@ -1059,8 +1058,9 @@ a {
   color: black;
   background-color: white;
   width: 100%;
-  font-size: 15px;
+  font-size: 18px;
   border: none;
+  margin-top: 8%;
 }
 
 
