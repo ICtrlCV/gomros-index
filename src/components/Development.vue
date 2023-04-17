@@ -1,11 +1,11 @@
 <template>
   <div id="development" style="background: white;">
-    <el-container id="top-img" style="background-image: url(../../static/abouttop.jpg);">
+    <el-container id="top-img" style="background-image: url(../../static/product/ccc__u1784.gif);">
       <el-row style="width: 100%;height:400px;">
         <el-col :span="15" style="height: 100%">
           <el-row type="flex" justify="start" style="padding: 10px">
             <el-col :span="3" style="margin-right: 80px">
-              <img src="static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
+              <img src="../../static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
             </el-col>
             <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
               <p><span style="font-size: 60px;color: #0D64E8;font-weight: bolder">GomROS</span>
