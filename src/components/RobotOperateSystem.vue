@@ -28,7 +28,7 @@
 
     <div>
       <!--    第一行 什么是机器人操作系统  -->
-      <el-row class="background_white">
+      <el-row class="background_white" style="padding-bottom: 0">
         <el-col :span="10" style="margin-left: 80px">
           <p id="ro-text1">GomROS机器人操作系统</p>
           <p id="ro-text2">是一组软件库和工具,能够帮助您快速构建机器人应用程序。从控制程序到先进算法的集合，
@@ -93,10 +93,325 @@
             </el-col>
           </el-row>
         </el-col>
-        <el-row>
-          <img id="ro_down" src="static/img/RobotOperateSystem/r01.jpg">
-        </el-row>
+<!--        <el-row>-->
+<!--          <img id="ro_down" src="static/img/RobotOperateSystem/r01.jpg">-->
+<!--        </el-row>-->
       </el-row>
+      <el-row style="padding-left: 60px;padding-right: 0px;padding-top: 0px;padding-bottom: 10px">
+        <el-col :span="12" style="border: 2px dashed #0d64e8;">
+          <el-row
+              style="width: 100%;height:40px;text-align: center;font-size: 14px;color: #0D64E8;font-weight: bolder;padding-bottom: 0;margin-top: 5px;margin-bottom: 10px;font-size: 14px">
+            移动机器人的位置、姿态、状态，关节臂姿态、状态、视觉目标位置，避障区域、障碍物尺寸、位置。
+          </el-row>
+          <el-row style="text-align: center;padding-left: 0;padding-right: 0;padding-bottom: 0">
+            <el-col :sapn="2" style="width: 10%;margin-left:1%;background-color: #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: white;font-weight: bolder;font-size: 18px;margin-top: 12px;margin-bottom: 12px">
+                数据处理
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                建图
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                定位
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                运动规划
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                坐标系变化
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                姿态预测
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                图像处理
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                特征表达
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                模型训练
+              </p>
+            </el-col>
+          </el-row>
+          <el-row style="text-align: center;padding-left: 0;padding-right: 0;">
+            <el-col :sapn="2" style="width: 10%;margin-left:1%;">
+              &nbsp;
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                数据滤波
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                数据融合
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                数据预测
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                数据插值
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                优化算法
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                搜索算法
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                深度学习
+              </p>
+            </el-col>
+            <el-col :sapn="2" style="width: 10%;margin-left: 1%;">
+              &nbsp;
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="11" style="border: 2px dashed #0d64e8;margin-left: 1%">
+          <el-row>
+            <el-col :span="4">
+              &nbsp;
+            </el-col>
+            <el-col :span="3"
+                    style="margin-left: 2%;width: 15%;height: 40px;background-color: #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: white;font-weight: bolder;font-size: 14px;margin-top:10px;margin-bottom: 10px">
+                平面移动规划
+              </p>
+            </el-col>
+            <el-col :span="3"
+                    style="width: 15%;height: 40px;margin-left: 1%;background-color: #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: white;font-weight: bolder;font-size: 14px;margin-top:10px;margin-bottom: 10px">
+                移动避障规则
+              </p>
+            </el-col>
+            <el-col :span="3"
+                    style="width: 15%;height: 40px;margin-left: 1%;background-color: #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: white;font-weight: bolder;font-size: 14px;margin-top:10px;margin-bottom: 10px">
+                关节运动规划
+              </p>
+            </el-col>
+            <el-col :span="3"
+                    style="width: 15%;height: 40px;margin-left: 1%;background-color: #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: white;font-weight: bolder;font-size: 14px;margin-top:10px;margin-bottom: 10px">
+                关节运动避障
+              </p>
+            </el-col>
+            <el-col :span="4">
+              &nbsp;
+            </el-col>
+          </el-row>
+          <el-row style="padding-top: 0;padding-left: 10px;padding-bottom: 0">
+            <el-col :span="3" style="width: 12%;background-color: #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: white;font-weight: bolder;font-size: 18px;margin-top:12px;margin-bottom: 12px">
+                逻辑处理
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                轨迹矫正
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                轨迹补差
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                路径搜索
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                轨迹预处理
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                速度控制
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                避障控制
+              </p>
+            </el-col>
+          </el-row>
+          <el-row style="padding-left: 10px;padding-bottom: 0">
+            <el-col :span="3" style="width: 12%;">
+              &nbsp;
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                绕障逻辑
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                力矩控制
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                坐标处理
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px;margin-top: 5px;margin-bottom: 5px">
+                运动模型<br>逆解
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                位置控制
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;border: 2px solid #0d64e8;border-radius:15%">
+              <p style="text-align: center;color: #0d64e8;font-weight: bolder;font-size: 14px">
+                跟踪控制
+              </p>
+            </el-col>
+            <el-col :span="3" style="width: 12%;margin-left: 1%;">
+              &nbsp;
+            </el-col>
+          </el-row>
+        </el-col>
+      </el-row>
+      <el-row style="padding-left: 60px;padding-right: 0px;padding-top: 0px;padding-bottom: 10px">
+        <el-col :span="12" style="border: 2px dashed #0d64e8">
+          <el-row style="height: 78px;padding-top: 15px;padding-bottom: 15px">
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 18px;color: #0d64e8;font-weight: bolder">硬件驱动</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">激光雷达</p>
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">毫米波雷达</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">超声波雷达</p>
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">点距离雷达</p>
+            </el-col>
+            <el-col :span="4">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">摄像头</p>
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">3D视觉传感器</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">喇叭</p>
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">灯光</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">电机</p>
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">屏幕</p>
+            </el-col>
+          </el-row>
+          <el-row style="margin-bottom: 15px">
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 18px;color: #0d64e8;font-weight: bolder;margin-top: 10px;margin-bottom: 10px">
+                原始数据</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">Can</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">TCP/IP</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">I/O</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">PLC</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">Modbus</p>
+            </el-col>
+            <el-col :span="3">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">RS232/485</p>
+            </el-col>
+            <el-col :span="2">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder">USB</p>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="11" style="border: 2px dashed #0d64e8;margin-left: 1%">
+          <el-row style="padding-top: 15px;padding-bottom: 15px">
+            <el-col :span="9">
+              &nbsp;
+            </el-col>
+            <el-col :span="3"
+                    style="border: 2px solid #0d64e8;background-color: #0d64e8;border-top-left-radius: 15%;border-bottom-left-radius: 15%">
+              <p style="text-align:center;font-size: 18px;color: white;font-weight: bolder;margin-top: 10px;margin-bottom: 10px">
+                控制</p>
+            </el-col>
+            <el-col :span="3"
+                    style="border: 2px solid #0d64e8;border-top-right-radius: 15%;border-bottom-right-radius: 15%;">
+              <p style="text-align:center;font-size: 18px;color: #0d64e8;font-weight: bolder;margin-top: 10px;margin-bottom: 10px">
+                输出</p>
+            </el-col>
+            <el-col :span="9">
+              &nbsp;
+            </el-col>
+          </el-row>
+          <el-row style="padding-left: 10px;padding-right: 10px;padding-top: 15px;padding-bottom:30px;margin-bottom:0">
+            <el-col :span="2" style="border: 2px solid #0d64e8;border-radius: 10%;background-color: #0d64e8">
+              <p style="text-align:center;font-size: 14px;color: white;font-weight: bolder;margin-top: 5px;margin-bottom: 5px">电机<br>控制</p>
+            </el-col>
+            <el-col :span="3"
+                    style="margin-left: 1%;border: 2px solid #0d64e8;border-radius: 10%;background-color: #0d64e8">
+              <p style="text-align:center;font-size: 14px;color: white;font-weight: bolder;">气缸控制</p>
+            </el-col>
+            <el-col :span="3"
+                    style="margin-left: 1%;border: 2px solid #0d64e8;border-radius: 10%;background-color: #0d64e8">
+              <p style="text-align:center;font-size: 14px;color: white;font-weight: bolder;">模拟量控制</p>
+            </el-col>
+            <el-col :span="3"
+                    style="margin-left: 1%;border: 2px solid #0d64e8;background-color: #0d64e8;border-top-left-radius: 15%;border-bottom-left-radius: 15%">
+              <p style="text-align:center;font-size: 14px;color: white;font-weight: bolder">I/O量控制</p>
+            </el-col>
+            <el-col :span="3"
+                    style="border: 2px solid #0d64e8;border-top-right-radius: 15%;border-bottom-right-radius: 15%;">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder;">屏幕显示</p>
+            </el-col>
+            <el-col :span="3" style="margin-left: 1%;border: 2px solid #0d64e8;border-radius: 10%;">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder;">网络输出</p>
+            </el-col>
+            <el-col :span="3" style="margin-left: 1%;border: 2px solid #0d64e8;border-radius: 10%;">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder;">多机协同</p>
+            </el-col>
+            <el-col :span="2" style="margin-left: 1%;border: 2px solid #0d64e8;border-radius: 10%;">
+              <p style="text-align:center;font-size: 14px;color: #0d64e8;font-weight: bolder;margin-top: 5px;margin-bottom: 5px">云端<br>输出</p>
+            </el-col>
+          </el-row>
+        </el-col>
+
+      </el-row>
+
 
       <!--    第二行 为什么做机器人操作系统  -->
       <el-footer class="sub_title">
