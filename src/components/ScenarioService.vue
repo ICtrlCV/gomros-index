@@ -36,7 +36,7 @@
             移动机器人在执行任务时，需要调度系统进行任务分配及路径规划等支撑，同时需要对接各类管理系统进行资源调用或结果反馈。</p>
           <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">让机器人集群能协调在一起工作，互相合作又互不影响，发挥出最大的效能。</p>
         </el-col>
-        <el-col :span="12" style="align-content: center;margin-top: 5%">
+        <el-col :span="12" style="align-content: center;margin-top: 3%">
           <el-row style="margin-bottom: 2px;text-align: center">
             <el-col :span="2">
               <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">ERP</p>
@@ -75,7 +75,7 @@
               <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">AGV调度系统</p>
             </el-col>
           </el-row>
-          <img class="img-box" src="static/img/scenarioService/u1257.png" style="width: 75%;height: 65%;">
+          <img class="img-box" src="static/img/scenarioService/u12570.png" style="width: 75%;height: 90%;">
         </el-col>
       </el-row>
 
