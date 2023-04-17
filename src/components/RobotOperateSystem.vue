@@ -40,26 +40,26 @@
             <el-col
                 style="width:800px;height:200px;background-image: url(static/img/MobileRobot/u21.gif);
                 background-size: cover;margin-right: 2%;text-align: center;">
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
-              <el-col :span="10">
+              <el-col :span="7" style="text-align: center">
                 <p id="ro_img1_text">视觉识别算法</p>
               </el-col>
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
             </el-col>
             <el-col
                 style="width:800px;background-image: url(static/img/RobotOperateSystem/u702.gif);
                 background-size: cover;text-align: center">
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
-              <el-col :span="10">
+              <el-col :span="7">
                 <p id="ro_img2_text">路径规划算法</p>
               </el-col>
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
             </el-col>
@@ -68,26 +68,26 @@
             <el-col
                 style="width:800px;height:200px;background-image: url(static/img/MobileRobot/u27.gif);
                 background-size: cover;margin-right: 2%;text-align: center">
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
-              <el-col :span="10">
+              <el-col :span="7">
                 <p id="ro_img3_text">激光导航算法</p>
               </el-col>
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
             </el-col>
             <el-col
                 style="width:800px;background-image: url(static/img/RobotOperateSystem/u704.gif);
                 background-size: cover;text-align: center">
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
-              <el-col :span="10">
+              <el-col :span="7">
                 <p id="ro_img4_text">视觉避障算法</p>
               </el-col>
-              <el-col :span="7">
+              <el-col :span="8">
                 &nbsp;
               </el-col>
             </el-col>
@@ -211,16 +211,22 @@
             <el-col :span="5" class="row4_sub1">软件系统</el-col>
             <el-row :gutter="2" type="flex" class="row4_border1">
               <el-col :span="8" style="margin-right:1%">
-                <img src="static/img/RobotOperateSystem/u831.png" class="row4_img1">
-                <p id="r4right_r1text1">云平台</p>
+                <el-row style="text-align: center">
+                  <img src="static/img/RobotOperateSystem/u831.png" class="row4_img1">
+                  <p id="r4right_r1text1">云平台</p>
+                </el-row>
               </el-col>
               <el-col :span="8" style="margin-right:1%">
-                <img src="static/img/RobotOperateSystem/u822.png" class="row4_img1">
-                <p id="r4right_r1text2">集群调度系统</p>
+                <el-row style="text-align: center">
+                  <img src="static/img/RobotOperateSystem/u822.png" class="row4_img1">
+                  <p id="r4right_r1text2">集群调度系统</p>
+                </el-row>
               </el-col>
               <el-col :span="8">
-                <img src="static/img/RobotOperateSystem/u820.png" class="row4_img1">
-                <p id="r4right_r1text3">控制软件系统</p>
+                <el-row style="text-align: center">
+                  <img src="static/img/RobotOperateSystem/u820.png" class="row4_img1">
+                  <p id="r4right_r1text3">控制软件系统</p>
+                </el-row>
               </el-col>
             </el-row>
           </el-row>
@@ -241,31 +247,41 @@
           </el-row>
         </el-col>
       </el-row>
-      <el-row :gutter="2" type="flex" style="height: 160px;padding-top: 0;margin-right: 2%">
+      <el-row :gutter="2" type="flex" style="height: 160px;padding-top: 0;padding-bottom: 20px;margin-right: 2%;">
         <el-col :span="5">&nbsp;</el-col>
         <el-col :span="5" class="row4_sub3" style="margin-left: 10%">
           硬件驱动/控制
         </el-col>
         <el-row :gutter="12" type="flex" class="row4_border3">
           <el-col :span="8">
-            <img src="static/img/RobotOperateSystem/u814.png" class="row4_img3">
-            <p id="r4right_r3text1">激光雷达</p>
+            <el-row style="text-align: center">
+              <img src="static/img/RobotOperateSystem/u814.png" class="row4_img3">
+              <p id="r4right_r3text1">激光雷达</p>
+            </el-row>
           </el-col>
           <el-col :span="8">
-            <img src="static/img/RobotOperateSystem/u815.png" class="row4_img3">
-            <p id="r4right_r3text2">3D视觉传感器</p>
+            <el-row style="text-align: center">
+              <img src="static/img/RobotOperateSystem/u815.png" class="row4_img3">
+              <p id="r4right_r3text2">3D视觉传感器</p>
+            </el-row>
           </el-col>
           <el-col :span="8">
-            <img src="static/img/RobotOperateSystem/u816.png" class="row4_img3">
-            <p id="r4right_r3text3">伺服电机</p>
+            <el-row style="text-align: center">
+              <img src="static/img/RobotOperateSystem/u816.png" class="row4_img3">
+              <p id="r4right_r3text3">伺服电机</p>
+            </el-row>
           </el-col>
           <el-col :span="8">
-            <img src="static/img/RobotOperateSystem/u817.png" class="row4_img3">
-            <p id="r4right_r3text4">工控机</p>
+            <el-row style="text-align: center">
+              <img src="static/img/RobotOperateSystem/u817.png" class="row4_img3">
+              <p id="r4right_r3text4">工控机</p>
+            </el-row>
           </el-col>
           <el-col :span="8">
-            <img src="static/img/RobotOperateSystem/u818.png" class="row4_img3">
-            <p id="r4right_r3text5">I/O系统</p>
+            <el-row style="text-align: center">
+              <img src="static/img/RobotOperateSystem/u818.png" class="row4_img3">
+              <p id="r4right_r3text5">I/O系统</p>
+            </el-row>
           </el-col>
         </el-row>
         <!--          </el-col>-->
@@ -414,7 +430,7 @@
 }
 
 #ro_img1_text {
-  width: 100%;
+  width: 120px;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
@@ -422,7 +438,7 @@
 }
 
 #ro_img2_text {
-  width: 100%;
+  width: 120px;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
@@ -430,7 +446,7 @@
 }
 
 #ro_img3_text {
-  width: 100%;
+  width: 120px;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
@@ -438,7 +454,7 @@
 }
 
 #ro_img4_text {
-  width: 100%;
+  width: 120px;
   background-color: #0d64e8;
   color: white;
   font-weight: bolder;
@@ -687,12 +703,13 @@
   text-align: center;
   border: 2px dashed dodgerblue;
   width: 80%;
+  height: 110px;
   padding: 0;
 }
 
 .row4_img3 {
   width: 60%;
-  height: 80%;
+  height: 80px;
   padding-top: 10px;
 }
 
@@ -702,6 +719,7 @@
   font-weight: bolder;
   color: #0d64e8;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #r4right_r3text2 {
@@ -710,6 +728,7 @@
   font-weight: bolder;
   color: #0d64e8;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #r4right_r3text3 {
@@ -718,6 +737,7 @@
   font-weight: bolder;
   color: #0d64e8;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #r4right_r3text4 {
@@ -726,6 +746,7 @@
   font-weight: bolder;
   color: #0d64e8;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #r4right_r3text5 {
@@ -734,6 +755,7 @@
   font-weight: bolder;
   color: #0d64e8;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #bottom {

@@ -198,34 +198,34 @@
               <el-row style="margin-left: 3%">
                 <el-col :span="3" style="width: 28%;text-align: center">
                   <el-row style="background-color: #0d64e8">
-                    <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">视觉设备</p>
+                    <p style="text-align: center;font-weight: bolder;color: white;font-size: 32px;margin: 10px">视觉设备</p>
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="font-weight: bolder;font-size: 18px">单目相机</p>
-                    <p style="font-weight: bolder;font-size: 18px">双目相机</p>
-                    <p style="font-weight: bolder;font-size: 18px">深度相机</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">单目相机</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">双目相机</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">深度相机</p>
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 28%;text-align: center">
                   <el-row style="background-color: #0d64e8">
-                    <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">测距设备</p>
+                    <p style="text-align: center;font-weight: bolder;color: white;font-size: 32px;margin: 10px">测距设备</p>
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="font-weight: bolder;font-size: 18px">超声波雷达</p>
-                    <p style="font-weight: bolder;font-size: 18px">激光雷达</p>
-                    <p style="font-weight: bolder;font-size: 18px">毫米波雷达</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">超声波雷达</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">激光雷达</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">毫米波雷达</p>
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 28%;text-align: center">
                   <el-row style="background-color: #0d64e8">
-                    <p style="font-weight: bolder;color: white;font-size: 32px;margin: 10px">驱动设备</p>
+                    <p style="text-align: center;font-weight: bolder;color: white;font-size: 32px;margin: 10px">驱动设备</p>
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="font-weight: bolder;font-size: 18px">伺服电机</p>
-                    <p style="font-weight: bolder;font-size: 18px">进步电机</p>
-                    <p style="font-weight: bolder;font-size: 18px">直流无刷电机</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">伺服电机</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">进步电机</p>
+                    <p style="text-align: center;font-weight: bolder;font-size: 18px">直流无刷电机</p>
                   </el-row>
                 </el-col>
               </el-row>
