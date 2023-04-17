@@ -54,7 +54,7 @@
                 领先的技术
               </el-row>
               <el-row style="background-color: white">
-                <div style="height: 250px;color: #0d64e8;text-align: center;font-size: 18px;">
+                <div style="height: 250px;color: #0d64e8;text-align: left;font-size: 18px;">
                   <br>我们平台拥有功能完备的机器学习模型，不断迭代优化，支持更先进的算法并且提供更高的算力，输出业界最前沿的研究成果。
                 </div>
               </el-row>
@@ -66,7 +66,7 @@
                 产品矩阵优势
               </el-row>
               <el-row style="background-color: white">
-                <div style="height: 250px;text-align: center;color: #0d64e8;font-size: 18px">
+                <div style="height: 250px;text-align: left;color: #0d64e8;font-size: 18px">
                   <br>我们有10余款生态机器人产品，覆盖多种使用场景，向各行各业的客户提供硬件设备和服务，可定制，售后有保障的软硬件一体解决方案。
                 </div>
               </el-row>
@@ -78,7 +78,7 @@
                 灵活开放的生态
               </el-row>
               <el-row style="background-color: white">
-                <div style="height: 250px;text-align: center;color: #0d64e8;font-size: 18px">
+                <div style="height: 250px;text-align: left;color: #0d64e8;font-size: 18px">
                   <br>二次开发灵活性强，第三方设备和应用可以快速接入，开放的开发者社区，学校人才聚集，聚集金融机构支持。
                 </div>
               </el-row>
@@ -90,7 +90,7 @@
                 产品和数据支持
               </el-row>
               <el-row style="background-color: white">
-                <div style="height: 250px;text-align: center;color: #0d64e8;font-size: 18px">
+                <div style="height: 250px;text-align: left;color: #0d64e8;font-size: 18px">
                   <br>平台有机器人调度系统、服务机器人管控系统、机器人操作控制软件系统、ERP系统、MES系统、WMS系统、WCS系统等产品及工具、
                   积累大量历史数据、用于迭代更新系统。
                 </div>
@@ -103,7 +103,7 @@
                 一体化的服务
               </el-row>
               <el-row style="background-color: white">
-                <div style="height: 250px;text-align: center;color: #0d64e8;font-size: 18px">
+                <div style="height: 250px;text-align: left;color: #0d64e8;font-size: 18px">
                   <br>为合作伙伴和客户提供，人机交互设计、软硬件管理控制软件，软硬件的产品订制开发，拥有强力的品牌价值保障。
                 </div>
               </el-row>
@@ -185,33 +185,45 @@
           <el-tabs style="text-align: center; width: 92%;" :stretch="true">
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">背负系列</span>
-              <el-row :gutter="24" type="flex" style="text-align: center">
+              <el-row :gutter="24" type="flex">
                 <el-col :span="2">
                   <br>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/bf1.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">50kg</p>
+                  <el-row style="text-align: center">
+                    <img src="../../static/img/cloudPlatform/bf1.png" style="width: 150px;height: 100px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">50kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/bf2.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">100kg</p>
+                  <el-row style="text-align: center">
+                    <img src="../../static/img/cloudPlatform/bf2.png" style="width: 150px;height: 100px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">100kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/bf3.jpg" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">300kg</p>
+                  <el-row style="text-align: center">
+                    <img src="../../static/img/cloudPlatform/bf3.jpg" style="width: 150px;height: 100px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">300kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="static/img/cloudPlatform/bf4.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">800kg</p>
+                  <el-row style="text-align: center">
+                    <img src="static/img/cloudPlatform/bf4.png" style="width: 150px;height: 100px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">800kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/bf5.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">1000kg</p>
+                  <el-row style="text-align: center">
+                    <img src="../../static/img/cloudPlatform/bf5.png" style="width: 150px;height: 100px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">1000kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/bf6.jpg" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">3000kg</p>
+                  <el-row style="text-align: center">
+                    <img src="../../static/img/cloudPlatform/bf6.jpg" style="width: 150px;height: 100px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">3000kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="2">
                   <br>
@@ -225,28 +237,40 @@
                   <br>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/ds1.jpg" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">300kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ds1.jpg" style="width: 150px;height: 100px;">
+                    <p style="text-align:center;font-weight: bolder;font-size: 16px;color: #0d64e8">300kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/ds2.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">600kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ds2.png" style="width: 150px;height: 100px;">
+                    <p style="text-align:center;font-weight: bolder;font-size: 16px;color: #0d64e8">600kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/ds3.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">600kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ds3.png" style="width: 150px;height: 100px;">
+                    <p style="text-align:center;font-weight: bolder;font-size: 16px;color: #0d64e8">600kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/ds4.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">1000kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ds4.png" style="width: 150px;height: 100px;">
+                    <p style="text-align:center;font-weight: bolder;font-size: 16px;color: #0d64e8">1000kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/ds5.jpg" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">1500kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ds5.jpg" style="width: 150px;height: 100px;">
+                    <p style="text-align:center;font-weight: bolder;font-size: 16px;color: #0d64e8">1500kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <img src="../../static/img/cloudPlatform/ds6.png" style="width: 150px;height: 100px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">5000kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ds6.png" style="width: 150px;height: 100px;">
+                    <p style="text-align:center;font-weight: bolder;font-size: 16px;color: #0d64e8">5000kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="0.5">
                   <br>
@@ -258,48 +282,57 @@
               <el-row style="text-align: center">
                 <el-col :span="4">&nbsp;</el-col>
                 <el-col :span="5">
-                  <img src="static/img/cloudPlatform/u370.png" style="width: 50%;height: 120px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">200kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="static/img/cloudPlatform/u370.png" style="width: 50%;height: 120px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">200kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="5">
-                  <img src="static/img/cloudPlatform/u368.png" style="width: 50%;height: 120px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">300kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="static/img/cloudPlatform/u368.png" style="width: 50%;height: 120px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">300kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="5">
-                  <img src="static/img/cloudPlatform/u369.png" style="width: 50%;height: 120px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">500kg</p>
+                  <el-row style="text-align: center;">
+                    <img src="static/img/cloudPlatform/u369.png" style="width: 50%;height: 120px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">500kg</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">&nbsp;</el-col>
               </el-row>
             </el-tab-pane>
             <el-tab-pane>
               <span slot="label" style="font-size: 18px;font-weight: bolder">叉车系列</span>
-              <el-row style="text-align: center">
+              <el-row>
                 <el-col :span="4">
                   <br>
                 </el-col>
                 <el-col :span="4">
-                  <el-row>
-                    <img src="../../static/img/cloudPlatform/cc1.png" style="width: 150px;height: 180px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">叉车</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/cc1.png" class="forklift_img">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">叉车</p>
                   </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <el-row>
-                    <img src="../../static/img/cloudPlatform/cc2.png" style="width: 150px;height: 180px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">中药送料叉车</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/cc2.png" class="forklift_img">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">中药送料叉车</p>
                   </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <el-row class="cc">
-                    <img src="../../static/img/cloudPlatform/cc3.png" style="width: 150px;height: 180px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">前移式叉车</p>
+                  <el-row style="text-align: center;" class="forklift forklift_layout">
+                    <img src="../../static/img/cloudPlatform/cc3.png" class="forklift_img">
+                    <p style="text-align: center;width: 100%;margin-left:8%;font-weight: bolder;font-size: 16px;color: #0d64e8">
+                      前移式叉车
+                    </p>
                   </el-row>
                 </el-col>
                 <el-col :span="4">
-                  <el-row class="cc">
-                    <img src="../../static/img/cloudPlatform/cc4.png" style="width: 150px;height: 180px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">托盘推高式叉车</p>
+                  <el-row style="text-align: center;" class="forklift forklift_layout">
+                    <img src="../../static/img/cloudPlatform/cc4.png" class="forklift_img">
+                    <p style="text-align: center;width: 100%;margin-left:8%;font-weight: bolder;font-size: 16px;color: #0d64e8;">
+                      托盘推高式叉车</p>
                   </el-row>
                 </el-col>
                 <el-col :span="4">
@@ -314,16 +347,22 @@
                   <br>
                 </el-col>
                 <el-col :span="5">
-                  <img src="../../static/img/cloudPlatform/ts1.jpg" style="width: 100%;height: 180px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">隧道探测</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ts1.jpg" style="width: 100%;height: 180px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">隧道探测</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="5">
-                  <img src="../../static/img/cloudPlatform/ts2.jpg" style="width: 100%;height: 180px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">激光清洗</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ts2.jpg" style="width: 100%;height: 180px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">激光清洗</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="5">
-                  <img src="../../static/img/cloudPlatform/ts3.jpg" style="width: 100%;height: 180px;">
-                  <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">建筑机器人</p>
+                  <el-row style="text-align: center;">
+                    <img src="../../static/img/cloudPlatform/ts3.jpg" style="width: 100%;height: 180px;">
+                    <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">建筑机器人</p>
+                  </el-row>
                 </el-col>
                 <el-col :span="4">
                   <br>
@@ -334,35 +373,35 @@
               <span slot="label" style="font-size: 18px;font-weight: bolder">服务系列</span>
               <el-row align="center" :gutter="24" style="text-align: center">
                 <el-col :span="2"><br></el-col>
-                <el-col :span="4">
-                  <el-row class="service">
-                    <img src="static/img/cloudPlatform/u409.png" style="width: 150px;height: 150px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">精准喷雾消毒机器人</p>
+                <el-col :span="4" style="text-align: center">
+                  <el-row class="service service_wh">
+                    <img src="static/img/cloudPlatform/u409.png" class="service_wh">
                   </el-row>
+                  <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8;position: relative">精准喷雾消毒机器人</p>
                 </el-col>
-                <el-col :span="4">
-                  <el-row class="service">
-                    <img src="static/img/cloudPlatform/u410.png" style="width: 150px;height: 150px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">紫外线喷雾消毒机器人</p>
+                <el-col :span="4" style="text-align: center">
+                  <el-row class="service service_wh">
+                    <img src="static/img/cloudPlatform/u410.png" class="service_wh">
                   </el-row>
+                  <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">紫外线喷雾消毒机器人</p>
                 </el-col>
-                <el-col :span="4">
-                  <el-row class="service">
-                    <img src="static/img/cloudPlatform/u411.jpg" style="width: 150px;height: 150px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">喷雾消毒机器人</p>
+                <el-col :span="4" style="text-align: center">
+                  <el-row class="service service_wh">
+                    <img src="static/img/cloudPlatform/u411.jpg" class="service_wh">
                   </el-row>
+                  <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">喷雾消毒机器人</p>
                 </el-col>
-                <el-col :span="4">
-                  <el-row class="service">
-                    <img src="static/img/cloudPlatform/u412.png" style="width: 150px;height: 150px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">送餐机器人</p>
+                <el-col :span="4" style="text-align: center">
+                  <el-row class="service service_wh">
+                    <img src="static/img/cloudPlatform/u412.png" class="service_wh">
                   </el-row>
+                  <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">送餐机器人</p>
                 </el-col>
-                <el-col :span="4">
-                  <el-row class="service">
-                    <img src="static/img/cloudPlatform/u413.png" style="width: 150px;height: 150px;">
-                    <p style="font-weight: bolder;font-size: 16px;color: #0d64e8">送药机器人</p>
+                <el-col :span="4" style="text-align: center">
+                  <el-row class="service service_wh">
+                    <img src="static/img/cloudPlatform/u413.png" class="service_wh">
                   </el-row>
+                  <p style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8">送药机器人</p>
                 </el-col>
                 <el-col :span="1">
                   <br>
@@ -667,17 +706,31 @@ export default {
   background-color: #f2f6fa;
 }
 
-.cc {
+.forklift_layout {
+  width: 150px;
+  height: 180px;
+  margin-left: 15%;
+}
+
+.forklift_img {
+  width: 150px;
+  height: 180px;
+}
+
+.forklift {
   position: relative;
 }
 
-.cc::before {
+.forklift::before {
   position: absolute;
-  top: 5px;
-  left: 41px;
-  width: 150px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.service_wh {
+  width: 180px;
+  height: 200px;
 }
 
 .service {
@@ -686,10 +739,8 @@ export default {
 
 .service::before {
   position: absolute;
-  top: 5px;
-  left: 31px;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
