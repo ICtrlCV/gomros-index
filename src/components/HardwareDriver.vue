@@ -197,35 +197,53 @@
             <el-col :span="13">
               <el-row style="margin-left: 3%">
                 <el-col :span="3" style="width: 28%;text-align: center">
-                  <el-row style="background-color: #0d64e8">
-                    <p style="text-align: center;font-weight: bolder;color: white;font-size: 32px;margin: 10px">视觉设备</p>
+                  <el-row style="background-color: #0d64e8;font-weight: bolder;color: white;font-size: 32px;text-align: center;padding-top: 10px;padding-bottom:10px ">
+                    视觉设备
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">单目相机</p>
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">双目相机</p>
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">深度相机</p>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px">
+                      单目相机
+                    </el-row>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px">
+                      双目相机
+                    </el-row>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px;margin-bottom: 20px">
+                      深度相机
+                    </el-row>
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 28%;text-align: center">
-                  <el-row style="background-color: #0d64e8">
-                    <p style="text-align: center;font-weight: bolder;color: white;font-size: 32px;margin: 10px">测距设备</p>
+                  <el-row style="background-color: #0d64e8;font-weight: bolder;color: white;font-size: 32px;text-align: center;padding-top: 10px;padding-bottom:10px ">
+                    测距设备
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">超声波雷达</p>
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">激光雷达</p>
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">毫米波雷达</p>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px">
+                      超声波雷达
+                    </el-row>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px">
+                      激光雷达
+                    </el-row>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px;margin-bottom: 20px">
+                      毫米波雷达
+                    </el-row>
                   </el-row>
                 </el-col>
                 <el-col :span="1">&nbsp;</el-col>
                 <el-col :span="3" style="width: 28%;text-align: center">
-                  <el-row style="background-color: #0d64e8">
-                    <p style="text-align: center;font-weight: bolder;color: white;font-size: 32px;margin: 10px">驱动设备</p>
+                  <el-row style="background-color: #0d64e8;font-weight: bolder;color: white;font-size: 32px;text-align: center;padding-top: 10px;padding-bottom:10px ">
+                    驱动设备
                   </el-row>
                   <el-row style="border:2px dashed dodgerblue">
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">伺服电机</p>
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">进步电机</p>
-                    <p style="text-align: center;font-weight: bolder;font-size: 18px">直流无刷电机</p>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px">
+                      伺服电机
+                    </el-row>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px">
+                      进步电机
+                    </el-row>
+                    <el-row style="text-align: center;font-weight: bolder;font-size: 18px;margin-top: 20px;margin-bottom: 20px">
+                      直流无刷电机
+                    </el-row>
                   </el-row>
                 </el-col>
               </el-row>
@@ -264,13 +282,13 @@
       </el-row>
 
       <!--    第五行 硬件设备支持  -->
-      <el-row :gutter="20" type="flex" style="height: 400px">
+      <el-row :gutter="20" type="flex" style="margin-bottom: 1%">
         <el-col :span="8" style="margin-top:2%;margin-left: 6%;margin-right: 2%">
           <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">硬件设备支持</p>
           <p style="font-size: 18px;color: #0d64e8;margin-left: 2%">机器人控制系统可适配各大品牌配件</p>
         </el-col>
         <el-col :span="13" style="align-content: center;margin-top: 4%;margin-left: 5%">
-          <img class="img-box" src="static/img/hardwareDriver/u1498.png" style="width: 91%;height: 95%;">
+          <img class="img-box" src="static/img/hardwareDriver/u14980.png" style="width: 91%;height: 100%;">
         </el-col>
       </el-row>
 

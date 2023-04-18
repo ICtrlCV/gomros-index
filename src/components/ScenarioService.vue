@@ -75,7 +75,7 @@
               <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">AGV调度系统</p>
             </el-col>
           </el-row>
-          <img class="img-box" src="static/img/scenarioService/u12570.png" style="width: 75%;height: 90%;">
+          <img class="img-box" src="static/img/scenarioService/u12570.png" style="width: 75%;height: 80%;">
         </el-col>
       </el-row>
 
