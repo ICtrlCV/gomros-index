@@ -8,7 +8,7 @@
                             <img src="static/img/MobileRobot/logo1.svg" style="width: 240px;height: 240px;">
                         </el-col>
                         <el-col :span="20" style="margin-top: 5px;margin-left: 5px;text-shadow: 2px 2px 5px white">
-                            <p><span style="font-size: 60px;color: #0d64e8;font-weight: bolder">gomros</span>
+                            <p><span style="font-size: 60px;color: #0d64e8;font-weight: bolder">GomROS</span>
                                 <span style="font-size: 18px;color: #0d64e8;font-weight: bolder">工业基础软件</span></p>
                             <p><span style="font-size: 60px;color: #0d64e8;font-weight: bolder">生态合作</span>
                                 <span style="font-size: 18px;color: #0d64e8;font-weight: bolder">供应商合作</span></p>
@@ -123,7 +123,7 @@
             </el-aside>
         </div>
 
-        <el-container style="text-align: left;background-color: #f2f6fa">
+        <el-container style="text-align: left;background-color: #f2f6fa" class=".el-div">
             <el-main style="margin-left: 6%;margin-top: 1%;margin-right: 6%">
                 <el-row :gutter="24" style="font-size: 32px">
                     <el-col :span="1">
@@ -532,12 +532,6 @@ p {
     overflow-x: hidden;
 }
 
-::v-deep .el-step__icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 60px;
-}
-
 .el-image__inner {
     border-radius: 50%;
     border: 1px solid #375ea0;
@@ -545,32 +539,63 @@ p {
 }
 
 </style>
+
 <style>
 .el-step__icon{
-    width: 100px;
-    height: 100px;
-    font-size: 40px;
-    color: #0d64e8;
-
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 40px !important;
+    color: #0d64e8 !important;
 }
 .el-step__line{
     /*top: 50px;*/
-    transform: translatey(40px);
-    border-color: grey;
+    transform: translatey(40px) !important;
+    border-color: grey !important;
 }
 .el-step__description{
-    margin-top: 20px;
-    font-size: 20px;
-    color: #0d64e8;
-    font-weight: 400;
+    margin-top: 20px !important;
+    font-size: 20px !important;
+    color: #0d64e8 !important;
+    font-weight: 400 !important;
 }
 .el-step__icon:hover{
-    border-width: 0;
-    background-color: #DFEBFB;
-    border-color: #0d64e8;
+    border-width: 0 !important;
+    background-color: #DFEBFB !important;
+    border-color: #0d64e8 !important;
 
 }
 .el-step__description.is-finish{
-    color: #0d64e8;
+    color: #0d64e8 !important;
+}
+.el-div{
+
+}
+
+.el-div.el-step__icon{
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 40px !important;
+    color: #0d64e8 !important;
+}
+.el-div.el-step__line{
+    /*top: 50px;*/
+    transform: translatey(40px) !important;
+    border-color: grey !important;
+}
+.el-div.el-step__description{
+    margin-top: 20px !important;
+    font-size: 20px !important;
+    color: #0d64e8 !important;
+    font-weight: 400 !important;
+}
+.el-div.el-step__icon:hover{
+    border-width: 0 !important;
+    background-color: #DFEBFB !important;
+    border-color: #0d64e8 !important;
+
+}
+.el-div.el-step__description.is-finish{
+    color: #0d64e8 !important;
 }
 </style>
+
