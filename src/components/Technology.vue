@@ -83,9 +83,9 @@
                 <el-row><br></el-row>
                 <el-row>
                   <p style="margin-left: 2%;width: 280px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
-                    GomRos车载系统</p>
+                    GomROS车载系统</p>
                   <p style="margin-left: 2%;width: 380px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
-                    GomRos车载系统可适配各大品牌电子元器件</p>
+                    GomROS车载系统可适配各大品牌电子元器件</p>
                 </el-row>
               </div>
             </el-col>
@@ -131,9 +131,9 @@
                 <el-row><br></el-row>
                 <el-row>
                   <p style="margin-left: 2%;width: 390px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
-                    GomRos数据处理系统</p>
+                    GomROS数据处理系统</p>
                   <p style="margin-left: 2%;width: 340px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
-                    GomRos 自动数据处理，自动输出结果</p>
+                    GomROS自动数据处理，自动输出结果</p>
                 </el-row>
               </div>
             </el-col>
@@ -245,7 +245,7 @@
               <el-row :gutter="24">
                 <el-col :span="10" style="width: 59%;padding-top: 4%">
                   <el-row style="font-size: 32px">云端任务管理</el-row>
-                  <el-row style="font-size: 15px">GomRos 云端任务管理 云端线路规划</el-row>
+                  <el-row style="font-size: 15px">GomROS 云端任务管理 云端线路规划</el-row>
                 </el-col>
                 <el-col :span="6">
                   <br>
@@ -284,7 +284,7 @@
               <el-row :gutter="24">
                 <el-col :span="10" style="width: 59%;padding-top: 4%">
                   <el-row style="font-size: 32px">云端数据分析</el-row>
-                  <el-row style="font-size: 15px">GomRos 云端数据分析 数据可视化展示</el-row>
+                  <el-row style="font-size: 15px">GomROS 云端数据分析 数据可视化展示</el-row>
                 </el-col>
                 <el-col :span="6"><br></el-col>
                 <el-col :span="8" style="padding-left: 8%;padding-top: 0;">
@@ -328,7 +328,7 @@
               <el-row :gutter="24">
                 <el-col :span="10" style="width: 59%;padding-top: 4%">
                   <el-row style="font-size: 32px">云端识别交互</el-row>
-                  <el-row style="font-size: 15px">GomRos 云端视觉识别 云端语音识别</el-row>
+                  <el-row style="font-size: 15px">GomROS 云端视觉识别 云端语音识别</el-row>
                 </el-col>
                 <el-col :span="6"><br></el-col>
                 <el-col :span="8" style="padding-left: 8%;padding-top: 0;">
@@ -368,7 +368,7 @@
               <el-row :gutter="24">
                 <el-col :span="10" style="width: 59%;padding-top: 4%">
                   <el-row style="font-size: 32px">云端更新推送</el-row>
-                  <el-row style="font-size: 15px">GomRos 广告内容推送 云端系统更新</el-row>
+                  <el-row style="font-size: 15px">GomROS 广告内容推送 云端系统更新</el-row>
                 </el-col>
                 <el-col :span="6"><br></el-col>
                 <el-col :span="8" style="padding-left: 10%;padding-top: 0;">
@@ -420,7 +420,7 @@
                   <p style="margin-left: 2%;width: 240px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
                     多场景服务系统</p>
                   <p style="margin-left: 2%;width: 260px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
-                    GomRos-满足各行业业务需求</p>
+                    GomROS-满足各行业业务需求</p>
                 </el-row>
               </div>
             </el-col>
@@ -451,7 +451,7 @@
                   <p style="margin-left: 2%;width: 220px;color: white;font-size: 32px;background-color: #0d64e8;font-weight: bolder">
                     Pc/手机/车载</p>
                   <p style="margin-left: 2%;width: 300px;color: white;font-size: 18px;background-color: #0d64e8;font-weight: bolder">
-                    GomRos-满足各类显示操控客户端</p>
+                    GomROS-满足各类显示操控客户端</p>
                 </el-row>
               </div>
             </el-col>
@@ -478,7 +478,7 @@
         <el-row><br><br></el-row>
         <el-row :gutter="24">
           <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;margin-left: 2%;padding-right: 0">
-            <div style="font-size: 72px">GomRos</div>
+            <div style="font-size: 72px">GomROS</div>
             <div style="font-size: 32px;text-align: left;margin-left: 30%">机器人产品应用</div>
           </el-col>
           <el-col :span="9">
@@ -494,7 +494,7 @@
           <div>
             <el-row :gutter="24">
               <el-col :span="5" style="color: #0d64e8;text-align: center;font-weight: bold;margin-left: 2%;padding-right: 0">
-                <div style="font-size: 72px">GomRos</div>
+                <div style="font-size: 72px">GomROS</div>
                 <div style="font-size: 32px;text-align: left;margin-left: 30%">我们的产品</div>
               </el-col>
               <el-col :span="5">

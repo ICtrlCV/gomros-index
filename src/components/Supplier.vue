@@ -229,7 +229,7 @@
                         </el-col>
                         <el-col :span="5">
                             <div>
-                                <el-row style="font-size: 20px;font-weight: bolder">gomros系统</el-row>
+                                <el-row style="font-size: 20px;font-weight: bolder">GomROS系统</el-row>
                                 <el-row style="font-size: 18px;margin-top: 10px;height: 80px">
                                     视觉识别、语音识别、运动控制、导航定位系统、等机器人软件控制系统。
                                 </el-row>
