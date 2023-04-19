@@ -30,7 +30,7 @@
     <div>
       <!--    第一行 机器人场景服务系统  -->
       <el-row :gutter="20" type="flex" style="background-color: white;height: 360px">
-        <el-col :span="8" style="margin-left: 6%;margin-right: 8%">
+        <el-col :span="8" style="width:42%;margin-left: 6%;margin-right: 5%">
           <p style="font-size: 32px;font-weight: bolder;color: #0d64e8">机器人场景服务系统</p>
           <p style="font-size: 26px;font-weight: bolder;color: #0d64e8;margin-left: 2%">
             移动机器人在执行任务时，需要调度系统进行任务分配及路径规划等支撑，同时需要对接各类管理系统进行资源调用或结果反馈。</p>
@@ -38,8 +38,8 @@
         </el-col>
         <el-col :span="12" style="align-content: center;margin-top: 3%">
           <el-row style="margin-bottom: 2px;text-align: center">
-            <el-col :span="2">
-              <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">ERP</p>
+            <el-col :span="2" style="text-align: center;font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">
+              ERP
             </el-col>
             <el-col :span="3">
               <el-row>
@@ -49,8 +49,8 @@
                 <img src="static/img/scenarioService/u1263p003.png">
               </el-row>
             </el-col>
-            <el-col :span="2">
-              <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">MES</p>
+            <el-col :span="2" style="text-align: center;font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">
+              MES
             </el-col>
             <el-col :span="3">
               <el-row>
@@ -60,8 +60,8 @@
                 <img src="static/img/scenarioService/u1263p003.png">
               </el-row>
             </el-col>
-            <el-col :span="3">
-              <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px;">WMS</p>
+            <el-col :span="3" style="text-align: center;font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px;">
+              WMS
             </el-col>
             <el-col :span="2">
               <el-row>
@@ -71,11 +71,11 @@
                 <img src="static/img/scenarioService/u1263p003.png">
               </el-row>
             </el-col>
-            <el-col :span="6">
-              <p style="font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">AGV调度系统</p>
+            <el-col :span="6" style="text-align: center;font-size: 30px;font-weight: bolder;margin-top: 2px;margin-bottom: 2px">
+              AGV调度系统
             </el-col>
           </el-row>
-          <img class="img-box" src="static/img/scenarioService/u12570.png" style="width: 75%;height: 80%;">
+          <img class="img-box" src="static/img/scenarioService/u12570.png" style="width: 75%;height: 80%;margin-left: 4%">
         </el-col>
       </el-row>
 
@@ -88,7 +88,7 @@
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
               <el-row
-                  style="width: 92%;height:300px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
+                  style="width: 92%;height:350px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机器人调度系统，负责全部机器人的任务分配、调度及运行监控。调度系统采用基于深度强化学习的人工智能调度算法，
                 实现了任务的最优分配、多机器人路径规划以及机器人交通管理。调度系统还负责监控机器人的运行状态，根据每个机器人的历史情况和当前状态，来决定是否需要进行具体项目的保养维护，
                 并结合充电站的运行状态和当前的任务执行情况，合理的安排有需要的机器人进行自主充电，补充能源，并记录分析和汇总全部机器人的告警信息，及时通知运维人员，给出相应的检查和处理的建议，
@@ -97,7 +97,7 @@
               </el-row>
             </el-col>
             <el-col :span="8">
-              <img class="img-box" src="static/img/scenarioService/u1269.gif" style="width: 75%;height: 290px;">
+              <img class="img-box" src="static/img/scenarioService/u1269.gif" style="width: 85%;height: 340px;">
             </el-col>
           </el-row>
         </el-col>
@@ -112,8 +112,8 @@
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
               <el-row
-                  style="width: 92%;height:300px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  style="width: 92%;height:350px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 WMS是仓库管理系统(Warehouse Management System) 的缩写，仓库管理系统是通过入库业务、出库业务、仓库调拨、库存调拨和虚仓管理等功能，对批次管理、物料对应、库存盘点、
                 质检管理、虚仓管理和即时库存管理等功能综合运用的管理系统，有效控制并跟踪仓库业务的物流和成本管理全过程，实现或完善企业的仓储信息管理。该系统可以独立执行库存操作，
                 也可与其他系统的单据和凭证等结合使用，可为企业提供更为完整企业物流管理流程和财务管理信息。
@@ -123,7 +123,7 @@
               </el-row>
             </el-col>
             <el-col :span="8">
-              <img class="img-box" src="static/img/scenarioService/u1272.gif" style="width: 75%;height: 290px;">
+              <img class="img-box" src="static/img/scenarioService/u1272.gif" style="width: 85%;height: 340px;">
             </el-col>
           </el-row>
         </el-col>
@@ -138,8 +138,8 @@
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
               <el-row
-                  style="width: 92%;height:300px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MES即制造执行系统（Manufacturing Execution
+                  style="width: 92%;height:350px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MES即制造执行系统（Manufacturing Execution
                 System），它是一套面向制造企业车间执行层的生产信息化管理系统，
                 可以为企业提供包括制造数据管理、计划排程管理、生产调度管理、库存管理、质量管理、人力资源管理、工作中心/设备管理等等多项管理模块。通过这些管理模块对整个车间制造过程进行优化管理，
                 从而提高生产效率和质量。
@@ -149,7 +149,7 @@
               </el-row>
             </el-col>
             <el-col :span="8">
-              <img class="img-box" src="static/img/scenarioService/u1276.gif" style="width: 75%;height: 290px;">
+              <img class="img-box" src="static/img/scenarioService/u1276.gif" style="width: 85%;height: 340px;">
             </el-col>
           </el-row>
         </el-col>
@@ -164,8 +164,8 @@
           <el-row style="text-align: left;height: 100%">
             <el-col :span="12" style="margin-left: 5%;margin-right: 2%">
               <el-row
-                  style="width: 92%;height:300px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
-                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP是一种主要面向制造行业进行物质资源、资金资源和信息资源集成一体化管理的企业信息管理系统。ERP是一个以管理会计为核心可以提供跨地区、
+                  style="width: 92%;height:350px;padding: 10px;border:2px solid #0d64e8;color: #0d64e8;font-size: 18px">
+                <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP是一种主要面向制造行业进行物质资源、资金资源和信息资源集成一体化管理的企业信息管理系统。ERP是一个以管理会计为核心可以提供跨地区、
                 跨部门、甚至跨公司整合实时信息的企业管理软件。针对物资资源管理（物流）、人力资源管理（人流）、财务资源管理（财流）、信息资源管理（信息流）集成一体化的企业管理软件。
                 <br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP 系统的全局性管理和 MES 的精准化生产调度结合起来，进行统筹规划，能提升企业的管理信息化水平。ERP 系统和 MES
@@ -173,7 +173,7 @@
               </el-row>
             </el-col>
             <el-col :span="8">
-              <img class="img-box" src="static/img/scenarioService/u1279.gif" style="width: 75%;height: 290px;">
+              <img class="img-box" src="static/img/scenarioService/u1279.gif" style="width: 85%;height: 340px;">
             </el-col>
           </el-row>
         </el-col>
