@@ -494,7 +494,7 @@
                 </el-col>
                 <el-col :span="4" style="text-align: center">
                   <el-row class="service service_wh">
-                    <img src="static/img/cloudPlatform/u413.png" class="service_wh">
+                    <img src="static/img/cloudPlatform/u423.png" class="service_wh">
                   </el-row>
                   <el-row
                       style="text-align: center;font-weight: bolder;font-size: 16px;color: #0d64e8;width: 200px;margin-top: 4%">
