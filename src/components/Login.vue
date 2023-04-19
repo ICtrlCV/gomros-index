@@ -14,7 +14,7 @@
 <template>
   <el-card class = "box-card">
     <div class="clearfix" slot="header">
-      <span>GomRos后台登录入口</span>
+      <span>GomROS后台登录入口</span>
       <el-button style="float: right;padding: 3px 0" type="text">注册</el-button>
     </div>
     <el-form ref="form" :model="form" label-width="80px">

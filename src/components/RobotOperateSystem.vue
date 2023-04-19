@@ -631,7 +631,7 @@
         <el-main id="bottom-main">
           <el-row :gutter="24" id="bottom-row">
             <el-col :span="13" id="bottom-text">
-              欢迎咨询GomRos系统相关专家获取解决方案
+              欢迎咨询GomROS系统相关专家获取解决方案
             </el-col>
             <el-col :span="11" id="bottom-bt">
               <el-button id="bottom-button" @click="$router.push('/about')">

@@ -26,7 +26,7 @@
         <el-col :span="3">
           <button class="button-box" @click="changeCarousel(3)" id="GomRos-open_community-button"
                   ref="buttonShowCarousel3">
-            GomRos开放平台
+            GomROS开放平台
           </button>
         </el-col>
         <el-col :span="3">
